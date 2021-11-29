@@ -1,0 +1,52 @@
+.navBar {
+  box-shadow: 0px 1px 5px rgb(87, 86, 86);
+  z-index: 100;
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+}
+
+.links:hover {
+  background-color: #ececec;
+  border-radius: 10px;
+}
+.active {
+  border-bottom: 2px solid #3ad6ab;
+}
+.notactive {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.navlinks {
+  background-color: blue;
+}
+
+@media (max-width: 400px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    height: "auto";
+    background-color: rgba(248, 249, 250, 0.97);
+    text-align: "left";
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
+  }
+}
