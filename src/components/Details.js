@@ -515,7 +515,7 @@ function Details() {
                 </div>
                 <div className="form-group pt-3 pb-2 px-2">
                   <input
-                    type="text"
+                    type="number"
                     className="inputText form-control"
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.04)" }}
                     id="location"
@@ -523,7 +523,7 @@ function Details() {
                     autofocus
                     required
                   />
-                  <span class="floating-label opacity-50">Home Location</span>
+                  <span class="floating-label opacity-50">Area Pincode</span>
                 </div>
 
                 <div className="form-group pt-3 pb-2 px-2">
