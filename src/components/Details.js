@@ -523,7 +523,7 @@ function Details() {
                     autofocus
                     required
                   />
-                  <span class="floating-label opacity-50">Area Pincodess</span>
+                  <span class="floating-label opacity-50">Area Pincode</span>
                 </div>
 
                 <div className="form-group pt-3 pb-2 px-2">
