@@ -15,6 +15,12 @@ import FeatMob from "./FeatMob";
 // import Navbars from "./navbar";
 
 function Home() {
+  //   $('.slider').slick({
+  //     dots: false,
+  //     prevArrow: false,
+  //     nextArrow: false
+  // });
+
   const [display, setdisplay] = useState(false);
 
   useEffect(() => {

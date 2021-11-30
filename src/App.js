@@ -18,6 +18,7 @@ import EventReg from "./components/EventReg";
 import Foot2 from "./components/foot2";
 import Navnew from "./components/Navnew";
 import Login from "./components/Login";
+import LoginMail from "./components/LoginMail";
 import Details from "./components/Details";
 import PodiumTalks from "./components/PodimTalks";
 import Focus from "./components/Focus";
@@ -37,6 +38,7 @@ import FocusPartners from "./components/FocusPartners";
 import FocusPartnMob from "./components/FocusPartnMob";
 import FocusRegSuc from "./components/FocusRegSuc";
 import ComingSoon from "./components/ComingSoon";
+import SignupMail from "./components/SignupMail";
 // import Navbar from "./components/navbar";
 
 function App() {
@@ -159,7 +161,12 @@ function App() {
           </Route>
 
           <Route path="/login">
-            <Login loginhandler={loginhandler} />
+            {/* <Login loginhandler={loginhandler} /> */}
+            <LoginMail />
+          </Route>
+          <Route path="/SignupMail">
+            {/* <Login loginhandler={loginhandler} /> */}
+            <SignupMail />
           </Route>
           <Route path="/detail">
             <Details />

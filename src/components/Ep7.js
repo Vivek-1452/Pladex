@@ -15,32 +15,29 @@ function Ep7() {
         <div className="row">
           <div className="col-lg-9 col-md-7 col-4 px-lg-0 px-md-0 ps-lg-4 ps-md-4 ps-1">
             <h1
-              className="fw-bold ps-4 mt-lg-5 mt-2"
-              style={{ textAlign: "left", marginBottom: "80px" }}
+              className="fw-bold ps-4 mt-lg-4 mt-2"
+              style={{ textAlign: "left", marginBottom: "60px" }}
             >
               {/* The <span style={{ color: "#3ad6ab" }}>content</span> you consume{" "}
           defines you. */}
               Podium Talks
             </h1>
-            <div className="d-lg-block d-md-block d-none">
+            <div className="d-lg-block d-md-block d-none pt-0">
               <h5 className="mt-5 mb-3 fw-light">
                 Experience the live interaction with real life heroes.
               </h5>
               <a
-                href="."
+                href="https://www.youtube.com/watch?v=q8m43j9XlHo&list=PLxbSDADGvebUKUEfsxYUgur0uBhXoj6Oa"
+                target="_blank"
+                rel="noreferrer"
                 className="btn mx-auto px-4 py-2 fs-4"
                 style={{
-                  backgroundColor: "#3ad6ab",
+                  backgroundColor: "#25d366",
                   width: "auto",
                   color: "white",
                 }}
               >
-                {/* <i
-                  className="fas fa-location-arrow"
-                  style={{ color: "#3ad6ab" }}
-                ></i>
-                &nbsp;  */}
-                Explore
+                <i className="far fa-play-circle fs-3"></i>&nbsp; Watch
               </a>
             </div>
           </div>
@@ -48,13 +45,13 @@ function Ep7() {
             <img
               src={img1}
               alt=""
-              style={{ height: "100%", width: "90%", float: "right" }}
+              style={{ height: "100%", width: "80%", float: "right" }}
             />
           </div>
         </div>
       </div>
       <div className="container-fluid row py-5 bg-light mx-0">
-        <h1 className="text-center display-5 fw-bold mt-3 mb-4">
+        <h1 className="text-center display-5 fw-bold mt-3 mb-5">
           Episode{" "}
           <span className="text" style={{ color: "#3ad6ab" }}>
             7
@@ -62,14 +59,14 @@ function Ep7() {
         </h1>
         <div className="col-lg-2"></div>
         <div className="col-lg-8 text-start">
-          <div>
+          {/* <div>
             <img
               className="mt-4 mb-5"
               src={img}
               alt=""
               style={{ height: "100%", width: "100%" }}
             />
-          </div>
+          </div> */}
           <h2 className="fw-bold">
             When should an under graduate start his/her preparation for GRE?
           </h2>

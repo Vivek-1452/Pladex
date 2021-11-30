@@ -1,10 +1,14 @@
 import React from "react";
-import imgabout from "./ImgJoinUs.png";
+import imgabout from "./ImgJoinUss.png";
 import img1 from "./Podcast-amico.png";
 import img2 from "./JoinusImg/joinusImg2.png";
 import img3 from "./JoinusImg/joinusImg3.png";
 import img4 from "./JoinusImg/joinusImg4.png";
 import img5 from "./JoinusImg/joinusImg5.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function JoinUs() {
   // window.onload = function () {
@@ -90,7 +94,11 @@ function JoinUs() {
           </span>{" "}
           Talks
         </h4>
-        <div className="col-md-5 d-flex h-100 justify-content-center align-self-center">
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
           <img
             id="img1"
             src={img1}
@@ -98,7 +106,11 @@ function JoinUs() {
             style={{ height: "90%", width: "60%" }}
           />
         </div>
-        <div className="col-md-7">
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
           <h4 className="text-center display-6 mt-3 mb-5 d-none d-md-block d-lg-block fw-bold">
             <span className="text" style={{ color: "#3ad6ab" }}>
               Podium
@@ -132,7 +144,11 @@ function JoinUs() {
         </div>
       </div>
       <div className="row pb-5">
-        <div className="col-md-7">
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
           <h4 className="text-center display-6 mt-3 mb-5 fw-bold">
             <span className="text" style={{ color: "#3ad6ab" }}>
               Collaborate
@@ -164,7 +180,11 @@ function JoinUs() {
             Join Us
           </button>
         </div>
-        <div className="col-md-5 d-flex h-100 justify-content-center align-self-center">
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
           <img
             id="img2"
             src={img2}
@@ -180,7 +200,11 @@ function JoinUs() {
           </span>{" "}
           Up
         </h4>
-        <div className="col-md-5 d-flex h-100 justify-content-center align-self-center">
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
           <img
             id="img3"
             src={img3}
@@ -188,7 +212,11 @@ function JoinUs() {
             style={{ height: "90%", width: "60%" }}
           />
         </div>
-        <div className="col-md-7">
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
           <h4 className="text-center display-6 mt-3 mb-5 d-none d-md-block d-lg-block fw-bold">
             <span className="text" style={{ color: "#3ad6ab" }}>
               Team
@@ -222,7 +250,11 @@ function JoinUs() {
         </div>
       </div>
       <div className="row pb-5">
-        <div className="col-md-7">
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
           <h4 className="text-center display-6 mt-3 mb-5 fw-bold">
             <span className="text" style={{ color: "#3ad6ab" }}>
               Community
@@ -253,7 +285,11 @@ function JoinUs() {
             Join Us
           </button>
         </div>
-        <div className="col-md-5 d-flex h-100 justify-content-center align-self-center">
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
           <img
             id="img4"
             src={img4}
@@ -269,7 +305,11 @@ function JoinUs() {
           </span>
           ians
         </h4>
-        <div className="col-md-5 d-flex h-100 justify-content-center align-self-center">
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
           <img
             id="img5"
             src={img5}
@@ -277,7 +317,11 @@ function JoinUs() {
             style={{ height: "90%", width: "60%" }}
           />
         </div>
-        <div className="col-md-7">
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
           <h4 className="text-center display-6 mt-3 mb-5 d-none d-md-block d-lg-block fw-bold">
             <span className="text" style={{ color: "#3ad6ab" }}>
               Pladex

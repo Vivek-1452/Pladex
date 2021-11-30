@@ -16,6 +16,211 @@ function FocusReg() {
     }
   }, [display]);
 
+  var branch = [
+    "Acoustic engineering",
+    "Aeronautical",
+    "Aeronautical/astronautical",
+    "Aerospace engineering",
+    "Aircraft maintenance",
+    "Agriculture",
+    "Agriculture and food engineering",
+    "Agriculture and irrigation engineering",
+    "Agriinformatics",
+    "Apparel production management",
+    "Applied engineering",
+    "Applied electronics",
+    "Applied electronics and instrumentation",
+    "Applied mechanics",
+    "Architecture engineering",
+    "Artificial engineering",
+    "Artificial intelligence and machine learning",
+    "Atmospheric sciences",
+    "Audio engineering",
+    "Automation and robotics",
+    "Automobile engineering",
+    "Automotive design",
+    "Automotive engineering",
+    "Autotronics",
+    "Avionics engineering",
+    "Aviation engineering",
+    "Big data analysis",
+    "Bio informatics",
+    "Bio technology",
+    "Biochemical",
+    "Biological sciences and bio engineering",
+    "Biologically inspired system science",
+    "Biomedical engineering",
+    "Biomedical instrumentation",
+    "Bioprocess technology",
+    "Bioscience and bioengineering",
+    "Biotechnology/bio technical",
+    "Block chain technology",
+    "Carpet and textile technology",
+    "Ceramic technology",
+    "Ceramics and cement technology",
+    "Chemical",
+    "Chemical and electrochemical engineering",
+    "Chemical engineering",
+    "Chemical science and technology",
+    "Civil engineering",
+    "Cloud technology",
+    "Computer and information science",
+    "Computer science engineering",
+    "Construction engineering and management",
+    "Cyber security",
+    "Dairy technology",
+    "Data science",
+    "Design and manufacturing",
+    "Design engineering",
+    "Dyestuff and intermediates technology",
+    "Earth sciences",
+    "Electrical and computer engineering",
+    "Electrical and electronics",
+    "Electrical engineering",
+    "Electrical engineering(power and automation)",
+    "Electronics",
+    "Electronics and communication engineering",
+    "Electronics and instrumentation",
+    "Electronics and media technology",
+    "Electronics and nanotechnology",
+    "Electronics and telecommunication",
+    "Electronics control system",
+    "Electronics instrumentation and control",
+    "Energy engineering",
+    "Energy science and engineering",
+    "Energy systems engineering",
+    "Engineering design",
+    "Engineering physics",
+    "Engineering science",
+    "Enterprise information systems",
+    "Environmental engineering",
+    "Environmental engineering and water resources",
+    "Fashion and lifestyle design",
+    "Fibre technology",
+    "Fibres and textile processing technology",
+    "Fire protection engineering",
+    "Food engineering",
+    "Food packaging technology",
+    "Food process engineering",
+    "Food science and technology",
+    "Food technology",
+    "Food technology and biochemical",
+    "Footwear engineering",
+    "Gas and applied petroleum",
+    "Genetic engineering",
+    "Geo informatics engineering",
+    "Geo sciences engineering",
+    "Geological engineering",
+    "Geomatics engineering",
+    "Horticulture",
+    "Industrial and production",
+    "Industrial automation",
+    "Industrial biotechnology",
+    "Industrial design",
+    "Industrial engineering",
+    "Industrial engineering and management",
+    "Industrial microbiology",
+    "Information and communication technology",
+    "Information security",
+    "Information technology",
+    "Infrastructure engineering",
+    "Instrumentation",
+    "Instrumentation and control",
+    "Jute and fibre technology",
+    "Leather technology",
+    "Mainframe technology",
+    "Manmade fibre technology",
+    "Manufacturing",
+    "Manufacturing process and automation",
+    "Manufacturing technology",
+    "Marine",
+    "Material science engineering",
+    "Mathematics and computing",
+    "Mechanical and automobile engineering",
+    "Mechanical and industrial",
+    "Mechanical engineering",
+    "Mechatronics",
+    "Medical electronics",
+    "Metallurgical and materials",
+    "Metallurgical engineering",
+    "Microelectronics engineering",
+    "Mineral engineering",
+    "Minerals and metallurgical",
+    "Mining",
+    "Mining machinery engineering",
+    "Mobile application and information security",
+    "Molecular and cellular engineering",
+    "Motor sports engineering",
+    "Nanotechnology",
+    "Nanotechnology and robotics",
+    "Naval architecture",
+    "Naval architecture and ocean engineering",
+    "Naval architecture and ship building",
+    "Naval engineering",
+    "Nuclear engineering",
+    "Nuclear science and technology",
+    "Ocean and marine",
+    "Oil and paint technology",
+    "Oil and gas informatics",
+    "Oil technology",
+    "Oleo chemicals and surfactants",
+    "Open source and open standards",
+    "Optics and optoelectronics",
+    "Packaging technology",
+    "Paint technology",
+    "Paper technology",
+    "Petrochemical",
+    "Petroleum engineering",
+    "Petroleum engineering and technology",
+    "Petroleum refining and petrochemicals",
+    "Pharmaceutical technology",
+    "Pharmaceuticals chemistry and technology",
+    "Physical sciences",
+    "Planning engineering",
+    "Plastic and polymer",
+    "Plastic technology",
+    "Polymer engineering",
+    "Polymer science and chemical technology",
+    "Polymer science and technology",
+    "Polymer technology",
+    "Poultry production engineering",
+    "Power electronics",
+    "Power engineering",
+    "Power system engineering",
+    "Print and media technology",
+    "Printing graphics and packaging",
+    "Printing technology",
+    "Production",
+    "Production and industrial engineering",
+    "Professional communication",
+    "Pulp and paper technology",
+    "Radio frequency and microwave",
+    "Robotics",
+    "Rubber and plastic technology",
+    "Rubber technology",
+    "Safety and fire",
+    "Silk technology",
+    "Software engineering",
+    "Soil and water conservation",
+    "Solar and alternative technology",
+    "Space technology",
+    "Structural engineering",
+    "Sugar and alcohol technology",
+    "Sugar technology",
+    "Surface coating technology",
+    "System science engineering",
+    "Telecom informatics",
+    "Telecommunications",
+    "Textile chemistry",
+    "Textile engineering",
+    "Thermal engineering",
+    "Tool engineering",
+    "TV",
+    "Upstream and applied petroleum",
+    "Urban and regional planning",
+    "Water resources engineering",
+  ];
+
   return (
     <div
       style={{
@@ -42,11 +247,12 @@ function FocusReg() {
             color: "white",
             // maxWidth: "50vw",
             width: display ? "80vw" : "35vw",
-            boxShadow: "0 0 5px white",
+            boxShadow: "0 0 20px #212121",
             opacity: "0.85",
+            border: "none",
           }}
         >
-          <div className="card-header bg-opacity-25 bg-success">
+          <div className="card-header bg-opacity-100 bg-dark">
             <div className="row py-2">
               <div
                 className={
@@ -56,7 +262,9 @@ function FocusReg() {
                 }
                 // style={{ width: "min-content" }}
               >
-                <h5 className="fw-bold">Event Registration</h5>
+                <h5 className="fw-bold" style={{ color: "#3ad6ab" }}>
+                  Event Registration
+                </h5>
               </div>
               <div
                 className={
@@ -75,7 +283,8 @@ function FocusReg() {
                   <input
                     type="text"
                     // is-valid bg-success
-                    className="form-control bg-opacity-25 bg-primary"
+                    className="form-control"
+                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="firstname"
                     autocomplete="off"
                     autofocus
@@ -88,7 +297,8 @@ function FocusReg() {
                   {/* <label for="lastname">Last Name</label> */}
                   <input
                     type="text"
-                    className="inputText form-control bg-opacity-25 bg-primary"
+                    className="inputText form-control"
+                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="lastname"
                     autocomplete="off"
                     autofocus
@@ -97,73 +307,12 @@ function FocusReg() {
                   <span class="floating-label opacity-50">Last Name</span>
                 </div>
               </div>
-              <div className="row">
-                <div className="form-group col-md-6 pt-1 pb-2 px-2">
-                  {/* <label for="college">College</label> */}
-                  {/* <div className="input-group"> */}
-                  <select
-                    id="college"
-                    className="form-control bg-opacity-25 bg-primary"
-                  >
-                    <option selected>Select College</option>
-                    <option>ABC University</option>
-                    <option>DEF University</option>
-                  </select>
-                  {/* <div className="input-group-append">
-                  <span className="input-group-text" id="basic-addon2">
-                    <i
-                      className="fas fa-caret-down py-2
-                    "
-                    ></i>
-                  </span>
-                </div> */}
-                  {/* </div> */}
-                </div>
-                <div className="form-group col-md-6 pt-1 pb-2 px-2">
-                  {/* <label for="branch">Branch</label> */}
-                  <select
-                    id="branch"
-                    className="form-control bg-opacity-25 bg-primary"
-                  >
-                    <option selected className="opacity-50">
-                      Select Branch
-                    </option>
-                    <option>ABC Engineering</option>
-                    <option>DEF Engineering</option>
-                  </select>
-                </div>
-              </div>
-              <div className="form-group pt-3 pb-2">
-                {/* <label for="state">State</label> */}
-                <select
-                  id="state"
-                  className="form-control bg-opacity-25 bg-primary"
-                >
-                  <option selected className="opacity-50">
-                    Select State
-                  </option>
-                  <option>ABC State</option>
-                  <option>DEF State</option>
-                </select>
-              </div>
-              <div className="form-group pt-3 pb-2">
-                {/* <label for="event">Event</label> */}
-                <select
-                  id="event"
-                  className="form-control bg-opacity-25 bg-primary"
-                >
-                  <option selected className="opacity-50">
-                    Select Event
-                  </option>
-                  <option>ABC event</option>
-                  <option>DEF event</option>
-                </select>
-              </div>
               <div className="form-group pt-3 pb-2" id="float-label">
                 {/* <label htmlFor="email">Mali ID</label> */}
                 <input
                   type="email"
-                  className="inputText form-control bg-opacity-25 bg-primary"
+                  className="inputText form-control"
+                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="email"
                   autocomplete="off"
                   autofocus
@@ -176,7 +325,8 @@ function FocusReg() {
                 <input
                   type="tel"
                   // is-invalid bg-danger
-                  className="inputText form-control bg-opacity-25 bg-primary"
+                  className="inputText form-control"
+                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="mobile"
                   autocomplete="off"
                   autofocus
@@ -186,6 +336,48 @@ function FocusReg() {
                 {/* <div className="invalid-feedback">
               Please provide a valid number.
             </div> */}
+              </div>
+              <div className="form-group pt-3 pb-2">
+                <input
+                  type="text"
+                  className="inputText form-control"
+                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                  id="clg"
+                  autocomplete="off"
+                  autofocus
+                  required
+                />
+                <span class="floating-label opacity-50">College Name</span>
+              </div>
+              <div className="form-group pt-3 pb-2">
+                <input
+                  list="degree"
+                  className="form-control"
+                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                  placeholder="Select Branch"
+                  required
+                ></input>
+                <datalist id="degree">
+                  {branch.map((courses) => (
+                    <option value={courses} id={courses}>
+                      {courses}
+                    </option>
+                  ))}
+                </datalist>
+              </div>
+              <div className="form-group pt-3 pb-2">
+                {/* <label for="event">Event</label> */}
+                <select
+                  id="event"
+                  className="form-control"
+                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                >
+                  <option selected className="opacity-50">
+                    Select Event
+                  </option>
+                  <option>ABC event</option>
+                  <option>DEF event</option>
+                </select>
               </div>
               {/* <div className="form-group">
             <div className="form-check">

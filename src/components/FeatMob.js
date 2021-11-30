@@ -37,6 +37,49 @@ function FeatMob() {
             <img
               className="my-3"
               src={image1}
+              alt="Dlibrary"
+              width="120"
+              height="120"
+            />
+          </center>
+          <div className="card-body">
+            <h3 className="card-title">
+              <b>D-Library</b>
+            </h3>
+            <p className="card-text my-4">
+              A vast digital library composed of free <strong>E-books</strong>{" "}
+              of all genres, competitive materials and{" "}
+              <strong>handwritten notes</strong>.
+            </p>
+            <button
+              className="btn w-auto mx-auto px-4 my-2"
+              style={{ backgroundColor: "#3ad6ab", color: "white" }}
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-lg-4 col-md-6 mb-4"
+        data-aos="zoom-in-up"
+        data-aos-duration="2500"
+      >
+        <div
+          className="card mx-auto my-2"
+          style={{
+            minWidth: "250px",
+            width: "90%",
+            height: "95%",
+            border: "2px #3ad6ab",
+            borderRadius: "10px",
+            boxShadow: "0 0 10px #999",
+          }}
+        >
+          <center>
+            <img
+              className="my-3"
+              src={image1}
               alt="College Explorer"
               width="120"
               height="120"
@@ -115,7 +158,7 @@ function FeatMob() {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="col-lg-4 col-md-6 mb-4"
         data-aos="zoom-in-up"
         data-aos-duration="2500"
@@ -158,51 +201,8 @@ function FeatMob() {
             </Link>
           </div>
         </div>
-      </div>
-      <div
-        className="col-lg-4 col-md-6 mb-4"
-        data-aos="zoom-in-up"
-        data-aos-duration="2500"
-      >
-        <div
-          className="card mx-auto my-2"
-          style={{
-            minWidth: "250px",
-            width: "90%",
-            height: "95%",
-            border: "2px #3ad6ab",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px #999",
-          }}
-        >
-          <center>
-            <img
-              className="my-3"
-              src={image1}
-              alt="Dlibrary"
-              width="120"
-              height="120"
-            />
-          </center>
-          <div className="card-body">
-            <h3 className="card-title">
-              <b>D-Library</b>
-            </h3>
-            <p className="card-text my-4">
-              A vast digital library composed of free <strong>E-books</strong>{" "}
-              of all genres, competitive materials and{" "}
-              <strong>handwritten notes</strong>.
-            </p>
-            <button
-              className="btn w-auto mx-auto px-4 my-2"
-              style={{ backgroundColor: "#3ad6ab", color: "white" }}
-            >
-              Explore
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className="col-lg-4 col-md-6 mb-4"
         data-aos="zoom-in-up"
         data-aos-duration="2500"
@@ -244,8 +244,8 @@ function FeatMob() {
             </button>
           </div>
         </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className="col-lg-4 col-md-6 mb-4"
         data-aos="zoom-in-up"
         data-aos-duration="2500"
@@ -288,7 +288,7 @@ function FeatMob() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

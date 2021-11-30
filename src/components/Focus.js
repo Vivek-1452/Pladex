@@ -1,5 +1,5 @@
 import React from "react";
-import DocumentMeta from "react-document-meta";
+// import DocumentMeta from "react-document-meta";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -18,6 +18,14 @@ import comp from "./FocusImages/comp.png";
 import guest from "./FocusImages/guestTemp.jpg";
 import speakers from "./FocusImages/mic.png";
 import guestBg from "./FocusImages/guestBg.png";
+import speaker1 from "./FocusImages/speaker1.svg";
+import speaker2 from "./FocusImages/speaker2.svg";
+// import speaker3 from "./FocusImages/speaker3.png";
+// import speaker4 from "./FocusImages/speaker4.png";
+// import speaker5 from "./FocusImages/speaker5.png";
+// import speaker6 from "./FocusImages/speaker6.png";
+// import speaker7 from "./FocusImages/speaker7.png";
+import cheifSpeaker from "./FocusImages/cheifSpeaker.svg";
 
 AOS.init();
 
@@ -45,10 +53,14 @@ function Focus() {
   }, [display]);
 
   return (
-    <>
+    <div className="pt-0" style={{ width: "100vw" }}>
       <div
-        className="row py-md-5 py-3 px-1"
-        style={{ backgroundImage: `url(${main})`, color: "whitesmoke" }}
+        className="row py-md-5 py-3 px-1 mx-0"
+        style={{
+          backgroundImage: `url(${main})`,
+          color: "whitesmoke",
+          maxWidth: "100vw",
+        }}
       >
         <div className="mx-auto pb-5 pt-2" style={{ width: "auto" }}>
           <h3 className="fw-bold pb-2">18 - 24 DECEMBER 2021</h3>
@@ -309,11 +321,11 @@ function Focus() {
               </h1>
               <h2 className="fw-bold mt-3 mb-4">
                 <span className="text fs-1" style={{ color: "#f6e7d8" }}>
-                  ABCD
+                  ABHI
                 </span>{" "}
                 and{" "}
                 <span className="text fs-1" style={{ color: "#f6e7d8" }}>
-                  NOPQ
+                  NIYU
                 </span>
               </h2>
               <br />
@@ -329,7 +341,7 @@ function Focus() {
             >
               <center>
                 <img
-                  src={guest}
+                  src={cheifSpeaker}
                   alt="Chief guest"
                   style={{ borderRadius: "50%", width: "90%", height: "90%" }}
                 />
@@ -347,9 +359,9 @@ function Focus() {
                 SPEAKERS
               </span>
             </h4>
-            <div className="row">
+            <div className="row mt-3">
               <div
-                className="col-lg-3 col-md-6 px-4 my-5"
+                className="col-lg-3 col-md-6 px-4 my-3"
                 data-aos="zoom-out-down"
                 data-aos-duration="2000"
               >
@@ -358,7 +370,7 @@ function Focus() {
                   style={{ borderRadius: "10px" }}
                 >
                   <img
-                    src={guest}
+                    src={speaker1}
                     alt="Speaker 1"
                     width="175"
                     height="175"
@@ -374,7 +386,7 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 1</h4>
+                    <h4 className="fw-bold mt-0">MARK LAITFLANG STONE</h4>
                     <h5 className="fw-light mt-4">
                       ENTREPRENEURSHIP & BRAND BUILDING
                     </h5>
@@ -382,7 +394,7 @@ function Focus() {
                 </div>
               </div>
               <div
-                className="col-lg-3 col-md-6 px-4 my-5"
+                className="col-lg-3 col-md-6 px-4 my-3"
                 style={{ borderRadius: "10px" }}
                 data-aos="zoom-out-down"
                 data-aos-duration="2000"
@@ -392,8 +404,8 @@ function Focus() {
                   style={{ borderRadius: "10px" }}
                 >
                   <img
-                    src={guest}
-                    alt="Speaker 1"
+                    src={speaker2}
+                    alt="Speaker 2"
                     width="175"
                     height="175"
                     style={{
@@ -408,15 +420,13 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 2</h4>
-                    <h5 className="fw-light mt-4">
-                      ENTREPRENEURSHIP & BRAND BUILDING
-                    </h5>
+                    <h4 className="fw-bold mt-0">PRIYANKA DAS RAJKAKATI</h4>
+                    <h5 className="fw-light my-5">WOMEN EMPOWERMENT</h5>
                   </div>
                 </div>
               </div>
               <div
-                className="col-lg-3 col-md-6 px-4 my-5"
+                className="col-lg-3 col-md-6 px-4 my-3"
                 data-aos="zoom-out-down"
                 data-aos-duration="2000"
               >
@@ -441,15 +451,15 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 3</h4>
-                    <h5 className="fw-light mt-4">
-                      ENTREPRENEURSHIP & BRAND BUILDING
+                    <h4 className="fw-bold mt-0">SIMI HANSPAL</h4>
+                    <h5 className="fw-light my-5">
+                      MENTAL HEALTH & WELL-BEING
                     </h5>
                   </div>
                 </div>
               </div>
               <div
-                className="col-lg-3 col-md-6 px-4 my-5"
+                className="col-lg-3 col-md-6 px-4 my-3"
                 data-aos="zoom-out-down"
                 data-aos-duration="2000"
               >
@@ -474,10 +484,8 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 4</h4>
-                    <h5 className="fw-light mt-4">
-                      ENTREPRENEURSHIP & BRAND BUILDING
-                    </h5>
+                    <h4 className="fw-bold mt-0">Dr. SIDDHARTHA GHOSH</h4>
+                    <h5 className="fw-light my-5">EMERGING TECHNOLOGIES</h5>
                   </div>
                 </div>
               </div>
@@ -485,7 +493,7 @@ function Focus() {
             <div className="row">
               <div className="col-lg-1"></div>
               <div
-                className="col-lg-3 col-md-6 px-4  mt-5 mb-3 ms-lg-5"
+                className="col-lg-3 col-md-6 px-4 mt-2 mb-0 ms-lg-5"
                 data-aos="zoom-out-up"
                 data-aos-duration="2000"
               >
@@ -510,15 +518,15 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 5</h4>
+                    <h4 className="fw-bold mt-0">HASINA KHARBHIH</h4>
                     <h5 className="fw-light mt-4">
-                      ENTREPRENEURSHIP & BRAND BUILDING
+                      TACKLING HUMAN TRAFFICKING & SELF DEFENSE
                     </h5>
                   </div>
                 </div>
               </div>
               <div
-                className="col-lg-3 col-md-6 px-4 mt-5 mb-3"
+                className="col-lg-3 col-md-6 px-4 mt-2 mb-0"
                 data-aos="zoom-out-up"
                 data-aos-duration="2000"
               >
@@ -543,16 +551,16 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 6</h4>
-                    <h5 className="fw-light mt-4">
-                      ENTREPRENEURSHIP & BRAND BUILDING
+                    <h4 className="fw-bold mt-0">SHIKHAR PRAJAPATI</h4>
+                    <h5 className="fw-light mt-4 px-1">
+                      SOFT SKILLS & PERSONALITY DEVELOPMENT
                     </h5>
                   </div>
                 </div>
               </div>
               <div className="col-md-3 d-none d-md-block d-lg-none"></div>
               <div
-                className="col-lg-3 col-md-6 px-4 mt-5 mb-3"
+                className="col-lg-3 col-md-6 px-4 mt-2 mb-0"
                 data-aos="zoom-out-up"
                 data-aos-duration="2000"
               >
@@ -577,10 +585,8 @@ function Focus() {
                       top: "-40px",
                     }}
                   >
-                    <h4 className="fw-bold mt-0">VIVEK PAIDI 7</h4>
-                    <h5 className="fw-light mt-4">
-                      ENTREPRENEURSHIP & BRAND BUILDING
-                    </h5>
+                    <h4 className="fw-bold mt-0">ADITYA TRIVEDI</h4>
+                    <h5 className="fw-light my-5">BASIC LAWS AND RIGHTS</h5>
                   </div>
                 </div>
               </div>
@@ -590,7 +596,7 @@ function Focus() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

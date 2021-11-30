@@ -56,8 +56,8 @@ function CountFocusweb() {
             data-aos-duration="2000"
           >
             <img src={img4} alt="Donations" height="150" width="150" />
-            <h4 className="fw-bold">Title 4</h4>
-            <h5>123</h5>
+            <h4 className="fw-bold">Sponsors</h4>
+            <h5>11</h5>
           </div>
           <div
             className="col-md-2 col-6 my-2"
@@ -66,8 +66,8 @@ function CountFocusweb() {
             data-aos-duration="2000"
           >
             <img src={img1} alt="Donations" height="150" width="150" />
-            <h4 className="fw-bold">Title 5</h4>
-            <h5>456</h5>
+            <h4 className="fw-bold">Partners</h4>
+            <h5>18</h5>
           </div>
           <div
             className="col-md-2 col-6 my-2"
@@ -76,8 +76,8 @@ function CountFocusweb() {
             data-aos-duration="2000"
           >
             <img src={img1} alt="Donations" height="150" width="150" />
-            <h4 className="fw-bold">Title 6</h4>
-            <h5>789</h5>
+            <h4 className="fw-bold">Donations</h4>
+            <h5>$ 100</h5>
           </div>
         </div>
       </div>

@@ -17,7 +17,50 @@ function UpcomEve() {
         <div
           className="col-lg-4 col-md-6 mb-4"
           data-aos="zoom-out-right"
-          data-aos-duration="2000"
+          data-aos-duration="3000"
+        >
+          <div
+            className="card mx-auto my-2"
+            style={{
+              minWidth: "250px",
+              width: "85%",
+              height: "95%",
+              border: "2px #3ad6ab",
+              borderRadius: "10px",
+              boxShadow: "0 0 10px #999",
+            }}
+          >
+            <center>
+              <img
+                className="my-3"
+                src={image1}
+                alt="Dlibrary"
+                width="120"
+                height="120"
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">
+                <b>DLibrary</b>
+              </h3>
+              <p className="card-text my-4">
+                A vast digital library composed of free <strong>E-books</strong>{" "}
+                of all genres, competitive materials and{" "}
+                <strong>handwritten notes</strong>.
+              </p>
+              <button
+                className="btn w-auto mx-auto px-4 mb-2"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-4 col-md-6 mb-4"
+          data-aos="zoom-out-up"
+          data-aos-duration="3000"
         >
           <div
             className="card mx-auto my-2"
@@ -62,7 +105,7 @@ function UpcomEve() {
                 style={{ textDecoration: "none" }}
               >
                 <button
-                  className="btn w-auto mx-auto px-4 my-2"
+                  className="btn w-auto mx-auto px-4 mt-3 mb-2"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Explore
@@ -73,8 +116,8 @@ function UpcomEve() {
         </div>
         <div
           className="col-lg-4 col-md-6 mb-4"
-          data-aos="zoom-out-down"
-          data-aos-duration="2000"
+          data-aos="zoom-out-left"
+          data-aos-duration="3000"
         >
           <div
             className="card mx-auto my-2"
@@ -111,7 +154,7 @@ function UpcomEve() {
                 style={{ textDecoration: "none" }}
               >
                 <button
-                  className="btn w-auto mx-auto px-4 my-2"
+                  className="btn w-auto mx-auto px-4 mt-3 mb-2"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Explore
@@ -120,7 +163,7 @@ function UpcomEve() {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           className="col-lg-4 col-md-6 mb-4"
           data-aos="zoom-out-left"
           data-aos-duration="2000"
@@ -163,51 +206,8 @@ function UpcomEve() {
               </Link>
             </div>
           </div>
-        </div>
-        <div
-          className="col-lg-4 col-md-6 mb-4"
-          data-aos="zoom-out-right"
-          data-aos-duration="2000"
-        >
-          <div
-            className="card mx-auto my-2"
-            style={{
-              minWidth: "250px",
-              width: "85%",
-              height: "95%",
-              border: "2px #3ad6ab",
-              borderRadius: "10px",
-              boxShadow: "0 0 10px #999",
-            }}
-          >
-            <center>
-              <img
-                className="my-3"
-                src={image1}
-                alt="Dlibrary"
-                width="120"
-                height="120"
-              />
-            </center>
-            <div className="card-body">
-              <h3 className="card-title">
-                <b>DLibrary</b>
-              </h3>
-              <p className="card-text my-4">
-                A vast digital library composed of free <strong>E-books</strong>{" "}
-                of all genres, competitive materials and{" "}
-                <strong>handwritten notes</strong>.
-              </p>
-              <button
-                className="btn w-auto mx-auto px-4 my-2"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="col-lg-4 col-md-6 mb-4"
           data-aos="zoom-out-up"
           data-aos-duration="2000"
@@ -249,8 +249,8 @@ function UpcomEve() {
               </button>
             </div>
           </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="col-lg-4 col-md-6 mb-4"
           data-aos="zoom-out-left"
           data-aos-duration="2000"
@@ -293,7 +293,7 @@ function UpcomEve() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

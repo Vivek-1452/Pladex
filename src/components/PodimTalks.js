@@ -132,20 +132,20 @@ function PodiumTalks() {
             </h1>
             <div className="d-lg-block d-md-block d-none pt-0">
               <h5 className="mt-5 mb-3 fw-light">
-                dslrwergio eorjgoeiijr ojorjgo ojerojedsg kdsoo
-                <br />
-                dsfgkbsdlruigh ojro wriohohw
+                Experience the live interaction with real life heroes.
               </h5>
               <a
-                href="."
-                className="btn mx-auto px-4 py-1 fs-4"
+                href="https://www.youtube.com/watch?v=q8m43j9XlHo&list=PLxbSDADGvebUKUEfsxYUgur0uBhXoj6Oa"
+                target="_blank"
+                rel="noreferrer"
+                className="btn mx-auto px-4 py-2 fs-4"
                 style={{
                   backgroundColor: "#25d366",
                   width: "auto",
                   color: "white",
                 }}
               >
-                Watch
+                <i className="far fa-play-circle fs-3"></i>&nbsp; Watch
               </a>
             </div>
           </div>
@@ -168,7 +168,9 @@ function PodiumTalks() {
           dsfgkbsdlruigh ojro wriohohw
         </h6>
         <a
-          href="."
+          href="https://www.youtube.com/watch?v=q8m43j9XlHo&list=PLxbSDADGvebUKUEfsxYUgur0uBhXoj6Oa"
+          target="_blank"
+          rel="noreferrer"
           className="btn mx-auto px-4 py-1 fs-6"
           style={{
             backgroundColor: "#25d366",
@@ -176,8 +178,7 @@ function PodiumTalks() {
             color: "white",
           }}
         >
-          {/* <i className="fab fa-whatsapp fs-3"></i>&nbsp;  */}
-          Watch
+          <i className="far fa-play-circle fs-5"></i>&nbsp; Watch
         </a>
       </div>
 
@@ -271,7 +272,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://youtu.be/UTDBHHTPO3I"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -323,7 +326,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=CfwvNextxqY"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -375,7 +380,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=7u6qK869afE"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -427,7 +434,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=QaHIhpg4Y3k"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -479,7 +488,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=YD1qgxbkv6E"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -531,7 +542,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=uhRAyxTv1YA"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -584,7 +597,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=aF3HvqwdJxQ"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -636,7 +651,9 @@ function PodiumTalks() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=q8m43j9XlHo"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >

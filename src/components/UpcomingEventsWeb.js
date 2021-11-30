@@ -62,8 +62,8 @@ export default class UpcomingEventsWeb extends Component {
               <center>
                 <img
                   className="mb-2"
-                  src={image1}
-                  alt="Upcoming Event 1"
+                  src={image2}
+                  alt="Upcoming Event 2"
                   // width="320"
                   // height="220"
                   style={{
@@ -76,16 +76,24 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Priyanka Das</b>
+                    <b>Entrepreneurship</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  Dig into all the <strong>details</strong> of
-                  <strong> colleges</strong> needed for admission process.
+                  Construct and Evolve. Get inspired to be an entrepreneur!
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                {/* <Link to="/FocusReg" style={{ textDecoration: "none" }}>
                   <button
                     className="btn w-auto mx-auto px-4 my-2"
+                    style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                  >
+                    Register
+                  </button>
+                </Link> */}
+                <p className="float-lg-start my-3 ms-3">Dec 18 | 6:30 PM</p>
+                <Link to="/FocusReg">
+                  <button
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -109,8 +117,8 @@ export default class UpcomingEventsWeb extends Component {
               <center>
                 <img
                   className="mb-2"
-                  src={image2}
-                  alt="Upcoming Event 2"
+                  src={image1}
+                  alt="Upcoming Event 1"
                   // width="320"
                   // height="220"
                   style={{
@@ -123,16 +131,16 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Mark Laitflang Stone</b>
+                    <b>Women Empowerment</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  Enter your rank and <strong>predict</strong> the
-                  <strong> best</strong> college for you at ease and comfort.
+                  Importance of women empowerment in sustainable development.
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                <p className="float-lg-start my-3 ms-3">Dec 19 | 6:30 PM</p>
+                <Link to="/FocusReg">
                   <button
-                    className="btn w-auto mx-auto px-4 my-2"
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -170,16 +178,17 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Simi Hanspal</b>
+                    <b>Mental Health</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  <strong>Listen</strong> to the experiences of
-                  <strong> striving</strong> students from various colleges.
+                  Know feasible ways to relieve stress & anxiety and be mentally
+                  fit.
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                <p className="float-lg-start my-3 ms-3">Dec 20 | 6:30 PM</p>
+                <Link to="/FocusReg">
                   <button
-                    className="btn w-auto mx-auto px-4 my-2"
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -217,16 +226,17 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Siddhartha Ghosh</b>
+                    <b>Emerging Technologies</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  <strong>Listen</strong> to the experiences of
-                  <strong> striving</strong> students from various colleges.
+                  Latest on boarding technology is more than just technical
+                  intelligence.
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                <p className="float-lg-start my-3 ms-3">Dec 21 | 6:30 PM</p>
+                <Link to="/FocusReg">
                   <button
-                    className="btn w-auto mx-auto px-4 my-2"
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -264,16 +274,16 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Hasina Kharbhih</b>
+                    <b>Self Defense</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  <strong>Listen</strong> to the experiences of
-                  <strong> striving</strong> students from various colleges.
+                  How to tackle hassle conditions and defend yourself?
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                <p className="float-lg-start my-3 ms-3">Dec 22 | 6:30 PM</p>
+                <Link to="/FocusReg">
                   <button
-                    className="btn w-auto mx-auto px-4 my-2"
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -311,16 +321,16 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Shikhar Prajapati</b>
+                    <b>Personality Development</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  <strong>Listen</strong> to the experiences of
-                  <strong> striving</strong> students from various colleges.
+                  Hone your soft skills and develop a positive influence.
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                <p className="float-lg-start my-3 ms-3">Dec 23 | 6:30 PM</p>
+                <Link to="/FocusReg">
                   <button
-                    className="btn w-auto mx-auto px-4 my-2"
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -358,16 +368,16 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Aditya Trivedi</b>
+                    <b>Basic Laws and Rights</b>
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  <strong>Listen</strong> to the experiences of
-                  <strong> striving</strong> students from various colleges.
+                  Basic laws & rights that all the students need be aware of.
                 </p>
-                <Link to="/FocusReg" style={{ textDecoration: "none" }}>
+                <p className="float-lg-start my-3 ms-3">Dec 24 | 6:30 PM</p>
+                <Link to="/FocusReg">
                   <button
-                    className="btn w-auto mx-auto px-4 my-2"
+                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register

@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./logoFocus.png";
+import main from "./FocusImages/main.png";
 // import video1 from "./our mission video.mp4";
 // import New from "./new.png";
 
 function OurMission() {
   return (
-    <React.Fragment>
-      <div className="container-fluid pt-0">
+    <div
+      style={{
+        backgroundImage: `url(${main})`,
+        color: "whitesmoke",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="container-fluid py-5">
         {/* <h3
           className="position-relative top-0 start-0 bg-danger"
           style={{ width: "100px" }}
@@ -17,10 +24,7 @@ function OurMission() {
         {/* <div style={{ width: "250px" }}>
           <img src={New} alt="NEW" className="" height="50" width="200" />
         </div> */}
-        <div
-          className="row pt-md-3 pt-1 pb-3"
-          style={{ backgroundColor: "white" }}
-        >
+        <div className="row pt-md-3 py-5">
           <div
             className="col-md-8 mt-4 ps-lg-5"
             data-aos="zoom-in"
@@ -33,7 +37,7 @@ function OurMission() {
               </span>
             </h4> */}
             <h1 className="fw-bold mt-3 mb-4">
-              <span className="text" style={{ color: "#444444" }}>
+              <span className="text" style={{ color: "#f6e7d8" }}>
                 FOCUS
               </span>{" "}
               <span className="text" style={{ color: "#ffbd59" }}>
@@ -42,7 +46,7 @@ function OurMission() {
               <span className="text" style={{ color: "#da6220" }}>
                 NE
               </span>{" "}
-              <span className="text" style={{ color: "#444444" }}>
+              <span className="text" style={{ color: "#f6e7d8" }}>
                 STUDENTS
               </span>
             </h1>
@@ -64,7 +68,7 @@ function OurMission() {
                 className="btn w-auto mx-auto px-4 my-4"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
-                Explore
+                Register
               </button>
             </Link>
           </div>
@@ -94,7 +98,7 @@ function OurMission() {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

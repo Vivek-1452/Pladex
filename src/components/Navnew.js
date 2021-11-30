@@ -29,10 +29,14 @@ const Navnew = ({ logincheck, loginhandler }) => {
       className="p-0"
       style={{ fontFamily: "Product Sans", height: "68px", width: "100vw" }}
     >
-      <Container className="navBar bg-light p-0" fluid>
+      <Container
+        className="navBar bg-light p-0"
+        fluid
+        style={{ width: "100vw" }}
+      >
         <Navbar expand="md" className="py-1 pe-md-0 pe-5">
           <NavbarBrand className="ps-5 pt-3">
-            <a href="#" className="text-dark text-decoration-none">
+            <a href="." className="text-dark text-decoration-none">
               <h2
                 style={{
                   fontFamily: "'Open Sans', sans-serif",

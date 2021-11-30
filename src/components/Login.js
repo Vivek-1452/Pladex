@@ -225,7 +225,7 @@ const Login = ({ loginhandler }) => {
                   fontWeight: "lighter",
                 }}
               >
-                Sign Up with
+                Login with
               </span>
               <br />
               <span
@@ -294,8 +294,8 @@ const Login = ({ loginhandler }) => {
               <br />
               <br />
               <span style={{ color: "black", fontSize: "1.2rem" }}>
-                If you have an account?{" "}
-                <span style={{ color: " #0ACF83" }}>Sign In</span>
+                Don't have an account?{" "}
+                <span style={{ color: " #0ACF83" }}>Sign Up</span>
               </span>
             </h1>
           </div>

@@ -15,7 +15,7 @@ input:not(:focus):valid ~ .floating-label {
   left: 5px;
   font-size: 14px;
   font-weight: bold;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 /* .inputText {

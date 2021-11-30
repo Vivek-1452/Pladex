@@ -171,7 +171,7 @@ function foot2() {
             marginTop: "0",
           }}
         />
-        <div className="row text-center">
+        {/* <div className="row text-center">
           <h6 className="m-lg-5 m-3 fw-light">
             Developed with{" "}
             <img
@@ -181,7 +181,7 @@ function foot2() {
             />{" "}
             by Web Dev team
           </h6>
-        </div>
+        </div> */}
       </div>
     </div>
   );

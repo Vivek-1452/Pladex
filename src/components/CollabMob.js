@@ -4,11 +4,12 @@ import "./Event.css";
 import image1 from "./collab1.jpeg";
 import image2 from "./collab2.png";
 import image3 from "./collab3.jpeg";
-
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import "./coll.css";
 
 function EventTemp2() {
   window.onload = function () {

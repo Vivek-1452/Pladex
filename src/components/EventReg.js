@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AddToCalendar from "react-add-to-calendar";
+// import AddToCalendar from "react-add-to-calendar";
 import image1 from "./ImgUpcomEvents/Img1.png";
 import image2 from "./ImgUpcomEvents/Img2.png";
 import image3 from "./ImgUpcomEvents/Img3.png";
@@ -141,7 +141,9 @@ function EventReg() {
                 Join the WhatsApp group to get regular event updates
               </h5>
               <a
-                href="."
+                href="https://chat.whatsapp.com/EYzfc3YDJ4E2hcdtngSsyJ"
+                target="_blank"
+                rel="noreferrer"
                 className="btn mx-auto px-4 py-2 fs-4"
                 style={{
                   backgroundColor: "#25d366",
@@ -170,7 +172,9 @@ function EventReg() {
           Join the WhatsApp group to get regular event updates
         </h6>
         <a
-          href="."
+          href="https://chat.whatsapp.com/EYzfc3YDJ4E2hcdtngSsyJ"
+          target="_blank"
+          rel="noreferrer"
           className="btn mx-auto px-4 py-2 fs-5"
           style={{
             backgroundColor: "#25d366",
@@ -203,8 +207,8 @@ function EventReg() {
             <center>
               <img
                 className="mb-2"
-                src={image1}
-                alt="Upcoming Event 1"
+                src={image2}
+                alt="Upcoming Event 2"
                 // width="320"
                 // height="220"
                 style={{
@@ -217,21 +221,22 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Priyanka Das</b>
+                  <b>Entrepreneurship</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Construct and Evolve. Get inspired to be an entrepreneur!
               </p>
-              <p className="float-lg-start m-3">Dec 18 | 6:30 PM</p>
-              <button
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                {/* <AddToCalendar event={event} listItems={items} /> */}
-                Add to calender
-              </button>
+              <p className="float-lg-start my-3 ms-3">Dec 18 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -250,8 +255,8 @@ function EventReg() {
             <center>
               <img
                 className="mb-2"
-                src={image2}
-                alt="Upcoming Event 2"
+                src={image1}
+                alt="Upcoming Event 1"
                 // width="320"
                 // height="220"
                 style={{
@@ -264,21 +269,22 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Mark Laitflang Stone</b>
+                  <b>Women Empowerment</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Importance of women empowerment in sustainable development.
               </p>
-              <p className="float-lg-start m-3">Dec 19 | 6:30 PM</p>
-              <a
-                href="https://www.collegeexplorer.in"
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Add to calender
-              </a>
+              <p className="float-lg-start my-3 ms-3">Dec 19 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -311,21 +317,23 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Simi Hanspal</b>
+                  <b>Mental Health</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Know feasible ways to relieve stress & anxiety and be mentally
+                fit.
               </p>
-              <p className="float-lg-start m-3">Dec 20 | 6:30 PM</p>
-              <a
-                href="https://www.collegeexplorer.in"
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Add to calender
-              </a>
+              <p className="float-lg-start my-3 ms-3">Dec 20 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -358,21 +366,23 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Siddhartha Ghosh</b>
+                  <b>Emerging Technologies</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Latest on boarding technology is more than just technical
+                intelligence.
               </p>
-              <p className="float-lg-start m-3">Dec 20 | 6:30 PM</p>
-              <a
-                href="https://www.collegeexplorer.in"
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Add to calender
-              </a>
+              <p className="float-lg-start my-3 ms-3">Dec 21 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -405,21 +415,22 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Hasina Kharbhih</b>
+                  <b>Self Defense</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                How to tackle hassle conditions and defend yourself?
               </p>
-              <p className="float-lg-start m-3">Dec 20 | 6:30 PM</p>
-              <a
-                href="https://www.collegeexplorer.in"
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Add to calender
-              </a>
+              <p className="float-lg-start my-3 ms-3">Dec 22 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -452,21 +463,22 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Shikhar Prajapati</b>
+                  <b>Personality Development</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Hone your soft skills and develop a positive influence.
               </p>
-              <p className="float-lg-start m-3">Dec 20 | 6:30 PM</p>
-              <a
-                href="https://www.collegeexplorer.in"
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Add to calender
-              </a>
+              <p className="float-lg-start my-3 ms-3">Dec 23 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -500,21 +512,22 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Aditya Trivedi</b>
+                  <b>Basic Laws and Rights</b>
                 </span>
               </h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Basic laws & rights that all the students need be aware of.
               </p>
-              <p className="float-lg-start m-3">Dec 20 | 6:30 PM</p>
-              <a
-                href="https://www.collegeexplorer.in"
-                className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Add to calender
-              </a>
+              <p className="float-lg-start my-3 ms-3">Dec 24 | 6:30 PM</p>
+              <Link to="/FocusReg">
+                <button
+                  className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  {/* <AddToCalendar event={event} listItems={items} /> */}
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -616,7 +629,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://youtu.be/UTDBHHTPO3I"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -668,7 +683,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=CfwvNextxqY"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -720,7 +737,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=7u6qK869afE"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -772,7 +791,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=QaHIhpg4Y3k"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -824,7 +845,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=YD1qgxbkv6E"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -876,7 +899,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=uhRAyxTv1YA"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -929,7 +954,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=aF3HvqwdJxQ"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
@@ -981,7 +1008,9 @@ function EventReg() {
                 </a>
               </Link>
               <a
-                href="https://www.collegeexplorer.in"
+                href="https://www.youtube.com/watch?v=q8m43j9XlHo"
+                target="_blank"
+                rel="noreferrer"
                 className="btn w-auto m-2 px-3 float-lg-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
