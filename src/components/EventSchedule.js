@@ -14,7 +14,13 @@ AOS.init();
 function EventSchedule() {
   return (
     <>
-      <div style={{ backgroundImage: `url(${events})`, color: "white" }}>
+      <div
+        style={{
+          backgroundImage: `url(${events})`,
+          color: "white",
+          overflowX: "hidden",
+        }}
+      >
         <div className="container-fluid">
           <div className="row py-5">
             <h4 className="text-center fw-bold display-6 mt-3 mb-5">

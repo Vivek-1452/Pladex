@@ -37,12 +37,13 @@ export default class UpcomingEventsWeb extends Component {
           <Link to="/EveReg">
             <h5
               className="text-end float-end pt-5 me-5 fw-bold"
-              style={{ color: "", textDecoration: "underline" }}
+              style={{ color: "#31343c" }}
             >
-              <span style={{ color: "", textDecoration: "underline" }}>
-                More
-              </span>{" "}
-              ➤
+              <span>More</span>{" "}
+              <i
+                class="fas fa-chevron-circle-right"
+                style={{ color: "#3ad6ab" }}
+              ></i>
             </h5>
           </Link>
         </div>
@@ -76,7 +77,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Entrepreneurship</b>
+                    {/* <b>Entrepreneurship</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -131,7 +132,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Women Empowerment</b>
+                    {/* <b>Women Empowerment</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -178,7 +179,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Mental Health</b>
+                    {/* <b>Mental Health</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -226,7 +227,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Emerging Technologies</b>
+                    {/* <b>Emerging Technologies</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -274,7 +275,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Self Defense</b>
+                    {/* <b>Self Defense</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -321,7 +322,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Personality Development</b>
+                    {/* <b>Personality Development</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -368,7 +369,7 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    <b>Basic Laws and Rights</b>
+                    {/* <b>Basic Laws and Rights</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">

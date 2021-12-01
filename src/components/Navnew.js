@@ -41,16 +41,17 @@ const Navnew = ({ logincheck, loginhandler }) => {
                 style={{
                   fontFamily: "'Open Sans', sans-serif",
                   fontWeight: "bold",
+                  fontSize: "32px",
                 }}
               >
                 <b>
-                  PL{" "}
+                  PL
                   <span className="text-primary">
                     <i
-                      className="fas fa-location-arrow"
+                      className="fas fa-location-arrow px-1"
                       style={{ color: "#3ad6ab" }}
                     ></i>
-                  </span>{" "}
+                  </span>
                   DEX
                 </b>
               </h2>

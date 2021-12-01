@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./EventLibrary/pt-6.png";
+// import img from "./EventLibrary/pt-6.png";
 import img1 from "./Podcast-amico.png";
 import "./Ep.css";
 

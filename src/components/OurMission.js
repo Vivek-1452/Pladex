@@ -1,20 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./logoFocus.png";
+import { useState } from "react";
+import { useEffect } from "react";
+// import logo from "./logoFocus.png";
 import main from "./FocusImages/main.png";
+import logo from "./FocusImages/logo.png";
+import "./textScroll.css";
 // import video1 from "./our mission video.mp4";
 // import New from "./new.png";
 
 function OurMission() {
+  const [display, setdisplay] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 769) {
+      setdisplay(true);
+    }
+  }, [display]);
+
   return (
     <div
+      className="pt-0"
       style={{
-        backgroundImage: `url(${main})`,
-        color: "whitesmoke",
-        backgroundPosition: "center",
+        backgroundColor: "#000000",
+        // backgroundImage: `url(${main})`,
+        color: "white",
+        // backgroundPosition: "center",
       }}
     >
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-md-5 pt-0">
         {/* <h3
           className="position-relative top-0 start-0 bg-danger"
           style={{ width: "100px" }}
@@ -24,9 +38,9 @@ function OurMission() {
         {/* <div style={{ width: "250px" }}>
           <img src={New} alt="NEW" className="" height="50" width="200" />
         </div> */}
-        <div className="row pt-md-3 py-5">
+        <div className="row pt-md-3 py-md-5 pb-4 pt-2">
           <div
-            className="col-md-8 mt-4 ps-lg-5"
+            className="col-md-8 mt-md-4 mt-2 ps-lg-5"
             data-aos="zoom-in"
             data-aos-duration="2000"
           >
@@ -36,19 +50,32 @@ function OurMission() {
                 Mission
               </span>
             </h4> */}
-            <h1 className="fw-bold mt-3 mb-4">
-              <span className="text" style={{ color: "#f6e7d8" }}>
-                FOCUS
-              </span>{" "}
-              <span className="text" style={{ color: "#ffbd59" }}>
-                O
-              </span>
-              <span className="text" style={{ color: "#da6220" }}>
-                NE
-              </span>{" "}
-              <span className="text" style={{ color: "#f6e7d8" }}>
-                STUDENTS
-              </span>
+            <h1 className="fw-bold mt-3 mb-5">
+              <center>
+                <div
+                  className=""
+                  id="scroll-container"
+                  style={display ? { width: "90%" } : { width: "70%" }}
+                >
+                  <div
+                    id="scroll-text"
+                    // style={{ display: "inline-block", width: "auto" }}
+                  >
+                    <span className="text" style={{ color: "#f6e7d8" }}>
+                      FOCUS
+                    </span>{" "}
+                    <span className="text" style={{ color: "#ffbd59" }}>
+                      O
+                    </span>
+                    <span className="text" style={{ color: "#da6220" }}>
+                      NE
+                    </span>{" "}
+                    <span className="text" style={{ color: "#f6e7d8" }}>
+                      STUDENTS
+                    </span>
+                  </div>
+                </div>
+              </center>
             </h1>
             <p className="mt-4 fs-6" style={{ fontFamily: "Product Sans" }}>
               A virtual event which mainly focuses on students across India. Our
@@ -91,7 +118,7 @@ function OurMission() {
                 src={logo}
                 alt=""
                 style={{
-                  width: "90%",
+                  width: "80%",
                 }}
               />
             </center>

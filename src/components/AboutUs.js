@@ -21,11 +21,10 @@ function AboutUs() {
           defines you. */}
                 About Us
               </h1>
-              <div className="d-lg-block d-md-block d-none pt-0">
-                <h5 className="mt-5 mb-3 fw-light">
-                  Sdhihuiuhisd fgdlk dfgljodfv ldjbdf lkfgdklj fgbll
-                  <br />
-                  fdgkjdf dglkfuhdsfgkj
+              <div className="d-lg-block d-md-block d-none pt-1">
+                <h5 className="mt-5 mb-3" style={{ fontFamily: "cursive" }}>
+                  When S joins U, it becomes US. We are determined to say YES
+                  for YOU.
                 </h5>
                 {/* <a
                 href="."

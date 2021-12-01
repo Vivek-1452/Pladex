@@ -1,8 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import image1 from "./college explorer.png";
-import image2 from "./college predictor.png";
-import image3 from "./podium talks.png";
+// import { Link } from "react-router-dom";
+// import image1 from "./college explorer.png";
+// import image2 from "./college predictor.png";
+// import image3 from "./podium talks.png";
+import image1 from "./iconDlibrary.png";
+import image2 from "./iconClgExplorer.png";
+import image3 from "./iconClgPredictor.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -79,7 +82,7 @@ function FeatMob() {
           <center>
             <img
               className="my-3"
-              src={image1}
+              src={image2}
               alt="College Explorer"
               width="120"
               height="120"
@@ -132,7 +135,7 @@ function FeatMob() {
           <center>
             <img
               className="my-3"
-              src={image2}
+              src={image3}
               alt="College Predictor"
               width="120"
               height="120"

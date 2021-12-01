@@ -16,6 +16,8 @@ import pt5 from "./EventLibrary/pt-5.png";
 import pt6 from "./EventLibrary/pt-6.png";
 import pt7 from "./EventLibrary/pt-7.png";
 import pt8 from "./EventLibrary/pt-8.png";
+import pt9 from "./EventLibrary/pt-9.png";
+import pt10 from "./EventLibrary/pt-10.png";
 import img1 from "./Events-amico.png";
 
 function EventReg() {
@@ -29,16 +31,20 @@ function EventReg() {
       document.getElementById("ME/ep6").style.display = "block";
       document.getElementById("EC/ep7").style.display = "block";
       document.getElementById("CH/ep8").style.display = "block";
+      document.getElementById("CV/ep9").style.display = "block";
+      document.getElementById("ME/ep10").style.display = "block";
       document.getElementById("all").style.backgroundColor = "#262626";
       document.getElementById("cse").style.backgroundColor = "#fbfbfb";
       document.getElementById("ece").style.backgroundColor = "#fbfbfb";
       document.getElementById("mech").style.backgroundColor = "#fbfbfb";
       document.getElementById("chem").style.backgroundColor = "#fbfbfb";
+      document.getElementById("civil").style.backgroundColor = "#fbfbfb";
       document.getElementById("all").style.color = "white";
       document.getElementById("cse").style.color = "black";
       document.getElementById("ece").style.color = "black";
       document.getElementById("mech").style.color = "black";
       document.getElementById("chem").style.color = "black";
+      document.getElementById("civil").style.color = "black";
     } else if (typ === "cse") {
       document.getElementById("CS/ep1").style.display = "block";
       document.getElementById("EC/ep2").style.display = "none";
@@ -48,16 +54,20 @@ function EventReg() {
       document.getElementById("ME/ep6").style.display = "none";
       document.getElementById("EC/ep7").style.display = "none";
       document.getElementById("CH/ep8").style.display = "none";
+      document.getElementById("CV/ep9").style.display = "none";
+      document.getElementById("ME/ep10").style.display = "none";
       document.getElementById("all").style.backgroundColor = "#fbfbfb";
       document.getElementById("cse").style.backgroundColor = "#262626";
       document.getElementById("ece").style.backgroundColor = "#fbfbfb";
       document.getElementById("mech").style.backgroundColor = "#fbfbfb";
       document.getElementById("chem").style.backgroundColor = "#fbfbfb";
+      document.getElementById("civil").style.backgroundColor = "#fbfbfb";
       document.getElementById("all").style.color = "black";
       document.getElementById("cse").style.color = "white";
       document.getElementById("ece").style.color = "black";
       document.getElementById("mech").style.color = "black";
       document.getElementById("chem").style.color = "black";
+      document.getElementById("civil").style.color = "black";
     } else if (typ === "ece") {
       document.getElementById("CS/ep1").style.display = "none";
       document.getElementById("EC/ep2").style.display = "block";
@@ -67,16 +77,20 @@ function EventReg() {
       document.getElementById("ME/ep6").style.display = "none";
       document.getElementById("EC/ep7").style.display = "block";
       document.getElementById("CH/ep8").style.display = "none";
+      document.getElementById("CV/ep9").style.display = "none";
+      document.getElementById("ME/ep10").style.display = "none";
       document.getElementById("all").style.backgroundColor = "#fbfbfb";
       document.getElementById("cse").style.backgroundColor = "#fbfbfb";
       document.getElementById("ece").style.backgroundColor = "#262626";
       document.getElementById("mech").style.backgroundColor = "#fbfbfb";
       document.getElementById("chem").style.backgroundColor = "#fbfbfb";
+      document.getElementById("civil").style.backgroundColor = "#fbfbfb";
       document.getElementById("all").style.color = "black";
       document.getElementById("cse").style.color = "black";
       document.getElementById("ece").style.color = "white";
       document.getElementById("mech").style.color = "black";
       document.getElementById("chem").style.color = "black";
+      document.getElementById("civil").style.color = "black";
     } else if (typ === "mech") {
       document.getElementById("CS/ep1").style.display = "none";
       document.getElementById("EC/ep2").style.display = "none";
@@ -86,16 +100,20 @@ function EventReg() {
       document.getElementById("ME/ep6").style.display = "block";
       document.getElementById("EC/ep7").style.display = "none";
       document.getElementById("CH/ep8").style.display = "none";
+      document.getElementById("CV/ep9").style.display = "none";
+      document.getElementById("ME/ep10").style.display = "block";
       document.getElementById("all").style.backgroundColor = "#fbfbfb";
       document.getElementById("cse").style.backgroundColor = "#fbfbfb";
       document.getElementById("ece").style.backgroundColor = "#fbfbfb";
       document.getElementById("mech").style.backgroundColor = "#262626";
       document.getElementById("chem").style.backgroundColor = "#fbfbfb";
+      document.getElementById("civil").style.backgroundColor = "#fbfbfb";
       document.getElementById("all").style.color = "black";
       document.getElementById("cse").style.color = "black";
       document.getElementById("ece").style.color = "black";
       document.getElementById("mech").style.color = "white";
       document.getElementById("chem").style.color = "black";
+      document.getElementById("civil").style.color = "black";
     } else if (typ === "chem") {
       document.getElementById("CS/ep1").style.display = "none";
       document.getElementById("EC/ep2").style.display = "none";
@@ -105,16 +123,43 @@ function EventReg() {
       document.getElementById("ME/ep6").style.display = "none";
       document.getElementById("EC/ep7").style.display = "none";
       document.getElementById("CH/ep8").style.display = "block";
+      document.getElementById("CV/ep9").style.display = "none";
+      document.getElementById("ME/ep10").style.display = "none";
       document.getElementById("all").style.backgroundColor = "#fbfbfb";
       document.getElementById("cse").style.backgroundColor = "#fbfbfb";
       document.getElementById("ece").style.backgroundColor = "#fbfbfb";
       document.getElementById("mech").style.backgroundColor = "#fbfbfb";
       document.getElementById("chem").style.backgroundColor = "#262626";
+      document.getElementById("civil").style.backgroundColor = "#fbfbfb";
       document.getElementById("all").style.color = "black";
       document.getElementById("cse").style.color = "black";
       document.getElementById("ece").style.color = "black";
       document.getElementById("mech").style.color = "black";
       document.getElementById("chem").style.color = "white";
+      document.getElementById("civil").style.color = "black";
+    } else if (typ === "civil") {
+      document.getElementById("CS/ep1").style.display = "none";
+      document.getElementById("EC/ep2").style.display = "none";
+      document.getElementById("EE/ep3").style.display = "none";
+      document.getElementById("EC/ep4").style.display = "none";
+      document.getElementById("ME/ep5").style.display = "none";
+      document.getElementById("ME/ep6").style.display = "none";
+      document.getElementById("EC/ep7").style.display = "none";
+      document.getElementById("CH/ep8").style.display = "none";
+      document.getElementById("CV/ep9").style.display = "block";
+      document.getElementById("ME/ep10").style.display = "none";
+      document.getElementById("all").style.backgroundColor = "#fbfbfb";
+      document.getElementById("cse").style.backgroundColor = "#fbfbfb";
+      document.getElementById("ece").style.backgroundColor = "#fbfbfb";
+      document.getElementById("mech").style.backgroundColor = "#fbfbfb";
+      document.getElementById("chem").style.backgroundColor = "#fbfbfb";
+      document.getElementById("civil").style.backgroundColor = "#262626";
+      document.getElementById("all").style.color = "black";
+      document.getElementById("cse").style.color = "black";
+      document.getElementById("ece").style.color = "black";
+      document.getElementById("mech").style.color = "black";
+      document.getElementById("chem").style.color = "black";
+      document.getElementById("civil").style.color = "white";
     }
   }
 
@@ -221,7 +266,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Entrepreneurship</b>
+                  {/* <b>Entrepreneurship</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -269,7 +314,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Women Empowerment</b>
+                  {/* <b>Women Empowerment</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -317,7 +362,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Mental Health</b>
+                  {/* <b>Mental Health</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -366,7 +411,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Emerging Technologies</b>
+                  {/* <b>Emerging Technologies</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -415,7 +460,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Self Defense</b>
+                  {/* <b>Self Defense</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -463,7 +508,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Personality Development</b>
+                  {/* <b>Personality Development</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -512,7 +557,7 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  <b>Basic Laws and Rights</b>
+                  {/* <b>Basic Laws and Rights</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -584,6 +629,120 @@ function EventReg() {
           >
             Chemical
           </button>
+          <button
+            id="civil"
+            className="btn btn-light px-4 m-2"
+            style={{ border: "1px solid #31343c" }}
+            onClick={() => btnClk("civil")}
+          >
+            Civil
+          </button>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="ME/ep10">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={pt10}
+                alt="Podium Talks 10"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 10</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Dig into all the <strong>details</strong> of
+                <strong> colleges</strong> needed for admission process.
+              </p>
+              <Link to="/ep10" style={{ textDecoration: "none" }}>
+                <a
+                  href="."
+                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
+                >
+                  Documentation
+                </a>
+              </Link>
+              <a
+                href="https://youtu.be/UTDBHHTPO3I"
+                target="_blank"
+                rel="noreferrer"
+                className="btn w-auto m-2 px-3 float-lg-end"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="CV/ep9">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={pt9}
+                alt="Podium Talks 9"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 9</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Dig into all the <strong>details</strong> of
+                <strong> colleges</strong> needed for admission process.
+              </p>
+              <Link to="/ep9" style={{ textDecoration: "none" }}>
+                <a
+                  href="."
+                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
+                >
+                  Documentation
+                </a>
+              </Link>
+              <a
+                href="https://youtu.be/UTDBHHTPO3I"
+                target="_blank"
+                rel="noreferrer"
+                className="btn w-auto m-2 px-3 float-lg-end"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
         </div>
         <div className="col-md-6 col-lg-4 my-4" id="CH/ep8">
           <div
@@ -612,9 +771,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 8</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 8</b> */}</h3>
               {/* <h5>Week 8</h5> */}
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
@@ -667,9 +824,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 7</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 7</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.
@@ -721,9 +876,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 6</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 6</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.
@@ -775,9 +928,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 5</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 5</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.
@@ -829,9 +980,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 4</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 4</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.
@@ -883,9 +1032,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 3</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 3</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.
@@ -938,9 +1085,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 2</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 2</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.
@@ -992,9 +1137,7 @@ function EventReg() {
               />
             </center>
             <div className="card-body">
-              <h3 className="card-title">
-                <b>Episode 1</b>
-              </h3>
+              <h3 className="card-title">{/* <b>Episode 1</b> */}</h3>
               <p className="card-text my-4">
                 Dig into all the <strong>details</strong> of
                 <strong> colleges</strong> needed for admission process.

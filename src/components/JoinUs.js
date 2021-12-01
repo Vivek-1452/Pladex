@@ -7,6 +7,7 @@ import img4 from "./JoinusImg/joinusImg4.png";
 import img5 from "./JoinusImg/joinusImg5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 AOS.init();
 
@@ -53,11 +54,9 @@ function JoinUs() {
           defines you. */}
               Join Us
             </h1>
-            <div className="d-lg-block d-md-block d-none pt-0">
-              <h5 className="mt-5 mb-3 fw-light">
-                Sdhihuiuhisd fgdlk dfgljodfv ldjbdf lkfgdklj fgbll
-                <br />
-                fdgkjdf dglkfuhdsfgkj
+            <div className="d-lg-block d-md-block d-none pt-1">
+              <h5 className="mt-5 mb-3" style={{ fontFamily: "cursive" }}>
+                Success is a decision. Join us and grow along towards success.
               </h5>
               {/* <a
                 href="."
@@ -87,113 +86,10 @@ function JoinUs() {
           Us
         </span>
       </h4> */}
-      <div className="row pb-5" style={{ backgroundColor: "azure" }}>
-        <h4 className="text-center display-6 mt-3 mb-5 d-lg-none d-md-none fw-bold">
-          <span className="text" style={{ color: "#3ad6ab" }}>
-            Podium
-          </span>{" "}
-          Talks
-        </h4>
-        <div
-          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
-          data-aos="zoom-in-right"
-          data-aos-duration="2500"
-        >
-          <img
-            id="img1"
-            src={img1}
-            alt="About Us"
-            style={{ height: "90%", width: "60%" }}
-          />
-        </div>
-        <div
-          className="col-md-7"
-          data-aos="zoom-in-left"
-          data-aos-duration="2500"
-        >
-          <h4 className="text-center display-6 mt-3 mb-5 d-none d-md-block d-lg-block fw-bold">
-            <span className="text" style={{ color: "#3ad6ab" }}>
-              Podium
-            </span>{" "}
-            Talks
-          </h4>
-          <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
-            Students who didn't get to interact with seniors due to this
-            pandemic, don't worry!
-          </h6>
-          <br />
-          <p style={{ marginBottom: "35px" }}>
-            <strong>PODIUM TALKS</strong> is all about bringing successful
-            students from various colleges, who got placed in top notch
-            companies or have aced many competitive exams for a live interactive
-            session, to clear all your doubts every Sunday on our official
-            Youtube channel. You can ask many demandable questions to our guests
-            on live and clarify all your queries.
-          </p>
-          <h4>To be our guest on Podium Talks</h4>
-          <br />
-          <button
-            id="btn1"
-            className="btn px-3"
-            onMouseOver={() => hovering("0", "btn1")}
-            onMouseLeave={() => hovering("1", "btn1")}
-            style={{ backgroundColor: "#3ad6ab", color: "white" }}
-          >
-            Join Us
-          </button>
-        </div>
-      </div>
-      <div className="row pb-5">
-        <div
-          className="col-md-7"
-          data-aos="zoom-in-right"
-          data-aos-duration="2500"
-        >
-          <h4 className="text-center display-6 mt-3 mb-5 fw-bold">
-            <span className="text" style={{ color: "#3ad6ab" }}>
-              Collaborate
-            </span>{" "}
-            With Us
-          </h4>
-          <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
-            Coming together is a Beginning, Staying together is Progress and
-            Working together is Success
-          </h6>
-          <br />
-          <p style={{ marginBottom: "35px" }}>
-            PLADEX is the hub where students come, connect and explore. Our
-            motto is to push and provide every student to become warriors in
-            their respective field without taking a single penny. Build
-            effective collaboration with PLADEX to revolutionize digital
-            education world. Come , let’s grow and make this beautiful dream a
-            reality together. <strong>INTERESTED ?</strong>
-          </p>
-          <h4>To affiliate with us</h4>
-          <br />
-          <button
-            id="btn2"
-            className="btn px-3"
-            onMouseOver={() => hovering("0", "btn2")}
-            onMouseLeave={() => hovering("1", "btn2")}
-            style={{ backgroundColor: "#3ad6ab", color: "white" }}
-          >
-            Join Us
-          </button>
-        </div>
-        <div
-          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
-          data-aos="zoom-in-left"
-          data-aos-duration="2500"
-        >
-          <img
-            id="img2"
-            src={img2}
-            alt="About Us"
-            style={{ height: "90%", width: "60%" }}
-          />
-        </div>
-      </div>
-      <div className="row pb-5" style={{ backgroundColor: "azure" }}>
+      <div
+        className="row pb-5"
+        style={{ backgroundColor: "azure", overflowX: "hidden" }}
+      >
         <h4 className="text-center display-6 mt-3 mb-5 d-md-none d-lg-none fw-bold">
           <span className="text" style={{ color: "#3ad6ab" }}>
             Team
@@ -238,18 +134,24 @@ function JoinUs() {
           </p>
           <h4>To join hands with us</h4>
           <br />
-          <button
-            id="btn3"
-            className="btn px-3"
-            onMouseOver={() => hovering("0", "btn3")}
-            onMouseLeave={() => hovering("1", "btn3")}
-            style={{ backgroundColor: "#3ad6ab", color: "white" }}
+          <a
+            href="https://forms.gle/o1dR1ddthAUL8wTb6"
+            target="_blank"
+            rel="noreferrer"
           >
-            Join Us
-          </button>
+            <button
+              id="btn3"
+              className="btn px-3"
+              onMouseOver={() => hovering("0", "btn3")}
+              onMouseLeave={() => hovering("1", "btn3")}
+              style={{ backgroundColor: "#3ad6ab", color: "white" }}
+            >
+              Join Us
+            </button>
+          </a>
         </div>
       </div>
-      <div className="row pb-5">
+      <div className="row pb-5" style={{ overflowX: "hidden" }}>
         <div
           className="col-md-7"
           data-aos="zoom-in-right"
@@ -275,15 +177,21 @@ function JoinUs() {
           </p>
           <h4>To be a Community Influencer</h4>
           <br />
-          <button
-            id="btn4"
-            className="btn px-3"
-            onMouseOver={() => hovering("0", "btn4")}
-            onMouseLeave={() => hovering("1", "btn4")}
-            style={{ backgroundColor: "#3ad6ab", color: "white" }}
+          <a
+            href="https://forms.gle/dU9ZQrSykXsbQFMu7"
+            target="_blank"
+            rel="noreferrer"
           >
-            Join Us
-          </button>
+            <button
+              id="btn4"
+              className="btn px-3"
+              onMouseOver={() => hovering("0", "btn4")}
+              onMouseLeave={() => hovering("1", "btn4")}
+              style={{ backgroundColor: "#3ad6ab", color: "white" }}
+            >
+              Join Us
+            </button>
+          </a>
         </div>
         <div
           className="col-md-5 d-flex h-100 justify-content-center align-self-center"
@@ -298,7 +206,129 @@ function JoinUs() {
           />
         </div>
       </div>
-      <div className="row pb-5" style={{ backgroundColor: "azure" }}>
+      <div
+        className="row pb-5"
+        style={{ backgroundColor: "azure", overflowX: "hidden" }}
+      >
+        <h4 className="text-center display-6 mt-3 mb-5 d-lg-none d-md-none fw-bold">
+          <span className="text" style={{ color: "#3ad6ab" }}>
+            Podium
+          </span>{" "}
+          Talks
+        </h4>
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
+          <img
+            id="img1"
+            src={img1}
+            alt="About Us"
+            style={{ height: "90%", width: "60%" }}
+          />
+        </div>
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
+          <h4 className="text-center display-6 mt-3 mb-5 d-none d-md-block d-lg-block fw-bold">
+            Podium Talk's{" "}
+            <span className="text" style={{ color: "#3ad6ab" }}>
+              Speaker
+            </span>
+          </h4>
+          <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
+            Students who didn't get to interact with seniors due to this
+            pandemic, don't worry!
+          </h6>
+          <br />
+          <p style={{ marginBottom: "35px" }}>
+            <strong>PODIUM TALKS</strong> is all about bringing successful
+            students from various colleges, who got placed in top notch
+            companies or have aced many competitive exams for a live interactive
+            session, to clear all your doubts every Sunday on our official
+            Youtube channel. You can ask many demandable questions to our guests
+            on live and clarify all your queries.
+          </p>
+          <h4>To be our guest on Podium Talks</h4>
+          <br />
+          <a
+            href="https://forms.gle/FxCrsUAVps2s1FF18"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <button
+              id="btn1"
+              className="btn px-3"
+              onMouseOver={() => hovering("0", "btn1")}
+              onMouseLeave={() => hovering("1", "btn1")}
+              style={{ backgroundColor: "#3ad6ab", color: "white" }}
+            >
+              Join Us
+            </button>
+          </a>
+        </div>
+      </div>
+      <div className="row pb-5" style={{ overflowX: "hidden" }}>
+        <div
+          className="col-md-7"
+          data-aos="zoom-in-right"
+          data-aos-duration="2500"
+        >
+          <h4 className="text-center display-6 mt-3 mb-5 fw-bold">
+            <span className="text" style={{ color: "#3ad6ab" }}>
+              Collaborate
+            </span>{" "}
+            With Us
+          </h4>
+          <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
+            Coming together is a Beginning, Staying together is Progress and
+            Working together is Success
+          </h6>
+          <br />
+          <p style={{ marginBottom: "35px" }}>
+            PLADEX is the hub where students come, connect and explore. Our
+            motto is to push and provide every student to become warriors in
+            their respective field without taking a single penny. Build
+            effective collaboration with PLADEX to revolutionize digital
+            education world. Come , let’s grow and make this beautiful dream a
+            reality together. <strong>INTERESTED ?</strong>
+          </p>
+          <h4>To affiliate with us</h4>
+          <br />
+          <a
+            href="https://forms.gle/Xbj8ZwDMMt1GRhQM7"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button
+              id="btn2"
+              className="btn px-3"
+              onMouseOver={() => hovering("0", "btn2")}
+              onMouseLeave={() => hovering("1", "btn2")}
+              style={{ backgroundColor: "#3ad6ab", color: "white" }}
+            >
+              Join Us
+            </button>
+          </a>
+        </div>
+        <div
+          className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+          data-aos="zoom-in-left"
+          data-aos-duration="2500"
+        >
+          <img
+            id="img2"
+            src={img2}
+            alt="About Us"
+            style={{ height: "90%", width: "60%" }}
+          />
+        </div>
+      </div>
+      {/* <div className="row pb-5" style={{ backgroundColor: "azure" }}>
         <h4 className="text-center display-6 mt-3 mb-5 d-md-none d-lg-none fw-bold">
           <span className="text" style={{ color: "#3ad6ab" }}>
             Pladex
@@ -353,7 +383,7 @@ function JoinUs() {
             Join Us
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

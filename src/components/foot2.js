@@ -13,7 +13,7 @@ import heart from "./heart.png";
 function foot2() {
   return (
     <div style={{ backgroundColor: "#31343c", color: "white" }}>
-      <div className="container-fluid text-md-start">
+      <div className="container-fluid text-start">
         {/* <div className="row text-center">
           <div className="col-md-3 col-1"></div>
           <div className="col-md-6 col-10 pt-5">
@@ -61,14 +61,17 @@ function foot2() {
           <div className="col-6 col-lg-2 my-3">
             <h5 className="mx-auto fw-bold">Quick Links</h5>
             <br />
-            <Link to="/features" className="links">
+            {/* <Link to="/features" className="links">
               <p>Our Features</p>
+            </Link> */}
+            <Link to="/Focus" className="links">
+              <p>Focus Next India</p>
+            </Link>
+            <Link to="/PodTalks" className="links">
+              <p>Podium Talks</p>
             </Link>
             <Link to="/EveReg" className="links">
-              <p>Upcoming Events</p>
-            </Link>
-            <Link to="/about" className="links">
-              <p>About Us</p>
+              <p>Event Library</p>
             </Link>
           </div>
           <div className="col-6 col-lg-2 my-3">
@@ -77,19 +80,36 @@ function foot2() {
             <Link to="/join" className="links">
               <p>Join Us</p>
             </Link>
-            <p>Help & Support</p>
-            <p>Donate Us</p>
+            <a className="links" href="#" target="_blank" rel="noreferrer">
+              <p>Help & Support</p>
+            </a>
+            <Link to="/about" className="links">
+              <p>Our Vision</p>
+            </Link>
           </div>
           <div className="col-md-6 col-lg-2 my-3">
-            <h5 className="mx-auto fw-bold">Events</h5>
+            <h5 className="mx-auto fw-bold">Features</h5>
             <br />
-            <Link to="/Focus" className="links">
-              <p>Focus Next India</p>
-            </Link>
-            <Link to="/PodTalks" className="links">
-              <p>Podium Talks</p>
-            </Link>
-            <p>Quiz Buzz</p>
+            <a className="links" href="#" target="_blank" rel="noreferrer">
+              <p>DLibrary</p>
+            </a>
+            <a
+              className="links"
+              href="https://www.collegeexplorer.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>College Explorer</p>
+            </a>
+            <a
+              className="links"
+              href="https://pladex.in/predictor.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>College Predictor</p>
+            </a>
+            {/* <p>Quiz Buzz</p> */}
           </div>
           <div className="col-md-6 col-lg-2 my-3">
             <h5 className="mx-auto fw-bold">Contact Us</h5>
@@ -105,60 +125,73 @@ function foot2() {
             >
               pladexstudentscorner@gmail.com
             </a>
+            <br />
+            <br />
+            <a
+              href="tel:+918688055328"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#6dd2ae",
+                textDecoration: "none",
+              }}
+            >
+              +91-8688055328
+            </a>
             {/* <Mailto email="pladexstudentscorner@gmail.com" obfuscate={true}>
               pladexstudentscorner@gmail.com
             </Mailto> */}
             <br />
             <h5 className="mx-auto mt-4 fw-bold">Follow Us</h5>
-            <div className="fs-5 mt-3 mb-3">
+            <div className="fs-4 mt-3 mb-3">
               <a
                 href="https://www.facebook.com/Pladex-101638408977842"
                 target="_blank"
                 rel="noreferrer"
-                style={{ textDecoration: "none", color: "#4267b2" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                {/* <i class="fw-bold fab fa-facebook-f"></i> */}
-                <img src={fb} alt="facebook" style={{ height: "30px" }} />
-                &nbsp;&nbsp;
+                <i class="fw-bold fab fa-facebook-f"></i>
+                {/* <img src={fb} alt="facebook" style={{ height: "30px" }} /> */}
+                &nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
                 href="https://www.instagram.com/pladex_official/"
                 target="_blank"
                 rel="noreferrer"
-                style={{ textDecoration: "none", color: "#fccc63" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                {/* <i class="fw-bold fab fa-instagram"></i> */}
-                <img src={insta} alt="Instagram" style={{ height: "39px" }} />
-                &nbsp;&nbsp;
+                <i class="fw-bold fab fa-instagram"></i>
+                {/* <img src={insta} alt="Instagram" style={{ height: "39px" }} /> */}
+                &nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
                 href="https://t.me/pladexians"
                 target="_blank"
                 rel="noreferrer"
-                style={{ textDecoration: "none", color: "yellow" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                {/* <i class="fw-bold fab fa-telegram-plane"></i> */}
-                <img src={telegram} alt="Telegram" style={{ height: "38px" }} />
-                &nbsp;&nbsp;
+                <i class="fw-bold fab fa-telegram-plane"></i>
+                {/* <img src={telegram} alt="Telegram" style={{ height: "38px" }} /> */}
+                &nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
                 href="https://www.youtube.com/c/PLADEXOfficial"
                 target="_blank"
                 rel="noreferrer"
-                style={{ textDecoration: "none", color: "yellow" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                {/* <i class="fw-bold fab fa-youtube"></i> */}
-                <img src={yt} alt="Youtube" style={{ height: "38px" }} />
-                &nbsp;&nbsp;
+                <i class="fw-bold fab fa-youtube"></i>
+                {/* <img src={yt} alt="Youtube" style={{ height: "38px" }} /> */}
+                &nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
                 href="https://www.linkedin.com/company/pladex-official/"
                 target="_blank"
                 rel="noreferrer"
-                style={{ textDecoration: "none", color: "yellow" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                {/* <i class="fw-bold fab fa-linkedin"></i> */}
-                <img src={linkedin} alt="LinkedIn" style={{ height: "30px" }} />
+                <i class="fw-bold fab fa-linkedin"></i>
+                {/* <img src={linkedin} alt="LinkedIn" style={{ height: "30px" }} /> */}
               </a>
             </div>
           </div>
@@ -171,8 +204,8 @@ function foot2() {
             marginTop: "0",
           }}
         />
-        {/* <div className="row text-center">
-          <h6 className="m-lg-5 m-3 fw-light">
+        <div className="row text-center">
+          <h6 className="my-lg-5 my-3 fw-light">
             Developed with{" "}
             <img
               src={heart}
@@ -181,7 +214,7 @@ function foot2() {
             />{" "}
             by Web Dev team
           </h6>
-        </div> */}
+        </div>
       </div>
     </div>
   );

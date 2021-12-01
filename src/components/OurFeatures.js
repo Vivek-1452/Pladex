@@ -51,11 +51,9 @@ function OurFeatures() {
           defines you. */}
                 Our Features
               </h1>
-              <div className="d-lg-block d-md-block d-none pt-0">
-                <h5 className="mt-5 mb-3 fw-light">
-                  Sdhihuiuhisd fgdlk dfgljodfv ldjbdf lkfgdklj fgbll
-                  <br />
-                  fdgkjdf dglkfuhdsfgkj
+              <div className="d-lg-block d-md-block d-none pt-1">
+                <h5 className="mt-5 mb-3" style={{ fontFamily: "cursive" }}>
+                  A product is described by how all features work together!
                 </h5>
                 {/* <a
                 href="."
@@ -201,7 +199,7 @@ function OurFeatures() {
               </center>
               <div className="card-body">
                 <h4 className="card-title">
-                  <b>D-Library</b>
+                  <b>DLibrary</b>
                 </h4>
                 <p className="card-text my-4">
                   A vast <strong>digital library</strong> composed of free
@@ -219,17 +217,19 @@ function OurFeatures() {
               style={myStyle1}
             >
               <center>
-                <img
-                  className="my-3"
-                  src={image4}
-                  alt="Quiz Buzz"
-                  width="70"
-                  height="70"
-                />
+                <Link to="/ComingSoon">
+                  <img
+                    className="my-3"
+                    src={image4}
+                    alt="Campus Media"
+                    width="70"
+                    height="70"
+                  />
+                </Link>
               </center>
               <div className="card-body">
                 <h4 className="card-title">
-                  <b>Quiz Buzz</b>
+                  <b>Logigate</b>
                 </h4>
                 <p className="card-text my-4">
                   <strong>Brainstorming</strong> quizzes to brush up your
