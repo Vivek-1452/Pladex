@@ -1,13 +1,20 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Select from "react-select";
 import main from "./FocusImages/reg.png";
 import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
 import "./FocusReg.css";
+import { eventOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusReg() {
+  // window.onload = function () {
+  //   document.getElementById("react-select-3-placeholder").innerHTML =
+  //     "Select Event";
+  // };
+
   const [display, setdisplay] = useState(false);
 
   useEffect(() => {
@@ -16,7 +23,14 @@ function FocusReg() {
     }
   }, [display]);
 
-  var branch = [
+  var colleges = [
+    "Acoustic engineering",
+    "Aeronautical",
+    "Aeronautical/astronautical",
+    "Others",
+  ];
+
+  var branches = [
     "Acoustic engineering",
     "Aeronautical",
     "Aeronautical/astronautical",
@@ -219,6 +233,7 @@ function FocusReg() {
     "Upstream and applied petroleum",
     "Urban and regional planning",
     "Water resources engineering",
+    "Others",
   ];
 
   return (
@@ -276,7 +291,7 @@ function FocusReg() {
             </div>
           </div>
           <div className="card-body px-4">
-            <form>
+            <form action="/auth/event" method="POST">
               <div className="row">
                 <div className="form-group col-md-6 pt-3 pb-2 px-2">
                   {/* <label for="firstname">First Name</label> */}
@@ -286,6 +301,7 @@ function FocusReg() {
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="firstname"
+                    name="fname"
                     autocomplete="off"
                     autofocus
                     required
@@ -300,6 +316,7 @@ function FocusReg() {
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="lastname"
+                    name="lname"
                     autocomplete="off"
                     autofocus
                     required
@@ -314,6 +331,7 @@ function FocusReg() {
                   className="inputText form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="email"
+                  name="email"
                   autocomplete="off"
                   autofocus
                   required
@@ -328,6 +346,7 @@ function FocusReg() {
                   className="inputText form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="mobile"
+                  name="mobile"
                   autocomplete="off"
                   autofocus
                   required
@@ -340,44 +359,64 @@ function FocusReg() {
               <div className="form-group pt-3 pb-2">
                 <input
                   type="text"
+                  list="college"
+                  name="college"
+                  multiple
+                  className="form-control"
+                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                  placeholder="Select College"
+                  required
+                />
+                <datalist id="college">
+                  {colleges.map((colleges) => (
+                    <option value={colleges} id={colleges}>
+                      {colleges}
+                    </option>
+                  ))}
+                </datalist>
+              </div>
+              {/* <div className="form-group pt-3 pb-2">
+                <input
+                  type="text"
                   className="inputText form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="clg"
+                  name="college"
                   autocomplete="off"
                   autofocus
                   required
                 />
                 <span class="floating-label opacity-50">College Name</span>
-              </div>
+              </div> */}
               <div className="form-group pt-3 pb-2">
                 <input
-                  list="degree"
+                  type="text"
+                  list="branch"
+                  name="branch"
+                  multiple
                   className="form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   placeholder="Select Branch"
                   required
-                ></input>
-                <datalist id="degree">
-                  {branch.map((courses) => (
-                    <option value={courses} id={courses}>
-                      {courses}
+                />
+                <datalist id="branch">
+                  {branches.map((branches) => (
+                    <option value={branches} id={branches}>
+                      {branches}
                     </option>
                   ))}
                 </datalist>
               </div>
               <div className="form-group pt-3 pb-2">
-                {/* <label for="event">Event</label> */}
-                <select
-                  id="event"
-                  className="form-control"
+                <Select
+                  isMulti
+                  name="event"
+                  placeholder="Select Event"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                >
-                  <option selected className="opacity-50">
-                    Select Event
-                  </option>
-                  <option>ABC event</option>
-                  <option>DEF event</option>
-                </select>
+                  options={eventOptions}
+                  className="basic-multi-select"
+                  classNamePrefix="select"
+                />
               </div>
               {/* <div className="form-group">
             <div className="form-check">

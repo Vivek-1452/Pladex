@@ -12,6 +12,25 @@ import image7 from "./ImgUpcomEvents/Img7.png";
 
 export default class UpcomingEventsWeb extends Component {
   render() {
+    const hovering = (num, id) => {
+      var x = document.getElementById(id);
+      if (num === "0") {
+        x.style.textDecoration = "underline";
+      } else {
+        x.style.textDecoration = "none";
+      }
+    };
+
+    // const hoveringCard = (num, id) => {
+    //   var x = document.getElementById(id);
+    //   if (num === "0") {
+    //     x.style.transform = "scale(1.08)";
+    //     x.style.transition = "transform .3s";
+    //   } else {
+    //     x.style.transform = "scale(1)";
+    //   }
+    // };
+
     var settings = {
       dots: true,
       infinite: true,
@@ -37,6 +56,9 @@ export default class UpcomingEventsWeb extends Component {
           <Link to="/EveReg">
             <h5
               className="text-end float-end pt-5 me-5 fw-bold"
+              id="more"
+              onMouseOver={() => hovering("0", "more")}
+              onMouseLeave={() => hovering("1", "more")}
               style={{ color: "#31343c" }}
             >
               <span>More</span>{" "}
@@ -51,6 +73,9 @@ export default class UpcomingEventsWeb extends Component {
           <div>
             <div
               className="card mx-auto my-2 pt-0"
+              id="card1"
+              // onMouseOver={() => hoveringCard("0", "card1")}
+              // onMouseLeave={() => hoveringCard("1", "card1")}
               style={{
                 minWidth: "250px",
                 width: "75%",
@@ -95,6 +120,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="entre"
+                    // onMouseOver={() => hovering("0", "entre")}
+                    // onMouseLeave={() => hovering("1", "entre")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -142,6 +170,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="women"
+                    // onMouseOver={() => hovering("0", "women")}
+                    // onMouseLeave={() => hovering("1", "women")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -190,6 +221,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="mental"
+                    // onMouseOver={() => hovering("0", "mental")}
+                    // onMouseLeave={() => hovering("1", "mental")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -238,6 +272,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="tech"
+                    // onMouseOver={() => hovering("0", "tech")}
+                    // onMouseLeave={() => hovering("1", "tech")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -285,6 +322,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="tackl"
+                    // onMouseOver={() => hovering("0", "tackl")}
+                    // onMouseLeave={() => hovering("1", "tackl")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -332,6 +372,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="soft"
+                    // onMouseOver={() => hovering("0", "soft")}
+                    // onMouseLeave={() => hovering("1", "soft")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -379,6 +422,9 @@ export default class UpcomingEventsWeb extends Component {
                 <Link to="/FocusReg">
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
+                    // id="laws"
+                    // onMouseOver={() => hovering("0", "laws")}
+                    // onMouseLeave={() => hovering("1", "laws")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register

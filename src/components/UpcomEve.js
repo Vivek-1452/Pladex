@@ -8,6 +8,25 @@ import image2 from "./iconClgExplorer.png";
 import image3 from "./iconClgPredictor.png";
 
 function UpcomEve() {
+  function hovering(num, id) {
+    var x = document.getElementById(id);
+    if (num === "0") {
+      x.style.backgroundColor = "black";
+    } else {
+      x.style.backgroundColor = "#3ad6ab";
+    }
+  }
+
+  function hoveringCard(num, id) {
+    var x = document.getElementById(id);
+    if (num === "0") {
+      x.style.transform = "scale(1.08)";
+      x.style.transition = "transform .3s";
+    } else {
+      x.style.transform = "scale(1)";
+    }
+  }
+
   return (
     <div style={{ backgroundColor: "#f5f6f7" }}>
       <div className="container row pt-5 pb-4 mx-auto">
@@ -24,6 +43,9 @@ function UpcomEve() {
         >
           <div
             className="card mx-auto my-2"
+            id="card1"
+            onMouseOver={() => hoveringCard("0", "card1")}
+            onMouseLeave={() => hoveringCard("1", "card1")}
             style={{
               minWidth: "250px",
               width: "85%",
@@ -52,7 +74,10 @@ function UpcomEve() {
                 <strong>handwritten notes</strong>.
               </p>
               <button
+                id="dlib"
                 className="btn w-auto mx-auto px-4 mb-2"
+                onMouseOver={() => hovering("0", "dlib")}
+                onMouseLeave={() => hovering("1", "dlib")}
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Explore
@@ -67,6 +92,9 @@ function UpcomEve() {
         >
           <div
             className="card mx-auto my-2"
+            id="card2"
+            onMouseOver={() => hoveringCard("0", "card2")}
+            onMouseLeave={() => hoveringCard("1", "card2")}
             style={{
               minWidth: "250px",
               width: "85%",
@@ -108,7 +136,10 @@ function UpcomEve() {
                 style={{ textDecoration: "none" }}
               >
                 <button
+                  id="colexp"
                   className="btn w-auto mx-auto px-4 mt-3 mb-2"
+                  onMouseOver={() => hovering("0", "colexp")}
+                  onMouseLeave={() => hovering("1", "colexp")}
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Explore
@@ -124,6 +155,9 @@ function UpcomEve() {
         >
           <div
             className="card mx-auto my-2"
+            id="card3"
+            onMouseOver={() => hoveringCard("0", "card3")}
+            onMouseLeave={() => hoveringCard("1", "card3")}
             style={{
               minWidth: "250px",
               width: "85%",
@@ -157,7 +191,10 @@ function UpcomEve() {
                 style={{ textDecoration: "none" }}
               >
                 <button
+                  id="colpred"
                   className="btn w-auto mx-auto px-4 mt-3 mb-2"
+                  onMouseOver={() => hovering("0", "colpred")}
+                  onMouseLeave={() => hovering("1", "colpred")}
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Explore

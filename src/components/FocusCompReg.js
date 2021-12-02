@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Select from "react-select";
 import main from "./FocusImages/reg.png";
 import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
 import "./FocusReg.css";
+import { compOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusCompReg() {
@@ -16,7 +18,14 @@ function FocusCompReg() {
     }
   }, [display]);
 
-  var branch = [
+  var colleges = [
+    "Acoustic engineering",
+    "Aeronautical",
+    "Aeronautical/astronautical",
+    "Others",
+  ];
+
+  var branches = [
     "Acoustic engineering",
     "Aeronautical",
     "Aeronautical/astronautical",
@@ -276,7 +285,7 @@ function FocusCompReg() {
             </div>
           </div>
           <div className="card-body px-4">
-            <form>
+            <form action="/auth/competition">
               <div className="row">
                 <div className="form-group col-md-6 pt-3 pb-2 px-2">
                   {/* <label for="firstname">First Name</label> */}
@@ -340,14 +349,21 @@ function FocusCompReg() {
               <div className="form-group pt-3 pb-2">
                 <input
                   type="text"
-                  className="inputText form-control"
+                  list="college"
+                  name="college"
+                  multiple
+                  className="form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                  id="clg"
-                  autocomplete="off"
-                  autofocus
+                  placeholder="Select College"
                   required
                 />
-                <span class="floating-label opacity-50">College Name</span>
+                <datalist id="college">
+                  {colleges.map((colleges) => (
+                    <option value={colleges} id={colleges}>
+                      {colleges}
+                    </option>
+                  ))}
+                </datalist>
               </div>
               <div className="form-group pt-3 pb-2">
                 <input
@@ -358,7 +374,7 @@ function FocusCompReg() {
                   required
                 ></input>
                 <datalist id="degree">
-                  {branch.map((courses) => (
+                  {branches.map((courses) => (
                     <option value={courses} id={courses}>
                       {courses}
                     </option>
@@ -366,18 +382,15 @@ function FocusCompReg() {
                 </datalist>
               </div>
               <div className="form-group pt-3 pb-2">
-                {/* <label for="event">Event</label> */}
-                <select
-                  id="event"
-                  className="form-control"
+                <Select
+                  isMulti
+                  name="competition"
+                  placeholder="Select Competition"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                >
-                  <option selected className="opacity-50">
-                    Select Competition
-                  </option>
-                  <option>ABC Competition</option>
-                  <option>DEF Competition</option>
-                </select>
+                  options={compOptions}
+                  className="basic-multi-select"
+                  classNamePrefix="select"
+                />
               </div>
               {/* <div className="form-group">
             <div className="form-check">

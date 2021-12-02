@@ -18,6 +18,16 @@ function CollWeb() {
     }
   }, [display]);
 
+  function hoveringCard(num, id) {
+    var x = document.getElementById(id);
+    if (num === "0") {
+      x.style.transform = "scale(1.15)";
+      x.style.transition = "transform .3s";
+    } else {
+      x.style.transform = "scale(1)";
+    }
+  }
+
   return (
     <div style={{ backgroundColor: "#f5f6f7" }}>
       <div className="container-lg container-fluid-md">
@@ -51,6 +61,9 @@ function CollWeb() {
                   rel="noreferrer"
                 >
                   <img
+                    id="img1"
+                    onMouseOver={() => hoveringCard("0", "img1")}
+                    onMouseLeave={() => hoveringCard("1", "img1")}
                     className="my-3"
                     src={image1}
                     alt="College Explorer"
@@ -95,6 +108,9 @@ function CollWeb() {
                   rel="noreferrer"
                 >
                   <img
+                    id="img2"
+                    onMouseOver={() => hoveringCard("0", "img2")}
+                    onMouseLeave={() => hoveringCard("1", "img2")}
                     className="my-3"
                     src={image2}
                     alt="College Predictor"
@@ -141,6 +157,9 @@ function CollWeb() {
                 >
                   <img
                     className="my-3"
+                    id="img3"
+                    onMouseOver={() => hoveringCard("0", "img3")}
+                    onMouseLeave={() => hoveringCard("1", "img3")}
                     src={image3}
                     alt="Podium Talks"
                     width="200"

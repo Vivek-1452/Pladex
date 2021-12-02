@@ -36,3 +36,33 @@ div {
   position: relative; /*  make label relate to div  */
   padding-top: 10px; /*  make space for label      */
 }
+
+.css-1s2u09g-control {
+  background-color: hsl(163, 65.5%, 88.3%) !important;
+  padding-top: 0 !important;
+}
+
+.css-14el2xx-placeholder {
+  padding-top: 0 !important;
+}
+
+.css-b62m3t-container {
+  padding-top: 0 !important;
+}
+
+.css-1hb7zxy-IndicatorsContainer {
+  padding-top: 0 !important;
+}
+
+.css-1rhbuit-multiValue {
+  padding-top: 0 !important;
+}
+
+.css-xb97g8 {
+  padding-top: 0 !important;
+}
+
+.css-1pahdxg-control {
+  background-color: hsl(163, 65.5%, 88.3%) !important;
+  padding-top: 0 !important;
+}

@@ -668,8 +668,8 @@ function EventReg() {
               <h3 className="card-title">{/* <b>Episode 10</b> */}</h3>
               {/* <h5>Week 8</h5> */}
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Watch how a <b>Mechanical Engineer</b> cracked <b>IES</b> who is
+                now working at Indian railways.
               </p>
               <Link to="/ep10" style={{ textDecoration: "none" }}>
                 <a
@@ -721,8 +721,8 @@ function EventReg() {
               <h3 className="card-title">{/* <b>Episode 9</b> */}</h3>
               {/* <h5>Week 8</h5> */}
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Listen from him how a life of a <b>Civil Engineer</b> would be
+                at <b>L&T</b>.
               </p>
               <Link to="/ep9" style={{ textDecoration: "none" }}>
                 <a
@@ -774,8 +774,8 @@ function EventReg() {
               <h3 className="card-title">{/* <b>Episode 8</b> */}</h3>
               {/* <h5>Week 8</h5> */}
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Hear from the <b>Cornell's chemical graduate</b> how he
+                constantly has been in the research field.
               </p>
               <Link to="/ep8" style={{ textDecoration: "none" }}>
                 <a
@@ -826,8 +826,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 7</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Know how he reached <b>Texas A&M</b> all the way from University
+                of Mumbai pursuing <b>Electronics</b>.
               </p>
               <Link to="/ep7" style={{ textDecoration: "none" }}>
                 <a
@@ -878,8 +878,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 6</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Watch the insights of how he cracked <b>CAT</b> exam and set
+                down in <b>IIM Ahmedabad</b>.
               </p>
               <Link to="/ep6" style={{ textDecoration: "none" }}>
                 <a
@@ -930,8 +930,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 5</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Peek at the roadmap how she landed at <b>ExxonMobil</b> from{" "}
+                <b>Mechanical branch</b>.
               </p>
               <Link to="/ep5" style={{ textDecoration: "none" }}>
                 <a
@@ -982,8 +982,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 4</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Know how one can balance various aspects in life like{" "}
+                <b>academics</b> and <b>passion</b>.
               </p>
               <Link to="/ep4" style={{ textDecoration: "none" }}>
                 <a
@@ -1034,8 +1034,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 3</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Explore how she overcame all the <b>stereotypical hurdles</b>{" "}
+                and explored various career paths.
               </p>
               <Link to="/ep3" style={{ textDecoration: "none" }}>
                 <a
@@ -1087,8 +1087,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 2</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Know all preparation strategies to crack <b>GATE</b> examination
+                with <b>AIR 4</b>.
               </p>
               <Link to="/ep2" style={{ textDecoration: "none" }}>
                 <a
@@ -1139,8 +1139,8 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 1</b> */}</h3>
               <p className="card-text my-4">
-                Dig into all the <strong>details</strong> of
-                <strong> colleges</strong> needed for admission process.
+                Ace <b>competitive coding</b> and get tips on tackling interview
+                sessions of <b>MNCs</b>.
               </p>
               <Link to="/ep1" style={{ textDecoration: "none" }}>
                 <a

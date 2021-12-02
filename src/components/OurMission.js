@@ -18,6 +18,19 @@ function OurMission() {
     }
   }, [display]);
 
+  function hovering(num, id) {
+    var x = document.getElementById(id);
+    if (num === "0") {
+      // x.className = "btn fs-5 px-3";
+      x.style.backgroundColor = "whitesmoke";
+      x.style.color = "black";
+    } else {
+      // x.className = "btn px-3";
+      x.style.backgroundColor = "#3ad6ab";
+      x.style.color = "white";
+    }
+  }
+
   return (
     <div
       className="pt-0"
@@ -92,7 +105,10 @@ function OurMission() {
             </p>
             <Link to="/Focus" style={{ textDecoration: "none" }}>
               <button
+                id="register"
                 className="btn w-auto mx-auto px-4 my-4"
+                onMouseOver={() => hovering("0", "register")}
+                onMouseLeave={() => hovering("1", "register")}
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Register

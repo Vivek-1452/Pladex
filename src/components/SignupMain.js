@@ -45,16 +45,6 @@ function SignupMain() {
     }
   }
 
-  $("#password, #cnfmpassword").on("keyup", function () {
-    if ($("#password").val() === $("#cnfmpassword").val()) {
-      // $("#message").html("Matching").css("color", "green");
-      $("#submit").prop("disabled", false);
-    } else {
-      // $("#message").html("Not Matching").css("color", "red");
-      $("#submit").prop("disabled", true);
-    }
-  });
-
   function passCheck() {
     var pass = document.getElementById("password").value;
     var cnfmPass = document.getElementById("cnfmpassword").value;
@@ -115,7 +105,7 @@ function SignupMain() {
                 Create your account
               </h5>
             </div>
-            <form>
+            <form action="/auth/register" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
                 <input
@@ -123,6 +113,7 @@ function SignupMain() {
                   className="inputText form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="email"
+                  name="email"
                   placeholder="Enter your mail id"
                   autocomplete="off"
                   autofocus
@@ -137,6 +128,7 @@ function SignupMain() {
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="password"
+                    name="password"
                     placeholder="Enter your password"
                     onKeyUp={() => passCheck()}
                     autocomplete="off"

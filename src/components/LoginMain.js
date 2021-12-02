@@ -75,7 +75,7 @@ function LoginMain() {
                 Log into your account
               </h5>
             </div>
-            <form>
+            <form action="/auth/login" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
                 <input
@@ -83,6 +83,7 @@ function LoginMain() {
                   className="inputText form-control"
                   style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                   id="email"
+                  name="email"
                   placeholder="Enter your mail id"
                   autocomplete="off"
                   autofocus
@@ -100,6 +101,7 @@ function LoginMain() {
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="password"
+                    name="password"
                     placeholder="Enter your password"
                     autocomplete="off"
                     autofocus
