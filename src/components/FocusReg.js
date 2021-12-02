@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Select from "react-select";
+import Navnew from "./Navnew";
 import main from "./FocusImages/reg.png";
 import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
@@ -10,10 +11,11 @@ import { eventOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusReg() {
-  // window.onload = function () {
-  //   document.getElementById("react-select-3-placeholder").innerHTML =
-  //     "Select Event";
-  // };
+  const [loginauth, setloginauth] = useState(false);
+
+  const loginhandler = () => {
+    setloginauth(true);
+  };
 
   const [display, setdisplay] = useState(false);
 
@@ -237,145 +239,147 @@ function FocusReg() {
   ];
 
   return (
-    <div
-      style={{
-        fontFamily: "Product Sans",
-        minWidth: "100vw",
-        minHeight: "100vh",
-        // overflow: "none",
-        backgroundImage: `url(${main})`,
-      }}
-    >
+    <>
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
-        className="d-flex justify-content-center align-items-center pt-5"
-        // style={{
-        //   minWidth: "100vw",
-        //   minHeight: "100vh",
-        //   // overflow: "none",
-        //   backgroundImage: `url(${main})`,
-        // }}
+        style={{
+          fontFamily: "Product Sans",
+          minWidth: "100vw",
+          minHeight: "100vh",
+          // overflow: "none",
+          backgroundImage: `url(${main})`,
+        }}
       >
         <div
-          id="details"
-          className="card text-black text-start pt-0"
-          style={{
-            color: "white",
-            // maxWidth: "50vw",
-            width: display ? "80vw" : "35vw",
-            boxShadow: "0 0 20px #212121",
-            opacity: "0.85",
-            border: "none",
-          }}
+          className="d-flex justify-content-center align-items-center pt-5"
+          // style={{
+          //   minWidth: "100vw",
+          //   minHeight: "100vh",
+          //   // overflow: "none",
+          //   backgroundImage: `url(${main})`,
+          // }}
         >
-          <div className="card-header bg-opacity-100 bg-dark">
-            <div className="row py-2">
-              <div
-                className={
-                  display
-                    ? "col-6 text-start"
-                    : "col-md-7 d-flex align-items-center"
-                }
-                // style={{ width: "min-content" }}
-              >
-                <h5 className="fw-bold" style={{ color: "#3ad6ab" }}>
-                  Event Registration
-                </h5>
-              </div>
-              <div
-                className={
-                  display ? "col-6 text-end" : "col-md-5 text-end pe-3"
-                }
-              >
-                <img src={logo} alt="Events" width="80" height="50" />
+          <div
+            id="details"
+            className="card text-black text-start pt-0"
+            style={{
+              color: "white",
+              // maxWidth: "50vw",
+              width: display ? "80vw" : "35vw",
+              boxShadow: "0 0 20px #212121",
+              opacity: "0.85",
+              border: "none",
+            }}
+          >
+            <div className="card-header bg-opacity-100 bg-dark">
+              <div className="row py-2">
+                <div
+                  className={
+                    display
+                      ? "col-6 text-start"
+                      : "col-md-7 d-flex align-items-center"
+                  }
+                  // style={{ width: "min-content" }}
+                >
+                  <h5 className="fw-bold" style={{ color: "#3ad6ab" }}>
+                    Event Registration
+                  </h5>
+                </div>
+                <div
+                  className={
+                    display ? "col-6 text-end" : "col-md-5 text-end pe-3"
+                  }
+                >
+                  <img src={logo} alt="Events" width="80" height="50" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="card-body px-4">
-            <form action="/auth/event" method="POST">
-              <div className="row">
-                <div className="form-group col-md-6 pt-3 pb-2 px-2">
-                  {/* <label for="firstname">First Name</label> */}
-                  <input
-                    type="text"
-                    // is-valid bg-success
-                    className="form-control"
-                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                    id="firstname"
-                    name="fname"
-                    autocomplete="off"
-                    autofocus
-                    required
-                  />
-                  <span class="floating-label opacity-50">First Name</span>
-                  {/* <div className="valid-feedback">Looks good!</div> */}
+            <div className="card-body px-4">
+              <form action="/auth/event" method="POST">
+                <div className="row">
+                  <div className="form-group col-md-6 pt-3 pb-2 px-2">
+                    {/* <label for="firstname">First Name</label> */}
+                    <input
+                      type="text"
+                      // is-valid bg-success
+                      className="form-control"
+                      style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                      id="firstname"
+                      name="fname"
+                      autocomplete="off"
+                      autofocus
+                      required
+                    />
+                    <span class="floating-label opacity-50">First Name</span>
+                    {/* <div className="valid-feedback">Looks good!</div> */}
+                  </div>
+                  <div className="form-group col-md-6 pt-3 pb-2 px-2">
+                    {/* <label for="lastname">Last Name</label> */}
+                    <input
+                      type="text"
+                      className="inputText form-control"
+                      style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                      id="lastname"
+                      name="lname"
+                      autocomplete="off"
+                      autofocus
+                      required
+                    />
+                    <span class="floating-label opacity-50">Last Name</span>
+                  </div>
                 </div>
-                <div className="form-group col-md-6 pt-3 pb-2 px-2">
-                  {/* <label for="lastname">Last Name</label> */}
+                <div className="form-group pt-3 pb-2" id="float-label">
+                  {/* <label htmlFor="email">Mali ID</label> */}
                   <input
-                    type="text"
+                    type="email"
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                    id="lastname"
-                    name="lname"
+                    id="email"
+                    name="email"
                     autocomplete="off"
                     autofocus
                     required
                   />
-                  <span class="floating-label opacity-50">Last Name</span>
+                  <span class="floating-label opacity-50">Mail ID</span>
                 </div>
-              </div>
-              <div className="form-group pt-3 pb-2" id="float-label">
-                {/* <label htmlFor="email">Mali ID</label> */}
-                <input
-                  type="email"
-                  className="inputText form-control"
-                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                  id="email"
-                  name="email"
-                  autocomplete="off"
-                  autofocus
-                  required
-                />
-                <span class="floating-label opacity-50">Mail ID</span>
-              </div>
-              <div className="form-group pt-3 pb-2">
-                {/* <label for="number">Mobile Number</label> */}
-                <input
-                  type="tel"
-                  // is-invalid bg-danger
-                  className="inputText form-control"
-                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                  id="mobile"
-                  name="mobile"
-                  autocomplete="off"
-                  autofocus
-                  required
-                />
-                <span class="floating-label opacity-50">Mobile Number</span>
-                {/* <div className="invalid-feedback">
+                <div className="form-group pt-3 pb-2">
+                  {/* <label for="number">Mobile Number</label> */}
+                  <input
+                    type="tel"
+                    // is-invalid bg-danger
+                    className="inputText form-control"
+                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                    id="mobile"
+                    name="mobile"
+                    autocomplete="off"
+                    autofocus
+                    required
+                  />
+                  <span class="floating-label opacity-50">Mobile Number</span>
+                  {/* <div className="invalid-feedback">
               Please provide a valid number.
             </div> */}
-              </div>
-              <div className="form-group pt-3 pb-2">
-                <input
-                  type="text"
-                  list="college"
-                  name="college"
-                  multiple
-                  className="form-control"
-                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                  placeholder="Select College"
-                  required
-                />
-                <datalist id="college">
-                  {colleges.map((colleges) => (
-                    <option value={colleges} id={colleges}>
-                      {colleges}
-                    </option>
-                  ))}
-                </datalist>
-              </div>
-              {/* <div className="form-group pt-3 pb-2">
+                </div>
+                <div className="form-group pt-3 pb-2">
+                  <input
+                    type="text"
+                    list="college"
+                    name="college"
+                    multiple
+                    className="form-control"
+                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                    placeholder="Select College"
+                    required
+                  />
+                  <datalist id="college">
+                    {colleges.map((colleges) => (
+                      <option value={colleges} id={colleges}>
+                        {colleges}
+                      </option>
+                    ))}
+                  </datalist>
+                </div>
+                {/* <div className="form-group pt-3 pb-2">
                 <input
                   type="text"
                   className="inputText form-control"
@@ -388,37 +392,37 @@ function FocusReg() {
                 />
                 <span class="floating-label opacity-50">College Name</span>
               </div> */}
-              <div className="form-group pt-3 pb-2">
-                <input
-                  type="text"
-                  list="branch"
-                  name="branch"
-                  multiple
-                  className="form-control"
-                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                  placeholder="Select Branch"
-                  required
-                />
-                <datalist id="branch">
-                  {branches.map((branches) => (
-                    <option value={branches} id={branches}>
-                      {branches}
-                    </option>
-                  ))}
-                </datalist>
-              </div>
-              <div className="form-group pt-3 pb-2">
-                <Select
-                  isMulti
-                  name="event"
-                  placeholder="Select Event"
-                  style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
-                  options={eventOptions}
-                  className="basic-multi-select"
-                  classNamePrefix="select"
-                />
-              </div>
-              {/* <div className="form-group">
+                <div className="form-group pt-3 pb-2">
+                  <input
+                    type="text"
+                    list="branch"
+                    name="branch"
+                    multiple
+                    className="form-control"
+                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                    placeholder="Select Branch"
+                    required
+                  />
+                  <datalist id="branch">
+                    {branches.map((branches) => (
+                      <option value={branches} id={branches}>
+                        {branches}
+                      </option>
+                    ))}
+                  </datalist>
+                </div>
+                <div className="form-group pt-3 pb-2">
+                  <Select
+                    isMulti
+                    name="event"
+                    placeholder="Select Event"
+                    style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
+                    options={eventOptions}
+                    className="basic-multi-select"
+                    classNamePrefix="select"
+                  />
+                </div>
+                {/* <div className="form-group">
             <div className="form-check">
               <input className="form-check-input" type="checkbox" id="gridCheck" />
               <label className="form-check-label" for="gridCheck">
@@ -426,32 +430,33 @@ function FocusReg() {
               </label>
             </div>
           </div> */}
-              <center>
-                <Link to="/FocusRegSuc">
+                <center>
+                  {/* <Link to="/FocusRegSuc"> */}
                   <button
                     type="submit"
                     className="btn bg-success mt-4 mb-2 text-white float-end me-3"
                   >
                     Register
                   </button>
-                </Link>
-              </center>
-            </form>
+                  {/* </Link> */}
+                </center>
+              </form>
+            </div>
           </div>
         </div>
+        <div className="py-3 text-center text-white">
+          <h6 className="m-0 py-3 fw-light">
+            Developed with{" "}
+            <img
+              src={heart}
+              alt="love"
+              style={{ height: "20px", position: "relative", bottom: "3px" }}
+            />{" "}
+            by Web Dev team
+          </h6>
+        </div>
       </div>
-      <div className="py-3 text-center text-white">
-        <h6 className="m-0 py-3 fw-light">
-          Developed with{" "}
-          <img
-            src={heart}
-            alt="love"
-            style={{ height: "20px", position: "relative", bottom: "3px" }}
-          />{" "}
-          by Web Dev team
-        </h6>
-      </div>
-    </div>
+    </>
   );
 }
 

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import AddToCalendar from "react-add-to-calendar";
+import { useState } from "react";
+import Foot2 from "./foot2";
+import Navnew from "./Navnew";
 import image1 from "./ImgUpcomEvents/Img1.png";
 import image2 from "./ImgUpcomEvents/Img2.png";
 import image3 from "./ImgUpcomEvents/Img3.png";
@@ -21,6 +23,12 @@ import pt10 from "./EventLibrary/pt-10.png";
 import img1 from "./Events-amico.png";
 
 function EventReg() {
+  const [loginauth, setloginauth] = useState(false);
+
+  const loginhandler = () => {
+    setloginauth(true);
+  };
+
   function btnClk(typ) {
     if (typ === "all") {
       document.getElementById("CS/ep1").style.display = "block";
@@ -165,6 +173,7 @@ function EventReg() {
 
   return (
     <>
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
         className="row py-3"
         style={{
@@ -1164,6 +1173,7 @@ function EventReg() {
         </div>
         {/* <div className="col-lg-2"></div> */}
       </div>
+      <Foot2 />
     </>
   );
 }

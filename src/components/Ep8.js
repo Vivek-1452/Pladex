@@ -1,11 +1,19 @@
 import React from "react";
-// import img from "./EventLibrary/pt-8.png";
+import { useState } from "react";
+import Foot2 from "./foot2";
+import Navnew from "./Navnew";
 import img1 from "./Podcast-amico.png";
 import "./Ep.css";
 
 function Ep8() {
+  const [loginauth, setloginauth] = useState(false);
+
+  const loginhandler = () => {
+    setloginauth(true);
+  };
   return (
     <>
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
         className="row py-3"
         style={{
@@ -242,6 +250,7 @@ function Ep8() {
         </div>
         <div className="col-lg-2"></div>
       </div>
+      <Foot2 />
     </>
   );
 }

@@ -1,9 +1,20 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import Foot2 from "./foot2";
+import Navnew from "./Navnew";
 import imgabout from "./ImgAboutUs.svg";
 
 function AboutUs() {
+  const [loginauth, setloginauth] = useState(false);
+
+  const loginhandler = () => {
+    setloginauth(true);
+  };
+
   return (
     <>
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div className="container-fluid pt-0">
         <div
           className="row py-3"
@@ -146,6 +157,7 @@ function AboutUs() {
           <div className="col-lg-2"></div>
         </div>
       </div>
+      <Foot2 />
     </>
   );
 }

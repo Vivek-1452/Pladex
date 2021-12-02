@@ -1,4 +1,8 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import Foot2 from "./foot2";
+import Navnew from "./Navnew";
 import { Link } from "react-router-dom";
 import pt1 from "./EventLibrary/pt-1.png";
 import pt2 from "./EventLibrary/pt-2.png";
@@ -13,6 +17,12 @@ import pt10 from "./EventLibrary/pt-10.png";
 import img1 from "./Podcast-amico.png";
 
 function PodiumTalks() {
+  const [loginauth, setloginauth] = useState(false);
+
+  const loginhandler = () => {
+    setloginauth(true);
+  };
+
   function btnClk(typ) {
     if (typ === "all") {
       document.getElementById("CS/ep1").style.display = "block";
@@ -159,6 +169,7 @@ function PodiumTalks() {
 
   return (
     <>
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
         className="row py-3"
         style={{
@@ -807,6 +818,7 @@ function PodiumTalks() {
         </div>
         {/* <div className="col-lg-2"></div> */}
       </div>
+      <Foot2 />
     </>
   );
 }

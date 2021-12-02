@@ -14,7 +14,11 @@ export const eventOptions: readonly ColourOption[] = [
     isFixed: true,
   },
   { value: "Women-Empowerment", label: "Women Empowerment", color: "#0052CC" },
-  { value: "purple", label: "Mental Health &  Well-being", color: "#5243AA" },
+  {
+    value: "Mental-Health",
+    label: "Mental Health &  Well-being",
+    color: "#5243AA",
+  },
   {
     value: "Emerging-Technologies",
     label: "Emerging Technologies",
