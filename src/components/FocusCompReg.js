@@ -26,9 +26,100 @@ function FocusCompReg() {
   }, [display]);
 
   var colleges = [
-    "Acoustic engineering",
-    "Aeronautical",
-    "Aeronautical/astronautical",
+    "NIT Agartala",
+    "IIIT Agartala",
+    "Tripura Institute of Technology",
+    "Techno College of Engineering",
+    "ICFAI University",
+    "TTAADC polytechnic institute",
+    "Tripura Institute of Technology",
+    "Gomati District Polytechnic",
+    "Dhalai District Polytechnic",
+    "Women Polytechnic",
+    "NIELIT Agartala - National Institute of Electronics and Information Technology",
+    "North Tripura District Polytechnic, Dharmanagar",
+    "Centre for Computers and Communication Technology",
+    "Institute of Communication and Information Technology",
+    "NIT Sikkim",
+    "Sikkim professional University",
+    "SMIT Sikkim",
+    "ICFAI SIKKIM",
+    "College of Agricultural Engineering and Post Harvest Technology",
+    "SRM University",
+    "St.Anthony's College",
+    "Jowai Polytechnic",
+    "District Institute of Education and Training",
+    "Tura Polytechnic",
+    "Shillong Polytechnic",
+    "NIPS School of Hotel Management",
+    "Nit Meghalaya",
+    "CMJ University",
+    "North-eastern Hill University",
+    "William Carey University",
+    "Mahatma Gandhi University",
+    "MIT University",
+    "Regional Institute of Science and Technology",
+    "Bongaigaon Polytechnic",
+    "Dibrugarh Polytechnic",
+    "Indian Institute of Handloom Technology",
+    "Now Gong Polytechnic",
+    "Residential Girls’ Polytechnic",
+    "Silchar Polytechnic",
+    "IIT Guwahati",
+    "IIIT Guwahati",
+    "NIT Silchar",
+    "Tezpur University",
+    "Assam Science and Technology University",
+    "Assam Engineering college",
+    "Central Institute of Technology",
+    "HRH the Prince of Wales Institute of Engineering and Technology",
+    "Dibrugarh University",
+    "Krishna kanta Handiqui State Open University",
+    "Bodoland University",
+    "Goal para university",
+    "Cotton University",
+    "Triguna Sen School of technology",
+    "Royal Global University",
+    "Bhattadev University",
+    "Jorhat engineering college.",
+    "Gauhati University",
+    "The Assam Kaziranga University",
+    "Assam Downtown University",
+    "Assam Donbosco University",
+    "National Institute of Electronics and Information technology, Aizawl",
+    "Mizoram Polytechnic,Lunglei",
+    "Regional Institute of Paramedical and Nursing Sciences",
+    "NIT Mizoram",
+    "Mizoram University, School of Engineering and Technology",
+    "NERIST Nirjuli",
+    "Himalayan University",
+    "Arunachal University of Studies",
+    "North-east Frontier Technical University",
+    "Arunodaya University",
+    "Apex Professional University",
+    "Rajiv Gandhi Government Polytechnic,Papum Pare",
+    "Government Polytechnic, Khonsa",
+    "Nit Arunachal Pradesh",
+    "NERIST Nirjuli",
+    "Government Polytechnic",
+    "Central Institute of Plastic Engineering and Technology",
+    "National Institute of Electronics and Information Technology",
+    "NIT Manipur",
+    "lIIT Manipur",
+    "Manipur Institute of Technology",
+    "College of Food Technology",
+    "Manipur Technical University",
+    "College of Dairy Technology",
+    "National Institute of Electronics and Information Technology, Kohima",
+    "Institute of Communication and Information Technology",
+    "Government Polytechnic, Kohima",
+    "Global Open University, Dimapur",
+    "Khelhoshe Polytechnic,Atoizu",
+    "Nagaland Tool Room and Training Centre",
+    "Mount Mary College",
+    "NIT Nagaland",
+    "St.Joseph University, Dimapur",
+    "Nagaland University",
     "Others",
   ];
 
@@ -410,14 +501,14 @@ function FocusCompReg() {
             </div>
           </div> */}
                 <center>
-                  <Link to="/FocusRegSuc">
-                    <button
-                      type="submit"
-                      className="btn bg-success mt-4 mb-2 text-white float-end me-3"
-                    >
-                      Register
-                    </button>
-                  </Link>
+                  {/* <Link to="/RegSuccess"> */}
+                  <button
+                    type="submit"
+                    className="btn bg-success mt-4 mb-2 text-white float-end me-3"
+                  >
+                    Register
+                  </button>
+                  {/* </Link> */}
                 </center>
               </form>
             </div>

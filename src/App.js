@@ -62,19 +62,19 @@ function App() {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/features">
+            <Route path="/Features">
               <OurFeatures />
             </Route>
-            <Route path="/about">
+            <Route path="/AboutUs">
               <AboutUs />
             </Route>
-            <Route path="/join">
+            <Route path="/JoinUs">
               <JoinUs />
             </Route>
-            <Route path="/EveReg">
+            <Route path="/EventLibrary">
               <EventReg />
             </Route>
-            <Route path="/PodTalks">
+            <Route path="/PodiumTalks">
               <PodiumTalks />
             </Route>
             <Route path="/Focus">
@@ -110,25 +110,25 @@ function App() {
             <Route path="/ep1">
               <Ep1 />
             </Route>
-            <Route path="/FocusReg">
+            <Route path="/EventRegister">
               <FocusReg />
             </Route>
-            <Route path="/FocusCompReg">
+            <Route path="/CompetitionReg">
               <FocusCompReg />
             </Route>
-            <Route path="/FocusRegSuc">
+            <Route path="/RegSuccess">
               <FocusRegSuc />
             </Route>
             <Route path="/ComingSoon">
               <ComingSoon />
             </Route>
-            <Route path="/CheckReg">
+            <Route path="/CheckRegister">
               <CheckReg />
             </Route>
             <Route path="/login">
               <LoginMain />
             </Route>
-            <Route path="/SignupMail">
+            <Route path="/signup">
               <SignupMain />
             </Route>
             <Route path="/detail">

@@ -87,7 +87,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="features"
+                to="Features"
                 onClick={() => {
                   toggleclass([
                     { id: 1, state: false },
@@ -107,7 +107,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="about"
+                to="AboutUs"
                 onClick={() => {
                   toggleclass([
                     { id: 1, state: false },
@@ -167,7 +167,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="join"
+                to="JoinUs"
                 onClick={() => {
                   toggleclass([
                     { id: 1, state: false },

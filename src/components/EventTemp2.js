@@ -8,7 +8,7 @@ import image4 from "./ImgUpcomEvents/Img4.png";
 import image5 from "./ImgUpcomEvents/Img5.png";
 import image6 from "./ImgUpcomEvents/Img6.png";
 import image7 from "./ImgUpcomEvents/Img7.png";
-import image8 from "./ImgUpcomEvents/Img8.png";
+// import image8 from "./ImgUpcomEvents/Img8.png";
 
 import Slider from "react-slick";
 
@@ -126,7 +126,7 @@ function EventTemp2() {
               Events
             </span>
           </h4>
-          <Link to="/EveReg">
+          <Link to="/EventLibrary">
             <h5
               className="text-end mt-4 mb-0 me-5 fw-bold"
               style={{ color: "", textDecoration: "underline" }}
@@ -187,7 +187,12 @@ function EventTemp2() {
                     <p className="float-start my-3 ms-3">
                       {slide.date} | {slide.time}
                     </p>
-                    <Link to="/FocusReg">
+                    <Link
+                      to={{
+                        pathname: "/CheckRegister",
+                        state: "eventReg",
+                      }}
+                    >
                       <button
                         className="btn w-auto me-3 px-4 my-2 float-end"
                         style={{ backgroundColor: "#3ad6ab", color: "white" }}

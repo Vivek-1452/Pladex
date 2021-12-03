@@ -88,7 +88,12 @@ function Focus() {
             <h4 className="fw-light py-2">
               FOR NORTH-EAST STUDENTS – GROW WITH US!
             </h4>
-            <Link to="/CheckReg">
+            <Link
+              to={{
+                pathname: "/CheckRegister",
+                state: "eventReg",
+              }}
+            >
               {/* <a href="./FocusReg"> */}
               <button
                 id="reg"
@@ -122,7 +127,12 @@ function Focus() {
                 <i class="fas fa-cloud-download-alt"> </i> Download Brochure
               </button>
             </a>
-            <Link to="/FocusCompReg">
+            <Link
+              to={{
+                pathname: "/CheckRegister",
+                state: "compReg",
+              }}
+            >
               <button
                 id="part"
                 className="button4 btn w-auto mx-3 my-2 py-2"

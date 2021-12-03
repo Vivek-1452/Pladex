@@ -53,7 +53,7 @@ export default class UpcomingEventsWeb extends Component {
               Events
             </span>
           </h4>
-          <Link to="/EveReg">
+          <Link to="/EventLibrary">
             <h5
               className="text-end float-end pt-5 me-5 fw-bold"
               id="more"
@@ -117,7 +117,12 @@ export default class UpcomingEventsWeb extends Component {
                   </button>
                 </Link> */}
                 <p className="float-lg-start my-3 ms-3">Dec 18 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="entre"
@@ -167,7 +172,12 @@ export default class UpcomingEventsWeb extends Component {
                   Importance of women empowerment in sustainable development.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 19 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="women"
@@ -218,7 +228,12 @@ export default class UpcomingEventsWeb extends Component {
                   fit.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 20 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="mental"
@@ -269,7 +284,12 @@ export default class UpcomingEventsWeb extends Component {
                   intelligence.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 21 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="tech"
@@ -319,7 +339,12 @@ export default class UpcomingEventsWeb extends Component {
                   How to tackle hassle conditions and defend yourself?
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 22 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="tackl"
@@ -369,7 +394,12 @@ export default class UpcomingEventsWeb extends Component {
                   Hone your soft skills and develop a positive influence.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 23 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="soft"
@@ -419,7 +449,12 @@ export default class UpcomingEventsWeb extends Component {
                   Basic laws & rights that all the students need be aware of.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 24 | 6:30 PM</p>
-                <Link to="/FocusReg">
+                <Link
+                  to={{
+                    pathname: "/CheckRegister",
+                    state: "eventReg",
+                  }}
+                >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                     // id="laws"

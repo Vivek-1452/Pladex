@@ -123,15 +123,15 @@ function LoginMain() {
                 </div>
               </div>
               <center>
-                <Link to="/FocusRegSuc">
-                  <button
-                    type="submit"
-                    className="btn mt-4 mb-2 text-white px-4"
-                    style={{ backgroundColor: "#53c29b" }}
-                  >
-                    Login
-                  </button>
-                </Link>
+                {/* <Link to="/FocusRegSuc"> */}
+                <button
+                  type="submit"
+                  className="btn mt-4 mb-2 text-white px-4"
+                  style={{ backgroundColor: "#53c29b" }}
+                >
+                  Login
+                </button>
+                {/* </Link> */}
               </center>
             </form>
 
@@ -145,7 +145,7 @@ function LoginMain() {
             />
             <div className="my-3 px-2 text-center">
               Don't have an account?{" "}
-              <Link to="/SignupMail" style={{ color: " #0ACF83" }}>
+              <Link to="/signup" style={{ color: " #0ACF83" }}>
                 <span>Sign Up</span>
               </Link>
             </div>

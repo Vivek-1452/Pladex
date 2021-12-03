@@ -171,7 +171,7 @@ function OurFeatures() {
                 style={myStyle1}
               >
                 <center>
-                  <Link to="/PodTalks" style={{ textDecoration: "none" }}>
+                  <Link to="/PodiumTalks" style={{ textDecoration: "none" }}>
                     <img
                       className="my-3"
                       src={image3}
