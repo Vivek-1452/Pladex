@@ -8,7 +8,7 @@ import heart from "./heart.png";
 import "./LoginMain.css";
 import { Link } from "react-router-dom";
 
-function LoginMain() {
+function LoginMain(props) {
   const [prop1, setprop1] = useState(false);
 
   const currentUrl = window.location.href;
@@ -122,6 +122,7 @@ function LoginMain() {
                 >
                   Invalid Credentials!
                 </label> */}
+                <input value={props.method} hidden />
                 <input
                   type="email"
                   className="inputText form-control"

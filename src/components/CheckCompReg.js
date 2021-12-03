@@ -7,6 +7,8 @@ import FocusCompReg from "./FocusCompReg";
 import axios from "axios";
 
 function CheckCompReg() {
+  const method = 2;
+
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,7 +19,7 @@ function CheckCompReg() {
     });
   }, [isLoaded]);
 
-  return <>{isLoaded ? <FocusCompReg /> : <LoginMain />}</>;
+  return <>{isLoaded ? <FocusCompReg /> : <LoginMain props={method} />}</>;
 }
 
 export default CheckCompReg;
