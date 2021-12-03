@@ -110,12 +110,12 @@ function App() {
             <Route path="/ep1">
               <Ep1 />
             </Route>
-            <Route path="/EventRegister">
+            {/* <Route path="/EventRegister">
               <FocusReg />
-            </Route>
-            <Route path="/CompetitionReg">
+            </Route> */}
+            {/* <Route path="/CompetitionReg">
               <FocusCompReg />
-            </Route>
+            </Route> */}
             <Route path="/RegSuccess">
               <FocusRegSuc />
             </Route>
