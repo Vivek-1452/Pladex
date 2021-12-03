@@ -7,7 +7,19 @@ import { Link } from "react-router-dom";
 import { GoogleLogout } from "react-google-login";
 import { Redirect } from "react-router";
 import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 const Navnew = ({ logincheck, loginhandler }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    axios.post("http://65.1.96.8:8000/authenticate").then((response) => {
+      if (response.data.status == "authenticated") {
+        setIsLoaded(true);
+      }
+    });
+  }, [isLoaded]);
+
   const [active, setactive] = useState([
     { id: 1, state: true },
     { id: 2, state: false },
@@ -22,6 +34,13 @@ const Navnew = ({ logincheck, loginhandler }) => {
   const onSignoutSuccess = () => {
     alert("Logged out");
     return <Redirect to="/"></Redirect>;
+  };
+
+  const clicking = (id1, id2, id3, id4) => {
+    document.getElementById(id1).style.borderBottom = "2px solid #3ad6ab";
+    document.getElementById(id2).style.borderBottom = "none";
+    document.getElementById(id3).style.borderBottom = "none";
+    document.getElementById(id4).style.borderBottom = "none";
   };
 
   return (
@@ -62,62 +81,68 @@ const Navnew = ({ logincheck, loginhandler }) => {
           <NavbarCollapse className="justify-content-end" id="navbarCollapse">
             <Nav className="d-flex align-items-center position-relative pe-5 my-0 py-0">
               <Link
+                id="nav1"
                 className={
                   active[0].state
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
                 to="/"
-                onClick={() => {
-                  toggleclass([
-                    { id: 1, state: true },
-                    { id: 2, state: false },
-                    { id: 3, state: false },
-                    { id: 4, state: false },
-                    { id: 5, state: false },
-                    { id: 6, state: false },
-                  ]);
-                }}
+                // onClick={() => {
+                //   toggleclass([
+                //     { id: 1, state: true },
+                //     { id: 2, state: false },
+                //     { id: 3, state: false },
+                //     { id: 4, state: false },
+                //     { id: 5, state: false },
+                //     { id: 6, state: false },
+                //   ]);
+                // }}
+                onClick={() => clicking("nav1", "nav2", "nav3", "nav4")}
               >
                 Home
               </Link>
               <Link
+                id="nav2"
                 className={
                   active[1].state
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
                 to="Features"
-                onClick={() => {
-                  toggleclass([
-                    { id: 1, state: false },
-                    { id: 2, state: true },
-                    { id: 3, state: false },
-                    { id: 4, state: false },
-                    { id: 5, state: false },
-                    { id: 6, state: false },
-                  ]);
-                }}
+                // onClick={() => {
+                //   toggleclass([
+                //     { id: 1, state: false },
+                //     { id: 2, state: true },
+                //     { id: 3, state: false },
+                //     { id: 4, state: false },
+                //     { id: 5, state: false },
+                //     { id: 6, state: false },
+                //   ]);
+                // }}
+                onClick={() => clicking("nav2", "nav1", "nav3", "nav4")}
               >
                 Features
               </Link>
               <Link
+                id="nav3"
                 className={
                   active[2].state
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
                 to="AboutUs"
-                onClick={() => {
-                  toggleclass([
-                    { id: 1, state: false },
-                    { id: 2, state: false },
-                    { id: 3, state: true },
-                    { id: 4, state: false },
-                    { id: 5, state: false },
-                    { id: 6, state: false },
-                  ]);
-                }}
+                // onClick={() => {
+                //   toggleclass([
+                //     { id: 1, state: false },
+                //     { id: 2, state: false },
+                //     { id: 3, state: true },
+                //     { id: 4, state: false },
+                //     { id: 5, state: false },
+                //     { id: 6, state: false },
+                //   ]);
+                // }}
+                onClick={() => clicking("nav3", "nav2", "nav1", "nav4")}
               >
                 About Us
               </Link>
@@ -162,26 +187,28 @@ const Navnew = ({ logincheck, loginhandler }) => {
                 Contact Us
               </Link> */}
               <Link
+                id="nav4"
                 className={
                   active[5].state
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
                 to="JoinUs"
-                onClick={() => {
-                  toggleclass([
-                    { id: 1, state: false },
-                    { id: 2, state: false },
-                    { id: 3, state: false },
-                    { id: 4, state: false },
-                    { id: 5, state: false },
-                    { id: 6, state: true },
-                  ]);
-                }}
+                // onClick={() => {
+                //   toggleclass([
+                //     { id: 1, state: false },
+                //     { id: 2, state: false },
+                //     { id: 3, state: false },
+                //     { id: 4, state: false },
+                //     { id: 5, state: false },
+                //     { id: 6, state: true },
+                //   ]);
+                // }}
+                onClick={() => clicking("nav4", "nav2", "nav3", "nav1")}
               >
                 Join Us
               </Link>
-              {logincheck ? (
+              {/* {logincheck ? (
                 <GoogleLogout
                   clientId="623615460174-undrui8pi574v6qqtra0vo35vr58olqr.apps.googleusercontent.com"
                   buttonText="Logout"
@@ -190,6 +217,23 @@ const Navnew = ({ logincheck, loginhandler }) => {
               ) : (
                 <Link
                   to="login"
+                  className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
+                  style={{ backgroundColor: "#53c29b" }}
+                >
+                  Login
+                </Link>
+              )} */}
+              {isLoaded ? (
+                <a
+                  href="http://65.1.96.8:8000/logout"
+                  className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
+                  style={{ backgroundColor: "#31343c", color: "white" }}
+                >
+                  Logout
+                </a>
+              ) : (
+                <Link
+                  to="/login"
                   className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
                   style={{ backgroundColor: "#53c29b" }}
                 >

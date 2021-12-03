@@ -136,7 +136,7 @@ function foot2() {
                 textDecoration: "none",
               }}
             >
-              +91-8688055328
+              +91 8688055328
             </a>
             {/* <Mailto email="pladexstudentscorner@gmail.com" obfuscate={true}>
               pladexstudentscorner@gmail.com

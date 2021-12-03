@@ -129,7 +129,7 @@ function Focus() {
             </a>
             <Link
               to={{
-                pathname: "/CheckRegister",
+                pathname: "/CheckReg",
                 state: "compReg",
               }}
             >

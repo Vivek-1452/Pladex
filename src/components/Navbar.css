@@ -11,13 +11,19 @@
   background-color: #ececec;
   border-radius: 10px;
 }
-.active {
+
+/* .active {
   border-bottom: 2px solid #3ad6ab;
 }
 .notactive {
   background-color: transparent;
   border-radius: 10px;
-}
+} */
+
+/* .links:active {
+  border-bottom: 2px solid #3ad6ab;
+} */
+
 .navlinks {
   background-color: blue;
 }

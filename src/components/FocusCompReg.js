@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Select from "react-select";
+import axios from "axios";
 import Navnew from "./Navnew";
 import main from "./FocusImages/reg.png";
 import logo from "./FocusImages/logo.png";
@@ -11,6 +12,25 @@ import { compOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusCompReg() {
+  const [isLoaded, setIsLoaded] = useState({});
+
+  useEffect(() => {
+    axios.post("http://65.1.96.8:8000/auth/data").then((response) => {
+      if (response.data.email != null) {
+        // email = response.data.email;
+        // setIsLoaded(true);
+        setIsLoaded({
+          email: response.data.email,
+          firstname: response.data.firstname,
+          lastname: response.data.lastname,
+          mobile: response.data.mobile,
+          college: response.data.college,
+          branch: response.data.branch,
+        });
+      }
+    });
+  }, []);
+
   const [loginauth, setloginauth] = useState(false);
 
   const loginhandler = () => {
@@ -395,7 +415,9 @@ function FocusCompReg() {
                       className="form-control"
                       style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                       id="firstname"
+                      name="firstname"
                       autocomplete="off"
+                      value={isLoaded.firstname}
                       autofocus
                       required
                     />
@@ -409,7 +431,9 @@ function FocusCompReg() {
                       className="inputText form-control"
                       style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                       id="lastname"
+                      name="lastname"
                       autocomplete="off"
+                      value={isLoaded.lastname}
                       autofocus
                       required
                     />
@@ -423,8 +447,9 @@ function FocusCompReg() {
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="email"
-                    autocomplete="off"
-                    autofocus
+                    name="email"
+                    value={isLoaded.email}
+                    readonly
                     required
                   />
                   <span class="floating-label opacity-50">Mail ID</span>
@@ -437,7 +462,9 @@ function FocusCompReg() {
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="mobile"
+                    name="mobile"
                     autocomplete="off"
+                    value={isLoaded.mobile}
                     autofocus
                     required
                   />
@@ -451,7 +478,7 @@ function FocusCompReg() {
                     type="text"
                     list="college"
                     name="college"
-                    multiple
+                    value={isLoaded.college}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select College"
@@ -467,13 +494,15 @@ function FocusCompReg() {
                 </div>
                 <div className="form-group pt-3 pb-2">
                   <input
-                    list="degree"
+                    list="branch"
+                    name="branch"
+                    value={isLoaded.branch}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select Branch"
                     required
                   ></input>
-                  <datalist id="degree">
+                  <datalist id="branch">
                     {branches.map((courses) => (
                       <option value={courses} id={courses}>
                         {courses}
@@ -490,6 +519,7 @@ function FocusCompReg() {
                     options={compOptions}
                     className="basic-multi-select"
                     classNamePrefix="select"
+                    required
                   />
                 </div>
                 {/* <div className="form-group">

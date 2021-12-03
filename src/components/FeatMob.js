@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import image1 from "./college explorer.png";
 // import image2 from "./college predictor.png";
 // import image3 from "./podium talks.png";
@@ -54,12 +54,14 @@ function FeatMob() {
               of all genres, competitive materials and{" "}
               <strong>handwritten notes</strong>.
             </p>
-            <button
-              className="btn w-auto mx-auto px-4 my-2"
-              style={{ backgroundColor: "#3ad6ab", color: "white" }}
-            >
-              Explore
-            </button>
+            <Link to="/ComingSoon">
+              <button
+                className="btn w-auto mx-auto px-4 my-2"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>

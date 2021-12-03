@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import Select from "react-select";
+import axios from "axios";
 import Navnew from "./Navnew";
 import main from "./FocusImages/reg.png";
 import logo from "./FocusImages/logo.png";
@@ -15,6 +16,27 @@ function FocusReg() {
   //   alert("Hii");
   // }
   // window.onload = load;
+
+  // var email = "Mail ID";
+
+  const [isLoaded, setIsLoaded] = useState({});
+
+  useEffect(() => {
+    axios.post("http://65.1.96.8:8000/auth/data").then((response) => {
+      if (response.data.email != null) {
+        // email = response.data.email;
+        // setIsLoaded(true);
+        setIsLoaded({
+          email: response.data.email,
+          firstname: response.data.firstname,
+          lastname: response.data.lastname,
+          mobile: response.data.mobile,
+          college: response.data.college,
+          branch: response.data.branch,
+        });
+      }
+    });
+  }, []);
 
   const [loginauth, setloginauth] = useState(false);
 
@@ -401,8 +423,9 @@ function FocusReg() {
                       className="form-control"
                       style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                       id="firstname"
-                      name="fname"
+                      name="firstname"
                       autocomplete="off"
+                      value={isLoaded.firstname}
                       autofocus
                       required
                     />
@@ -416,8 +439,9 @@ function FocusReg() {
                       className="inputText form-control"
                       style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                       id="lastname"
-                      name="lname"
+                      name="lastname"
                       autocomplete="off"
+                      value={isLoaded.lastname}
                       autofocus
                       required
                     />
@@ -432,8 +456,8 @@ function FocusReg() {
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="email"
                     name="email"
-                    autocomplete="off"
-                    autofocus
+                    value={isLoaded.email}
+                    readonly
                     required
                   />
                   <span class="floating-label opacity-50">Mail ID</span>
@@ -448,6 +472,7 @@ function FocusReg() {
                     id="mobile"
                     name="mobile"
                     autocomplete="off"
+                    value={isLoaded.mobile}
                     autofocus
                     required
                   />
@@ -461,7 +486,7 @@ function FocusReg() {
                     type="text"
                     list="college"
                     name="college"
-                    multiple
+                    value={isLoaded.college}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select College"
@@ -493,7 +518,7 @@ function FocusReg() {
                     type="text"
                     list="branch"
                     name="branch"
-                    multiple
+                    value={isLoaded.branch}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select Branch"
@@ -516,6 +541,7 @@ function FocusReg() {
                     options={eventOptions}
                     className="basic-multi-select"
                     classNamePrefix="select"
+                    required
                   />
                 </div>
                 {/* <div className="form-group">

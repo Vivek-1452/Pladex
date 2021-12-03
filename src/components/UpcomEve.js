@@ -30,12 +30,6 @@ function UpcomEve() {
   return (
     <div style={{ backgroundColor: "#f5f6f7" }}>
       <div className="container row pt-5 pb-4 mx-auto">
-        {/* <h4 className="text-center fw-bold display-6 mb-4">
-        Home{" "}
-        <span className="text" style={{ color: "#3ad6ab" }}>
-          Features
-        </span>
-      </h4> */}
         <div
           className="col-lg-4 col-md-6 mb-4"
           data-aos="zoom-out-right"
@@ -73,15 +67,17 @@ function UpcomEve() {
                 of all genres, competitive materials and{" "}
                 <strong>handwritten notes</strong>.
               </p>
-              <button
-                id="dlib"
-                className="btn w-auto mx-auto px-4 mb-2"
-                onMouseOver={() => hovering("0", "dlib")}
-                onMouseLeave={() => hovering("1", "dlib")}
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Explore
-              </button>
+              <Link to="/ComingSoon">
+                <button
+                  id="dlib"
+                  className="btn w-auto mx-auto px-4 mb-2"
+                  onMouseOver={() => hovering("0", "dlib")}
+                  onMouseLeave={() => hovering("1", "dlib")}
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Explore
+                </button>
+              </Link>
             </div>
           </div>
         </div>

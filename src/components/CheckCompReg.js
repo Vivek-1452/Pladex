@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import FocusReg from "./FocusReg";
+// import FocusReg from "./FocusReg";
 import LoginMain from "./LoginMain";
-// import FocusCompReg from "./FocusCompReg";
+import FocusCompReg from "./FocusCompReg";
 import axios from "axios";
 
-function CheckReg() {
+function CheckCompReg() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function CheckReg() {
     });
   }, [isLoaded]);
 
-  return <>{isLoaded ? <FocusReg /> : <LoginMain />}</>;
+  return <>{isLoaded ? <FocusCompReg /> : <LoginMain />}</>;
 }
 
-export default CheckReg;
+export default CheckCompReg;

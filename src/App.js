@@ -23,27 +23,14 @@ import Ep4 from "./components/Ep4";
 import Ep3 from "./components/Ep3";
 import Ep2 from "./components/Ep2";
 import Ep1 from "./components/Ep1";
-import FocusReg from "./components/FocusReg";
-import FocusCompReg from "./components/FocusCompReg";
+// import FocusReg from "./components/FocusReg";
+// import FocusCompReg from "./components/FocusCompReg";
 import FocusRegSuc from "./components/FocusRegSuc";
 import ComingSoon from "./components/ComingSoon";
 import LoginMain from "./components/LoginMain";
 import SignupMain from "./components/SignupMain";
 import CheckReg from "./components/CheckReg";
-
-// var reactRoute = require("react-router");
-// var Route = reactRoute.Route;
-// var Switch = reactRoute.Switch;
-
-// var reactStaters = require("react");
-// var useState = reactStaters.useState;
-// var useEffect = reactStaters.useEffect;
-
-// var reactRouter = require("react-router-dom");
-// var Router = reactRouter.BrowserRouter;
-
-// var reactFeatures = require("react-router-dom");
-// var OurFeatures = reactFeatures.OurFeatures;
+import CheckCompReg from "./components/CheckCompReg";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -124,6 +111,9 @@ function App() {
             </Route>
             <Route path="/CheckRegister">
               <CheckReg />
+            </Route>
+            <Route path="/CheckReg">
+              <CheckCompReg />
             </Route>
             <Route path="/login">
               <LoginMain />

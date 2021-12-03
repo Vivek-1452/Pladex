@@ -150,7 +150,7 @@ function SignupMain() {
                   color: "red",
                 }}
               >
-                Entered Mail ID is already registered! Do Login.
+                Entered Mail ID is already registered!
               </h5>
             </div>
             <form action="/auth/register" method="POST">
