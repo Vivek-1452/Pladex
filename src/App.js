@@ -30,6 +30,20 @@ import ComingSoon from "./components/ComingSoon";
 import LoginMain from "./components/LoginMain";
 import SignupMain from "./components/SignupMain";
 
+// var reactRoute = require("react-router");
+// var Route = reactRoute.Route;
+// var Switch = reactRoute.Switch;
+
+// var reactStaters = require("react");
+// var useState = reactStaters.useState;
+// var useEffect = reactStaters.useEffect;
+
+// var reactRouter = require("react-router-dom");
+// var Router = reactRouter.BrowserRouter;
+
+// var reactFeatures = require("react-router-dom");
+// var OurFeatures = reactFeatures.OurFeatures;
+
 function App() {
   const [display, setdisplay] = useState(false);
 

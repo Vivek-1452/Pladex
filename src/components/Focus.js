@@ -36,6 +36,21 @@ import cheifSpeaker from "./FocusImages/cheifSpeaker.png";
 AOS.init();
 
 function Focus() {
+  // const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    fetch("https://localhost/authenticate", { method: "POST" }).then(
+      (response) => {
+        if (response.json().status == "authenticated") {
+          setIsLoaded(true);
+        } else {
+          setIsLoaded(false);
+        }
+      }
+    );
+  }, [isLoaded]);
+
   const [loginauth, setloginauth] = useState(false);
 
   const loginhandler = () => {
@@ -87,6 +102,7 @@ function Focus() {
               FOR NORTH-EAST STUDENTS – GROW WITH US!
             </h4>
             <Link to="/FocusReg">
+              {/* <a href="./FocusReg"> */}
               <button
                 id="reg"
                 className="button1 btn w-auto mx-auto ms-md-3 ms-0 mt-5 mb-3 py-2 px-3 fs-5"
@@ -98,6 +114,7 @@ function Focus() {
               >
                 <i class="far fa-calendar-check"> </i> Register Now
               </button>
+              {/* </a> */}
             </Link>
             <br />
             <a
@@ -118,19 +135,36 @@ function Focus() {
                 <i class="fas fa-cloud-download-alt"> </i> Download Brochure
               </button>
             </a>
-            <Link to="/FocusCompReg">
-              <button
-                id="part"
-                className="button4 btn w-auto mx-3 my-2 py-2"
-                style={{
-                  color: "white",
-                  border: "1px solid white",
-                  borderRadius: "10px",
-                }}
-              >
-                <i class="far fa-lightbulb"> </i> Competition registration
-              </button>
-            </Link>
+            {isLoaded ? (
+              <Link to="/FocusCompReg">
+                <button
+                  id="part"
+                  className="button4 btn w-auto mx-3 my-2 py-2"
+                  style={{
+                    color: "white",
+                    border: "1px solid white",
+                    borderRadius: "10px",
+                  }}
+                >
+                  <i class="far fa-lightbulb"> </i> Competition registration
+                </button>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <button
+                  id="part"
+                  className="button4 btn w-auto mx-3 my-2 py-2"
+                  style={{
+                    color: "white",
+                    border: "1px solid white",
+                    borderRadius: "10px",
+                  }}
+                >
+                  <i class="far fa-lightbulb"> </i> Competition registration
+                </button>
+              </Link>
+            )}
+
             <a
               href="https://forms.gle/PVQwCfqi4bUryPPfA"
               target="_blank"

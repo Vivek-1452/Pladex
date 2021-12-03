@@ -11,6 +11,11 @@ import { eventOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusReg() {
+  // function load() {
+  //   alert("Hii");
+  // }
+  // window.onload = load;
+
   const [loginauth, setloginauth] = useState(false);
 
   const loginhandler = () => {
