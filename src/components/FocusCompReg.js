@@ -405,7 +405,7 @@ function FocusCompReg() {
               </div>
             </div>
             <div className="card-body px-4">
-              <form action="/auth/competition">
+              <form action="/auth/competition" method="POST">
                 <div className="row">
                   <div className="form-group col-md-6 pt-3 pb-2 px-2">
                     {/* <label for="firstname">First Name</label> */}
