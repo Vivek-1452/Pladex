@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import main from "./loginbg.png";
 // import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
@@ -8,6 +9,18 @@ import "./LoginMain.css";
 import { Link } from "react-router-dom";
 
 function LoginMain() {
+  const [prop1, setprop1] = useState(false);
+
+  const [searchParams] = useSearchParams();
+  useEffect(() => {
+    if (
+      searchParams.get("state") ==
+      "83356ace8891b8d4b2fa144bcd6914a448bdff2ad348b86602c6674fef2dea8a"
+    ) {
+      setprop1(true);
+    }
+  }, [prop1]);
+
   const [display, setdisplay] = useState(false);
 
   useEffect(() => {
@@ -78,6 +91,13 @@ function LoginMain() {
             <form action="/auth/login" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
+                <label
+                  id="match"
+                  className={prop1 ? "float-end d-block" : "float-end d-none"}
+                  style={{ color: "red" }}
+                >
+                  Invalid Credentials!
+                </label>
                 <input
                   type="email"
                   className="inputText form-control"

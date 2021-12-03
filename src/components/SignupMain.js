@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import $ from "jquery";
 import main from "./loginbg.png";
 // import logo from "./FocusImages/logo.png";
@@ -9,6 +10,29 @@ import "./LoginMain.css";
 import { Link } from "react-router-dom";
 
 function SignupMain() {
+  const [prop1, setprop1] = useState(false);
+
+  const [searchParams] = useSearchParams();
+  useEffect(() => {
+    if (
+      searchParams.get("state") ==
+      "28d6dfcb31c48f6b8957860b99726bb863c5dc424e2d466105683c4b9d1ae3e2"
+    ) {
+      setprop1(true);
+    }
+  }, [prop1]);
+
+  const [prop2, setprop2] = useState(false);
+
+  useEffect(() => {
+    if (
+      searchParams.get("state") ==
+      "f00201589c87b5c0dff5aad0b1a189dde6af1f0ba445b44bcb00091ac408d418"
+    ) {
+      setprop2(true);
+    }
+  }, [prop2]);
+
   const [display, setdisplay] = useState(false);
 
   useEffect(() => {
@@ -108,6 +132,20 @@ function SignupMain() {
             <form action="/auth/register" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
+                <label
+                  id="match"
+                  className={prop1 ? "float-end d-block" : "float-end d-none"}
+                  style={{ color: "red" }}
+                >
+                  Registered Mail ID!
+                </label>
+                <label
+                  id="match"
+                  className={prop2 ? "float-end d-block" : "float-end d-none"}
+                  style={{ color: "red" }}
+                >
+                  Invalid entry! Try again.
+                </label>
                 <input
                   type="email"
                   className="inputText form-control"
