@@ -122,7 +122,7 @@ function LoginMain(props) {
                 >
                   Invalid Credentials!
                 </label> */}
-                <input value={props.method} hidden />
+                <input value={props.method} name="hide" hidden />
                 <input
                   type="email"
                   className="inputText form-control"
