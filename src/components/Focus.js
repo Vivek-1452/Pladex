@@ -37,19 +37,6 @@ AOS.init();
 
 function Focus() {
   // const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    fetch("https://localhost/authenticate", { method: "POST" }).then(
-      (response) => {
-        if (response.json().status == "authenticated") {
-          setIsLoaded(true);
-        } else {
-          setIsLoaded(false);
-        }
-      }
-    );
-  }, [isLoaded]);
 
   const [loginauth, setloginauth] = useState(false);
 
@@ -101,7 +88,7 @@ function Focus() {
             <h4 className="fw-light py-2">
               FOR NORTH-EAST STUDENTS – GROW WITH US!
             </h4>
-            <Link to="/FocusReg">
+            <Link to="/CheckReg">
               {/* <a href="./FocusReg"> */}
               <button
                 id="reg"
@@ -135,35 +122,19 @@ function Focus() {
                 <i class="fas fa-cloud-download-alt"> </i> Download Brochure
               </button>
             </a>
-            {isLoaded ? (
-              <Link to="/FocusCompReg">
-                <button
-                  id="part"
-                  className="button4 btn w-auto mx-3 my-2 py-2"
-                  style={{
-                    color: "white",
-                    border: "1px solid white",
-                    borderRadius: "10px",
-                  }}
-                >
-                  <i class="far fa-lightbulb"> </i> Competition registration
-                </button>
-              </Link>
-            ) : (
-              <Link to="/login">
-                <button
-                  id="part"
-                  className="button4 btn w-auto mx-3 my-2 py-2"
-                  style={{
-                    color: "white",
-                    border: "1px solid white",
-                    borderRadius: "10px",
-                  }}
-                >
-                  <i class="far fa-lightbulb"> </i> Competition registration
-                </button>
-              </Link>
-            )}
+            <Link to="/FocusCompReg">
+              <button
+                id="part"
+                className="button4 btn w-auto mx-3 my-2 py-2"
+                style={{
+                  color: "white",
+                  border: "1px solid white",
+                  borderRadius: "10px",
+                }}
+              >
+                <i class="far fa-lightbulb"> </i> Competition registration
+              </button>
+            </Link>
 
             <a
               href="https://forms.gle/PVQwCfqi4bUryPPfA"

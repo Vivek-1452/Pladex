@@ -29,6 +29,7 @@ import FocusRegSuc from "./components/FocusRegSuc";
 import ComingSoon from "./components/ComingSoon";
 import LoginMain from "./components/LoginMain";
 import SignupMain from "./components/SignupMain";
+import CheckReg from "./components/CheckReg";
 
 // var reactRoute = require("react-router");
 // var Route = reactRoute.Route;
@@ -120,6 +121,9 @@ function App() {
             </Route>
             <Route path="/ComingSoon">
               <ComingSoon />
+            </Route>
+            <Route path="/CheckReg">
+              <CheckReg />
             </Route>
             <Route path="/login">
               <LoginMain />
