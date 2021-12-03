@@ -55,7 +55,7 @@ function LoginMain() {
         backgroundImage: `url(${main})`,
         backgroundPosition: display ? "center" : "center",
         backgroundRepeat: display ? "no-repeat" : "no-repeat",
-        backgroundSize: display ? "cover" : "100%",
+        backgroundSize: display ? "cover" : "cover",
       }}
     >
       <div
