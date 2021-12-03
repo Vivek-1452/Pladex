@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useParams } from "react-router";
 import main from "./loginbg.png";
 // import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
@@ -11,10 +11,12 @@ import { Link } from "react-router-dom";
 function LoginMain() {
   const [prop1, setprop1] = useState(false);
 
-  const [searchParams] = useSearchParams();
+  const currentUrl = window.location.href;
+  var params = new URL(currentUrl).searchParams.get("state");
+
   useEffect(() => {
     if (
-      searchParams.get("state") ==
+      params ==
       "83356ace8891b8d4b2fa144bcd6914a448bdff2ad348b86602c6674fef2dea8a"
     ) {
       setprop1(true);
@@ -81,23 +83,45 @@ function LoginMain() {
         >
           <div className="card-body px-4 px-md-5">
             <div className="text-center mb-3">
-              <h4 style={{ fontWeight: "lighter", fontFamily: "cursive" }}>
+              <h4
+                className={prop1 ? "d-none" : "d-block"}
+                style={{ fontWeight: "lighter", fontFamily: "cursive" }}
+              >
                 Heyaa!
               </h4>
-              <h5 style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}>
+              <h4
+                className={prop1 ? "d-block" : "d-none"}
+                style={{ fontWeight: "lighter", fontFamily: "cursive" }}
+              >
+                Uh-Oh!
+              </h4>
+              <h5
+                className={prop1 ? "d-none" : "d-block"}
+                style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}
+              >
                 Log into your account
+              </h5>
+              <h5
+                className={prop1 ? "d-block" : "d-none"}
+                style={{
+                  fontWeight: "bolder",
+                  fontFamily: "serif",
+                  color: "red",
+                }}
+              >
+                Invalid Credentials!
               </h5>
             </div>
             <form action="/auth/login" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
-                <label
+                {/* <label
                   id="match"
                   className={prop1 ? "float-end d-block" : "float-end d-none"}
                   style={{ color: "red" }}
                 >
                   Invalid Credentials!
-                </label>
+                </label> */}
                 <input
                   type="email"
                   className="inputText form-control"

@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
+import { useParams } from "react-router";
 import $ from "jquery";
 import main from "./loginbg.png";
 // import logo from "./FocusImages/logo.png";
@@ -12,10 +13,11 @@ import { Link } from "react-router-dom";
 function SignupMain() {
   const [prop1, setprop1] = useState(false);
 
-  const [searchParams] = useSearchParams();
+  const currentUrl = window.location.href;
+  var params = new URL(currentUrl).searchParams.get("state");
   useEffect(() => {
     if (
-      searchParams.get("state") ==
+      params ==
       "28d6dfcb31c48f6b8957860b99726bb863c5dc424e2d466105683c4b9d1ae3e2"
     ) {
       setprop1(true);
@@ -26,7 +28,7 @@ function SignupMain() {
 
   useEffect(() => {
     if (
-      searchParams.get("state") ==
+      params ==
       "f00201589c87b5c0dff5aad0b1a189dde6af1f0ba445b44bcb00091ac408d418"
     ) {
       setprop2(true);
@@ -122,23 +124,45 @@ function SignupMain() {
         >
           <div className="card-body px-4 px-md-5">
             <div className="text-center mb-3">
-              <h4 style={{ fontWeight: "lighter", fontFamily: "cursive" }}>
-                Welcome!
+              <h4
+                className={prop1 ? "d-none" : "d-block"}
+                style={{ fontWeight: "lighter", fontFamily: "cursive" }}
+              >
+                Welcome
               </h4>
-              <h5 style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}>
+              <h4
+                className={prop1 ? "d-block" : "d-none"}
+                style={{ fontWeight: "lighter", fontFamily: "cursive" }}
+              >
+                Welcome Back!
+              </h4>
+              <h5
+                className={prop1 ? "d-none" : "d-block"}
+                style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}
+              >
                 Create your account
+              </h5>
+              <h5
+                className={prop1 ? "mt-3 d-block" : "d-none"}
+                style={{
+                  fontWeight: "bolder",
+                  fontFamily: "serif",
+                  color: "red",
+                }}
+              >
+                Entered Mail ID is registered! Do Login.
               </h5>
             </div>
             <form action="/auth/register" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
-                <label
+                {/* <label
                   id="match"
                   className={prop1 ? "float-end d-block" : "float-end d-none"}
                   style={{ color: "red" }}
                 >
                   Registered Mail ID!
-                </label>
+                </label> */}
                 <label
                   id="match"
                   className={prop2 ? "float-end d-block" : "float-end d-none"}
