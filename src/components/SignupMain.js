@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // import { useSearchParams } from "react-router-dom";
 import { useParams } from "react-router";
 import $ from "jquery";
-import main from "./loginbg.png";
+import main from "./loginbg.svg";
 // import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
 import "./LoginMain.css";

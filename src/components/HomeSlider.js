@@ -2,6 +2,7 @@ import React from "react";
 import slide1 from "./ImgHomeSlider/dlibrary.png";
 import slide2 from "./ImgHomeSlider/focus.png";
 import slide3 from "./ImgHomeSlider/logigate.png";
+import slide4 from "./ImgHomeSlider/podiumtalks.svg";
 
 function HomeSlider() {
   return (
@@ -52,6 +53,19 @@ function HomeSlider() {
             margin: "0 8px",
           }}
         ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+          style={{
+            backgroundColor: "#6dd2ae",
+            width: "9px",
+            height: "8px",
+            borderRadius: "50%",
+            margin: "0 8px",
+          }}
+        ></button>
       </div>
       <div className="carousel-inner p-0">
         <div
@@ -83,6 +97,17 @@ function HomeSlider() {
           <img
             // src="https://pladex.in/images/home-3.png"
             src={slide3}
+            className="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div
+          className="carousel-item p-0"
+          style={{ backgroundColor: "#f5f6f7", border: "none" }}
+        >
+          <img
+            // src="https://pladex.in/images/home-3.png"
+            src={slide4}
             className="d-block w-100"
             alt="..."
           />

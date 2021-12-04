@@ -31,6 +31,7 @@ import LoginMain from "./components/LoginMain";
 import SignupMain from "./components/SignupMain";
 import CheckReg from "./components/CheckReg";
 import CheckCompReg from "./components/CheckCompReg";
+import EmailValidation from "./components/EmailValidation";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -114,6 +115,9 @@ function App() {
             </Route>
             <Route path="/CheckReg">
               <CheckCompReg />
+            </Route>
+            <Route path="/EmailValidation">
+              <EmailValidation />
             </Route>
             <Route path="/login">
               <LoginMain />

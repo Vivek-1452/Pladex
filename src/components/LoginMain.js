@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router";
-import main from "./loginbg.png";
+import main from "./loginbg.svg";
 // import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
 import "./LoginMain.css";
@@ -124,7 +124,7 @@ function LoginMain(props) {
               </h5>
               <h5
                 id="logevent"
-                className={prop1 ? "d-none" : "d-block"}
+                // className={prop1 ? "d-none" : "d-block"}
                 style={{
                   fontWeight: "bolder",
                   fontFamily: "sans-serif",
