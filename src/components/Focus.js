@@ -18,7 +18,7 @@ import FocusPartnMob from "./FocusPartnMob";
 import main from "./FocusImages/main.png";
 import main3 from "./FocusImages/main3.png";
 import logo from "./FocusImages/logo.png";
-import comp from "./FocusImages/comp.png";
+import comp from "./FocusImages/compF.png";
 // import comp1 from "./FocusImages/comp1.png";
 // import comp2 from "./FocusImages/comp2.png";
 import guest from "./FocusImages/guestTemp.jpg";
@@ -65,7 +65,7 @@ function Focus() {
           }}
         >
           <div className="mx-auto pb-5 pt-2" style={{ width: "auto" }}>
-            <h3 className="fw-bold pb-2">18 - 24 DECEMBER 2021</h3>
+            <h3 className="fw-bold pb-2">15 - 26 DECEMBER 2021</h3>
             <hr
               style={{
                 height: "4px",
@@ -238,20 +238,20 @@ function Focus() {
           }}
         >
           <div className="container py-lg-5 py-4">
-            <div className="row px-lg-5 py-5">
+            <div className="row px-lg-5 pb-5 pt-3">
               {/* <h1 className="display-5 fw-bold mb-3">
               <span className="text" style={{ color: "#3ad6ab" }}>
                 THEME
               </span>
             </h1> */}
-              <h4 className="text-center fw-bold display-6 mt-3 mb-5">
+              <h4 className="text-center fw-bold display-6 mb-5">
                 {/* EVENT{" "} */}
                 <span className="text" style={{ color: "#3ad6ab" }}>
                   COMPETITIONS
                 </span>
               </h4>
               <div
-                className="col-md-5 my-3 my-md-5 text-start"
+                className="col-md-5 my-3 mb-md-5 text-start"
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
@@ -274,7 +274,7 @@ function Focus() {
               </div>
               <div className="col-md-2"></div>
               <div
-                className="col-md-5 my-3 my-md-5 text-end"
+                className="col-md-5 my-3 mb-md-5 text-end"
                 data-aos="fade-left"
                 data-aos-duration="2000"
               >
@@ -342,6 +342,74 @@ function Focus() {
                   Rule Book
                 </button>
               </div>
+              <div
+                className="col-md-5 my-3 my-md-5 text-start"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <h2 className="fw-bold mt-3 mb-4">
+                  <span className="text" style={{ color: "#f6e7d8" }}>
+                    CAMPUS ACTS
+                  </span>
+                </h2>
+                <br />
+                <p className="fs-4">
+                  Students who are into stories, poems or any kind of writings
+                  can improve themselves by taking part in this contest.
+                </p>
+                <button
+                  className="btn float-end opacity-75 me-5"
+                  style={{ backgroundColor: "#ffd966" }}
+                >
+                  Rule Book
+                </button>
+              </div>
+              <div className="col-md-2"></div>
+              <div
+                className="col-md-5 my-3 my-md-5 text-end"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <h2 className="fw-bold mt-3 mb-4">
+                  <span className="text" style={{ color: "#f6e7d8" }}>
+                    CAMPUS POSES
+                  </span>
+                </h2>
+                <br />
+                <p className="fs-4">
+                  {/* This contest is something unique when compared to all above. */}
+                  This focuses on the ideas/solutions that students can come up
+                  with, for any problems faced by many students in North-east
+                  India.
+                </p>
+                <button
+                  className="btn float-start opacity-75 ms-5"
+                  style={{ backgroundColor: "#6fa8dc" }}
+                >
+                  Rule Book
+                </button>
+              </div>
+              <Link
+                to={{
+                  pathname: "/CheckReg",
+                  state: "compReg",
+                }}
+              >
+                <button
+                  id="part"
+                  className="button5 btn w-auto mt-5 py-2"
+                  style={{
+                    color: "white",
+                    backgroundColor: "#3ad6ab",
+                    border: "1px solid #3ad6ab",
+                    borderRadius: "10px",
+                  }}
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
+                  <i class="far fa-lightbulb"> </i> Competition registration
+                </button>
+              </Link>
             </div>
           </div>
         </div>

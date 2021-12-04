@@ -182,6 +182,27 @@ function EventSchedule() {
                 </h4>
               </VerticalTimelineElement>
               <VerticalTimelineElement
+                className="vertical-timeline-element--work text-end"
+                contentStyle={{
+                  background: "#d5a6bd",
+                  color: "#fff",
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid #d5a6bd",
+                }}
+                date="December 25"
+                iconStyle={{ background: "#d5a6bd", color: "#fff" }}
+                // icon={<WorkIcon />}
+              >
+                <h3 className="vertical-timeline-element-title text-start fw-bold text-dark">
+                  25 DEC
+                </h3>
+                <br />
+                <h4 className="vertical-timeline-element-subtitle text-start fw-light text-dark">
+                  SOFT SKILLS & PERSONALITY DEVELOPMENT
+                </h4>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
                 iconStyle={{ background: "#bb012d", color: "#fff" }}
                 // icon={<StarIcon />}
               />
