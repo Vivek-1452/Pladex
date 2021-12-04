@@ -7,8 +7,6 @@ import LoginMain from "./LoginMain";
 import axios from "axios";
 
 function CheckReg() {
-  const method = 1;
-
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -19,7 +17,7 @@ function CheckReg() {
     });
   }, [isLoaded]);
 
-  return <>{isLoaded ? <FocusReg /> : <LoginMain props={method} />}</>;
+  return <>{isLoaded ? <FocusReg /> : <LoginMain method="event" />}</>;
 }
 
 export default CheckReg;
