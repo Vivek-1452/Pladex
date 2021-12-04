@@ -265,12 +265,15 @@ function Focus() {
                   Students who are passionate about arts can showcase their work
                   by participating in this contest.
                 </p>
-                <button
+                <a
+                  href="https://bit.ly/3xXYAfc"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn float-end opacity-75 me-5"
                   style={{ backgroundColor: "#9ffeff" }}
                 >
                   Rule Book
-                </button>
+                </a>
               </div>
               <div className="col-md-2"></div>
               <div
@@ -288,12 +291,15 @@ function Focus() {
                   Students who are interested in photography can display their
                   masterpieces by participating in this contest.
                 </p>
-                <button
+                <a
+                  href="https://bit.ly/3lA3qtM"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn float-start opacity-75 ms-5"
                   style={{ backgroundColor: "#e69138" }}
                 >
                   Rule Book
-                </button>
+                </a>
               </div>
               <div
                 className="col-md-5 my-3 my-md-5 text-start"
@@ -310,12 +316,15 @@ function Focus() {
                   Students who are into stories, poems or any kind of writings
                   can improve themselves by taking part in this contest.
                 </p>
-                <button
+                <a
+                  href="https://bit.ly/3GdEUqy"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn float-end opacity-75 me-5"
                   style={{ backgroundColor: "#ddeecc" }}
                 >
                   Rule Book
-                </button>
+                </a>
               </div>
               <div className="col-md-2"></div>
               <div
@@ -335,12 +344,15 @@ function Focus() {
                   with, for any problems faced by many students in North-east
                   India.
                 </p>
-                <button
+                <a
+                  href="https://bit.ly/31wNmlM"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn float-start opacity-75 ms-5"
                   style={{ backgroundColor: "#ddaa77" }}
                 >
                   Rule Book
-                </button>
+                </a>
               </div>
               <div
                 className="col-md-5 my-3 my-md-5 text-start"
@@ -357,12 +369,15 @@ function Focus() {
                   Students who are into stories, poems or any kind of writings
                   can improve themselves by taking part in this contest.
                 </p>
-                <button
+                <a
+                  href="https://bit.ly/3xSqby6"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn float-end opacity-75 me-5"
                   style={{ backgroundColor: "#ffd966" }}
                 >
                   Rule Book
-                </button>
+                </a>
               </div>
               <div className="col-md-2"></div>
               <div
@@ -382,12 +397,15 @@ function Focus() {
                   with, for any problems faced by many students in North-east
                   India.
                 </p>
-                <button
+                <a
+                  href="https://bit.ly/3ollzxw"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn float-start opacity-75 ms-5"
                   style={{ backgroundColor: "#6fa8dc" }}
                 >
                   Rule Book
-                </button>
+                </a>
               </div>
               <Link
                 to={{
