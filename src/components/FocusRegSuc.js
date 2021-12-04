@@ -7,10 +7,42 @@ import regSuc from "./FocusImages/regSuc.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
+import { InferencePriority } from "typescript";
 
 AOS.init();
 
 function FocusRegSuc() {
+  // const [myState, setMystate] = useState({});
+
+  const [info, setInfo] = useState([]);
+
+  const [infocomp, setInfocomp] = useState([]);
+
+  useEffect(() => {
+    axios.post("http://65.1.96.8:8000/auth/eventdata").then((response) => {
+      const myInfo = response.data.eventdata;
+      setInfo(myInfo);
+      if (response.data.state == "event") {
+        document.getElementById("eventdisplay").style.display = "block";
+        document.getElementById("compdisplay").style.display = "none";
+      }
+    });
+  }, [info]);
+
+  useEffect(() => {
+    axios
+      .post("http://65.1.96.8:8000/auth/competitiondata")
+      .then((response) => {
+        const myInfocomp = response.data.competitiondata;
+        setInfocomp(myInfocomp);
+        if (response.data.state == "competition") {
+          document.getElementById("eventdisplay").style.display = "none";
+          document.getElementById("compdisplay").style.display = "block";
+        }
+      });
+  }, [infocomp]);
+
   const [loginauth, setloginauth] = useState(false);
 
   const loginhandler = () => {
@@ -55,7 +87,18 @@ function FocusRegSuc() {
             You've Successfully registered for{" "}
             <br className="d-sm-none d-md-none d-lg-none" />
             <Zoom bottom cascade>
-              <span style={{ color: "#6dd2ae" }}>ABC event, DEF event.</span>
+              <span id="eventdisplay" style={{ color: "#6dd2ae" }}>
+                {info.map((value, index) => {
+                  return <span>{value}</span>;
+                })}{" "}
+                events.
+              </span>
+              <span id="compdisplay" style={{ color: "#6dd2ae" }}>
+                {infocomp.map((value, index) => {
+                  return <span>{value}</span>;
+                })}{" "}
+                competitions.
+              </span>
             </Zoom>
           </h2>
         </div>
