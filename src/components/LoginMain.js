@@ -20,19 +20,24 @@ function LoginMain(props) {
       "83356ace8891b8d4b2fa144bcd6914a448bdff2ad348b86602c6674fef2dea8a"
     ) {
       setprop1(true);
-    } else if (
-      params ==
-      "3dbb4af3c5c4487908ea5f23315a2b578c09c5b20be208917b17e08a52c51e3f"
-    ) {
-      alert("Logged out successfully!");
-    } else if (
-      params ==
-      "b54dc0f6b309929dd43ef88aa54958f854af3aa23e1744da5ded5887d79a8d0e"
-    ) {
-      alert("Unable to logout!");
-    } else if (props.method == "event" || props.method == "competition") {
+    }
+    // else if (
+    //   params ==
+    //   "3dbb4af3c5c4487908ea5f23315a2b578c09c5b20be208917b17e08a52c51e3f"
+    // ) {
+    //   alert("Logged out successfully!");
+    // } else if (
+    //   params ==
+    //   "b54dc0f6b309929dd43ef88aa54958f854af3aa23e1744da5ded5887d79a8d0e"
+    // ) {
+    //   alert("Unable to logout!");
+    // }
+    else if (props.method == "event" || props.method == "competition") {
       document.getElementById("log").style.display = "none";
       document.getElementById("logevent").style.display = "block";
+    } else if (props.method == null) {
+      document.getElementById("log").style.display = "block";
+      document.getElementById("logevent").style.display = "none";
     } else {
       setprop1(false);
     }
