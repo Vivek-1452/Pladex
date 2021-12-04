@@ -1,0 +1,72 @@
+ <div className="row m-3" id="bookrow">
+      {searchdata.filter((item)=>{
+        //if (book.Branch==='ECE'){
+          //return book;
+       // }
+        if(filtertxt.key==="branch")
+        {
+          return item.branch===filtertxt.value;
+        }
+        else if(filtertxt.key==="course")
+        {
+          return item.course===filtertxt.value;
+        }
+        else if(filtertxt.key==="type")
+        {
+         return item.type===filtertxt.value;
+        }
+        else if(filtertxt.key==="likes")
+        {
+          return book.sort((a,b)=>{return b.likes-a.likes})
+        }
+        else if(filtertxt.key===" ")
+        {
+          return book;
+        }
+      })
+    .map((book)=>(
+      <div className="card col-md-4 px-3 py-3 my-3 justify-content-center d-flex" id={book._id}>
+      <div className="maincard h-100 ">
+        <div className="card-body ">
+        <p className="card-title title" style={{overflow: 'hidden', height: 75}} >{book.Bookname}</p>
+        <div className="d-flex">{<div className="my-5" style={{marginRight:'20px'}}><img src={book.Bookimg} width="100px" alt="img"></img></div>} 
+        <div>
+        
+       
+        
+        {/* <img src={Dots} style={{width:'3px'}} alt="img"></img> </div> */}
+                  
+        
+            {/* <div className="d-flex flex-row-reverse"></div> */}
+              
+              <p className="card-text mt-5">
+                <span className="span1">Author : </span>
+                <span className="span2">{book.Authors}</span>
+                </p>
+                <p className="card-text">
+                  <span className="span1">Subject : </span>
+                  <span className="span2">{book.Subject}</span>
+                  </p>
+                  <p className="card-text">
+                  <span className="span1">Branch : </span>
+                  <span className="span2">{book.Branch}</span>
+                  </p>
+                  
+                  <div className="lower my-5" style={{display:'flex'}}>
+                    <span className="lowerimg1">
+                      <img src={Share} className="mx-3" alt="img"></img>
+                      </span><img src={Likes} className="mx-1" alt="img"></img>
+                      <span>{book.Likes}</span>
+                      <span className="lowerimg2 mx-3">
+                        <img src={Save} alt="img"></img>
+                        </span><span className="mx-3">
+                          <img src={Comment} alt="img"></img>
+                          </span>
+                          
+                          </div>
+                          <a href={book.Booklink} className="btn btn1">Download</a>
+                      </div>
+                      </div>
+                   </div>    </div></div> 
+    ))}
+</div>

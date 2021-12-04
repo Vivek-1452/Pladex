@@ -1,0 +1,42 @@
+.detail{
+margin: auto;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.maindetail img{
+    width: 30px;
+}
+.maindetail{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #E5E5E5;
+    padding-bottom: 100%;
+}
+.maindetail .tag{
+font-size: 18px;
+}
+.detail input {
+    width: 100%;
+    height: 25px;
+    background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+}
+.detail select{
+    width: 100%;
+    height: 25px;
+    background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+}
+.detail .detailsform{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.detail .detailsform label{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+}

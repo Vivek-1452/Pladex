@@ -54,7 +54,7 @@ function FeatMob() {
               of all genres, competitive materials and{" "}
               <strong>handwritten notes</strong>.
             </p>
-            <Link to="/ComingSoon">
+            <Link to="/DLibrary">
               <button
                 className="btn w-auto mx-auto px-4 my-2"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}

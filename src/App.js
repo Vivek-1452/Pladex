@@ -32,6 +32,7 @@ import SignupMain from "./components/SignupMain";
 import CheckReg from "./components/CheckReg";
 import CheckCompReg from "./components/CheckCompReg";
 import EmailValidation from "./components/EmailValidation";
+import Btechsubject from "./components/books/btechsubject";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -118,6 +119,9 @@ function App() {
             </Route>
             <Route path="/EmailValidation">
               <EmailValidation />
+            </Route>
+            <Route path="/DLibrary">
+              <Btechsubject />
             </Route>
             <Route path="/login">
               <LoginMain />
