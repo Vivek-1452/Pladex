@@ -120,7 +120,11 @@ function LoginMain(props) {
               <h5
                 id="logevent"
                 className={prop1 ? "d-none" : "d-block"}
-                style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}
+                style={{
+                  fontWeight: "bolder",
+                  fontFamily: "sans-serif",
+                  display: "none",
+                }}
               >
                 Kindly Log into your account first!
               </h5>
