@@ -12,12 +12,9 @@ import { eventOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusReg() {
-  // function load() {
-  //   alert("Hii");
-  // }
-  // window.onload = load;
-
-  // var email = "Mail ID";
+  function inputClicking() {
+    document.getElementById("dev").style.display = "none";
+  }
 
   const [isLoaded, setIsLoaded] = useState({});
 
@@ -53,6 +50,7 @@ function FocusReg() {
   }, [display]);
 
   var colleges = [
+    "Others",
     "NIT Agartala",
     "IIIT Agartala",
     "Tripura Institute of Technology",
@@ -151,6 +149,7 @@ function FocusReg() {
   ];
 
   var branches = [
+    "Others",
     "Acoustic engineering",
     "Aeronautical",
     "Aeronautical/astronautical",
@@ -353,7 +352,6 @@ function FocusReg() {
     "Upstream and applied petroleum",
     "Urban and regional planning",
     "Water resources engineering",
-    "Others",
   ];
 
   return (
@@ -532,7 +530,10 @@ function FocusReg() {
                     ))}
                   </datalist>
                 </div>
-                <div className="form-group pt-3 pb-2">
+                <div
+                  className="form-group pt-3 pb-2"
+                  onClick={() => inputClicking()}
+                >
                   <Select
                     isMulti
                     name="event"
@@ -566,7 +567,7 @@ function FocusReg() {
             </div>
           </div>
         </div>
-        <div className="py-3 text-center text-white">
+        <div id="dev" className="py-3 text-center text-white">
           <h6 className="m-0 py-3 fw-light">
             Developed with{" "}
             <img

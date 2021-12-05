@@ -636,7 +636,7 @@ function PodiumTalks() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 4</b> */}</h3>
               <p className="card-text my-4">
-                Know how one can balance various aspects in life like{" "}
+                Know how one can balance various aspects in life such as{" "}
                 <b>academics</b> and <b>passion</b>.
               </p>
               <Link to="/ep4" style={{ textDecoration: "none" }}>
@@ -688,7 +688,7 @@ function PodiumTalks() {
             <div className="card-body">
               <h3 className="card-title">{/* <b>Episode 3</b> */}</h3>
               <p className="card-text my-4">
-                Explore how she overcame all the <b>stereotypical hurdles</b>{" "}
+                Experience how she overcame all the <b>stereotypical hurdles</b>{" "}
                 and explored various career paths.
               </p>
               <Link to="/ep3" style={{ textDecoration: "none" }}>

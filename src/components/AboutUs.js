@@ -82,25 +82,22 @@ function AboutUs() {
             <br />
             <ul style={{ textAlign: "left" }}>
               <li>
-                We are the <b>students from various colleges</b> of India came
-                forward to make our <b>dream</b> of, connecting all the students
-                of India through this platform where they can stay together as a{" "}
-                student friendly community to present their <b>ideas</b>, clear:
-                ; their queries, and build <b>connections</b> with like-minded
-                peers to build skills,
-                <b>come true</b>.
+                We are the students from various colleges of India came forward
+                to <b>make our dream</b> of connecting all the students of India
+                through this platform where they can stay together as a student
+                friendly community to present their ideas, clear their queries,
+                and build connections with like-minded peers to develop skills,
+                <b> come true</b>.
               </li>
               <li>
                 <b>PLADEX</b> is a one stop platform where students can easily
-                get all: ; the requirements to build their <b>career</b>, show
-                off their <b>talents</b>, enhance their <b>skills</b> and grow
-                along with us.
+                get all the requirements to build their career, show off their
+                talents, enhance their skills and grow along with us.
               </li>
               <li>
-                We aim to bring the <b>equity</b> of competent resources among
-                all the
-                <b>students</b> even in tier 2 & tier 3 colleges irrespective of
-                their domains.
+                We aim to bring the equity of competent resources among all the
+                students even in tier 2 & tier 3 colleges irrespective of their
+                domains.
               </li>
             </ul>
             <h4

@@ -12,6 +12,10 @@ import { compOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusCompReg() {
+  function inputClicking() {
+    document.getElementById("dev").style.display = "none";
+  }
+
   const [isLoaded, setIsLoaded] = useState({});
 
   useEffect(() => {
@@ -510,7 +514,10 @@ function FocusCompReg() {
                     ))}
                   </datalist>
                 </div>
-                <div className="form-group pt-3 pb-2">
+                <div
+                  className="form-group pt-3 pb-2"
+                  onClick={() => inputClicking()}
+                >
                   <Select
                     isMulti
                     name="competition"
@@ -544,7 +551,7 @@ function FocusCompReg() {
             </div>
           </div>
         </div>
-        <div className="py-3 text-center text-white">
+        <div id="dev" className="py-3 text-center text-white">
           <h6 className="m-0 py-3 fw-light">
             Developed with{" "}
             <img

@@ -9,6 +9,8 @@ import img1 from "./Icons3d/stud.png";
 import img2 from "./Icons3d/inst.png";
 import img3 from "./Icons3d/eve.png";
 import img4 from "./Icons3d/don.png";
+import img5 from "./Icons3d/spon.png";
+import img6 from "./Icons3d/part.png";
 import bg from "./FocusImages/iconsBg.png";
 
 function CountFocusmob() {
@@ -31,28 +33,28 @@ function CountFocusmob() {
     {
       id: 1,
       label1: "Students",
-      label2: "637",
+      label2: "469",
       image: img1,
       label12: "Institutions",
-      label22: "27",
+      label22: "37",
       image2: img2,
     },
     {
       id: 2,
       label1: "Events",
-      label2: "14",
+      label2: "11",
       image: img3,
       label12: "Sponsors",
-      label22: "2",
-      image2: img4,
+      label22: "3",
+      image2: img5,
     },
     {
       id: 3,
       label1: "Partners",
-      label2: "14",
-      image: img4,
+      label2: "5",
+      image: img6,
       label12: "Donations",
-      label22: "2",
+      label22: "$ 119.08",
       image2: img4,
     },
     // {

@@ -91,17 +91,22 @@ function OurMission() {
               </center>
             </h1>
             <p className="mt-4 fs-6" style={{ fontFamily: "Product Sans" }}>
-              A virtual event which mainly focuses on students across India. Our
-              sole objective of this event is to create awareness among students
-              through conducting interactive sessions by the influential
-              speakers to improve the equity among students irrespective of
-              their colleges and domains. Thereby, inspiring them to express
-              their opinions openly and adapt to the society hence transforming
-              for a better India.
+              The first phase of this event mainly focalizes on students of{" "}
+              <span className="text" style={{ color: "#da6220" }}>
+                North East India
+              </span>
+              . Our sole objective of this event is to create awareness, bring
+              out the hidden talents and to improve the equity among students
+              irrespective of their colleges and domains through conducting live
+              interactive sessions by the influential speakers and holding
+              ingenious competitions. Thereby, inspiring them to express their
+              opinions openly and adapt to the society hence transforming for a
+              better India.
               <br />
               <br />
-              We conduct many competitions to bring out many hidden talents from
-              students of India.
+              <span className="text fs-5" style={{ color: "#ffbd59" }}>
+                For registration and to know more about the event.
+              </span>
             </p>
             <Link to="/Focus" style={{ textDecoration: "none" }}>
               <button
@@ -111,24 +116,19 @@ function OurMission() {
                 onMouseLeave={() => hovering("1", "register")}
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
-                Register
+                Click here
               </button>
             </Link>
           </div>
           <div
-            className="col-md-4 d-flex justify-content-center align-items-center"
+            className={
+              display
+                ? "d-none"
+                : "col-md-4 d-flex justify-content-center align-items-center mt-md-4"
+            }
             data-aos="zoom-out"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
           >
-            {/* <video
-              className="h-100 d-flex videoTag justify-content-center align-items-center mx-auto"
-              autoPlay
-              loop
-              muted
-              style={{ width: "90%" }}
-            >
-              <source src={video1} type="video/mp4" />
-            </video> */}
             <center>
               <img
                 src={logo}

@@ -51,7 +51,7 @@ function EventTemp2() {
       id: 3,
       title: "Codified Youth",
       label1: "Helping students to get ",
-      label2: "internship opportunities, jobs, get placement support, ",
+      label2: "internship opportunities, jobs, placement support, ",
       label3: "free projects and courses.",
       image: image3,
       link: "https://codifiedyouth.com/",

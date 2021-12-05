@@ -82,12 +82,12 @@ export default class FocusPartners extends Component {
               </center>
               <div className="card-body">
                 <h3 className="card-title">
-                  <b>Beta Testers</b>
+                  <b>College Explorer</b>
                 </h3>
                 <p className="card-text my-4">
-                  Creating an <b>impact</b> on the youth who are struggling to
-                  ace their <b>skills</b> through <b>vodcasts</b> and guide
-                  viewers by clearing their doubts.
+                  Students can easily <b>explore</b> more about their dream{" "}
+                  <b>colleges</b> which helps them for their <b>admission</b>{" "}
+                  process.
                 </p>
               </div>
             </div>
@@ -116,12 +116,11 @@ export default class FocusPartners extends Component {
               </center>
               <div className="card-body">
                 <h3 className="card-title">
-                  <b>Beta Testers</b>
+                  <b>Codified Youth</b>
                 </h3>
                 <p className="card-text my-4">
-                  Creating an <b>impact</b> on the youth who are struggling to
-                  ace their <b>skills</b> through <b>vodcasts</b> and guide
-                  viewers by clearing their doubts.
+                  Helping students to get <b>internship</b> opportunities, jobs,
+                  <b> placement</b> support, <b>free projects</b> and courses.
                 </p>
               </div>
             </div>

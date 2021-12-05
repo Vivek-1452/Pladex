@@ -174,8 +174,7 @@ function CollWeb() {
                 </h3>
                 <p className="card-text my-4">
                   Helping students to get <b>internship</b> opportunities, jobs,
-                  get <b>placement</b> support, <b>free projects</b> and
-                  courses.
+                  <b> placement</b> support, <b>free projects</b> and courses.
                 </p>
               </div>
             </div>

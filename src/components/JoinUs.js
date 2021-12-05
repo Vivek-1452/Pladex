@@ -255,12 +255,14 @@ function JoinUs() {
             </h6>
             <br />
             <p style={{ marginBottom: "35px" }}>
-              <strong>PODIUM TALKS</strong> is all about bringing successful
-              students from various colleges, who got placed in top notch
+              <strong>PODIUM TALKS</strong> is all about bringing graduated
+              students from various domains, who got placed in top notch
               companies or have aced many competitive exams for a live
-              interactive session, to clear all your doubts every Sunday on our
-              official Youtube channel. You can ask many demandable questions to
-              our guests on live and clarify all your queries.
+              interactive session, to clear all the doubts running in fellow
+              student's minds. If you are willing to cheer up students with your
+              insights through a live interactive session which will be held on
+              Sundays on our official <strong>YouTube</strong> channel, be a{" "}
+              <strong>speaker</strong> on our Podium Talks.
             </p>
             <h4>To be our guest on Podium Talks</h4>
             <br />

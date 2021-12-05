@@ -1,8 +1,9 @@
 import React from "react";
 import slide1 from "./ImgHomeSlider/dlibrary.png";
 import slide2 from "./ImgHomeSlider/focus.png";
-import slide3 from "./ImgHomeSlider/logigate.png";
-import slide4 from "./ImgHomeSlider/podiumtalks.svg";
+// import slide3 from "./ImgHomeSlider/logigate.png";
+import slide4 from "./ImgHomeSlider/podiumtalks.png";
+import slide5 from "./ImgHomeSlider/abhiniyu.png";
 
 function HomeSlider() {
   return (
@@ -84,8 +85,8 @@ function HomeSlider() {
           style={{ backgroundColor: "#f5f6f7", border: "none" }}
         >
           <img
-            // src="https://pladex.in/images/home-2.png"
-            src={slide1}
+            // src="https://pladex.in/images/home-1.png"
+            src={slide5}
             className="d-block w-100"
             alt="..."
           />
@@ -95,8 +96,8 @@ function HomeSlider() {
           style={{ backgroundColor: "#f5f6f7", border: "none" }}
         >
           <img
-            // src="https://pladex.in/images/home-3.png"
-            src={slide3}
+            // src="https://pladex.in/images/home-2.png"
+            src={slide1}
             className="d-block w-100"
             alt="..."
           />
@@ -112,6 +113,17 @@ function HomeSlider() {
             alt="..."
           />
         </div>
+        {/* <div
+          className="carousel-item p-0"
+          style={{ backgroundColor: "#f5f6f7", border: "none" }}
+        >
+          <img
+            // src="https://pladex.in/images/home-3.png"
+            src={slide4}
+            className="d-block w-100"
+            alt="..."
+          />
+        </div> */}
       </div>
     </div>
   );

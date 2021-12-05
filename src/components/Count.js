@@ -24,7 +24,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Students</h4>
-          <h5>637</h5>
+          <h5>469</h5>
         </div>
         <div
           className="col-md-3 col-6 my-4"
@@ -38,7 +38,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Institutions</h4>
-          <h5>12</h5>
+          <h5>37</h5>
         </div>
         <div
           className="col-md-3 col-6 my-4"
@@ -52,7 +52,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Events</h4>
-          <h5>38</h5>
+          <h5>11</h5>
         </div>
         <div
           className="col-md-3 col-6 my-4"
@@ -66,7 +66,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Donations</h4>
-          <h5>$ 100</h5>
+          <h5>$ 119.08</h5>
         </div>
       </div>
     </div>

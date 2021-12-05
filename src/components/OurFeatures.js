@@ -205,13 +205,15 @@ function OurFeatures() {
                 style={myStyle1}
               >
                 <center>
-                  <img
-                    className="my-3"
-                    src={image9}
-                    alt="D-Library"
-                    width="70"
-                    height="70"
-                  />
+                  <Link to="/ComingSoon">
+                    <img
+                      className="my-3"
+                      src={image9}
+                      alt="D-Library"
+                      width="70"
+                      height="70"
+                    />
+                  </Link>
                 </center>
                 <div className="card-body">
                   <h4 className="card-title">
@@ -237,7 +239,7 @@ function OurFeatures() {
                     <img
                       className="my-3"
                       src={image4}
-                      alt="Campus Media"
+                      alt="Logigate"
                       width="70"
                       height="70"
                     />
@@ -278,8 +280,8 @@ function OurFeatures() {
                     <b>Campus Media</b>
                   </h4>
                   <p className="card-text my-4">
-                    Students can <strong>connect</strong> with all the colleges
-                    clubs and their events, contests and many more across India.
+                    Students can <strong>connect</strong> with all the college
+                    clubs, events, contests and many more.
                   </p>
                 </div>
               </div>
@@ -338,8 +340,8 @@ function OurFeatures() {
                   </h4>
                   <p className="card-text my-4">
                     Directly connect with global companies to grab{" "}
-                    <strong>internships, jobs</strong> and get exposed to the
-                    pratical knowledge.
+                    <strong>internships, jobs opportunities</strong> and get
+                    exposed to the pratical knowledge.
                   </p>
                 </div>
               </div>
@@ -518,8 +520,8 @@ function OurFeatures() {
                   </h4>
                   <p className="card-text my-4">
                     Facing <strong>financial problems</strong>? No worries!
-                    Students can visit our scholarship section and apply as per
-                    your eligibility.
+                    Students can visit this section and apply as per their
+                    eligibility.
                   </p>
                 </div>
               </div>

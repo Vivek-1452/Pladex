@@ -2,6 +2,8 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import "./Event.css";
 import image1 from "./collab1.jpeg";
+import image2 from "./collab2.png";
+import image3 from "./collab3.jpeg";
 // import image1 from "./college explorer.png";
 // import image2 from "./college predictor.png";
 // import image3 from "./podium talks.png";
@@ -39,21 +41,19 @@ function EventTemp2() {
     },
     {
       id: 2,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
+      title: "College Explorer",
+      label1: "Students can easily ",
+      label2: "explore more about their dream colleges ",
+      label3: "which helps them for their admission process.",
+      image: image2,
     },
     {
       id: 3,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
+      title: "Codified Youth",
+      label1: "Helping students to get ",
+      label2: "internship opportunities, jobs, ",
+      label3: "placement support, free projects and courses.",
+      image: image3,
     },
     // {
     //   id: 4,
