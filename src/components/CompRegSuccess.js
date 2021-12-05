@@ -12,7 +12,7 @@ import { InferencePriority } from "typescript";
 
 AOS.init();
 
-function FocusRegSuc() {
+function CompRegSuccess() {
   const [loginauth, setloginauth] = useState(false);
 
   const loginhandler = () => {
@@ -55,7 +55,7 @@ function FocusRegSuc() {
           </h1>
           <h2 className="fw-light">
             <Zoom bottom cascade>
-              <p>You've Successfully registered for the events.</p>
+              <p>You've Successfully registered for the competitions.</p>
               Check your Mail for info.
             </Zoom>
           </h2>
@@ -65,4 +65,4 @@ function FocusRegSuc() {
   );
 }
 
-export default FocusRegSuc;
+export default CompRegSuccess;

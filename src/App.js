@@ -38,6 +38,7 @@ import ResetPassword from "./components/ResetPassword";
 import VerifiedMail from "./components/VerifiedMail";
 import ResetSuccess from "./components/ResetSuccess";
 import ErrorRedirect from "./components/ErrorRedirect";
+import CompRegSuccess from "./components/CompRegSuccess";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -112,6 +113,9 @@ function App() {
             </Route> */}
             <Route path="/RegSuccess">
               <FocusRegSuc />
+            </Route>
+            <Route path="/CompRegSuccess">
+              <CompRegSuccess />
             </Route>
             <Route path="/ComingSoon">
               <ComingSoon />
