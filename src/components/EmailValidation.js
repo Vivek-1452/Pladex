@@ -97,8 +97,12 @@ function EmailValidation() {
           </h1>
           <h2 className="fw-light">
             <Zoom bottom cascade>
-              Kindly click on the verification link sent to your registered Mail
-              ID.
+              <b>
+                Kindly click on the verification link sent to your registered
+                Mail ID.
+              </b>
+              <br />
+              Redirecting to login page.
             </Zoom>
           </h2>
         </div>

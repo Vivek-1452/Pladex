@@ -23,34 +23,6 @@ function ResetValidation() {
     }, 7000);
   }, []);
 
-  const [info, setInfo] = useState([]);
-
-  const [infocomp, setInfocomp] = useState([]);
-
-  useEffect(() => {
-    axios.post("http://65.1.96.8:8000/auth/eventdata").then((response) => {
-      const myInfo = response.data.eventdata;
-      setInfo(myInfo);
-      if (response.data.state == "event") {
-        document.getElementById("eventdisplay").style.display = "block";
-        document.getElementById("compdisplay").style.display = "none";
-      }
-    });
-  }, [info]);
-
-  useEffect(() => {
-    axios
-      .post("http://65.1.96.8:8000/auth/competitiondata")
-      .then((response) => {
-        const myInfocomp = response.data.competitiondata;
-        setInfocomp(myInfocomp);
-        if (response.data.state == "competition") {
-          document.getElementById("eventdisplay").style.display = "none";
-          document.getElementById("compdisplay").style.display = "block";
-        }
-      });
-  }, [infocomp]);
-
   const [display, setdisplay] = useState(false);
 
   useEffect(() => {
@@ -89,6 +61,8 @@ function ResetValidation() {
             We'll send you a reset link, <br className="d-md-none" />
             <Zoom bottom cascade>
               <b>If the entered Mail ID is registered.</b>
+              <br />
+              Redirecting to login page.
             </Zoom>
           </h2>
         </div>

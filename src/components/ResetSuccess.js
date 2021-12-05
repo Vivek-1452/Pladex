@@ -3,7 +3,7 @@ import Zoom from "react-reveal/Zoom";
 import { useState } from "react";
 import { useEffect } from "react";
 import Navnew from "./Navnew";
-import regSuc from "./FocusImages/mailVerified.svg";
+import regSuc from "./passChanged.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,7 @@ import { InferencePriority } from "typescript";
 
 AOS.init();
 
-function VerifiedMail() {
+function ResetSuccess() {
   function redirect() {
     document.location.href = "/login";
   }
@@ -22,12 +22,6 @@ function VerifiedMail() {
       redirect();
     }, 5000);
   }, []);
-
-  const [loginauth, setloginauth] = useState(false);
-
-  const loginhandler = () => {
-    setloginauth(true);
-  };
 
   const [display, setdisplay] = useState(false);
 
@@ -41,39 +35,41 @@ function VerifiedMail() {
     <>
       {/* <Navnew logincheck={loginauth} loginhandler={loginhandler} /> */}
       <div
-        className="pt-0"
+        className="pt-3"
         style={{
           height: "85vh",
           width: "100vw",
           display: "table-cell",
           verticalAlign: "middle",
+          overflow: "hidden",
         }}
       >
         <Zoom>
           <img
+            className="mb-5"
             src={regSuc}
             alt="Successfully registered"
-            width={display ? "400" : "700"}
-            height={display ? "370" : "500"}
+            width={display ? "300" : "320"}
+            height={display ? "280" : "300"}
             data-aos="zoom-in"
             data-aos-duration="20000"
           />
         </Zoom>
-        <div className="my-sm-2 mx-3 my-4">
+        <div className="my-sm-2 mx-3 mt-4">
           <h1 className="fw-bold" style={{ color: "#50bc95" }}>
             Holaa!
           </h1>
-          <h3 className="fw-light">
+          <h2 className="fw-light">
+            <b>Your password is changed successfully.</b>{" "}
+            <br className="d-md-none" />
             <Zoom bottom cascade>
-              <b>Your Mail ID is successfully verified!</b>
-              <br />
-              <span className="fs-5">Redirecting to login page.</span>
+              Redirecting to login page.
             </Zoom>
-          </h3>
+          </h2>
         </div>
       </div>
     </>
   );
 }
 
-export default VerifiedMail;
+export default ResetSuccess;

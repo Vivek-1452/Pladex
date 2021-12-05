@@ -36,6 +36,7 @@ import ForgotPassword from "./components/ForgotPassword";
 import ResetValidation from "./components/ResetValidation";
 import ResetPassword from "./components/ResetPassword";
 import VerifiedMail from "./components/VerifiedMail";
+import ResetSuccess from "./components/ResetSuccess";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -134,6 +135,9 @@ function App() {
             </Route>
             <Route path="/VerifiedMail">
               <VerifiedMail />
+            </Route>
+            <Route path="/ResetSuccess">
+              <ResetSuccess />
             </Route>
             {/* <Route path="/DLibrary">
               <Btechsubject />
