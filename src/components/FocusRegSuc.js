@@ -30,6 +30,14 @@ function FocusRegSuc() {
     });
   }, [info]);
 
+  var eventss = "";
+
+  for (var i = 0; i < info.length; i++) {
+    eventss = eventss + ", " + info[i];
+  }
+
+  eventss = eventss.replace(",", "");
+
   useEffect(() => {
     axios
       .post("http://65.1.96.8:8000/auth/competitiondata")
@@ -42,6 +50,14 @@ function FocusRegSuc() {
         }
       });
   }, [infocomp]);
+
+  var compss = "";
+
+  for (var j = 0; j < infocomp.length; j++) {
+    compss = compss + ", " + infocomp[i];
+  }
+
+  compss = compss.replace(",", "");
 
   const [loginauth, setloginauth] = useState(false);
 
@@ -88,16 +104,16 @@ function FocusRegSuc() {
             <br className="d-sm-none d-md-none d-lg-none" />
             <Zoom bottom cascade>
               <span id="eventdisplay" style={{ color: "#6dd2ae" }}>
-                {info.map((value, index) => {
+                {/* {infos.map((value, index) => {
                   return <span>{value}</span>;
-                })}{" "}
-                events.
+                })}{" "} */}
+                {eventss} events.
               </span>
               <span id="compdisplay" style={{ color: "#6dd2ae" }}>
-                {infocomp.map((value, index) => {
+                {/* {infocomp.map((value, index) => {
                   return <span>{value}</span>;
-                })}{" "}
-                competitions.
+                })}{" "} */}
+                {compss} competitions.
               </span>
             </Zoom>
           </h2>
