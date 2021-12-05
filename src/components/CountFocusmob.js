@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Event.css";
+import "./upcom.css";
 import img1 from "./Icons3d/stud.png";
 import img2 from "./Icons3d/inst.png";
 import img3 from "./Icons3d/eve.png";

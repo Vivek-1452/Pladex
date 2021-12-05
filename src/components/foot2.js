@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import Mailto from "react-mailto";
 import "./footerCss.css";
-import fb from "./fb.png";
-import insta from "./insta.png";
-import telegram from "./telegram.png";
-import yt from "./yt.png";
-import linkedin from "./linkedin.png";
+// import fb from "./fb.png";
+// import insta from "./insta.png";
+// import telegram from "./telegram.png";
+// import yt from "./yt.png";
+// import linkedin from "./linkedin.png";
 import heart from "./heart.png";
 // import Mailto from "reactv16-mailto";
 

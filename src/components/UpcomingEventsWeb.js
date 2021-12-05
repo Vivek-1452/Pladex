@@ -8,6 +8,7 @@ import image4 from "./ImgUpcomEvents/Img4.png";
 import image5 from "./ImgUpcomEvents/Img5.png";
 import image6 from "./ImgUpcomEvents/Img6.png";
 import image7 from "./ImgUpcomEvents/Img7.png";
+import "./upcom.css";
 // import image8 from "./ImgUpcomEvents/Img8.png";
 
 export default class UpcomingEventsWeb extends Component {
@@ -42,7 +43,7 @@ export default class UpcomingEventsWeb extends Component {
     };
 
     return (
-      <div className="pb-5">
+      <div className="pb-5 pt-0">
         <div className="pb-3">
           <h4
             className="text-center fw-bold display-6 mt-3 mb-1 ps-5 ms-5 w-auto"
@@ -70,7 +71,7 @@ export default class UpcomingEventsWeb extends Component {
           </Link>
         </div>
         <Slider {...settings}>
-          <div>
+          <div className="pt-0">
             <div
               className="card mx-auto my-2 pt-0"
               id="card1"

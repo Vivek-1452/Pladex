@@ -12,20 +12,16 @@ import { InferencePriority } from "typescript";
 
 AOS.init();
 
-function EmailValidation() {
+function ResetValidation() {
   function redirect() {
-    // window.location.href = "http://65.1.96.8/login";
-    // window.location.href = "localhost:3000/login";
     document.location.href = "/login";
   }
 
   useEffect(() => {
     setTimeout(() => {
       redirect();
-    }, 5000);
+    }, 7000);
   }, []);
-
-  // const [myState, setMystate] = useState({});
 
   const [info, setInfo] = useState([]);
 
@@ -54,12 +50,6 @@ function EmailValidation() {
         }
       });
   }, [infocomp]);
-
-  const [loginauth, setloginauth] = useState(false);
-
-  const loginhandler = () => {
-    setloginauth(true);
-  };
 
   const [display, setdisplay] = useState(false);
 
@@ -96,9 +86,9 @@ function EmailValidation() {
             Holaa!
           </h1>
           <h2 className="fw-light">
+            We'll send you a reset link, <br className="d-md-none" />
             <Zoom bottom cascade>
-              Kindly click on the verification link sent to your registered Mail
-              ID.
+              <b>If the entered Mail ID is registered.</b>
             </Zoom>
           </h2>
         </div>
@@ -107,4 +97,4 @@ function EmailValidation() {
   );
 }
 
-export default EmailValidation;
+export default ResetValidation;

@@ -32,6 +32,9 @@ import SignupMain from "./components/SignupMain";
 import CheckReg from "./components/CheckReg";
 import CheckCompReg from "./components/CheckCompReg";
 import EmailValidation from "./components/EmailValidation";
+import ForgotPassword from "./components/ForgotPassword";
+import ResetValidation from "./components/ResetValidation";
+import ResetPassword from "./components/ResetPassword";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -118,6 +121,15 @@ function App() {
             </Route>
             <Route path="/EmailValidation">
               <EmailValidation />
+            </Route>
+            <Route path="/ForgotPassword">
+              <ForgotPassword />
+            </Route>
+            <Route path="/ResetValidation">
+              <ResetValidation />
+            </Route>
+            <Route path="/ResetPassword">
+              <ResetPassword />
             </Route>
             {/* <Route path="/DLibrary">
               <Btechsubject />
