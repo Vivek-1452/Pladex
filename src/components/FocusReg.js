@@ -11,14 +11,7 @@ import "./FocusReg.css";
 import { eventOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
-function FocusReg(props) {
-  if (
-    props.err.params ==
-    "eb3b62d785bda296823ca0e1c582a4f7eec2cadf457bad12ce8f132ccbad9557"
-  ) {
-    alert("hii");
-  }
-
+function FocusReg() {
   function inputClicking() {
     document.getElementById("dev").style.display = "none";
   }
