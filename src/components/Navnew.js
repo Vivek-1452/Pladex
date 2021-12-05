@@ -13,7 +13,7 @@ const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios.post("http://65.1.96.8:8000/authenticate").then((response) => {
+    axios.post("https://www.pladex.in/authenticate").then((response) => {
       if (response.data.status == "authenticated") {
         setIsLoaded(true);
       }
@@ -248,7 +248,7 @@ const Navnew = (props) => {
               )} */}
               {isLoaded ? (
                 <a
-                  href="http://65.1.96.8:8000/logout"
+                  href="https://www.pladex.in/logout"
                   className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
                   style={{ backgroundColor: "#31343c", color: "white" }}
                 >

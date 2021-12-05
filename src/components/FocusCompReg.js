@@ -32,7 +32,7 @@ function FocusCompReg() {
   const [isLoaded, setIsLoaded] = useState([]);
 
   useEffect(() => {
-    axios.post("http://65.1.96.8:8000/auth/data").then((response) => {
+    axios.post("https://www.pladex.in/auth/data").then((response) => {
       if (response.data.email != null) {
         setIsLoaded([
           response.data.email,

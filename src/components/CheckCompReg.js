@@ -10,7 +10,7 @@ function CheckCompReg() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios.post("http://65.1.96.8:8000/authenticate").then((response) => {
+    axios.post("https://www.pladex.in/authenticate").then((response) => {
       if (response.data.status == "authenticated") {
         setIsLoaded(true);
       }

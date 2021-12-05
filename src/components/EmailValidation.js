@@ -32,7 +32,7 @@ function EmailValidation() {
   const [infocomp, setInfocomp] = useState([]);
 
   useEffect(() => {
-    axios.post("http://65.1.96.8:8000/auth/eventdata").then((response) => {
+    axios.post("https://www.pladex.in/auth/eventdata").then((response) => {
       const myInfo = response.data.eventdata;
       setInfo(myInfo);
       if (response.data.state == "event") {
@@ -44,7 +44,7 @@ function EmailValidation() {
 
   useEffect(() => {
     axios
-      .post("http://65.1.96.8:8000/auth/competitiondata")
+      .post("https://www.pladex.in/auth/competitiondata")
       .then((response) => {
         const myInfocomp = response.data.competitiondata;
         setInfocomp(myInfocomp);
