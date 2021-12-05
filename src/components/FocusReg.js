@@ -12,6 +12,19 @@ import { eventOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusReg() {
+  const currentUrl = window.location.href;
+  var params = new URL(currentUrl).searchParams.get("state");
+
+  useEffect(() => {
+    if (
+      params ==
+      "eb3b62d785bda296823ca0e1c582a4f7eec2cadf457bad12ce8f132ccbad9557"
+    ) {
+      alert("Unable to register! Try again.");
+      document.location.href = "/CheckRegister";
+    }
+  }, []);
+
   function inputClicking() {
     document.getElementById("dev").style.display = "none";
   }
@@ -33,7 +46,7 @@ function FocusReg() {
         });
       }
     });
-  }, []);
+  }, [isLoaded]);
 
   const [loginauth, setloginauth] = useState(false);
 
@@ -455,7 +468,7 @@ function FocusReg() {
                     id="email"
                     name="email"
                     value={isLoaded.email}
-                    readonly
+                    readOnly
                     required
                   />
                   <span class="floating-label opacity-50">Mail ID</span>

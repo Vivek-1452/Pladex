@@ -12,6 +12,19 @@ import { compOptions } from "./multiSelect.ts";
 import { Link } from "react-router-dom";
 
 function FocusCompReg() {
+  const currentUrl = window.location.href;
+  var params = new URL(currentUrl).searchParams.get("state");
+
+  useEffect(() => {
+    if (
+      params ==
+      "eb3b62d785bda296823ca0e1c582a4f7eec2cadf457bad12ce8f132ccbad9557"
+    ) {
+      alert("Unable to register! Try again.");
+      document.location.href = "/CheckReg";
+    }
+  }, []);
+
   function inputClicking() {
     document.getElementById("dev").style.display = "none";
   }
