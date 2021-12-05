@@ -32,7 +32,6 @@ import SignupMain from "./components/SignupMain";
 import CheckReg from "./components/CheckReg";
 import CheckCompReg from "./components/CheckCompReg";
 import EmailValidation from "./components/EmailValidation";
-import Btechsubject from "./components/books/btechsubject";
 
 function App() {
   const [display, setdisplay] = useState(false);
