@@ -29,24 +29,22 @@ function FocusCompReg() {
     document.getElementById("dev").style.display = "none";
   }
 
-  const [isLoaded, setIsLoaded] = useState({});
+  const [isLoaded, setIsLoaded] = useState([]);
 
   useEffect(() => {
     axios.post("http://65.1.96.8:8000/auth/data").then((response) => {
       if (response.data.email != null) {
-        // email = response.data.email;
-        // setIsLoaded(true);
-        setIsLoaded({
-          email: response.data.email,
-          firstname: response.data.firstname,
-          lastname: response.data.lastname,
-          mobile: response.data.mobile,
-          college: response.data.college,
-          branch: response.data.branch,
-        });
+        setIsLoaded([
+          response.data.email,
+          response.data.firstname,
+          response.data.lastname,
+          response.data.mobile,
+          response.data.college,
+          response.data.branch,
+        ]);
       }
     });
-  }, []);
+  }, [isLoaded]);
 
   const [loginauth, setloginauth] = useState(false);
 
@@ -434,7 +432,7 @@ function FocusCompReg() {
                       id="firstname"
                       name="firstname"
                       autocomplete="off"
-                      value={isLoaded.firstname}
+                      defaultValue={isLoaded[1]}
                       autofocus
                       required
                     />
@@ -450,7 +448,7 @@ function FocusCompReg() {
                       id="lastname"
                       name="lastname"
                       autocomplete="off"
-                      value={isLoaded.lastname}
+                      defaultValue={isLoaded[2]}
                       autofocus
                       required
                     />
@@ -465,7 +463,7 @@ function FocusCompReg() {
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="email"
                     name="email"
-                    value={isLoaded.email}
+                    value={isLoaded[0]}
                     readonly
                     required
                   />
@@ -481,7 +479,7 @@ function FocusCompReg() {
                     id="mobile"
                     name="mobile"
                     autocomplete="off"
-                    value={isLoaded.mobile}
+                    defaultValue={isLoaded[3]}
                     autofocus
                     required
                   />
@@ -495,7 +493,7 @@ function FocusCompReg() {
                     type="text"
                     list="college"
                     name="college"
-                    value={isLoaded.college}
+                    defaultValue={isLoaded[4]}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select College"
@@ -513,7 +511,7 @@ function FocusCompReg() {
                   <input
                     list="branch"
                     name="branch"
-                    value={isLoaded.branch}
+                    defaultValue={isLoaded[5]}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select Branch"

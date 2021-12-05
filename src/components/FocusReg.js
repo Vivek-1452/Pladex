@@ -29,21 +29,19 @@ function FocusReg() {
     document.getElementById("dev").style.display = "none";
   }
 
-  const [isLoaded, setIsLoaded] = useState({});
+  const [isLoaded, setIsLoaded] = useState([]);
 
   useEffect(() => {
     axios.post("http://65.1.96.8:8000/auth/data").then((response) => {
       if (response.data.email != null) {
-        // email = response.data.email;
-        // setIsLoaded(true);
-        setIsLoaded({
-          email: response.data.email,
-          firstname: response.data.firstname,
-          lastname: response.data.lastname,
-          mobile: response.data.mobile,
-          college: response.data.college,
-          branch: response.data.branch,
-        });
+        setIsLoaded([
+          response.data.email,
+          response.data.firstname,
+          response.data.lastname,
+          response.data.mobile,
+          response.data.college,
+          response.data.branch,
+        ]);
       }
     });
   }, [isLoaded]);
@@ -436,7 +434,7 @@ function FocusReg() {
                       id="firstname"
                       name="firstname"
                       autocomplete="off"
-                      value={isLoaded.firstname}
+                      defaultValue={isLoaded[1]}
                       autofocus
                       required
                     />
@@ -452,14 +450,14 @@ function FocusReg() {
                       id="lastname"
                       name="lastname"
                       autocomplete="off"
-                      value={isLoaded.lastname}
+                      defaultValue={isLoaded[2]}
                       autofocus
                       required
                     />
                     <span class="floating-label opacity-50">Last Name</span>
                   </div>
                 </div>
-                <div className="form-group pt-3 pb-2" id="float-label">
+                <div className="form-group pt-3 pb-2">
                   {/* <label htmlFor="email">Mali ID</label> */}
                   <input
                     type="email"
@@ -467,11 +465,11 @@ function FocusReg() {
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="email"
                     name="email"
-                    value={isLoaded.email}
+                    value={isLoaded[0]}
                     readOnly
                     required
                   />
-                  <span class="floating-label opacity-50">Mail ID</span>
+                  {/* <span class="floating-label opacity-50">Mail ID</span> */}
                 </div>
                 <div className="form-group pt-3 pb-2">
                   {/* <label for="number">Mobile Number</label> */}
@@ -483,7 +481,7 @@ function FocusReg() {
                     id="mobile"
                     name="mobile"
                     autocomplete="off"
-                    value={isLoaded.mobile}
+                    defaultValue={isLoaded[3]}
                     autofocus
                     required
                   />
@@ -497,7 +495,7 @@ function FocusReg() {
                     type="text"
                     list="college"
                     name="college"
-                    value={isLoaded.college}
+                    defaultValue={isLoaded[4]}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select College"
@@ -529,7 +527,7 @@ function FocusReg() {
                     type="text"
                     list="branch"
                     name="branch"
-                    value={isLoaded.branch}
+                    defaultValue={isLoaded[5]}
                     className="form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     placeholder="Select Branch"
