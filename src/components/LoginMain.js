@@ -33,12 +33,14 @@ function LoginMain(props) {
     //   alert("Unable to logout!");
     // }
     else if (props.method == "event" || props.method == "competition") {
-      document.getElementById("log").style.display = "none";
-      document.getElementById("logevent").style.display = "block";
-    } else if (props.method == null) {
-      document.getElementById("log").style.display = "block";
-      document.getElementById("logevent").style.display = "none";
-    } else {
+      document.getElementById("log1").style.display = "inline-block";
+      document.getElementById("log2").style.display = "inline-block";
+    }
+    // else if (props.method == null) {
+    //   document.getElementById("log1").style.display = "none";
+    //   document.getElementById("log2").style.display = "none";
+    // }
+    else {
       setprop1(false);
     }
   }, [prop1]);
@@ -120,9 +122,15 @@ function LoginMain(props) {
                 className={prop1 ? "d-none" : "d-block"}
                 style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}
               >
-                Log into your account
+                <span id="log1" style={{ display: "none", width: "auto" }}>
+                  Kindly,
+                </span>{" "}
+                Log into your account{" "}
+                <span id="log2" style={{ display: "none", width: "auto" }}>
+                  first!{" "}
+                </span>
               </h5>
-              <h5
+              {/* <h5
                 id="logevent"
                 // className={prop1 ? "d-none" : "d-block"}
                 style={{
@@ -132,7 +140,7 @@ function LoginMain(props) {
                 }}
               >
                 Kindly Log into your account first!
-              </h5>
+              </h5> */}
               <h5
                 className={prop1 ? "d-block" : "d-none"}
                 style={{

@@ -46,7 +46,7 @@ function JoinUs() {
 
   return (
     <>
-      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} prop1="join" />
       <div className="container-fluid pt-0">
         <div
           className="row py-3"

@@ -497,7 +497,7 @@ function Focus() {
           style={{
             backgroundImage: `url(${speakers})`,
             color: "white",
-            overflowX: "hidden",
+            overflow: "hidden",
           }}
         >
           <div className="container py-4">
@@ -746,7 +746,7 @@ function Focus() {
           </div>
         </div>
       </div>
-      {display ? <FocusSponsMob /> : <FocusSponsors />}
+      {/* {display ? <FocusSponsMob /> : <FocusSponsors />} */}
       {display ? <FocusPartnMob /> : <FocusPartners />}
       <Foot2 />
     </>

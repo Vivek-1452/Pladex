@@ -81,7 +81,7 @@ function CountFocusmob() {
   return (
     <React.Fragment>
       <div
-        className="slider-wrapper py-5"
+        className="slider-wrapper py-md-5 pb-5"
         id="mobile"
         style={{ backgroundColor: "#f5f6f7", backgroundImage: `url(${bg})` }}
       >

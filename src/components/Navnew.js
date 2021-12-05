@@ -9,7 +9,7 @@ import { Redirect } from "react-router";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-const Navnew = ({ logincheck, loginhandler }) => {
+const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -20,6 +20,19 @@ const Navnew = ({ logincheck, loginhandler }) => {
     });
   }, [isLoaded]);
 
+  useEffect(() => {
+    if (props.prop1 == "home") {
+      document.getElementById("nav1").style.borderBottom = "2px solid #3ad6ab";
+    } else if (props.prop1 == "features") {
+      document.getElementById("nav2").style.borderBottom = "2px solid #3ad6ab";
+    } else if (props.prop1 == "about") {
+      document.getElementById("nav3").style.borderBottom = "2px solid #3ad6ab";
+    } else if (props.prop1 == "join") {
+      document.getElementById("nav4").style.borderBottom = "2px solid #3ad6ab";
+    }
+    // }, 3000);
+  }, []);
+
   const [active, setactive] = useState([
     { id: 1, state: true },
     { id: 2, state: false },
@@ -28,19 +41,29 @@ const Navnew = ({ logincheck, loginhandler }) => {
     { id: 5, state: false },
     { id: 6, state: false },
   ]);
-  const toggleclass = (e) => {
-    setactive(e);
-  };
-  const onSignoutSuccess = () => {
-    alert("Logged out");
-    return <Redirect to="/"></Redirect>;
-  };
+  // const toggleclass = (e) => {
+  //   setactive(e);
+  // };
+  // const onSignoutSuccess = () => {
+  //   alert("Logged out");
+  //   return <Redirect to="/"></Redirect>;
+  // };
 
   const clicking = (id1, id2, id3, id4) => {
-    document.getElementById(id1).style.borderBottom = "2px solid #3ad6ab";
-    document.getElementById(id2).style.borderBottom = "none";
-    document.getElementById(id3).style.borderBottom = "none";
-    document.getElementById(id4).style.borderBottom = "none";
+    // document.getElementById(id1).style.borderBottom = "2px solid #3ad6ab";
+    // document.getElementById(id2).style.borderBottom = "none";
+    // document.getElementById(id3).style.borderBottom = "none";
+    // document.getElementById(id4).style.borderBottom = "none";
+
+    if (id1 == "nav1") {
+      document.location.href = "/";
+    } else if (id1 == "nav2") {
+      document.location.href = "/Features";
+    } else if (id1 == "nav3") {
+      document.location.href = "/AboutUs";
+    } else if (id1 == "nav4") {
+      document.location.href = "/JoinUs";
+    }
   };
 
   return (
@@ -53,7 +76,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
         fluid
         style={{ width: "100vw" }}
       >
-        <Navbar expand="md" className="py-1 pe-md-0 pe-5">
+        <Navbar expand="md" className="py-1 pe-md-0 pe-lg-5">
           <NavbarBrand className="ps-5 pt-3">
             <a href="." className="text-dark text-decoration-none">
               <h2
@@ -79,7 +102,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
 
           <NavbarToggle />
           <NavbarCollapse className="justify-content-end" id="navbarCollapse">
-            <Nav className="d-flex align-items-center position-relative pe-5 my-0 py-0">
+            <Nav className="d-flex align-items-center position-relative my-0 py-0">
               <Link
                 id="nav1"
                 className={
@@ -87,7 +110,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="/"
+                // to="/"
                 // onClick={() => {
                 //   toggleclass([
                 //     { id: 1, state: true },
@@ -109,7 +132,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="Features"
+                // to="Features"
                 // onClick={() => {
                 //   toggleclass([
                 //     { id: 1, state: false },
@@ -131,7 +154,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="AboutUs"
+                // to="AboutUs"
                 // onClick={() => {
                 //   toggleclass([
                 //     { id: 1, state: false },
@@ -193,7 +216,7 @@ const Navnew = ({ logincheck, loginhandler }) => {
                     ? "mx-2 my-2 links text-dark px-3 py-2 active text-decoration-none"
                     : "mx-2 my-2 links text-dark px-3 py-2 notactive text-decoration-none"
                 }
-                to="JoinUs"
+                // to="JoinUs"
                 // onClick={() => {
                 //   toggleclass([
                 //     { id: 1, state: false },

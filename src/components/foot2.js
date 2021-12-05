@@ -67,32 +67,32 @@ function foot2() {
             <Link to="/Focus" className="links">
               <p>Focus Next India</p>
             </Link>
-            <Link to="/PodTalks" className="links">
+            <Link to="/PodiumTalks" className="links">
               <p>Podium Talks</p>
             </Link>
-            <Link to="/EveReg" className="links">
+            <Link to="/EventLibrary" className="links">
               <p>Event Library</p>
             </Link>
           </div>
           <div className="col-6 col-lg-2 my-3">
             <h5 className="mx-auto fw-bold">Community</h5>
             <br />
-            <Link to="/join" className="links">
+            <Link to="/JoinUs" className="links">
               <p>Join Us</p>
             </Link>
             <a className="links" href="#" target="_blank" rel="noreferrer">
               <p>Help & Support</p>
             </a>
-            <Link to="/about" className="links">
+            <Link to="/AboutUs" className="links">
               <p>Our Vision</p>
             </Link>
           </div>
           <div className="col-md-6 col-lg-2 my-3">
             <h5 className="mx-auto fw-bold">Features</h5>
             <br />
-            <a className="links" href="#" target="_blank" rel="noreferrer">
+            <Link to="/ComingSoon" className="links">
               <p>DLibrary</p>
-            </a>
+            </Link>
             <a
               className="links"
               href="https://www.collegeexplorer.in/"

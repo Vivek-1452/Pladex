@@ -39,6 +39,10 @@ function Home() {
     setloginauth(true);
   };
 
+  // const prop1 = () => {
+  //   setloginauth(true);
+  // };
+
   const [display, setdisplay] = useState(false);
 
   useEffect(() => {
@@ -47,9 +51,11 @@ function Home() {
     }
   }, [display]);
 
+  // logincheck={loginauth} loginhandler={loginhandler}
+
   return (
     <>
-      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
+      <Navnew prop1="home" />
       <HomeSlider />
       <OurMission />
       {display ? <FeatMob /> : <UpcomEve />}

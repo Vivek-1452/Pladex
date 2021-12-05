@@ -38,7 +38,11 @@ function OurFeatures() {
 
   return (
     <>
-      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
+      <Navnew
+        logincheck={loginauth}
+        loginhandler={loginhandler}
+        prop1="features"
+      />
       <div
         className="pt-0 pb-2"
         style={{

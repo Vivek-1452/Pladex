@@ -47,7 +47,7 @@ function CollWeb() {
               className="card mx-auto my-2"
               style={{
                 minWidth: "250px",
-                width: "72%",
+                width: "78%",
                 height: "95%",
                 border: "1px solid #3ad6ab",
                 borderRadius: "10px",
@@ -94,7 +94,7 @@ function CollWeb() {
               className="card mx-auto my-2"
               style={{
                 minWidth: "250px",
-                width: "72%",
+                width: "78%",
                 height: "95%",
                 border: "1px solid #3ad6ab",
                 borderRadius: "10px",
@@ -142,7 +142,7 @@ function CollWeb() {
               className="card mx-auto my-2"
               style={{
                 minWidth: "250px",
-                width: "72%",
+                width: "78%",
                 height: "95%",
                 border: "1px solid #3ad6ab",
                 borderRadius: "10px",

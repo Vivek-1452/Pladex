@@ -282,7 +282,7 @@ function EventReg() {
                 Construct and Evolve. Get inspired to be an entrepreneur!
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 18 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
@@ -330,7 +330,7 @@ function EventReg() {
                 Importance of women empowerment in sustainable development.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 19 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
@@ -379,7 +379,7 @@ function EventReg() {
                 fit.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 20 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
@@ -428,7 +428,7 @@ function EventReg() {
                 intelligence.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 21 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
@@ -476,7 +476,7 @@ function EventReg() {
                 How to tackle hassle conditions and defend yourself?
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 22 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
@@ -524,7 +524,7 @@ function EventReg() {
                 Hone your soft skills and develop a positive influence.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 23 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
@@ -573,7 +573,7 @@ function EventReg() {
                 Basic laws & rights that all the students need be aware of.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 24 | 6:30 PM</p>
-              <Link to="/FocusReg">
+              <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}

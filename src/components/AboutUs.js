@@ -14,7 +14,11 @@ function AboutUs() {
 
   return (
     <>
-      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
+      <Navnew
+        logincheck={loginauth}
+        loginhandler={loginhandler}
+        prop1="about"
+      />
       <div className="container-fluid pt-0">
         <div
           className="row py-3"
