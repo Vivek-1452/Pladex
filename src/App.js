@@ -119,9 +119,9 @@ function App() {
             <Route path="/EmailValidation">
               <EmailValidation />
             </Route>
-            <Route path="/DLibrary">
+            {/* <Route path="/DLibrary">
               <Btechsubject />
-            </Route>
+            </Route> */}
             <Route path="/login">
               <LoginMain />
             </Route>
