@@ -31,4 +31,9 @@
 .slick-prev:before,
 .slick-next:before {
   color: #777777;
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
 }

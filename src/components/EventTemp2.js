@@ -42,7 +42,7 @@ function EventTemp2() {
       // label3: "needed for admission process.",
       image: image2,
       date: "Dec 18",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     {
       id: 2,
@@ -52,7 +52,7 @@ function EventTemp2() {
       // label3: "college for you at ease and comfort.",
       image: image1,
       date: "Dec 19",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ function EventTemp2() {
       // label3: "from various colleges.",
       image: image3,
       date: "Dec 20",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     {
       id: 4,
@@ -74,7 +74,7 @@ function EventTemp2() {
       // label3: "needed for admission process.",
       image: image4,
       date: "Dec 21",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     {
       id: 5,
@@ -84,7 +84,7 @@ function EventTemp2() {
       // label3: "college for you at ease and comfort.",
       image: image5,
       date: "Dec 22",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     {
       id: 6,
@@ -94,7 +94,7 @@ function EventTemp2() {
       // label3: "from various colleges.",
       image: image6,
       date: "Dec 23",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     {
       id: 7,
@@ -104,7 +104,7 @@ function EventTemp2() {
       // label3: "from various colleges.",
       image: image7,
       date: "Dec 24",
-      time: "6:30 PM",
+      time: "6:07 PM",
     },
     // {
     //   id: 8,
@@ -129,12 +129,13 @@ function EventTemp2() {
           <Link to="/EventLibrary">
             <h5
               className="text-end mt-4 mb-0 me-5 fw-bold"
-              style={{ color: "", textDecoration: "underline" }}
+              style={{ color: "black", textDecoration: "underline" }}
             >
-              <span style={{ color: "", textDecoration: "underline" }}>
-                More
-              </span>{" "}
-              ➤
+              <span>More</span>{" "}
+              <i
+                class="fas fa-chevron-circle-right"
+                style={{ color: "#3ad6ab" }}
+              ></i>
             </h5>
           </Link>
         </div>

@@ -37,6 +37,7 @@ import ResetValidation from "./components/ResetValidation";
 import ResetPassword from "./components/ResetPassword";
 import VerifiedMail from "./components/VerifiedMail";
 import ResetSuccess from "./components/ResetSuccess";
+import ErrorRedirect from "./components/ErrorRedirect";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -138,6 +139,9 @@ function App() {
             </Route>
             <Route path="/ResetSuccess">
               <ResetSuccess />
+            </Route>
+            <Route path="/ErrorRedirect">
+              <ErrorRedirect />
             </Route>
             {/* <Route path="/DLibrary">
               <Btechsubject />

@@ -61,3 +61,21 @@
     transition: left 500ms ease-in-out;
   }
 }
+
+.fa-location-arrow {
+  animation: updownarrow 1.5s infinite;
+}
+
+@keyframes updownarrow {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(45deg);
+    transform: rotateY(45deg);
+    transform: rotateX(45deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}

@@ -7,7 +7,7 @@ import LoginMain from "./LoginMain";
 import axios from "axios";
 
 function CheckReg() {
-  const [isLoaded, setIsLoaded] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     axios.post("http://65.1.96.8:8000/authenticate").then((response) => {

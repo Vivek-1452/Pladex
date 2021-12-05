@@ -281,7 +281,7 @@ function EventReg() {
               <p className="card-text my-4">
                 Construct and Evolve. Get inspired to be an entrepreneur!
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 18 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 18 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
@@ -329,7 +329,7 @@ function EventReg() {
               <p className="card-text my-4">
                 Importance of women empowerment in sustainable development.
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 19 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 19 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
@@ -378,7 +378,7 @@ function EventReg() {
                 Know feasible ways to relieve stress & anxiety and be mentally
                 fit.
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 20 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 20 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
@@ -427,7 +427,7 @@ function EventReg() {
                 Latest on boarding technology is more than just technical
                 intelligence.
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 21 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 21 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
@@ -475,7 +475,7 @@ function EventReg() {
               <p className="card-text my-4">
                 How to tackle hassle conditions and defend yourself?
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 22 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 22 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
@@ -523,7 +523,7 @@ function EventReg() {
               <p className="card-text my-4">
                 Hone your soft skills and develop a positive influence.
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 23 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 23 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
@@ -572,7 +572,7 @@ function EventReg() {
               <p className="card-text my-4">
                 Basic laws & rights that all the students need be aware of.
               </p>
-              <p className="float-lg-start my-3 ms-3">Dec 24 | 6:30 PM</p>
+              <p className="float-lg-start my-3 ms-3">Dec 24 | 6:07 PM</p>
               <Link to="/CheckRegister">
                 <button
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
