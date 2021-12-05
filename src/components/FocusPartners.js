@@ -126,7 +126,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div>
-          <div>
+          {/* <div>
             <div
               className="card mx-auto my-2"
               style={{
@@ -363,7 +363,7 @@ export default class FocusPartners extends Component {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
     );

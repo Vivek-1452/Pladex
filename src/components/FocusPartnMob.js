@@ -55,56 +55,56 @@ function EventTemp2() {
       label3: "and guide viewers by clearing their doubts.",
       image: image1,
     },
-    {
-      id: 4,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
-    },
-    {
-      id: 5,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
-    },
-    {
-      id: 6,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
-    },
-    {
-      id: 7,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
-    },
-    {
-      id: 8,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
-      image: image1,
-    },
+    // {
+    //   id: 4,
+    //   title: "Beta Testers",
+    //   label1:
+    //     "Creating an impact on the youth who are struggling to ace their ",
+    //   label2: "skills through vodcasts ",
+    //   label3: "and guide viewers by clearing their doubts.",
+    //   image: image1,
+    // },
+    // {
+    //   id: 5,
+    //   title: "Beta Testers",
+    //   label1:
+    //     "Creating an impact on the youth who are struggling to ace their ",
+    //   label2: "skills through vodcasts ",
+    //   label3: "and guide viewers by clearing their doubts.",
+    //   image: image1,
+    // },
+    // {
+    //   id: 6,
+    //   title: "Beta Testers",
+    //   label1:
+    //     "Creating an impact on the youth who are struggling to ace their ",
+    //   label2: "skills through vodcasts ",
+    //   label3: "and guide viewers by clearing their doubts.",
+    //   image: image1,
+    // },
+    // {
+    //   id: 7,
+    //   title: "Beta Testers",
+    //   label1:
+    //     "Creating an impact on the youth who are struggling to ace their ",
+    //   label2: "skills through vodcasts ",
+    //   label3: "and guide viewers by clearing their doubts.",
+    //   image: image1,
+    // },
+    // {
+    //   id: 8,
+    //   title: "Beta Testers",
+    //   label1:
+    //     "Creating an impact on the youth who are struggling to ace their ",
+    //   label2: "skills through vodcasts ",
+    //   label3: "and guide viewers by clearing their doubts.",
+    //   image: image1,
+    // },
   ];
 
   return (
-    <React.Fragment>
-      <div className="slider-wrapper pt-5 pb-3 mb-4 bg-light" id="mobile">
+    <div className="bg-light">
+      <div className="slider-wrapper pt-5 pb-5" id="mobile">
         <h4 className="text-center fw-bold display-6 mb-0">
           OUR{" "}
           <span className="text" style={{ color: "#3ad6ab" }}>
@@ -152,7 +152,7 @@ function EventTemp2() {
           ))}
         </Slider>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

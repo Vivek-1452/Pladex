@@ -32,3 +32,11 @@
 .slick-next:before {
   color: #777777;
 }
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
