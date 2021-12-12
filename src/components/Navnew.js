@@ -77,7 +77,7 @@ const Navnew = (props) => {
         style={{ width: "100vw" }}
       >
         <Navbar expand="md" className="py-1 pe-md-0 pe-lg-5">
-          <NavbarBrand className="ps-5 pt-3">
+          <NavbarBrand className="ps-md-5 ps-4 pt-3">
             <a href="." className="text-dark text-decoration-none">
               <h2
                 style={{

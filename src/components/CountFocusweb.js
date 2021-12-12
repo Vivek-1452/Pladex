@@ -79,7 +79,7 @@ function CountFocusweb() {
           >
             <img src={img1} alt="Donations" height="150" width="150" />
             <h4 className="fw-bold">Donations</h4>
-            <h5>$ 119.08</h5>
+            <h5>$ 0.00</h5>
           </div>
         </div>
       </div>

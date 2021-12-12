@@ -110,7 +110,7 @@ function Focus() {
             </Link>
             <br />
             <a
-              href="https://bit.ly/3I9D5g8"
+              href="https://bit.ly/3opHcwM"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
@@ -142,7 +142,7 @@ function Focus() {
                   borderRadius: "10px",
                 }}
               >
-                <i class="far fa-lightbulb"> </i> Competition registration
+                <i class="far fa-lightbulb"> </i> Competition Registration
               </button>
             </Link>
 
@@ -266,7 +266,7 @@ function Focus() {
                   by participating in this contest.
                 </p>
                 <a
-                  href="https://bit.ly/3xXYAfc"
+                  href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
                   className="btn float-end opacity-75 me-5"
@@ -292,7 +292,7 @@ function Focus() {
                   masterpieces by participating in this contest.
                 </p>
                 <a
-                  href="https://bit.ly/3lA3qtM"
+                  href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
                   className="btn float-start opacity-75 ms-5"
@@ -317,7 +317,7 @@ function Focus() {
                   can improve themselves by taking part in this contest.
                 </p>
                 <a
-                  href="https://bit.ly/3GdEUqy"
+                  href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
                   className="btn float-end opacity-75 me-5"
@@ -345,7 +345,7 @@ function Focus() {
                   India.
                 </p>
                 <a
-                  href="https://bit.ly/31wNmlM"
+                  href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
                   className="btn float-start opacity-75 ms-5"
@@ -366,11 +366,12 @@ function Focus() {
                 </h2>
                 <br />
                 <p className="fs-4">
-                  Students who are into stories, poems or any kind of writings
-                  can improve themselves by taking part in this contest.
+                  Students who are fascinated about acting including Mono acts,
+                  dancing, singing, stand up comedy or mimicry can show off
+                  themselves through this contest.
                 </p>
                 <a
-                  href="https://bit.ly/3xSqby6"
+                  href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
                   className="btn float-end opacity-75 me-5"
@@ -392,13 +393,12 @@ function Focus() {
                 </h2>
                 <br />
                 <p className="fs-4">
-                  {/* This contest is something unique when compared to all above. */}
-                  This focuses on the ideas/solutions that students can come up
-                  with, for any problems faced by many students in North-east
-                  India.
+                  Students who have the key roles played by their favorite
+                  actors can recreate the same look and participate in this
+                  contest.
                 </p>
                 <a
-                  href="https://bit.ly/3ollzxw"
+                  href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
                   className="btn float-start opacity-75 ms-5"
@@ -425,7 +425,7 @@ function Focus() {
                   data-aos="zoom-in"
                   data-aos-duration="2000"
                 >
-                  <i class="far fa-lightbulb"> </i> Competition registration
+                  <i class="far fa-lightbulb"> </i> Competition Registration
                 </button>
               </Link>
             </div>
@@ -455,14 +455,16 @@ function Focus() {
                   <span className="text fs-1" style={{ color: "#f6e7d8" }}>
                     ABHI
                   </span>{" "}
-                  and{" "}
+                  <span className="text" style={{ color: "#da6220" }}>
+                    &
+                  </span>{" "}
                   <span className="text fs-1" style={{ color: "#f6e7d8" }}>
                     NIYU
                   </span>
                 </h2>
                 <br />
                 <p className="fs-4">
-                  The closing ceremony will be held on{" "}
+                  {/* The closing ceremony will be held on{" "}
                   <span className="text" style={{ color: "#ffbd59 " }}>
                     26th December at 6PM{" "}
                   </span>
@@ -472,9 +474,18 @@ function Focus() {
                     North East India
                   </span>{" "}
                   and also the winners of all the competitions will be announced
-                  by them.
+                  by them. */}
                   {/* On 26th December, Sunday - Winners will be announced and
                 rewarded by our honourable guest. */}
+                  Abhiraj and Niyati are one of the most influential content
+                  creators who put forth heart warming stories of change and
+                  inspiration across India. They, have been trying to fight for
+                  north eastern people, will be gracing our event with their
+                  insights on{" "}
+                  <span style={{ color: "#ffbd59 " }}>
+                    26th December at 6:07 PM
+                  </span>{" "}
+                  as the special guest.
                 </p>
               </div>
               <div
@@ -747,7 +758,7 @@ function Focus() {
         </div>
       </div>
       {/* {display ? <FocusSponsMob /> : <FocusSponsors />} */}
-      {display ? <FocusPartnMob /> : <FocusPartners />}
+      {/* {display ? <FocusPartnMob /> : <FocusPartners />} */}
       <Foot2 />
     </>
   );

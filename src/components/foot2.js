@@ -152,7 +152,7 @@ function foot2() {
               >
                 <i class="fw-bold fab fa-facebook-f"></i>
                 {/* <img src={fb} alt="facebook" style={{ height: "30px" }} /> */}
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
                 href="https://www.instagram.com/pladex_official/"
@@ -162,18 +162,18 @@ function foot2() {
               >
                 <i class="fw-bold fab fa-instagram"></i>
                 {/* <img src={insta} alt="Instagram" style={{ height: "39px" }} /> */}
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
-              <a
+              {/* <a
                 href="https://t.me/pladexians"
                 target="_blank"
                 rel="noreferrer"
                 style={{ textDecoration: "none", color: "white" }}
               >
-                <i class="fw-bold fab fa-telegram-plane"></i>
-                {/* <img src={telegram} alt="Telegram" style={{ height: "38px" }} /> */}
-                &nbsp;&nbsp;&nbsp;&nbsp;
-              </a>
+                <i class="fw-bold fab fa-telegram-plane"></i> */}
+              {/* <img src={telegram} alt="Telegram" style={{ height: "38px" }} /> */}
+              {/* &nbsp;&nbsp;&nbsp;&nbsp;
+              </a> */}
               <a
                 href="https://www.youtube.com/c/PLADEXOfficial"
                 target="_blank"
@@ -182,7 +182,7 @@ function foot2() {
               >
                 <i class="fw-bold fab fa-youtube"></i>
                 {/* <img src={yt} alt="Youtube" style={{ height: "38px" }} /> */}
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
                 href="https://www.linkedin.com/company/pladex-official/"

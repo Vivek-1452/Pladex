@@ -250,8 +250,7 @@ function JoinUs() {
               </span>
             </h4>
             <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
-              Students who didn't get to interact with seniors due to this
-              pandemic, don't worry!
+              A Small advice could bring a Huge impact!
             </h6>
             <br />
             <p style={{ marginBottom: "35px" }}>

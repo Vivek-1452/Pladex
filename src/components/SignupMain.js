@@ -227,7 +227,7 @@ function SignupMain() {
                     className="inputText form-control"
                     style={{ backgroundColor: "rgb(58, 214, 171, 0.3)" }}
                     id="cnfmpassword"
-                    placeholder="re-Enter your password"
+                    placeholder="Re-enter your password"
                     onKeyUp={() => passCheck()}
                     autocomplete="off"
                     autofocus

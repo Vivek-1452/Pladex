@@ -1,8 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import "./Event.css";
-import image1 from "./collab1.jpeg";
-import image2 from "./collab2.png";
+import image1 from "./ImgFocusPartners/partner1.png";
+import image2 from "./ImgFocusPartners/partner2.png";
 import image3 from "./collab3.jpeg";
 // import image1 from "./college explorer.png";
 // import image2 from "./college predictor.png";

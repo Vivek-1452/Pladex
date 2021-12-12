@@ -99,7 +99,7 @@ function EventTemp2() {
     {
       id: 7,
       title: "Basic Laws and Rights",
-      label1: "Basic laws & rights that all the students need be aware of.",
+      label1: "Basic laws & rights that all the students need to be aware of.",
       // label2: "striving students ",
       // label3: "from various colleges.",
       image: image7,

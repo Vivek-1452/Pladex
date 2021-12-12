@@ -447,7 +447,7 @@ export default class UpcomingEventsWeb extends Component {
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  Basic laws & rights that all the students need be aware of.
+                  Basic laws & rights that all the students need to be aware of.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 24 | 6:07 PM</p>
                 <Link

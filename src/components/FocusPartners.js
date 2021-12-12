@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import image1 from "./collab1.jpeg";
-import image2 from "./collab2.png";
+import image1 from "./ImgFocusPartners/partner1.png";
+import image2 from "./ImgFocusPartners/partner2.png";
 import image3 from "./collab3.jpeg";
 
 export default class FocusPartners extends Component {
@@ -38,7 +38,7 @@ export default class FocusPartners extends Component {
             >
               <center>
                 <img
-                  className="my-3"
+                  className="my-3 bg-dark"
                   src={image1}
                   alt="College Explorer"
                   width="200"
@@ -72,7 +72,7 @@ export default class FocusPartners extends Component {
             >
               <center>
                 <img
-                  className="my-3"
+                  className="my-3 bg-dark"
                   src={image2}
                   alt="College Explorer"
                   width="200"

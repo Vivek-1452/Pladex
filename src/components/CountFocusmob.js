@@ -54,7 +54,7 @@ function CountFocusmob() {
       label2: "5",
       image: img6,
       label12: "Donations",
-      label22: "$ 119.08",
+      label22: "$ 0.00",
       image2: img4,
     },
     // {

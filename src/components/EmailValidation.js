@@ -8,52 +8,52 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
-import { InferencePriority } from "typescript";
+// import { InferencePriority } from "typescript";
 
 AOS.init();
 
 function EmailValidation() {
-  function redirect() {
-    // window.location.href = "http://65.1.96.8/login";
-    // window.location.href = "localhost:3000/login";
-    document.location.href = "/login";
-  }
+  // function redirect() {
+  //   // window.location.href = "http://65.1.96.8/login";
+  //   // window.location.href = "localhost:3000/login";
+  //   document.location.href = "/login";
+  // }
 
-  useEffect(() => {
-    setTimeout(() => {
-      redirect();
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     redirect();
+  //   }, 15000);
+  // }, []);
 
   // const [myState, setMystate] = useState({});
 
-  const [info, setInfo] = useState([]);
+  // const [info, setInfo] = useState([]);
 
-  const [infocomp, setInfocomp] = useState([]);
+  // const [infocomp, setInfocomp] = useState([]);
 
-  useEffect(() => {
-    axios.post("https://www.pladex.in/auth/eventdata").then((response) => {
-      const myInfo = response.data.eventdata;
-      setInfo(myInfo);
-      if (response.data.state == "event") {
-        document.getElementById("eventdisplay").style.display = "block";
-        document.getElementById("compdisplay").style.display = "none";
-      }
-    });
-  }, [info]);
+  // useEffect(() => {
+  //   axios.post("https://www.pladex.in/auth/eventdata").then((response) => {
+  //     const myInfo = response.data.eventdata;
+  //     setInfo(myInfo);
+  //     if (response.data.state == "event") {
+  //       document.getElementById("eventdisplay").style.display = "block";
+  //       document.getElementById("compdisplay").style.display = "none";
+  //     }
+  //   });
+  // }, [info]);
 
-  useEffect(() => {
-    axios
-      .post("https://www.pladex.in/auth/competitiondata")
-      .then((response) => {
-        const myInfocomp = response.data.competitiondata;
-        setInfocomp(myInfocomp);
-        if (response.data.state == "competition") {
-          document.getElementById("eventdisplay").style.display = "none";
-          document.getElementById("compdisplay").style.display = "block";
-        }
-      });
-  }, [infocomp]);
+  // useEffect(() => {
+  //   axios
+  //     .post("https://www.pladex.in/auth/competitiondata")
+  //     .then((response) => {
+  //       const myInfocomp = response.data.competitiondata;
+  //       setInfocomp(myInfocomp);
+  //       if (response.data.state == "competition") {
+  //         document.getElementById("eventdisplay").style.display = "none";
+  //         document.getElementById("compdisplay").style.display = "block";
+  //       }
+  //     });
+  // }, [infocomp]);
 
   const [loginauth, setloginauth] = useState(false);
 
@@ -71,7 +71,7 @@ function EmailValidation() {
 
   return (
     <>
-      {/* <Navnew logincheck={loginauth} loginhandler={loginhandler} /> */}
+      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
         className="pt-0"
         style={{
@@ -99,10 +99,14 @@ function EmailValidation() {
             <Zoom bottom cascade>
               <b>
                 Kindly click on the verification link sent to your registered
-                Mail ID.
+                Mail ID (Might be in <span style={{ color: "red" }}>spam!</span>
+                ).
               </b>
               <br />
-              Redirecting to login page.
+              Didn't get an verification mail?{" "}
+              <form method="POST" action="auth/resend_mail">
+                <input type="submit">Re-send!</input>
+              </form>
             </Zoom>
           </h2>
         </div>

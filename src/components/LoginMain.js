@@ -100,7 +100,7 @@ function LoginMain(props) {
             opacity: "0.95",
             border: "none",
             // marginTop: "100px",
-            marginTop: display ? "15vh" : "12vh",
+            marginTop: display ? "12vh" : "12vh",
           }}
         >
           <div className="card-body px-4 px-md-5">

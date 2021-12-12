@@ -175,9 +175,10 @@ function EventReg() {
     <>
       <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
-        className="row py-3"
+        className="row py-3 mx-0"
         style={{
           backgroundImage: "linear-gradient(180deg, #6dd2ae 0%, white 90%)",
+          width: "100vw",
         }}
       >
         <div className="row">
@@ -219,8 +220,8 @@ function EventReg() {
         </div>
       </div>
       <div
-        className="row d-lg-none d-md-none d-block pt-4"
-        style={{ backgroundColor: "#f5f6f7" }}
+        className="row d-lg-none d-md-none d-block pt-4 mx-0"
+        style={{ backgroundColor: "#f5f6f7", width: "100vw" }}
       >
         <h6 className="mb-3 fw-light">
           Join the WhatsApp group to get regular event updates
@@ -590,14 +591,17 @@ function EventReg() {
 
       {/* Event library */}
 
-      <div className="row py-4">
+      <div className="row py- mx-0" style={{ width: "100vw" }}>
         <h2 className="text-center fw-bold my-3">
           Event{" "}
           <span className="text" style={{ color: "#3ad6ab" }}>
             library
           </span>
         </h2>
-        <div className="text-start ms-md-4 ms-3 my-4">
+        <div
+          className="text-start ms-md-4 ms-3 my-4 p-0"
+          style={{ width: "95vw" }}
+        >
           <button
             id="all"
             className="btn btn-dark px-4 m-2"

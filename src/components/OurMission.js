@@ -95,17 +95,23 @@ function OurMission() {
               <span className="text" style={{ color: "#da6220" }}>
                 North East India
               </span>
-              . Our sole objective of this event is to create awareness, bring
-              out the hidden talents and to improve the equity among students
-              irrespective of their colleges and domains through conducting live
-              interactive sessions by the influential speakers and holding
-              ingenious competitions. Thereby, inspiring them to express their
-              opinions openly and adapt to the society hence transforming for a
-              better India.
+              . Our sole objective of this{" "}
+              <span className="text" style={{ color: "#ffbd59" }}>
+                event
+              </span>{" "}
+              is to create awareness, bring out the hidden talents and to
+              improve the equity among students irrespective of their colleges
+              and domains through conducting live interactive sessions by the
+              influential speakers and holding ingenious{" "}
+              <span className="text" style={{ color: "#ffbd59" }}>
+                competitions
+              </span>
+              . Thereby, inspiring them to express their opinions openly and
+              adapt to the society hence transforming for a better India.
               <br />
               <br />
               <span className="text fs-5" style={{ color: "#ffbd59" }}>
-                For registration and to know more about the event.
+                For registration and to know more about events & competitions.
               </span>
             </p>
             <Link to="/Focus" style={{ textDecoration: "none" }}>
