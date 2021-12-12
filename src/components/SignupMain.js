@@ -184,6 +184,13 @@ function SignupMain() {
               </div>
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="password">Password</label>
+                <label
+                  className="float-end"
+                  style={{ fontSize: "13px", color: "orange" }}
+                >
+                  Atleast 8 characters with
+                  <br /> 1 uppercase, lowercase, number!
+                </label>
                 <div className="input-group pt-0">
                   <input
                     type="password"
@@ -192,6 +199,7 @@ function SignupMain() {
                     id="password"
                     name="password"
                     placeholder="Enter your password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     onKeyUp={() => passCheck()}
                     autocomplete="off"
                     autofocus

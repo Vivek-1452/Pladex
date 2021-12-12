@@ -146,14 +146,19 @@ function LoginMain(props) {
                 action="auth/resend_mail"
                 className={prop2 ? "d-block d-inline-block w-auto" : "d-none"}
               >
-                <a
+                <button
                   id="submit"
                   type="submit"
-                  // className="btn btn-warning my-2 text-white px-4"
-                  // style={{ backgroundColor: "#53c29b" }}
+                  className="btn p-0"
+                  style={{
+                    backgroundColor: "white",
+                    color: "blue",
+                    position: "relative",
+                    top: "-2px",
+                  }}
                 >
-                  Re-send!
-                </a>{" "}
+                  <u>Re-send</u>
+                </button>
                 verification link to mail!
               </form>
             </div>
