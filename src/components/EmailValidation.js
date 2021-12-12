@@ -85,8 +85,8 @@ function EmailValidation() {
           <img
             src={regSuc}
             alt="Successfully registered"
-            width={display ? "400" : "700"}
-            height={display ? "370" : "500"}
+            width={display ? "400" : "600"}
+            height={display ? "370" : "400"}
             data-aos="zoom-in"
             data-aos-duration="20000"
           />
@@ -95,20 +95,32 @@ function EmailValidation() {
           <h1 className="fw-bold" style={{ color: "#50bc95" }}>
             Holaa!
           </h1>
-          <h2 className="fw-light">
+          <h3 className="fw-light">
             <Zoom bottom cascade>
               <b>
                 Kindly click on the verification link sent to your registered
-                Mail ID (Might be in <span style={{ color: "red" }}>spam!</span>
+                Mail ID (might be in <span style={{ color: "red" }}>spam!</span>
                 ).
               </b>
               <br />
-              Didn't get an verification mail?{" "}
-              <form method="POST" action="auth/resend_mail">
-                <input type="submit">Re-send!</input>
+              <br className="d-md-none d-block" />
+              Didn't get an verification mail?
+              <form
+                method="POST"
+                action="auth/resend_mail"
+                className="d-inline-block w-auto"
+              >
+                <button
+                  id="submit"
+                  type="submit"
+                  className="btn my-2 text-white px-4"
+                  style={{ backgroundColor: "#53c29b" }}
+                >
+                  Re-send!
+                </button>
               </form>
             </Zoom>
-          </h2>
+          </h3>
         </div>
       </div>
     </>

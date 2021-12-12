@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 function LoginMain(props) {
   const [prop1, setprop1] = useState(false);
+  const [prop2, setprop2] = useState(false);
 
   const currentUrl = window.location.href;
   var params = new URL(currentUrl).searchParams.get("state");
@@ -20,30 +21,18 @@ function LoginMain(props) {
       "83356ace8891b8d4b2fa144bcd6914a448bdff2ad348b86602c6674fef2dea8a"
     ) {
       setprop1(true);
-    }
-    // else if (
-    //   params ==
-    //   "3dbb4af3c5c4487908ea5f23315a2b578c09c5b20be208917b17e08a52c51e3f"
-    // ) {
-    //   alert("Logged out successfully!");
-    // } else if (
-    //   params ==
-    //   "b54dc0f6b309929dd43ef88aa54958f854af3aa23e1744da5ded5887d79a8d0e"
-    // ) {
-    //   alert("Unable to logout!");
-    // }
-    else if (props.method == "event" || props.method == "competition") {
+    } else if (
+      params ==
+      "81250cb00595e685921654003178bfc8c7924a2314cd8d8565ffe5dd8ae5b2cb"
+    ) {
+      setprop2(true);
+    } else if (props.method == "event" || props.method == "competition") {
       document.getElementById("log1").style.display = "inline-block";
       document.getElementById("log2").style.display = "inline-block";
-    }
-    // else if (props.method == null) {
-    //   document.getElementById("log1").style.display = "none";
-    //   document.getElementById("log2").style.display = "none";
-    // }
-    else {
+    } else {
       setprop1(false);
     }
-  }, [prop1]);
+  }, [prop1, prop2]);
 
   const [display, setdisplay] = useState(false);
 
@@ -130,17 +119,6 @@ function LoginMain(props) {
                   first!{" "}
                 </span>
               </h5>
-              {/* <h5
-                id="logevent"
-                // className={prop1 ? "d-none" : "d-block"}
-                style={{
-                  fontWeight: "bolder",
-                  fontFamily: "sans-serif",
-                  display: "none",
-                }}
-              >
-                Kindly Log into your account first!
-              </h5> */}
               <h5
                 className={prop1 ? "d-block" : "d-none"}
                 style={{
@@ -151,17 +129,35 @@ function LoginMain(props) {
               >
                 Invalid Credentials!
               </h5>
+              <h5
+                className={prop2 ? "d-block" : "d-none"}
+                style={{
+                  fontWeight: "bolder",
+                  fontFamily: "serif",
+                  color: "red",
+                }}
+              >
+                Please verify your Mail id!
+              </h5>
+              <form
+                method="POST"
+                action="auth/resend_mail"
+                className={prop2 ? "d-block d-inline-block w-auto" : "d-none"}
+              >
+                <button
+                  id="submit"
+                  type="submit"
+                  className="btn btn-warning my-2 text-white px-4"
+                  // style={{ backgroundColor: "#53c29b" }}
+                >
+                  Re-send!
+                </button>{" "}
+                verification link to mail!
+              </form>
             </div>
             <form action="/auth/login" method="POST">
               <div className="form-group pt-3 pb-2" id="float-label">
                 <label for="email">Mail ID</label>
-                {/* <label
-                  id="match"
-                  className={prop1 ? "float-end d-block" : "float-end d-none"}
-                  style={{ color: "red" }}
-                >
-                  Invalid Credentials!
-                </label> */}
                 <input value={props.method} name="hide" hidden />
                 <input
                   type="email"
