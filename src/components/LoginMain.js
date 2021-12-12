@@ -106,19 +106,21 @@ function LoginMain(props) {
               >
                 Uh-Oh!
               </h4>
-              <h5
-                id="log"
-                className={prop1 ? "d-none" : "d-block"}
-                style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}
-              >
-                <span id="log1" style={{ display: "none", width: "auto" }}>
-                  Kindly,
-                </span>{" "}
-                Log into your account{" "}
-                <span id="log2" style={{ display: "none", width: "auto" }}>
-                  first!{" "}
-                </span>
-              </h5>
+              <span className={prop2 ? "d-none" : "d-block"}>
+                <h5
+                  id="log"
+                  className={prop1 ? "d-none" : "d-block"}
+                  style={{ fontWeight: "bolder", fontFamily: "sans-serif" }}
+                >
+                  <span id="log1" style={{ display: "none", width: "auto" }}>
+                    Kindly,
+                  </span>{" "}
+                  Log into your account{" "}
+                  <span id="log2" style={{ display: "none", width: "auto" }}>
+                    first!{" "}
+                  </span>
+                </h5>
+              </span>
               <h5
                 className={prop1 ? "d-block" : "d-none"}
                 style={{
@@ -144,14 +146,14 @@ function LoginMain(props) {
                 action="auth/resend_mail"
                 className={prop2 ? "d-block d-inline-block w-auto" : "d-none"}
               >
-                <button
+                <a
                   id="submit"
                   type="submit"
-                  className="btn btn-warning my-2 text-white px-4"
+                  // className="btn btn-warning my-2 text-white px-4"
                   // style={{ backgroundColor: "#53c29b" }}
                 >
                   Re-send!
-                </button>{" "}
+                </a>{" "}
                 verification link to mail!
               </form>
             </div>
