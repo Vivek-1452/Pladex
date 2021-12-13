@@ -63,7 +63,7 @@ function Home() {
       {display ? <FeatMob /> : <UpcomEve />}
       {display ? <EventTemp2 /> : <UpcomingEventsWeb />}
       {display ? <CollabMob /> : <CollWeb />}
-      {/* <Count /> */}
+      <Count />
       <Foot2 />
     </>
   );

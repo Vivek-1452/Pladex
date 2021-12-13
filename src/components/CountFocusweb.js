@@ -28,19 +28,19 @@ function CountFocusweb() {
     }
   }, [students]);
 
-  // const [inst, setInst] = useState({});
+  const [inst, setInst] = useState([]);
 
-  // useEffect(() => {
-  //   if (window.location.origin == "https://www.pladex.in") {
-  //     axios.get("https://www.pladex.in/count_inst").then((response) => {
-  //       setInst(response.data.count);
-  //     });
-  //   } else {
-  //     axios.get("https://pladex.in/count_inst").then((response) => {
-  //       setInst(response.data.count);
-  //     });
-  //   }
-  // }, [inst]);
+  useEffect(() => {
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.get("https://www.pladex.in/count_inst").then((response) => {
+        setInst(response.data);
+      });
+    } else {
+      axios.get("https://pladex.in/count_inst").then((response) => {
+        setInst(response.data);
+      });
+    }
+  }, [inst]);
 
   return (
     <>
@@ -70,7 +70,7 @@ function CountFocusweb() {
           >
             <img src={img2} alt="Institutions" height="150" width="150" />
             <h4 className="fw-bold">Institutions</h4>
-            <h5>37</h5>
+            <h5>{inst.count}</h5>
           </div>
           <div
             className="col-md-2 col-6 my-2"

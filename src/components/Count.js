@@ -12,30 +12,30 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Count() {
-  const [students, setStudents] = useState({});
+  const [students, setStudents] = useState([]);
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
       axios.get("https://www.pladex.in/count_students").then((response) => {
-        setStudents(response.data.count_students);
+        setStudents(response.data);
       });
     } else {
       axios.get("https://pladex.in/count_students").then((response) => {
-        setStudents(response.data.count_students);
+        setStudents(response.data);
       });
     }
   }, [students]);
 
-  const [inst, setInst] = useState({});
+  const [inst, setInst] = useState([]);
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
       axios.get("https://www.pladex.in/count_inst").then((response) => {
-        setInst(response.data.count);
+        setInst(response.data);
       });
     } else {
       axios.get("https://pladex.in/count_inst").then((response) => {
-        setInst(response.data.count);
+        setInst(response.data);
       });
     }
   }, [inst]);
@@ -55,7 +55,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Students</h4>
-          <h5>{students}</h5>
+          <h5>{students.count_students}</h5>
         </div>
         <div
           className="col-md-3 col-6 my-4"
@@ -69,7 +69,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Institutions</h4>
-          <h5>{inst}</h5>
+          <h5>{inst.count}</h5>
         </div>
         <div
           className="col-md-3 col-6 my-4"

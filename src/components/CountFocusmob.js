@@ -31,19 +31,19 @@ function CountFocusmob() {
     }
   }, [students]);
 
-  // const [inst, setInst] = useState({});
+  const [inst, setInst] = useState([]);
 
-  // useEffect(() => {
-  //   if (window.location.origin == "https://www.pladex.in") {
-  //     axios.get("https://www.pladex.in/count_inst").then((response) => {
-  //       setInst(response.data.count);
-  //     });
-  //   } else {
-  //     axios.get("https://pladex.in/count_inst").then((response) => {
-  //       setInst(response.data.count);
-  //     });
-  //   }
-  // }, [inst]);
+  useEffect(() => {
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.get("https://www.pladex.in/count_inst").then((response) => {
+        setInst(response.data);
+      });
+    } else {
+      axios.get("https://pladex.in/count_inst").then((response) => {
+        setInst(response.data);
+      });
+    }
+  }, [inst]);
 
   // window.onload = function () {
   //   const divis = document.getElementById("mobile");
@@ -67,7 +67,7 @@ function CountFocusmob() {
       label2: students.count_students,
       image: img1,
       label12: "Institutions",
-      label22: "37",
+      label22: inst.count,
       image2: img2,
     },
     {
