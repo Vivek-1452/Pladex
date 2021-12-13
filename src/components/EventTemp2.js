@@ -18,14 +18,14 @@ import "slick-carousel/slick/slick-theme.css";
 import "./coll.css";
 
 function EventTemp2() {
-  window.onload = function () {
-    const divi = document.getElementById("mobile");
-    if (window.innerWidth < 769) {
-      divi.style.display = "block";
-    } else {
-      divi.style.display = "none";
-    }
-  };
+  // window.onload = function () {
+  //   const divi = document.getElementById("mobile");
+  //   if (window.innerWidth < 769) {
+  //     divi.style.display = "block";
+  //   } else {
+  //     divi.style.display = "none";
+  //   }
+  // };
 
   const settings = {
     dots: true,
@@ -119,7 +119,7 @@ function EventTemp2() {
   return (
     <React.Fragment>
       <div className="slider-wrapper pt-5 pb-3 mb-4" id="mobile">
-        <div className="pt-0">
+        <div className="pt-0 d-none d-md-block">
           <h4 className="text-center fw-bold display-6 mb-0">
             Upcoming{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
@@ -138,6 +138,31 @@ function EventTemp2() {
               ></i>
             </h5>
           </Link>
+        </div>
+        <div className="pt-0 d-md-none d-lg-none">
+          <h4 className="text-center fw-bold display-6 mb-0">
+            Upcoming{" "}
+            <span className="text" style={{ color: "#3ad6ab" }}>
+              Events
+            </span>
+            <Link
+              to="/EventLibrary"
+              className="position-absolute"
+              style={{ right: "30px" }}
+            >
+              {/* <h5
+                className="text-end mt-4 mb-0 me-5 fw-bold"
+                style={{ color: "black", textDecoration: "underline" }}
+              > */}
+              <i
+                className="fas fa-chevron-circle-right fs-3"
+                style={{
+                  color: "#3ad6ab",
+                }}
+              ></i>
+              {/* </h5> */}
+            </Link>
+          </h4>
         </div>
         <Slider {...settings} className="pt-0">
           {slidesData.map((slide) => (
