@@ -11,7 +11,10 @@ import { useEffect } from "react";
 import axios from "axios";
 const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isLoaded2, setIsLoaded2] = useState(false);
+  // const [isLoaded2, setIsLoaded2] = useState(false);
+  // if (window.location.origin == "https://www.pladex.in") {
+
+  var log1 = window.location.origin + "/logout";
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
@@ -23,11 +26,11 @@ const Navnew = (props) => {
     } else {
       axios.post("https://pladex.in/authenticate").then((response) => {
         if (response.data.status == "authenticated") {
-          setIsLoaded2(true);
+          setIsLoaded(true);
         }
       });
     }
-  }, [isLoaded, isLoaded2]);
+  }, [isLoaded]);
 
   useEffect(() => {
     if (props.prop1 == "home") {
@@ -257,24 +260,8 @@ const Navnew = (props) => {
               )} */}
               {isLoaded ? (
                 <a
-                  href="https://www.pladex.in/logout"
-                  className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
-                  style={{ backgroundColor: "#31343c", color: "white" }}
-                >
-                  Logout
-                </a>
-              ) : (
-                <Link
-                  to="/login"
-                  className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
-                  style={{ backgroundColor: "#53c29b" }}
-                >
-                  Login
-                </Link>
-              )}
-              {isLoaded2 ? (
-                <a
-                  href="https://pladex.in/logout"
+                  // href="https://www.pladex.in/logout"
+                  href={log1}
                   className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
                   style={{ backgroundColor: "#31343c", color: "white" }}
                 >
