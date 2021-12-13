@@ -14,33 +14,33 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function CountFocusweb() {
-  const [students, setStudents] = useState({});
+  const [students, setStudents] = useState([]);
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
       axios.get("https://www.pladex.in/count_students").then((response) => {
-        setStudents(response.data.count_students);
+        setStudents(response.data);
       });
     } else {
       axios.get("https://pladex.in/count_students").then((response) => {
-        setStudents(response.data.count_students);
+        setStudents(response.data);
       });
     }
   }, [students]);
 
-  const [inst, setInst] = useState({});
+  // const [inst, setInst] = useState({});
 
-  useEffect(() => {
-    if (window.location.origin == "https://www.pladex.in") {
-      axios.get("https://www.pladex.in/count_inst").then((response) => {
-        setInst(response.data.count);
-      });
-    } else {
-      axios.get("https://pladex.in/count_inst").then((response) => {
-        setInst(response.data.count);
-      });
-    }
-  }, [inst]);
+  // useEffect(() => {
+  //   if (window.location.origin == "https://www.pladex.in") {
+  //     axios.get("https://www.pladex.in/count_inst").then((response) => {
+  //       setInst(response.data.count);
+  //     });
+  //   } else {
+  //     axios.get("https://pladex.in/count_inst").then((response) => {
+  //       setInst(response.data.count);
+  //     });
+  //   }
+  // }, [inst]);
 
   return (
     <>
@@ -60,7 +60,7 @@ function CountFocusweb() {
           >
             <img src={img1} alt="Students" height="150" width="150" />
             <h4 className="fw-bold">Students</h4>
-            <h5>469</h5>
+            <h5>{students.count_students}</h5>
           </div>
           <div
             className="col-md-2 col-6 my-2"

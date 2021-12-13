@@ -17,33 +17,33 @@ import img6 from "./Icons3d/part.png";
 import bg from "./FocusImages/iconsBg.png";
 
 function CountFocusmob() {
-  const [students, setStudents] = useState({});
+  const [students, setStudents] = useState([]);
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
       axios.get("https://www.pladex.in/count_students").then((response) => {
-        setStudents(response.data.count_students);
+        setStudents(response.data);
       });
     } else {
       axios.get("https://pladex.in/count_students").then((response) => {
-        setStudents(response.data.count_students);
+        setStudents(response.data);
       });
     }
   }, [students]);
 
-  const [inst, setInst] = useState({});
+  // const [inst, setInst] = useState({});
 
-  useEffect(() => {
-    if (window.location.origin == "https://www.pladex.in") {
-      axios.get("https://www.pladex.in/count_inst").then((response) => {
-        setInst(response.data.count);
-      });
-    } else {
-      axios.get("https://pladex.in/count_inst").then((response) => {
-        setInst(response.data.count);
-      });
-    }
-  }, [inst]);
+  // useEffect(() => {
+  //   if (window.location.origin == "https://www.pladex.in") {
+  //     axios.get("https://www.pladex.in/count_inst").then((response) => {
+  //       setInst(response.data.count);
+  //     });
+  //   } else {
+  //     axios.get("https://pladex.in/count_inst").then((response) => {
+  //       setInst(response.data.count);
+  //     });
+  //   }
+  // }, [inst]);
 
   // window.onload = function () {
   //   const divis = document.getElementById("mobile");
@@ -64,7 +64,7 @@ function CountFocusmob() {
     {
       id: 1,
       label1: "Students",
-      label2: "469",
+      label2: students.count_students,
       image: img1,
       label12: "Institutions",
       label22: "37",
