@@ -48,21 +48,20 @@ function EventTemp2() {
     },
     {
       id: 3,
-      title: "Aaveg",
-      label1: "NIT AGARTALA",
+      title: "E-Cell",
+      label1: "NIT SILCHAR",
       // label2: "internship opportunities, jobs, ",
       // label3: "placement support, free projects and courses.",
       image: image3,
     },
-    // {
-    //   id: 4,
-    //   title: "Beta Testers",
-    //   label1:
-    //     "Creating an impact on the youth who are struggling to ace their ",
-    //   label2: "skills through vodcasts ",
-    //   label3: "and guide viewers by clearing their doubts.",
-    //   image: image1,
-    // },
+    {
+      id: 4,
+      title: "Aaveg",
+      label1: "NIT AGARTALA",
+      // label2: "skills through vodcasts ",
+      // label3: "and guide viewers by clearing their doubts.",
+      image: image3,
+    },
     // {
     //   id: 5,
     //   title: "Beta Testers",
