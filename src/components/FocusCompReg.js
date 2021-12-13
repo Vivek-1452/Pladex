@@ -32,18 +32,20 @@ function FocusCompReg() {
   const [isLoaded, setIsLoaded] = useState([]);
 
   useEffect(() => {
-    axios.post("https://www.pladex.in/auth/data").then((response) => {
-      if (response.data.email != null) {
-        setIsLoaded([
-          response.data.email,
-          response.data.firstname,
-          response.data.lastname,
-          response.data.mobile,
-          response.data.college,
-          response.data.branch,
-        ]);
-      }
-    });
+    axios
+      .post("https://www.pladex.in/auth/data", { withCredentials: true })
+      .then((response) => {
+        if (response.data.email != null) {
+          setIsLoaded([
+            response.data.email,
+            response.data.firstname,
+            response.data.lastname,
+            response.data.mobile,
+            response.data.college,
+            response.data.branch,
+          ]);
+        }
+      });
   }, [isLoaded]);
 
   const [loginauth, setloginauth] = useState(false);

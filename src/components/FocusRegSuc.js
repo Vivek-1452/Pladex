@@ -7,8 +7,8 @@ import regSuc from "./FocusImages/regSuc.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import axios from "axios";
-import { InferencePriority } from "typescript";
+// import axios from "axios";
+// import { InferencePriority } from "typescript";
 
 AOS.init();
 
