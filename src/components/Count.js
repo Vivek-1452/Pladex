@@ -12,20 +12,32 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Count() {
-  var students = 469;
+  var students = 794;
 
   useEffect(() => {
-    axios.get("https://www.pladex.in/count_students").then((response) => {
-      students = students + response.data.count;
-    });
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.get("https://www.pladex.in/count_students").then((response) => {
+        students = students + response.data.count_students;
+      });
+    } else {
+      axios.get("https://pladex.in/count_students").then((response) => {
+        students = students + response.data.count_students;
+      });
+    }
   }, []);
 
   var inst = 26;
 
   useEffect(() => {
-    axios.get("https://www.pladex.in/count_inst").then((response) => {
-      inst = inst + response.data.count;
-    });
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.get("https://www.pladex.in/count_inst").then((response) => {
+        inst = inst + response.data.count;
+      });
+    } else {
+      axios.get("https://pladex.in/count_inst").then((response) => {
+        inst = inst + response.data.count;
+      });
+    }
   }, []);
 
   return (

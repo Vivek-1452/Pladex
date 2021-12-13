@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import image1 from "./ImgFocusPartners/partner1.png";
-import image2 from "./ImgFocusPartners/partner2.png";
-import image3 from "./collab3.jpeg";
+import image1 from "./ImgFocusPartners/part1.png";
+import image2 from "./ImgFocusPartners/part2.png";
+import image3 from "./ImgFocusPartners/part4.png";
 
 export default class FocusPartners extends Component {
   render() {
@@ -40,21 +40,17 @@ export default class FocusPartners extends Component {
                 <img
                   className="my-3 bg-dark"
                   src={image1}
-                  alt="College Explorer"
+                  alt="E-Cell"
                   width="200"
                   height="200"
                   style={{ borderRadius: "50%" }}
                 />
               </center>
               <div className="card-body">
-                <h3 className="card-title">
-                  <b>Beta Testers</b>
-                </h3>
-                <p className="card-text my-4">
-                  Creating an <b>impact</b> on the youth who are struggling to
-                  ace their <b>skills</b> through <b>vodcasts</b> and guide
-                  viewers by clearing their doubts.
-                </p>
+                <h2 className="card-title ">
+                  <b>E-Cell</b>
+                </h2>
+                <p className="card-text my-4">NIT AGARTALA</p>
               </div>
             </div>
           </div>
@@ -81,14 +77,10 @@ export default class FocusPartners extends Component {
                 />
               </center>
               <div className="card-body">
-                <h3 className="card-title">
-                  <b>College Explorer</b>
-                </h3>
-                <p className="card-text my-4">
-                  Students can easily <b>explore</b> more about their dream{" "}
-                  <b>colleges</b> which helps them for their <b>admission</b>{" "}
-                  process.
-                </p>
+                <h2 className="card-title ">
+                  <b>Literary Club</b>
+                </h2>
+                <p className="card-text my-4">NIT AGARTALA</p>
               </div>
             </div>
           </div>
@@ -115,13 +107,10 @@ export default class FocusPartners extends Component {
                 />
               </center>
               <div className="card-body">
-                <h3 className="card-title">
-                  <b>Codified Youth</b>
-                </h3>
-                <p className="card-text my-4">
-                  Helping students to get <b>internship</b> opportunities, jobs,
-                  <b> placement</b> support, <b>free projects</b> and courses.
-                </p>
+                <h2 className="card-title ">
+                  <b>Aaveg</b>
+                </h2>
+                <p className="card-text my-4">NIT AGARTALA</p>
               </div>
             </div>
           </div>

@@ -1,9 +1,9 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import "./Event.css";
-import image1 from "./ImgFocusPartners/partner1.png";
-import image2 from "./ImgFocusPartners/partner2.png";
-import image3 from "./collab3.jpeg";
+import image1 from "./ImgFocusPartners/part1.png";
+import image2 from "./ImgFocusPartners/part2.png";
+import image3 from "./ImgFocusPartners/part4.png";
 // import image1 from "./college explorer.png";
 // import image2 from "./college predictor.png";
 // import image3 from "./podium talks.png";
@@ -32,27 +32,26 @@ function EventTemp2() {
   const slidesData = [
     {
       id: 1,
-      title: "Beta Testers",
-      label1:
-        "Creating an impact on the youth who are struggling to ace their ",
-      label2: "skills through vodcasts ",
-      label3: "and guide viewers by clearing their doubts.",
+      title: "E-Cell",
+      label1: "NIT AGARTALA",
+      // label2: "skills through vodcasts ",
+      // label3: "and guide viewers by clearing their doubts.",
       image: image1,
     },
     {
       id: 2,
-      title: "College Explorer",
-      label1: "Students can easily ",
-      label2: "explore more about their dream colleges ",
-      label3: "which helps them for their admission process.",
+      title: "Literary Club",
+      label1: "NIT AGARTALA",
+      // label2: "explore more about their dream colleges ",
+      // label3: "which helps them for their admission process.",
       image: image2,
     },
     {
       id: 3,
-      title: "Codified Youth",
-      label1: "Helping students to get ",
-      label2: "internship opportunities, jobs, ",
-      label3: "placement support, free projects and courses.",
+      title: "Aaveg",
+      label1: "NIT AGARTALA",
+      // label2: "internship opportunities, jobs, ",
+      // label3: "placement support, free projects and courses.",
       image: image3,
     },
     // {
@@ -137,13 +136,13 @@ function EventTemp2() {
                     />
                   </center>
                   <div className="card-body">
-                    <h3 className="card-title">
+                    <h2 className="card-title">
                       <b>{slide.title}</b>
-                    </h3>
+                    </h2>
                     <p className="card-text my-4">
                       {slide.label1}
-                      <b>{slide.label2}</b>
-                      {slide.label3}
+                      {/* <b>{slide.label2}</b>
+                      {slide.label3} */}
                     </p>
                   </div>
                 </div>

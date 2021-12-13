@@ -13,13 +13,19 @@ const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios
-      .post("https://www.pladex.in/authenticate", { withCredentials: true })
-      .then((response) => {
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.post("https://www.pladex.in/authenticate").then((response) => {
         if (response.data.status == "authenticated") {
           setIsLoaded(true);
         }
       });
+    } else {
+      axios.post("https://pladex.in/authenticate").then((response) => {
+        if (response.data.status == "authenticated") {
+          setIsLoaded(true);
+        }
+      });
+    }
   }, [isLoaded]);
 
   useEffect(() => {

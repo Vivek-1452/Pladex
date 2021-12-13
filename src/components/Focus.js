@@ -529,17 +529,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker1}
-                      alt="Speaker 1"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/markstoneinspires"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker1}
+                        alt="Speaker 1"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -563,17 +569,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker2}
-                      alt="Speaker 2"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/priyankaspace"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker2}
+                        alt="Speaker 2"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -594,17 +606,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker3}
-                      alt="Speaker 3"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/simihanspal"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker3}
+                        alt="Speaker 3"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -627,17 +645,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker4}
-                      alt="Speaker 4"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/dr-siddhartha-ghosh-ba019016"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker4}
+                        alt="Speaker 4"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -661,17 +685,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker5}
-                      alt="Speaker 5"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/hasinakharbhih"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker5}
+                        alt="Speaker 5"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -694,17 +724,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker6}
-                      alt="Speaker 6"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/shikhar-prajapati-motivational-speaker-corporate-trainer-b72a3582"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker6}
+                        alt="Speaker 6"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -728,17 +764,23 @@ function Focus() {
                     className="bg-opacity-75 bg-light text-black pt-3 m-2"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img
-                      src={speaker7}
-                      alt="Speaker 7"
-                      width="175"
-                      height="175"
-                      style={{
-                        borderRadius: "50%",
-                        position: "relative",
-                        top: "-75px",
-                      }}
-                    />
+                    <a
+                      href="https://www.linkedin.com/in/aditya-trivedi-nlu-assam"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker7}
+                        alt="Speaker 7"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
                     <div
                       style={{
                         position: "relative",
@@ -758,7 +800,7 @@ function Focus() {
         </div>
       </div>
       {/* {display ? <FocusSponsMob /> : <FocusSponsors />} */}
-      {/* {display ? <FocusPartnMob /> : <FocusPartners />} */}
+      {display ? <FocusPartnMob /> : <FocusPartners />}
       <Foot2 />
     </>
   );

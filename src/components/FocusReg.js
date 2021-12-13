@@ -25,16 +25,15 @@ function FocusReg() {
     }
   }, []);
 
-  function inputClicking() {
-    document.getElementById("dev").style.display = "none";
-  }
+  // function inputClicking() {
+  //   document.getElementById("dev").style.display = "none";
+  // }
 
   const [isLoaded, setIsLoaded] = useState([]);
 
   useEffect(() => {
-    axios
-      .post("https://www.pladex.in/auth/data", { withCredentials: true })
-      .then((response) => {
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.post("https://www.pladex.in/auth/data").then((response) => {
         if (response.data.email != null) {
           setIsLoaded([
             response.data.email,
@@ -46,6 +45,20 @@ function FocusReg() {
           ]);
         }
       });
+    } else {
+      axios.post("https://pladex.in/auth/data").then((response) => {
+        if (response.data.email != null) {
+          setIsLoaded([
+            response.data.email,
+            response.data.firstname,
+            response.data.lastname,
+            response.data.mobile,
+            response.data.college,
+            response.data.branch,
+          ]);
+        }
+      });
+    }
   }, [isLoaded]);
 
   const [loginauth, setloginauth] = useState(false);
@@ -545,7 +558,7 @@ function FocusReg() {
                 </div>
                 <div
                   className="form-group pt-3 pb-2"
-                  onClick={() => inputClicking()}
+                  // onClick={() => inputClicking()}
                 >
                   <Select
                     isMulti
@@ -580,7 +593,7 @@ function FocusReg() {
             </div>
           </div>
         </div>
-        <div id="dev" className="py-3 text-center text-white">
+        {/* <div id="dev" className="py-3 text-center text-white">
           <h6 className="m-0 py-3 fw-light">
             Developed with{" "}
             <img
@@ -590,7 +603,7 @@ function FocusReg() {
             />{" "}
             by Web Dev team
           </h6>
-        </div>
+        </div> */}
       </div>
     </>
   );

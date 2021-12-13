@@ -28,7 +28,7 @@ function CompRegSuccess() {
   }, [display]);
 
   return (
-    <>
+    <div style={{ display: "inline-block", width: "100vw" }}>
       <Navnew logincheck={loginauth} loginhandler={loginhandler} />
       <div
         className="pt-0"
@@ -45,6 +45,7 @@ function CompRegSuccess() {
             alt="Successfully registered"
             width={display ? "400" : "450"}
             height={display ? "300" : "300"}
+            style={{ maxWidth: "100vw" }}
             data-aos="zoom-in"
             data-aos-duration="20000"
           />
@@ -59,9 +60,9 @@ function CompRegSuccess() {
               Check your Mail for info.
               <br />
               <p className="fs-6" style={{ color: "" }}>
-                <u>Share our competitions through</u>
+                <u>Invite friends to register and gain bonus points</u>
               </p>
-              <div className="d-inline-block w-auto">
+              <div className="d-inline-block w-auto me-3">
                 <a
                   href="whatsapp://send?text=I'm inviting you to check out *FOCUS NEXT INDIA EVENT- India's Largest Virtual Event by PLADEX*.%0A%0AExciting contests and informative live interactive sessions are being held!%0ATake part in this 12 day digital journey and *win exciting prizes*.%0AHurry up!! *Only the first 1000 registrations are for free*.%0A*Register now* and grab your tokens.!!!!!%0A%0Ahttps://www.pladex.in/Focus"
                   target="_blank"
@@ -83,7 +84,7 @@ function CompRegSuccess() {
                   WhatsApp
                 </p>
               </div>
-              <div className="d-inline-block w-auto">
+              <div className="d-inline-block w-auto ms-3">
                 <a
                   href="https://web.whatsapp.com/send?text=I'm inviting you to check out *FOCUS NEXT INDIA EVENT- India's Largest Virtual Event by PLADEX*.%0A%0AExciting contests and informative live interactive sessions are being held!%0ATake part in this 12 day digital journey and *win exciting prizes*.%0AHurry up!! *Only the first 1000 registrations are for free*.%0A*Register now* and grab your tokens.!!!!!%0A%0Ahttps://www.pladex.in/Focus"
                   target="_blank"
@@ -109,7 +110,7 @@ function CompRegSuccess() {
           </h2>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
