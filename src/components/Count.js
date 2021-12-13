@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
@@ -12,33 +12,33 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Count() {
-  var students = 794;
+  const [students, setStudents] = useState({});
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
       axios.get("https://www.pladex.in/count_students").then((response) => {
-        students = students + response.data.count_students;
+        setStudents(response.data.count_students);
       });
     } else {
       axios.get("https://pladex.in/count_students").then((response) => {
-        students = students + response.data.count_students;
+        setStudents(response.data.count_students);
       });
     }
-  }, []);
+  }, [students]);
 
-  var inst = 26;
+  const [inst, setInst] = useState({});
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
       axios.get("https://www.pladex.in/count_inst").then((response) => {
-        inst = inst + response.data.count;
+        setInst(response.data.count);
       });
     } else {
       axios.get("https://pladex.in/count_inst").then((response) => {
-        inst = inst + response.data.count;
+        setInst(response.data.count);
       });
     }
-  }, []);
+  }, [inst]);
 
   return (
     <div style={{ backgroundColor: "#f5f6f7" }}>

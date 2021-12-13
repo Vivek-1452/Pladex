@@ -1,5 +1,8 @@
 // App.js
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,14 +17,42 @@ import img6 from "./Icons3d/part.png";
 import bg from "./FocusImages/iconsBg.png";
 
 function CountFocusmob() {
-  window.onload = function () {
-    const divis = document.getElementById("mobile");
-    if (window.innerWidth < 769) {
-      divis.style.display = "block";
+  const [students, setStudents] = useState({});
+
+  useEffect(() => {
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.get("https://www.pladex.in/count_students").then((response) => {
+        setStudents(response.data.count_students);
+      });
     } else {
-      divis.style.display = "none";
+      axios.get("https://pladex.in/count_students").then((response) => {
+        setStudents(response.data.count_students);
+      });
     }
-  };
+  }, [students]);
+
+  const [inst, setInst] = useState({});
+
+  useEffect(() => {
+    if (window.location.origin == "https://www.pladex.in") {
+      axios.get("https://www.pladex.in/count_inst").then((response) => {
+        setInst(response.data.count);
+      });
+    } else {
+      axios.get("https://pladex.in/count_inst").then((response) => {
+        setInst(response.data.count);
+      });
+    }
+  }, [inst]);
+
+  // window.onload = function () {
+  //   const divis = document.getElementById("mobile");
+  //   if (window.innerWidth < 769) {
+  //     divis.style.display = "block";
+  //   } else {
+  //     divis.style.display = "none";
+  //   }
+  // };
 
   const settings = {
     dots: true,

@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import axios from "axios";
 const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded2, setIsLoaded2] = useState(false);
 
   useEffect(() => {
     if (window.location.origin == "https://www.pladex.in") {
@@ -22,11 +23,11 @@ const Navnew = (props) => {
     } else {
       axios.post("https://pladex.in/authenticate").then((response) => {
         if (response.data.status == "authenticated") {
-          setIsLoaded(true);
+          setIsLoaded2(true);
         }
       });
     }
-  }, [isLoaded]);
+  }, [isLoaded, isLoaded2]);
 
   useEffect(() => {
     if (props.prop1 == "home") {
@@ -257,6 +258,23 @@ const Navnew = (props) => {
               {isLoaded ? (
                 <a
                   href="https://www.pladex.in/logout"
+                  className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
+                  style={{ backgroundColor: "#31343c", color: "white" }}
+                >
+                  Logout
+                </a>
+              ) : (
+                <Link
+                  to="/login"
+                  className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
+                  style={{ backgroundColor: "#53c29b" }}
+                >
+                  Login
+                </Link>
+              )}
+              {isLoaded2 ? (
+                <a
+                  href="https://pladex.in/logout"
                   className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
                   style={{ backgroundColor: "#31343c", color: "white" }}
                 >
