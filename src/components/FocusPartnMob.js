@@ -4,6 +4,7 @@ import "./Event.css";
 import image1 from "./ImgFocusPartners/part1.png";
 import image2 from "./ImgFocusPartners/part2.png";
 import image3 from "./ImgFocusPartners/part4.png";
+import image4 from "./ImgFocusPartners/part3.png";
 // import image1 from "./college explorer.png";
 // import image2 from "./college predictor.png";
 // import image3 from "./podium talks.png";
@@ -52,7 +53,7 @@ function EventTemp2() {
       label1: "NIT SILCHAR",
       // label2: "internship opportunities, jobs, ",
       // label3: "placement support, free projects and courses.",
-      image: image3,
+      image: image4,
     },
     {
       id: 4,
