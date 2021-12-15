@@ -152,8 +152,8 @@ export default class UpcomingEventsWeb extends Component {
               <center>
                 <img
                   className="mb-2"
-                  src={image1}
-                  alt="Upcoming Event 1"
+                  src={image3}
+                  alt="Upcoming Event 3"
                   // width="320"
                   // height="220"
                   style={{
@@ -166,11 +166,12 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    {/* <b>Women Empowerment</b> */}
+                    {/* <b>Mental Health</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  Importance of women empowerment in sustainable development.
+                  Know feasible ways to relieve stress & anxiety and be mentally
+                  fit.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 19 | 6:07 PM</p>
                 <Link
@@ -181,9 +182,9 @@ export default class UpcomingEventsWeb extends Component {
                 >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="women"
-                    // onMouseOver={() => hovering("0", "women")}
-                    // onMouseLeave={() => hovering("1", "women")}
+                    // id="mental"
+                    // onMouseOver={() => hovering("0", "mental")}
+                    // onMouseLeave={() => hovering("1", "mental")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -207,8 +208,8 @@ export default class UpcomingEventsWeb extends Component {
               <center>
                 <img
                   className="mb-2"
-                  src={image3}
-                  alt="Upcoming Event 3"
+                  src={image1}
+                  alt="Upcoming Event 1"
                   // width="320"
                   // height="220"
                   style={{
@@ -221,12 +222,11 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    {/* <b>Mental Health</b> */}
+                    {/* <b>Women Empowerment</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
-                  Know feasible ways to relieve stress & anxiety and be mentally
-                  fit.
+                  Importance of women empowerment in sustainable development.
                 </p>
                 <p className="float-lg-start my-3 ms-3">Dec 20 | 6:07 PM</p>
                 <Link
@@ -237,9 +237,9 @@ export default class UpcomingEventsWeb extends Component {
                 >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="mental"
-                    // onMouseOver={() => hovering("0", "mental")}
-                    // onMouseLeave={() => hovering("1", "mental")}
+                    // id="women"
+                    // onMouseOver={() => hovering("0", "women")}
+                    // onMouseLeave={() => hovering("1", "women")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register

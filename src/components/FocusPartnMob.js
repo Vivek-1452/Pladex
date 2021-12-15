@@ -5,9 +5,11 @@ import image1 from "./ImgFocusPartners/part1.png";
 import image2 from "./ImgFocusPartners/part2.png";
 import image3 from "./ImgFocusPartners/part4.png";
 import image4 from "./ImgFocusPartners/part3.png";
-// import image1 from "./college explorer.png";
-// import image2 from "./college predictor.png";
-// import image3 from "./podium talks.png";
+import image5 from "./ImgFocusPartners/part5.png";
+import image6 from "./ImgFocusPartners/part6.jpg";
+import image7 from "./ImgFocusPartners/part7.png";
+import image8 from "./ImgFocusPartners/part8.jpeg";
+import image9 from "./ImgFocusPartners/part9.jpg";
 
 import Slider from "react-slick";
 
@@ -63,42 +65,46 @@ function EventTemp2() {
       // label3: "and guide viewers by clearing their doubts.",
       image: image3,
     },
-    // {
-    //   id: 5,
-    //   title: "Beta Testers",
-    //   label1:
-    //     "Creating an impact on the youth who are struggling to ace their ",
-    //   label2: "skills through vodcasts ",
-    //   label3: "and guide viewers by clearing their doubts.",
-    //   image: image1,
-    // },
-    // {
-    //   id: 6,
-    //   title: "Beta Testers",
-    //   label1:
-    //     "Creating an impact on the youth who are struggling to ace their ",
-    //   label2: "skills through vodcasts ",
-    //   label3: "and guide viewers by clearing their doubts.",
-    //   image: image1,
-    // },
-    // {
-    //   id: 7,
-    //   title: "Beta Testers",
-    //   label1:
-    //     "Creating an impact on the youth who are struggling to ace their ",
-    //   label2: "skills through vodcasts ",
-    //   label3: "and guide viewers by clearing their doubts.",
-    //   image: image1,
-    // },
-    // {
-    //   id: 8,
-    //   title: "Beta Testers",
-    //   label1:
-    //     "Creating an impact on the youth who are struggling to ace their ",
-    //   label2: "skills through vodcasts ",
-    //   label3: "and guide viewers by clearing their doubts.",
-    //   image: image1,
-    // },
+    {
+      id: 5,
+      title: "Sanganan Prayog",
+      label1: "NIT AGARTALA",
+      // label2: "skills through vodcasts ",
+      // label3: "and guide viewers by clearing their doubts.",
+      image: image5,
+    },
+    {
+      id: 6,
+      title: "EEE SOCIETY",
+      label1: "NIT MIZORAM",
+      // label2: "explore more about their dream colleges ",
+      // label3: "which helps them for their admission process.",
+      image: image6,
+    },
+    {
+      id: 7,
+      title: "E-Cell",
+      label1: "NIT NAGALAND",
+      // label2: "internship opportunities, jobs, ",
+      // label3: "placement support, free projects and courses.",
+      image: image7,
+    },
+    {
+      id: 8,
+      title: "SOCIAL SERVICE CLUB",
+      label1: "NIT NAGALAND",
+      // label2: "skills through vodcasts ",
+      // label3: "and guide viewers by clearing their doubts.",
+      image: image8,
+    },
+    {
+      id: 9,
+      title: "MOVIE CLUB",
+      label1: "NIT NAGALAND",
+      // label2: "skills through vodcasts ",
+      // label3: "and guide viewers by clearing their doubts.",
+      image: image9,
+    },
   ];
 
   return (

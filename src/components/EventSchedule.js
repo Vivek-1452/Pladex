@@ -73,7 +73,7 @@ function EventSchedule() {
                 </h3>
                 <br />
                 <h4 className="vertical-timeline-element-subtitle text-start fw-light text-dark">
-                  WOMEN EMPOWERMENT
+                  MENTAL HEALTH & WELL-BEING
                 </h4>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -94,7 +94,7 @@ function EventSchedule() {
                 </h3>
                 <br />
                 <h4 className="vertical-timeline-element-subtitle text-lg-end fw-light text-dark">
-                  MENTAL HEALTH & WELL-BEING
+                  WOMEN EMPOWERMENT
                 </h4>
               </VerticalTimelineElement>
               <VerticalTimelineElement

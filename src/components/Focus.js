@@ -560,44 +560,6 @@ function Focus() {
                   </div>
                 </div>
                 <div
-                  className="col-lg-3 col-md-6 px-4 my-md-3 mt-5 mb-3"
-                  style={{ borderRadius: "10px" }}
-                  data-aos="zoom-out-down"
-                  data-aos-duration="2000"
-                >
-                  <div
-                    className="bg-opacity-75 bg-light text-black pt-3 m-2"
-                    style={{ borderRadius: "10px" }}
-                  >
-                    <a
-                      href="https://www.linkedin.com/in/priyankaspace"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src={speaker2}
-                        alt="Speaker 2"
-                        width="175"
-                        height="175"
-                        style={{
-                          borderRadius: "50%",
-                          position: "relative",
-                          top: "-75px",
-                        }}
-                      />
-                    </a>
-                    <div
-                      style={{
-                        position: "relative",
-                        top: "-40px",
-                      }}
-                    >
-                      <h4 className="fw-bold mt-0">PRIYANKA DAS RAJKAKATI</h4>
-                      <h5 className="fw-light my-5">WOMEN EMPOWERMENT</h5>
-                    </div>
-                  </div>
-                </div>
-                <div
                   className="col-lg-3 col-md-6 px-4 my-3"
                   data-aos="zoom-out-down"
                   data-aos-duration="2000"
@@ -633,6 +595,44 @@ function Focus() {
                       <h5 className="fw-light my-5">
                         MENTAL HEALTH & WELL-BEING
                       </h5>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-lg-3 col-md-6 px-4 my-md-3 mt-5 mb-3"
+                  style={{ borderRadius: "10px" }}
+                  data-aos="zoom-out-down"
+                  data-aos-duration="2000"
+                >
+                  <div
+                    className="bg-opacity-75 bg-light text-black pt-3 m-2"
+                    style={{ borderRadius: "10px" }}
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/priyankaspace"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={speaker2}
+                        alt="Speaker 2"
+                        width="175"
+                        height="175"
+                        style={{
+                          borderRadius: "50%",
+                          position: "relative",
+                          top: "-75px",
+                        }}
+                      />
+                    </a>
+                    <div
+                      style={{
+                        position: "relative",
+                        top: "-40px",
+                      }}
+                    >
+                      <h4 className="fw-bold mt-0">PRIYANKA DAS RAJKAKATI</h4>
+                      <h5 className="fw-light my-5">WOMEN EMPOWERMENT</h5>
                     </div>
                   </div>
                 </div>

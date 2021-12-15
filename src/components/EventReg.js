@@ -310,8 +310,8 @@ function EventReg() {
             <center>
               <img
                 className="mb-2"
-                src={image1}
-                alt="Upcoming Event 1"
+                src={image3}
+                alt="Upcoming Event 3"
                 // width="320"
                 // height="220"
                 style={{
@@ -324,11 +324,12 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Women Empowerment</b> */}
+                  {/* <b>Mental Health</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
-                Importance of women empowerment in sustainable development.
+                Know feasible ways to relieve stress & anxiety and be mentally
+                fit.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 19 | 6:07 PM</p>
               <Link to="/CheckRegister">
@@ -358,8 +359,8 @@ function EventReg() {
             <center>
               <img
                 className="mb-2"
-                src={image3}
-                alt="Upcoming Event 3"
+                src={image1}
+                alt="Upcoming Event 1"
                 // width="320"
                 // height="220"
                 style={{
@@ -372,12 +373,11 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Mental Health</b> */}
+                  {/* <b>Women Empowerment</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
-                Know feasible ways to relieve stress & anxiety and be mentally
-                fit.
+                Importance of women empowerment in sustainable development.
               </p>
               <p className="float-lg-start my-3 ms-3">Dec 20 | 6:07 PM</p>
               <Link to="/CheckRegister">
