@@ -9,6 +9,7 @@ import image6 from "./ImgFocusPartners/part6.jpg";
 import image7 from "./ImgFocusPartners/part7.png";
 import image8 from "./ImgFocusPartners/part8.jpeg";
 import image9 from "./ImgFocusPartners/part9.jpg";
+import image10 from "./ImgFocusPartners/part10.png";
 
 export default class FocusPartners extends Component {
   render() {
@@ -300,7 +301,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div>
-          {/* <div>
+          <div>
             <div
               className="card mx-auto my-2"
               style={{
@@ -315,7 +316,7 @@ export default class FocusPartners extends Component {
               <center>
                 <img
                   className="my-3"
-                  src={image2}
+                  src={image10}
                   alt="College Explorer"
                   width="200"
                   height="200"
@@ -323,17 +324,13 @@ export default class FocusPartners extends Component {
                 />
               </center>
               <div className="card-body">
-                <h3 className="card-title">
-                  <b>Beta Testers</b>
+                <h3 className="card-title ">
+                  <b>Student Society</b>
                 </h3>
-                <p className="card-text my-4">
-                  Creating an <b>impact</b> on the youth who are struggling to
-                  ace their <b>skills</b> through <b>vodcasts</b> and guide
-                  viewers by clearing their doubts.
-                </p>
+                <p className="card-text my-4">NIT Arunachal Pradesh</p>
               </div>
             </div>
-          </div> */}
+          </div>
         </Slider>
       </div>
     );

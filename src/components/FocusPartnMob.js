@@ -10,6 +10,7 @@ import image6 from "./ImgFocusPartners/part6.jpg";
 import image7 from "./ImgFocusPartners/part7.png";
 import image8 from "./ImgFocusPartners/part8.jpeg";
 import image9 from "./ImgFocusPartners/part9.jpg";
+import image10 from "./ImgFocusPartners/part10.png";
 
 import Slider from "react-slick";
 
@@ -91,7 +92,7 @@ function EventTemp2() {
     },
     {
       id: 8,
-      title: "SOCIAL SERVICE CLUB",
+      title: "Social Service Club",
       label1: "NIT NAGALAND",
       // label2: "skills through vodcasts ",
       // label3: "and guide viewers by clearing their doubts.",
@@ -104,6 +105,14 @@ function EventTemp2() {
       // label2: "skills through vodcasts ",
       // label3: "and guide viewers by clearing their doubts.",
       image: image9,
+    },
+    {
+      id: 10,
+      title: "Student Society",
+      label1: "NIT Arunachal Pradesh",
+      // label2: "skills through vodcasts ",
+      // label3: "and guide viewers by clearing their doubts.",
+      image: image10,
     },
   ];
 

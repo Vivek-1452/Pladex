@@ -71,7 +71,7 @@ export default class UpcomingEventsWeb extends Component {
           </Link>
         </div>
         <Slider {...settings}>
-          <div className="pt-0">
+          <div>
             <div
               className="card mx-auto my-2 pt-0"
               id="card1"

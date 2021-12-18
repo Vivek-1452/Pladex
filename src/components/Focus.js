@@ -8,6 +8,7 @@ import Navnew from "./Navnew";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Focus.css";
+import "./textScroll2.css";
 import EventSchedule from "./EventSchedule";
 import CountFocusweb from "./CountFocusweb";
 import CountFocusmob from "./CountFocusmob";
@@ -66,28 +67,49 @@ function Focus() {
         >
           <div className="mx-auto pb-5 pt-2" style={{ width: "auto" }}>
             <h3 className="fw-bold pb-2">15 - 26 DECEMBER 2021</h3>
-            <hr
-              style={{
-                height: "4px",
-                background:
-                  "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
-                marginTop: "0",
-              }}
-            />
+            <center>
+              <hr
+                style={{
+                  height: "4px",
+                  width: "80%",
+                  background:
+                    "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
+                  marginTop: "0",
+                }}
+              />
+            </center>
             <div className="mx-auto pb-4 pt-3" style={{ maxWidth: "400px" }}>
-              <img src={logo} alt="logo" style={{ width: "90%" }} />
+              <img src={logo} alt="logo" style={{ width: "70%" }} />
             </div>
-            <hr
-              style={{
-                height: "4px",
-                background:
-                  "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
-                marginTop: "0",
-              }}
-            />
+            <center>
+              <hr
+                style={{
+                  height: "4px",
+                  width: "80%",
+                  background:
+                    "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
+                  marginTop: "0",
+                }}
+              />
+            </center>
             <h4 className="fw-light py-2">
               FOR NORTH-EAST STUDENTS – GROW WITH US!
             </h4>
+            <h2 className="fw-bold mt-3 mb-1">
+              <center>
+                <div
+                  className=""
+                  id="scroll-container"
+                  style={display ? { width: "90%" } : { width: "100%" }}
+                >
+                  <div id="scroll-text">
+                    Competition registrations and submissions are extended upto{" "}
+                    <span style={{ color: "#ffbd59" }}>24th</span>{" "}
+                    <span style={{ color: "#da6220" }}>December</span>.
+                  </div>
+                </div>
+              </center>
+            </h2>
             <Link
               to={{
                 pathname: "/CheckRegister",
@@ -560,7 +582,7 @@ function Focus() {
                   </div>
                 </div>
                 <div
-                  className="col-lg-3 col-md-6 px-4 my-3"
+                  className="col-lg-3 col-md-6 px-4 my-md-3 mt-5 mb-3"
                   data-aos="zoom-out-down"
                   data-aos-duration="2000"
                 >
@@ -599,7 +621,7 @@ function Focus() {
                   </div>
                 </div>
                 <div
-                  className="col-lg-3 col-md-6 px-4 my-md-3 mt-5 mb-3"
+                  className="col-lg-3 col-md-6 px-4 my-3"
                   style={{ borderRadius: "10px" }}
                   data-aos="zoom-out-down"
                   data-aos-duration="2000"
