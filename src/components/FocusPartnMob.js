@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Event.css";
 import image1 from "./ImgFocusPartners/part1.png";
 import image2 from "./ImgFocusPartners/part2.png";
@@ -119,12 +119,26 @@ function EventTemp2() {
   return (
     <div className="bg-light">
       <div className="slider-wrapper pt-5 pb-5" id="mobile">
-        <h4 className="text-center fw-bold display-6 mb-0">
-          OUR{" "}
-          <span className="text" style={{ color: "#3ad6ab" }}>
-            PARTNERS
-          </span>
-        </h4>
+        <div className="pt-0 d-md-none d-lg-none">
+          <h4 className="text-center fw-bold display-6 mb-0">
+            OUR{" "}
+            <span className="text" style={{ color: "#3ad6ab" }}>
+              PARTNERS
+            </span>
+            <Link
+              to="/AllPartners"
+              className="position-absolute"
+              style={{ right: "30px" }}
+            >
+              <i
+                className="fas fa-chevron-circle-right fs-3"
+                style={{
+                  color: "#3ad6ab",
+                }}
+              ></i>
+            </Link>
+          </h4>
+        </div>
         <Slider {...settings}>
           {slidesData.map((slide) => (
             <div className="pt-0">

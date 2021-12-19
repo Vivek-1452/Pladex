@@ -39,6 +39,7 @@ import VerifiedMail from "./components/VerifiedMail";
 import ResetSuccess from "./components/ResetSuccess";
 import ErrorRedirect from "./components/ErrorRedirect";
 import CompRegSuccess from "./components/CompRegSuccess";
+import AllPartners from "./components/AllPartners";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -146,6 +147,9 @@ function App() {
             </Route>
             <Route path="/ErrorRedirect">
               <ErrorRedirect />
+            </Route>
+            <Route path="/AllPartners">
+              <AllPartners />
             </Route>
             {/* <Route path="/DLibrary">
               <Btechsubject />

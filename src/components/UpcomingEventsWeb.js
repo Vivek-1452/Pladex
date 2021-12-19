@@ -86,62 +86,6 @@ export default class UpcomingEventsWeb extends Component {
               <center>
                 <img
                   className="mb-2"
-                  src={image3}
-                  alt="Upcoming Event 3"
-                  // width="320"
-                  // height="220"
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    borderRadius: "10px 10px 0 0",
-                  }}
-                />
-              </center>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <span className="text" style={{ color: "#da6220" }}>
-                    {/* <b>Mental Health</b> */}
-                  </span>
-                </h3>
-                <p className="card-text my-4">
-                  Know feasible ways to relieve stress & anxiety and be mentally
-                  fit.
-                </p>
-                <p className="float-lg-start my-3 ms-3">Dec 19 | 6:07 PM</p>
-                <Link
-                  to={{
-                    pathname: "/CheckRegister",
-                    state: "eventReg",
-                  }}
-                >
-                  <button
-                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="mental"
-                    // onMouseOver={() => hovering("0", "mental")}
-                    // onMouseLeave={() => hovering("1", "mental")}
-                    style={{ backgroundColor: "#3ad6ab", color: "white" }}
-                  >
-                    Register
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className="card mx-auto my-2 pt-0"
-              style={{
-                minWidth: "250px",
-                width: "75%",
-                height: "95%",
-                border: "none",
-                borderRadius: "10px",
-                boxShadow: "0 0 4px #999",
-              }}
-            >
-              <center>
-                <img
-                  className="mb-2"
                   src={image1}
                   alt="Upcoming Event 1"
                   // width="320"

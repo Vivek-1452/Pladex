@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import image1 from "./ImgFocusPartners/part1.png";
 import image2 from "./ImgFocusPartners/part2.png";
 import image3 from "./ImgFocusPartners/part4.png";
@@ -13,6 +14,15 @@ import image10 from "./ImgFocusPartners/part10.png";
 
 export default class FocusPartners extends Component {
   render() {
+    const hovering = (num, id) => {
+      var x = document.getElementById(id);
+      if (num === "0") {
+        x.style.textDecoration = "underline";
+      } else {
+        x.style.textDecoration = "none";
+      }
+    };
+
     var settings = {
       dots: true,
       infinite: true,
@@ -24,12 +34,32 @@ export default class FocusPartners extends Component {
     };
     return (
       <div className="bg-light pb-5">
-        <h4 className="text-center fw-bold display-6 mt-5 mb-1">
-          OUR{" "}
-          <span className="text" style={{ color: "#3ad6ab" }}>
-            PARTNERS
-          </span>
-        </h4>
+        <div className="pb-3">
+          <h4
+            className="text-center fw-bold display-6 mt-3 mb-1 ps-5 ms-5 w-auto"
+            style={{ display: "inline-block" }}
+          >
+            OUR{" "}
+            <span className="text" style={{ color: "#3ad6ab" }}>
+              PARTNERS
+            </span>
+          </h4>
+          <Link to="/AllPartners">
+            <h5
+              className="text-end float-end pt-5 me-5 fw-bold"
+              id="more"
+              onMouseOver={() => hovering("0", "more")}
+              onMouseLeave={() => hovering("1", "more")}
+              style={{ color: "#31343c" }}
+            >
+              <span>More</span>{" "}
+              <i
+                class="fas fa-chevron-circle-right"
+                style={{ color: "#3ad6ab" }}
+              ></i>
+            </h5>
+          </Link>
+        </div>
         <Slider {...settings}>
           <div>
             <div
@@ -265,7 +295,7 @@ export default class FocusPartners extends Component {
               </center>
               <div className="card-body">
                 <h3 className="card-title ">
-                  <b>SOCIAL SERVICE CLUB</b>
+                  <b>Social Service Club</b>
                 </h3>
                 <p className="card-text my-4">NIT NAGALAND</p>
               </div>

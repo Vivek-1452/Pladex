@@ -291,7 +291,7 @@ function EventReg() {
             </div>
           </div>
         </div> */}
-        <div className="col-md-6 col-lg-4 my-4">
+        {/* <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
             style={{
@@ -308,8 +308,6 @@ function EventReg() {
                 className="mb-2"
                 src={image3}
                 alt="Upcoming Event 3"
-                // width="320"
-                // height="220"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -320,7 +318,6 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Mental Health</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -333,13 +330,12 @@ function EventReg() {
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  {/* <AddToCalendar event={event} listItems={items} /> */}
                   Register
                 </button>
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
@@ -454,8 +450,6 @@ function EventReg() {
                 className="mb-2"
                 src={image5}
                 alt="Upcoming Event 5"
-                // width="320"
-                // height="220"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -465,9 +459,7 @@ function EventReg() {
             </center>
             <div className="card-body">
               <h3 className="card-title">
-                <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Self Defense</b> */}
-                </span>
+                <span className="text" style={{ color: "#da6220" }}></span>
               </h3>
               <p className="card-text my-4">
                 How to tackle hassle conditions and defend yourself?
@@ -478,7 +470,6 @@ function EventReg() {
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  {/* <AddToCalendar event={event} listItems={items} /> */}
                   Register
                 </button>
               </Link>
