@@ -34,18 +34,18 @@ function EventTemp2() {
   };
 
   const slidesData = [
+    // {
+    //   id: 1,
+    //   title: "Entrepreneurship",
+    //   label1: "Construct and Evolve. Get inspired to be an entrepreneur!",
+    //   // label2: "details of colleges ",
+    //   // label3: "needed for admission process.",
+    //   image: image2,
+    //   date: "Dec 18",
+    //   time: "6:07 PM",
+    // },
     {
       id: 1,
-      title: "Entrepreneurship",
-      label1: "Construct and Evolve. Get inspired to be an entrepreneur!",
-      // label2: "details of colleges ",
-      // label3: "needed for admission process.",
-      image: image2,
-      date: "Dec 18",
-      time: "6:07 PM",
-    },
-    {
-      id: 2,
       title: "Mental Health",
       label1:
         "Know feasible ways to relieve stress & anxiety and be mentally fit.",
@@ -56,7 +56,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 3,
+      id: 2,
       title: "Women Empowerment",
       label1: "Importance of women empowerment in sustainable development.",
       // label2: "predict the best ",
@@ -66,7 +66,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 4,
+      id: 3,
       title: "Emerging Technologies",
       label1:
         "Latest on boarding technology is more than just technical intelligence.",
@@ -77,7 +77,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 5,
+      id: 4,
       title: "Self Defense",
       label1: "How to tackle hassle conditions and defend yourself?",
       // label2: "predict the best ",
@@ -87,7 +87,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 6,
+      id: 5,
       title: "Personality Development",
       label1: "Hone your soft skills and develop a positive influence.",
       // label2: "striving students ",
@@ -97,7 +97,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 7,
+      id: 6,
       title: "Basic Laws and Rights",
       label1: "Basic laws & rights that all the students need to be aware of.",
       // label2: "striving students ",
