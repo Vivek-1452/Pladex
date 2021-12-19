@@ -100,7 +100,7 @@ function Focus() {
                 <div
                   className=""
                   id="scroll-container"
-                  style={display ? { width: "90%" } : { width: "100%" }}
+                  style={display ? { width: "100%" } : { width: "100%" }}
                 >
                   <div id="scroll-text">
                     Competition registrations and submissions are extended upto{" "}
