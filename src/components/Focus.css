@@ -20,5 +20,10 @@
 
 .button5:hover {
   background-color: #ffa500;
-  box-shadow: 0px 0px 10px 1px #6aa84f;
+  box-shadow: 0px 0px 10px 1px #ffa500;
+}
+
+.button6:hover {
+  background-color: #674ea7;
+  box-shadow: 0px 0px 15px 1px #674ea7;
 }

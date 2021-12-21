@@ -20,10 +20,20 @@ import image12 from "./ImgFocusPartners/part12.png";
 import image13 from "./ImgFocusPartners/part13.png";
 import image14 from "./ImgFocusPartners/part14.png";
 import image15 from "./ImgFocusPartners/part15.png";
-import image16 from "./ImgFocusPartners/part16.jpg";
+import image16 from "./ImgFocusPartners/part16.png";
 import image17 from "./ImgFocusPartners/part17.png";
 import image18 from "./ImgFocusPartners/part18.png";
 import image19 from "./ImgFocusPartners/part19.jpeg";
+import image20 from "./ImgFocusPartners/part20.jpeg";
+import image21 from "./ImgFocusPartners/part21.png";
+import image22 from "./ImgFocusPartners/part22.png";
+import image23 from "./ImgFocusPartners/part23.png";
+import image24 from "./ImgFocusPartners/part24.jpeg";
+import image25 from "./ImgFocusPartners/part25.png";
+import image26 from "./ImgFocusPartners/part26.png";
+import image27 from "./ImgFocusPartners/part27.png";
+import image28 from "./ImgFocusPartners/part28.jpg";
+import image29 from "./ImgFocusPartners/part29.png";
 
 function AllPartners() {
   const [loginauth, setloginauth] = useState(false);
@@ -529,10 +539,10 @@ function AllPartners() {
                 />
               </center>
               <div className="card-body">
-                <h2 className="card-title py-4">
+                <h2 className="card-title">
                   <b>Magnetophone</b>
                 </h2>
-                {/* <p className="card-text my-4">-----</p> */}
+                <p className="card-text my-4">NIT MANIPUR</p>
               </div>
             </div>
           </div>
@@ -560,7 +570,7 @@ function AllPartners() {
               </center>
               <div className="card-body">
                 <h2 className="card-title py-4">
-                  <b>Tech</b>
+                  <b>NIT Meghalaya</b>
                 </h2>
                 {/* <p className="card-text my-4">NIT AGARTALA</p> */}
               </div>
@@ -626,7 +636,7 @@ function AllPartners() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div>
+          {/* <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div> */}
           <div className="col-md-6 col-lg-4 my-2 my-md-4">
             <div
               className="card mx-auto my-2"
@@ -657,8 +667,9 @@ function AllPartners() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div>
-          {/* <div className="col-md-6 col-lg-4 my-2 my-md-4">
+          {/* <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div> */}
+
+          <div className="col-md-6 col-lg-4 my-2 my-md-4">
             <div
               className="card mx-auto my-2"
               style={{
@@ -682,7 +693,7 @@ function AllPartners() {
               </center>
               <div className="card-body">
                 <h3 className="card-title ">
-                  <b>Social Service Club</b>
+                  <b>ME CLUB</b>
                 </h3>
                 <p className="card-text my-4">NIT NAGALAND</p>
               </div>
@@ -712,9 +723,9 @@ function AllPartners() {
               </center>
               <div className="card-body">
                 <h2 className="card-title ">
-                  <b>MOVIE CLUB</b>
+                  <b>NSS</b>
                 </h2>
-                <p className="card-text my-4">NIT NAGALAND</p>
+                <p className="card-text my-4">Mount Mary College</p>
               </div>
             </div>
           </div>
@@ -742,9 +753,9 @@ function AllPartners() {
               </center>
               <div className="card-body">
                 <h3 className="card-title ">
-                  <b>Student Society</b>
+                  <b>Learning & Service Club</b>
                 </h3>
-                <p className="card-text my-4">NIT Arunachal Pradesh</p>
+                <p className="card-text my-4">Pachhunga University College</p>
               </div>
             </div>
           </div>
@@ -771,10 +782,10 @@ function AllPartners() {
                 />
               </center>
               <div className="card-body">
-                <h2 className="card-title ">
-                  <b>Sanganan Prayog</b>
+                <h2 className="card-title py-4">
+                  <b>NERIST</b>
                 </h2>
-                <p className="card-text my-4">NIT AGARTALA</p>
+                {/* <p className="card-text my-4">NIT AGARTALA</p> */}
               </div>
             </div>
           </div>
@@ -802,12 +813,162 @@ function AllPartners() {
               </center>
               <div className="card-body">
                 <h2 className="card-title ">
-                  <b>EEE SOCIETY</b>
+                  <b>FITNESS CLUB</b>
                 </h2>
-                <p className="card-text my-4">NIT MIZORAM</p>
+                <p className="card-text my-4">NIT NAGALAND</p>
               </div>
-            </div> */}
-          {/* </div> */}
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-4 my-2 my-md-4">
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: display ? "85%" : "80%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={image25}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title pt-2">
+                  <b>Tripura Mathmetical Association</b>
+                </h2>
+                {/* <p className="card-text my-4">NIT NAGALAND</p> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-4 my-2 my-md-4">
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: display ? "85%" : "80%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={image26}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title py-4">
+                  <b>SJU</b>
+                </h2>
+                {/* <p className="card-text my-4">NIT NAGALAND</p> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-4 my-2 my-md-4">
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: display ? "85%" : "80%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={image27}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>CODING CLUB</b>
+                </h2>
+                <p className="card-text my-4">NIT MEGHALAYA</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-4 my-2 my-md-4">
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: display ? "85%" : "80%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={image28}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title py-4">
+                  <b>ACCESS</b>
+                </h2>
+                {/* <p className="card-text my-4">NIT NAGALAND</p> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-4 my-2 my-md-4">
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: display ? "85%" : "80%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={image29}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>MUSIC CLUB</b>
+                </h2>
+                <p className="card-text my-4">NIT NAGALAND</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

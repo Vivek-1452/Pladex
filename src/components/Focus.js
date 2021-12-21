@@ -116,10 +116,9 @@ function Focus() {
                 state: "eventReg",
               }}
             >
-              {/* <a href="./FocusReg"> */}
               <button
                 id="reg"
-                className="button1 btn w-auto mx-auto ms-md-3 ms-0 mt-5 mb-3 py-2 px-3 fs-5"
+                className="button1 btn w-auto mx-auto ms-md-3 ms-0 mt-5 mb-md-3 mb-2 py-2 px-3 fs-5"
                 style={{
                   color: "white",
                   border: "1px solid white",
@@ -128,7 +127,6 @@ function Focus() {
               >
                 <i class="far fa-calendar-check"> </i> Register Now
               </button>
-              {/* </a> */}
             </Link>
             <br />
             <a
@@ -175,7 +173,7 @@ function Focus() {
             >
               <button
                 id="team"
-                className="button3 btn w-auto me-3 ms-4 ms-md-0 ms-lg-0 my-2 py-2"
+                className="button3 btn w-auto me-3 ms-3 ms-md-0 ms-lg-0 my-2 py-2"
                 style={{
                   color: "white",
                   border: "1px solid white",
@@ -185,6 +183,20 @@ function Focus() {
                 <i class="fas fa-users"> </i> Campus Ambassador
               </button>
             </a>
+            <br />
+            <Link to="/AllPartners">
+              <button
+                id="reg"
+                className="button6 btn w-auto mx-auto ms-md-4 ms-0 mt-md-3 mt-2 mb-1 py-2 px-3 fs-6"
+                style={{
+                  color: "white",
+                  border: "1px solid white",
+                  borderRadius: "10px",
+                }}
+              >
+                <i class="far fa-calendar-check"> </i> Partners & Sponsors
+              </button>
+            </Link>
           </div>
           {/* <div className="row">
           <button

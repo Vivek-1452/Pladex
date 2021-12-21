@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import image1 from "./ImgUpcomEvents/Img1.png";
-import image2 from "./ImgUpcomEvents/Img2.png";
-import image3 from "./ImgUpcomEvents/Img3.png";
+// import image3 from "./ImgUpcomEvents/Img3.png";
 import image4 from "./ImgUpcomEvents/Img4.png";
 import image5 from "./ImgUpcomEvents/Img5.png";
 import image6 from "./ImgUpcomEvents/Img6.png";
@@ -21,16 +19,6 @@ export default class UpcomingEventsWeb extends Component {
         x.style.textDecoration = "none";
       }
     };
-
-    // const hoveringCard = (num, id) => {
-    //   var x = document.getElementById(id);
-    //   if (num === "0") {
-    //     x.style.transform = "scale(1.08)";
-    //     x.style.transition = "transform .3s";
-    //   } else {
-    //     x.style.transform = "scale(1)";
-    //   }
-    // };
 
     var settings = {
       dots: true,
@@ -71,7 +59,7 @@ export default class UpcomingEventsWeb extends Component {
           </Link>
         </div>
         <Slider {...settings}>
-          <div>
+          {/* <div>
             <div
               className="card mx-auto my-2 pt-0"
               style={{
@@ -88,8 +76,6 @@ export default class UpcomingEventsWeb extends Component {
                   className="mb-2"
                   src={image1}
                   alt="Upcoming Event 1"
-                  // width="320"
-                  // height="220"
                   style={{
                     height: "100%",
                     width: "100%",
@@ -100,7 +86,6 @@ export default class UpcomingEventsWeb extends Component {
               <div className="card-body">
                 <h3 className="card-title">
                   <span className="text" style={{ color: "#da6220" }}>
-                    {/* <b>Women Empowerment</b> */}
                   </span>
                 </h3>
                 <p className="card-text my-4">
@@ -115,9 +100,6 @@ export default class UpcomingEventsWeb extends Component {
                 >
                   <button
                     className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="women"
-                    // onMouseOver={() => hovering("0", "women")}
-                    // onMouseLeave={() => hovering("1", "women")}
                     style={{ backgroundColor: "#3ad6ab", color: "white" }}
                   >
                     Register
@@ -125,7 +107,7 @@ export default class UpcomingEventsWeb extends Component {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div>
             <div
               className="card mx-auto my-2 pt-0"

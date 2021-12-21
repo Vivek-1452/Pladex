@@ -55,18 +55,18 @@ function EventTemp2() {
     //   date: "Dec 19",
     //   time: "6:07 PM",
     // },
+    // {
+    //   id: 1,
+    //   title: "Women Empowerment",
+    //   label1: "Importance of women empowerment in sustainable development.",
+    //   // label2: "predict the best ",
+    //   // label3: "college for you at ease and comfort.",
+    //   image: image1,
+    //   date: "Dec 20",
+    //   time: "6:07 PM",
+    // },
     {
       id: 1,
-      title: "Women Empowerment",
-      label1: "Importance of women empowerment in sustainable development.",
-      // label2: "predict the best ",
-      // label3: "college for you at ease and comfort.",
-      image: image1,
-      date: "Dec 20",
-      time: "6:07 PM",
-    },
-    {
-      id: 2,
       title: "Emerging Technologies",
       label1:
         "Latest on boarding technology is more than just technical intelligence.",
@@ -77,7 +77,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 3,
+      id: 2,
       title: "Self Defense",
       label1: "How to tackle hassle conditions and defend yourself?",
       // label2: "predict the best ",
@@ -87,7 +87,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 4,
+      id: 3,
       title: "Personality Development",
       label1: "Hone your soft skills and develop a positive influence.",
       // label2: "striving students ",
@@ -97,7 +97,7 @@ function EventTemp2() {
       time: "6:07 PM",
     },
     {
-      id: 5,
+      id: 4,
       title: "Basic Laws and Rights",
       label1: "Basic laws & rights that all the students need to be aware of.",
       // label2: "striving students ",
