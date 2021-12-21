@@ -194,7 +194,7 @@ function Focus() {
                   borderRadius: "10px",
                 }}
               >
-                <i class="far fa-calendar-check"> </i> Partners & Sponsors
+                <i class="fas fa-handshake"> </i> Partners & Sponsors
               </button>
             </Link>
           </div>
