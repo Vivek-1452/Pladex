@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Foot2 from "./foot2";
 import Navnew from "./Navnew";
-import image4 from "./ImgUpcomEvents/Img4.png";
-import image5 from "./ImgUpcomEvents/Img5.png";
-import image6 from "./ImgUpcomEvents/Img6.png";
-import image7 from "./ImgUpcomEvents/Img7.png";
+// import image4 from "./ImgUpcomEvents/Img4.png";
+// import image5 from "./ImgUpcomEvents/Img5.png";
+// import image6 from "./ImgUpcomEvents/Img6.png";
+// import image7 from "./ImgUpcomEvents/Img7.png";
 import pt1 from "./EventLibrary/pt-1.png";
 import pt2 from "./EventLibrary/pt-2.png";
 import pt3 from "./EventLibrary/pt-3.png";
@@ -237,14 +237,14 @@ function EventReg() {
           <i className="fab fa-whatsapp fs-3"></i>&nbsp; Get notified
         </a>
       </div>
-      <div className="row py-4 mx-auto" style={{ backgroundColor: "#f5f6f7" }}>
+      {/* <div className="row py-4 mx-auto" style={{ backgroundColor: "#f5f6f7" }}>
         <h2 className="text-center fw-bold my-3">
           Upcoming{" "}
           <span className="text" style={{ color: "#3ad6ab" }}>
             Events
           </span>
-        </h2>
-        {/* <div className="col-md-6 col-lg-4 my-4">
+        </h2> */}
+      {/* <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
             style={{
@@ -288,7 +288,7 @@ function EventReg() {
             </div>
           </div>
         </div> */}
-        {/* <div className="col-md-6 col-lg-4 my-4">
+      {/* <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
             style={{
@@ -333,7 +333,7 @@ function EventReg() {
             </div>
           </div>
         </div> */}
-        {/* <div className="col-md-6 col-lg-4 my-4">
+      {/* <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
             style={{
@@ -376,7 +376,7 @@ function EventReg() {
             </div>
           </div>
         </div> */}
-        <div className="col-md-6 col-lg-4 my-4">
+      {/* <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
             style={{
@@ -393,8 +393,6 @@ function EventReg() {
                 className="mb-2"
                 src={image4}
                 alt="Upcoming Event 4"
-                // width="320"
-                // height="220"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -405,7 +403,6 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Emerging Technologies</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -418,7 +415,6 @@ function EventReg() {
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  {/* <AddToCalendar event={event} listItems={items} /> */}
                   Register
                 </button>
               </Link>
@@ -485,8 +481,6 @@ function EventReg() {
                 className="mb-2"
                 src={image6}
                 alt="Upcoming Event 6"
-                // width="320"
-                // height="220"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -497,7 +491,6 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Personality Development</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -509,14 +502,12 @@ function EventReg() {
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  {/* <AddToCalendar event={event} listItems={items} /> */}
                   Register
                 </button>
               </Link>
             </div>
           </div>
         </div>
-        {/* <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div> */}
         <div className="col-md-6 col-lg-4 my-4">
           <div
             className="card mx-auto my-2 pt-0"
@@ -534,8 +525,6 @@ function EventReg() {
                 className="mb-2"
                 src={image7}
                 alt="Upcoming Event 7"
-                // width="320"
-                // height="220"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -546,7 +535,6 @@ function EventReg() {
             <div className="card-body">
               <h3 className="card-title">
                 <span className="text" style={{ color: "#da6220" }}>
-                  {/* <b>Basic Laws and Rights</b> */}
                 </span>
               </h3>
               <p className="card-text my-4">
@@ -558,15 +546,14 @@ function EventReg() {
                   className="btn w-auto mx-3 px-4 my-2 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  {/* <AddToCalendar event={event} listItems={items} /> */}
                   Register
                 </button>
               </Link>
             </div>
           </div>
-        </div>
-        {/* <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div> */}
-      </div>
+        </div> */}
+      {/* <div className="col-md-3 col-lg-4 d-sm-none d-md-block d-lg-block"></div> */}
+      {/* </div> */}
 
       {/* Event library */}
 

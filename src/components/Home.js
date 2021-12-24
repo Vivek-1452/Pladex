@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Foot2 from "./foot2";
 import Navnew from "./Navnew";
-import UpcomingEventsWeb from "./UpcomingEventsWeb";
-import EventTemp2 from "./EventTemp2";
+// import UpcomingEventsWeb from "./UpcomingEventsWeb";
+// import EventTemp2 from "./EventTemp2";
 import HomeSlider from "./HomeSlider";
 import OurMission from "./OurMission";
 import CollWeb from "./CollWeb";
@@ -35,11 +35,11 @@ function Home() {
     }
   }, []);
 
-  const [loginauth, setloginauth] = useState(false);
+  // const [loginauth, setloginauth] = useState(false);
 
-  const loginhandler = () => {
-    setloginauth(true);
-  };
+  // const loginhandler = () => {
+  //   setloginauth(true);
+  // };
 
   // const prop1 = () => {
   //   setloginauth(true);
@@ -61,7 +61,7 @@ function Home() {
       <HomeSlider />
       <OurMission />
       {display ? <FeatMob /> : <UpcomEve />}
-      {display ? <EventTemp2 /> : <UpcomingEventsWeb />}
+      {/* {display ? <EventTemp2 /> : <UpcomingEventsWeb />} */}
       {display ? <CollabMob /> : <CollWeb />}
       <Count />
       <Foot2 />

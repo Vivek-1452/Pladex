@@ -82,7 +82,7 @@ function CountFocusmob() {
     {
       id: 3,
       label1: "Partners",
-      label2: "5",
+      label2: "26",
       image: img6,
       label12: "Donations",
       label22: "$ 0.00",

@@ -100,7 +100,7 @@ function CountFocusweb() {
           >
             <img src={img6} alt="Donations" height="150" width="150" />
             <h4 className="fw-bold">Partners</h4>
-            <h5>5</h5>
+            <h5>26</h5>
           </div>
           <div
             className="col-md-2 col-6 my-2"

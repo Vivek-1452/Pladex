@@ -71,7 +71,7 @@ function Focus() {
               <hr
                 style={{
                   height: "4px",
-                  width: "80%",
+                  width: "85%",
                   background:
                     "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
                   marginTop: "0",
@@ -79,13 +79,13 @@ function Focus() {
               />
             </center>
             <div className="mx-auto pb-4 pt-3" style={{ maxWidth: "400px" }}>
-              <img src={logo} alt="logo" style={{ width: "70%" }} />
+              <img src={logo} alt="logo" style={{ width: "80%" }} />
             </div>
             <center>
               <hr
                 style={{
                   height: "4px",
-                  width: "80%",
+                  width: "85%",
                   background:
                     "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
                   marginTop: "0",
@@ -95,7 +95,7 @@ function Focus() {
             <h4 className="fw-light py-2">
               FOR NORTH-EAST STUDENTS – GROW WITH US!
             </h4>
-            <h2 className="fw-bold mt-3 mb-1">
+            {/* <h2 className="fw-bold mt-3 mb-1">
               <center>
                 <div
                   className=""
@@ -109,7 +109,7 @@ function Focus() {
                   </div>
                 </div>
               </center>
-            </h2>
+            </h2> */}
             <Link
               to={{
                 pathname: "/CheckRegister",
@@ -147,13 +147,8 @@ function Focus() {
                 <i class="fas fa-cloud-download-alt"> </i> Download Brochure
               </button>
             </a>
-            <Link
-              to={{
-                pathname: "/CheckReg",
-                state: "compReg",
-              }}
-            >
-              <button
+            <Link to="/AllPartners">
+              {/* <button
                 id="part"
                 className="button4 btn w-auto mx-3 my-2 py-2"
                 style={{
@@ -163,6 +158,17 @@ function Focus() {
                 }}
               >
                 <i class="far fa-lightbulb"> </i> Competition Registration
+              </button> */}
+              <button
+                id="part"
+                className="button4 btn w-auto mx-3 my-2 py-2"
+                style={{
+                  color: "white",
+                  border: "1px solid white",
+                  borderRadius: "10px",
+                }}
+              >
+                <i class="fas fa-handshake"> </i> Partners & Sponsors
               </button>
             </Link>
 
@@ -183,7 +189,7 @@ function Focus() {
                 <i class="fas fa-users"> </i> Campus Ambassador
               </button>
             </a>
-            <br />
+            {/* <br />
             <Link to="/AllPartners">
               <button
                 id="reg"
@@ -196,7 +202,7 @@ function Focus() {
               >
                 <i class="fas fa-handshake"> </i> Partners & Sponsors
               </button>
-            </Link>
+            </Link> */}
           </div>
           {/* <div className="row">
           <button
@@ -290,7 +296,7 @@ function Focus() {
                 data-aos-duration="2000"
               >
                 <h2 className="fw-bold mt-3 mb-4">
-                  <span className="text" style={{ color: "#f6e7d8" }}>
+                  <span className="text" style={{ color: "#fdd9b4" }}>
                     CAMPUS ARTS
                   </span>
                 </h2>
@@ -299,7 +305,7 @@ function Focus() {
                   Students who are passionate about arts can showcase their work
                   by participating in this contest.
                 </p>
-                <a
+                {/* <a
                   href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
@@ -307,7 +313,7 @@ function Focus() {
                   style={{ backgroundColor: "#9ffeff" }}
                 >
                   Rule Book
-                </a>
+                </a> */}
               </div>
               <div className="col-md-2"></div>
               <div
@@ -316,7 +322,7 @@ function Focus() {
                 data-aos-duration="2000"
               >
                 <h2 className="fw-bold mt-3 mb-4">
-                  <span className="text" style={{ color: "#f6e7d8" }}>
+                  <span className="text" style={{ color: "#fdd9b4" }}>
                     CAMPUS GALLERY
                   </span>
                 </h2>
@@ -325,7 +331,7 @@ function Focus() {
                   Students who are interested in photography can display their
                   masterpieces by participating in this contest.
                 </p>
-                <a
+                {/* <a
                   href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
@@ -333,7 +339,7 @@ function Focus() {
                   style={{ backgroundColor: "#e69138" }}
                 >
                   Rule Book
-                </a>
+                </a> */}
               </div>
               <div
                 className="col-md-5 my-3 my-md-5 text-start"
@@ -341,7 +347,7 @@ function Focus() {
                 data-aos-duration="2000"
               >
                 <h2 className="fw-bold mt-3 mb-4">
-                  <span className="text" style={{ color: "#f6e7d8" }}>
+                  <span className="text" style={{ color: "#fdd9b4" }}>
                     CAMPUS WRITINGS
                   </span>
                 </h2>
@@ -350,7 +356,7 @@ function Focus() {
                   Students who are into stories, poems or any kind of writings
                   can improve themselves by taking part in this contest.
                 </p>
-                <a
+                {/* <a
                   href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
@@ -358,7 +364,7 @@ function Focus() {
                   style={{ backgroundColor: "#ddeecc" }}
                 >
                   Rule Book
-                </a>
+                </a> */}
               </div>
               <div className="col-md-2"></div>
               <div
@@ -367,7 +373,7 @@ function Focus() {
                 data-aos-duration="2000"
               >
                 <h2 className="fw-bold mt-3 mb-4">
-                  <span className="text" style={{ color: "#f6e7d8" }}>
+                  <span className="text" style={{ color: "#fdd9b4" }}>
                     CAMPUS SPEAKS
                   </span>
                 </h2>
@@ -378,7 +384,7 @@ function Focus() {
                   with, for any problems faced by many students in North-east
                   India.
                 </p>
-                <a
+                {/* <a
                   href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
@@ -386,7 +392,7 @@ function Focus() {
                   style={{ backgroundColor: "#ddaa77" }}
                 >
                   Rule Book
-                </a>
+                </a> */}
               </div>
               <div
                 className="col-md-5 my-3 my-md-5 text-start"
@@ -394,7 +400,7 @@ function Focus() {
                 data-aos-duration="2000"
               >
                 <h2 className="fw-bold mt-3 mb-4">
-                  <span className="text" style={{ color: "#f6e7d8" }}>
+                  <span className="text" style={{ color: "#fdd9b4" }}>
                     CAMPUS ACTS
                   </span>
                 </h2>
@@ -404,7 +410,7 @@ function Focus() {
                   dancing, singing, stand up comedy or mimicry can show off
                   themselves through this contest.
                 </p>
-                <a
+                {/* <a
                   href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
@@ -412,7 +418,7 @@ function Focus() {
                   style={{ backgroundColor: "#ffd966" }}
                 >
                   Rule Book
-                </a>
+                </a> */}
               </div>
               <div className="col-md-2"></div>
               <div
@@ -421,7 +427,7 @@ function Focus() {
                 data-aos-duration="2000"
               >
                 <h2 className="fw-bold mt-3 mb-4">
-                  <span className="text" style={{ color: "#f6e7d8" }}>
+                  <span className="text" style={{ color: "#fdd9b4" }}>
                     CAMPUS POSES
                   </span>
                 </h2>
@@ -431,7 +437,7 @@ function Focus() {
                   actors can recreate the same look and participate in this
                   contest.
                 </p>
-                <a
+                {/* <a
                   href="https://bit.ly/3lDj7kc"
                   target="_blank"
                   rel="noreferrer"
@@ -439,9 +445,9 @@ function Focus() {
                   style={{ backgroundColor: "#6fa8dc" }}
                 >
                   Rule Book
-                </a>
+                </a> */}
               </div>
-              <Link
+              {/* <Link
                 to={{
                   pathname: "/CheckReg",
                   state: "compReg",
@@ -461,7 +467,7 @@ function Focus() {
                 >
                   <i class="far fa-lightbulb"> </i> Competition Registration
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
