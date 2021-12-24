@@ -30,7 +30,7 @@ import ComingSoon from "./components/ComingSoon";
 import LoginMain from "./components/LoginMain";
 import SignupMain from "./components/SignupMain";
 import CheckReg from "./components/CheckReg";
-import CheckCompReg from "./components/CheckCompReg";
+// import CheckCompReg from "./components/CheckCompReg";
 import EmailValidation from "./components/EmailValidation";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetValidation from "./components/ResetValidation";
@@ -38,7 +38,7 @@ import ResetPassword from "./components/ResetPassword";
 import VerifiedMail from "./components/VerifiedMail";
 import ResetSuccess from "./components/ResetSuccess";
 import ErrorRedirect from "./components/ErrorRedirect";
-import CompRegSuccess from "./components/CompRegSuccess";
+// import CompRegSuccess from "./components/CompRegSuccess";
 import AllPartners from "./components/AllPartners";
 
 function App() {
@@ -115,18 +115,18 @@ function App() {
             <Route path="/RegSuccess">
               <FocusRegSuc />
             </Route>
-            <Route path="/CompRegSuccess">
+            {/* <Route path="/CompRegSuccess">
               <CompRegSuccess />
-            </Route>
+            </Route> */}
             <Route path="/ComingSoon">
               <ComingSoon />
             </Route>
             <Route path="/CheckRegister">
               <CheckReg />
             </Route>
-            <Route path="/CheckReg">
+            {/* <Route path="/CheckReg">
               <CheckCompReg />
-            </Route>
+            </Route> */}
             <Route path="/EmailValidation">
               <EmailValidation />
             </Route>
