@@ -40,6 +40,7 @@ import ResetSuccess from "./components/ResetSuccess";
 import ErrorRedirect from "./components/ErrorRedirect";
 // import CompRegSuccess from "./components/CompRegSuccess";
 import AllPartners from "./components/AllPartners";
+import Btechsubject from "./components/dlibrary/btechsubject";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -150,6 +151,9 @@ function App() {
             </Route>
             <Route path="/AllPartners">
               <AllPartners />
+            </Route>
+            <Route path="/dlibrary">
+              <Btechsubject />
             </Route>
             {/* <Route path="/DLibrary">
               <Btechsubject />

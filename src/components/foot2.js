@@ -90,7 +90,7 @@ function foot2() {
           <div className="col-md-6 col-lg-2 my-3">
             <h5 className="mx-auto fw-bold">Features</h5>
             <br />
-            <Link to="/ComingSoon" className="links">
+            <Link to="/dlibrary" className="links">
               <p>DLibrary</p>
             </Link>
             <a

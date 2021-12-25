@@ -229,7 +229,7 @@ function EventReg() {
           rel="noreferrer"
           className="btn mx-auto px-4 py-2 fs-5"
           style={{
-            backgroundColor: "#25d366",
+            // backgroundColor: "#25d366",
             width: "auto",
             color: "white",
           }}
