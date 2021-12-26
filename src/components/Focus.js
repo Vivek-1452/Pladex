@@ -66,12 +66,12 @@ function Focus() {
           }}
         >
           <div className="mx-auto pb-5 pt-2" style={{ width: "auto" }}>
-            <h3 className="fw-bold pb-2">15 - 26 DECEMBER 2021</h3>
+            <h3 className="fw-bold py-2">15 - 26 DECEMBER 2021</h3>
             <center>
               <hr
                 style={{
                   height: "4px",
-                  width: "85%",
+                  width: "90%",
                   background:
                     "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
                   marginTop: "0",
@@ -79,13 +79,13 @@ function Focus() {
               />
             </center>
             <div className="mx-auto pb-4 pt-3" style={{ maxWidth: "400px" }}>
-              <img src={logo} alt="logo" style={{ width: "80%" }} />
+              <img src={logo} alt="logo" style={{ width: "95%" }} />
             </div>
             <center>
               <hr
                 style={{
                   height: "4px",
-                  width: "85%",
+                  width: "90%",
                   background:
                     "linear-gradient(to right, rgba(0, 0, 0, 0), #3ad6ab, rgba(0, 0, 0, 0))",
                   marginTop: "0",
@@ -110,7 +110,7 @@ function Focus() {
                 </div>
               </center>
             </h2> */}
-            <Link
+            {/* <Link
               to={{
                 pathname: "/CheckRegister",
                 state: "eventReg",
@@ -127,7 +127,8 @@ function Focus() {
               >
                 <i class="far fa-calendar-check"> </i> Register Now
               </button>
-            </Link>
+            </Link> */}
+            <br />
             <br />
             <a
               href="https://bit.ly/3opHcwM"

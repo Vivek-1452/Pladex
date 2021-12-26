@@ -309,6 +309,7 @@ function Btechsubject() {
                         border: "1px solid black",
                         borderTopLeftRadius: 5,
                         borderBottomLeftRadius: 5,
+                        borderRadius: "5px 0 0 5px",
                       }}
                     >
                       <option value="Author">Author</option>
@@ -339,7 +340,7 @@ function Btechsubject() {
                     onChange={(event) => setsearch(event.target.value)}
                     placeholder="Search for the book"
                     id="myInput"
-                    className="form-control text-center"
+                    className="form-control"
                     style={{
                       border: "1px solid black",
                       borderRadiusTopRight: 5,
@@ -347,7 +348,7 @@ function Btechsubject() {
                     }}
                   ></input>
                   <button
-                    className="button btn btn-success "
+                    className="button btn btn-success px-3"
                     id="searchbtn"
                     onClick={handleSearch}
                   >
@@ -519,6 +520,23 @@ function Btechsubject() {
             </div>
           </Link>
         </div>
+        <Link to="/uploadbook">
+          <div
+            style={{
+              position: "fixed",
+              bottom: "20px",
+              right: "20px",
+              // zIndex: "100",
+              height: "60px",
+              width: "60px",
+              borderRadius: "50%",
+              boxShadow: "0 0 10px 0.5px #5c5e64",
+              backgroundColor: "#3ad6ab",
+            }}
+          >
+            <i class="fas fa-upload fs-4 pt-2" style={{ color: "white" }}></i>
+          </div>
+        </Link>
       </div>
       <Foot2 />
     </>

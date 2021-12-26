@@ -41,6 +41,7 @@ import ErrorRedirect from "./components/ErrorRedirect";
 // import CompRegSuccess from "./components/CompRegSuccess";
 import AllPartners from "./components/AllPartners";
 import Btechsubject from "./components/dlibrary/btechsubject";
+import Upload from "./components/dlibrary/upload";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -154,6 +155,9 @@ function App() {
             </Route>
             <Route path="/dlibrary">
               <Btechsubject />
+            </Route>
+            <Route path="/uploadbook">
+              <Upload />
             </Route>
             {/* <Route path="/DLibrary">
               <Btechsubject />
