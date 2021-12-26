@@ -77,7 +77,7 @@ function Btechsubject() {
                     {book.Bookimglink.length > 3 ? (
                       <img src={book.Bookimglink} width="100px" alt="img"></img>
                     ) : (
-                      <Svg bookname={book.Bookname} />
+                      <Svg bookname={book.Bookname} author={book.Authors} />
                     )}
                   </div>
                 }
@@ -483,43 +483,43 @@ function Btechsubject() {
             </a>
           </div>
         </nav>
-        <div className="users justify-content-center mx-auto">
-          {" "}
-          {Displayusers}
-          <ReactPaginate
-            previousLabel={"Previous"}
-            nextLabel={"Next"}
-            pageCount={pageCount}
-            onPageChange={changePage}
-            containerClassName={"paginationBttns"}
-            previousLinkClassName={"previousBttn"}
-            nextLinkClassName={"nextBttn"}
-            disabledClassName={"pagiantionDisabled"}
-            activeClassName={"paginationActive"}
-            previousClassName={"previouspage"}
-            nextClassName={"nextpage"}
-            pageLinkClassName={"pageBttn"}
-            pageClassName={"pageclassBttn"}
-          />{" "}
-        </div>
 
-        <div
-          className="notfound text-center mt-5"
-          id="notfound"
-          style={{ visibility: "hidden" }}
-        >
-          <img src={Btechimg2} alt="img"></img>
-          <p className="p1">sorry we dont have what you are looking for</p>
-          <p className="p3">
-            please tap on request and fill the details of what you are looking
-            for
-          </p>
-          <Link to="/request">
-            <div className="my-5">
-              <button className="btn px-5">Request</button>
-            </div>
-          </Link>
-        </div>
+        {searchdata.length > 0 ? (
+          <div className="users justify-content-center mx-auto">
+            {" "}
+            {Displayusers}
+            <ReactPaginate
+              previousLabel={"Previous"}
+              nextLabel={"Next"}
+              pageCount={pageCount}
+              onPageChange={changePage}
+              containerClassName={"paginationBttns"}
+              previousLinkClassName={"previousBttn"}
+              nextLinkClassName={"nextBttn"}
+              disabledClassName={"pagiantionDisabled"}
+              activeClassName={"paginationActive"}
+              previousClassName={"previouspage"}
+              nextClassName={"nextpage"}
+              pageLinkClassName={"pageBttn"}
+              pageClassName={"pageclassBttn"}
+            />{" "}
+          </div>
+        ) : (
+          <div className="notfound text-center mt-5" id="notfound">
+            <img src={Btechimg2} alt="img"></img>
+            <p className="p1">Sorry! We don't have what you are looking for.</p>
+            <p className="p3">
+              Please tap on request and fill the details of what you are looking
+              for
+            </p>
+            <Link to="/request">
+              <div className="my-3">
+                <button className="btn px-5 fs-5">Request</button>
+              </div>
+            </Link>
+          </div>
+        )}
+
         <Link to="/uploadbook">
           <div
             style={{
