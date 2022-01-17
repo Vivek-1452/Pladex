@@ -41,7 +41,7 @@ function HomeSlider() {
             margin: "0 8px",
           }}
         ></button>
-        <button
+        {/* <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
@@ -66,10 +66,10 @@ function HomeSlider() {
             borderRadius: "50%",
             margin: "0 8px",
           }}
-        ></button>
+        ></button> */}
       </div>
       <div className="carousel-inner p-0">
-        <div
+        {/* <div
           className="carousel-item active p-0"
           style={{ backgroundColor: "#f5f6f7", border: "none" }}
         >
@@ -90,9 +90,9 @@ function HomeSlider() {
             className="d-block w-100"
             alt="..."
           />
-        </div>
+        </div> */}
         <div
-          className="carousel-item p-0"
+          className="carousel-item active p-0"
           style={{ backgroundColor: "#f5f6f7", border: "none" }}
         >
           <img

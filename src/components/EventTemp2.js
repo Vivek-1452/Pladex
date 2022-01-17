@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Event.css";
 import image1 from "./ImgUpcomEvents/Img1.png";
-// import image2 from "./ImgUpcomEvents/Img2.png";
-// import image3 from "./ImgUpcomEvents/Img3.png";
+import image2 from "./ImgUpcomEvents/Img2.png";
+import image3 from "./ImgUpcomEvents/Img3.png";
 import image4 from "./ImgUpcomEvents/Img4.png";
 import image5 from "./ImgUpcomEvents/Img5.png";
 import image6 from "./ImgUpcomEvents/Img6.png";
@@ -34,39 +34,42 @@ function EventTemp2() {
   };
 
   const slidesData = [
-    // {
-    //   id: 1,
-    //   title: "Entrepreneurship",
-    //   label1: "Construct and Evolve. Get inspired to be an entrepreneur!",
-    //   // label2: "details of colleges ",
-    //   // label3: "needed for admission process.",
-    //   image: image2,
-    //   date: "Dec 18",
-    //   time: "6:07 PM",
-    // },
-    // {
-    //   id: 1,
-    //   title: "Mental Health",
-    //   label1:
-    //     "Know feasible ways to relieve stress & anxiety and be mentally fit.",
-    //   // label2: "striving students ",
-    //   // label3: "from various colleges.",
-    //   image: image3,
-    //   date: "Dec 19",
-    //   time: "6:07 PM",
-    // },
-    // {
-    //   id: 1,
-    //   title: "Women Empowerment",
-    //   label1: "Importance of women empowerment in sustainable development.",
-    //   // label2: "predict the best ",
-    //   // label3: "college for you at ease and comfort.",
-    //   image: image1,
-    //   date: "Dec 20",
-    //   time: "6:07 PM",
-    // },
     {
       id: 1,
+      title: "Entrepreneurship",
+      label1: "Construct and Evolve. Get inspired to be an entrepreneur!",
+      // label2: "details of colleges ",
+      // label3: "needed for admission process.",
+      image: image1,
+      date: "Dec 18",
+      time: "6:07 PM",
+      link: "https://youtu.be/ayrjVGl_ZEQ",
+    },
+    {
+      id: 2,
+      title: "Mental Health",
+      label1:
+        "Know feasible ways to relieve stress & anxiety and be mentally fit.",
+      // label2: "striving students ",
+      // label3: "from various colleges.",
+      image: image2,
+      date: "Dec 19",
+      time: "6:07 PM",
+      link: "https://youtu.be/BNYwH1X8VbQ",
+    },
+    {
+      id: 3,
+      title: "Women Empowerment",
+      label1: "Importance of women empowerment in sustainable development.",
+      // label2: "predict the best ",
+      // label3: "college for you at ease and comfort.",
+      image: image3,
+      date: "Dec 20",
+      time: "6:07 PM",
+      link: "https://youtu.be/CdkA1fUTFIM",
+    },
+    {
+      id: 4,
       title: "Emerging Technologies",
       label1:
         "Latest on boarding technology is more than just technical intelligence.",
@@ -75,9 +78,10 @@ function EventTemp2() {
       image: image4,
       date: "Dec 21",
       time: "6:07 PM",
+      link: "https://youtu.be/LStGEbPODmA",
     },
     {
-      id: 2,
+      id: 5,
       title: "Self Defense",
       label1: "How to tackle hassle conditions and defend yourself?",
       // label2: "predict the best ",
@@ -85,9 +89,10 @@ function EventTemp2() {
       image: image5,
       date: "Dec 22",
       time: "6:07 PM",
+      link: "https://youtu.be/BwPuQp1EzcU",
     },
     {
-      id: 3,
+      id: 6,
       title: "Personality Development",
       label1: "Hone your soft skills and develop a positive influence.",
       // label2: "striving students ",
@@ -95,9 +100,10 @@ function EventTemp2() {
       image: image6,
       date: "Dec 23",
       time: "6:07 PM",
+      link: "https://youtu.be/ftnkjhEZyPU",
     },
     {
-      id: 4,
+      id: 7,
       title: "Basic Laws and Rights",
       label1: "Basic laws & rights that all the students need to be aware of.",
       // label2: "striving students ",
@@ -105,6 +111,7 @@ function EventTemp2() {
       image: image7,
       date: "Dec 24",
       time: "6:07 PM",
+      link: "https://youtu.be/Tj2SQoZlB_k",
     },
     // {
     //   id: 8,
@@ -117,8 +124,12 @@ function EventTemp2() {
   ];
 
   return (
-    <React.Fragment>
-      <div className="slider-wrapper pt-5 pb-3 mb-4" id="mobile">
+    <div style={{ backgroundColor: "#f5f6f7" }}>
+      <div
+        className="slider-wrapper pb-5"
+        id="mobile"
+        style={{ backgroundColor: "#f5f6f7" }}
+      >
         {/* <div className="pt-0 d-none d-md-block">
           <h4 className="text-center fw-bold display-6 mb-0">
             Upcoming{" "}
@@ -141,7 +152,7 @@ function EventTemp2() {
         </div> */}
         <div className="pt-0 d-md-none d-lg-none">
           <h4 className="text-center fw-bold display-6 mb-0">
-            Upcoming{" "}
+            Our{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
               Events
             </span>
@@ -205,7 +216,7 @@ function EventTemp2() {
                         Register
                       </button>
                     </Link> */}
-                    <p className="float-start my-3 ms-3">
+                    {/* <p className="float-start my-3 ms-3">
                       {slide.date} | {slide.time}
                     </p>
                     <Link
@@ -220,7 +231,17 @@ function EventTemp2() {
                       >
                         Register
                       </button>
-                    </Link>
+                    </Link> */}
+                    <a
+                      href={slide.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      // className="btn w-auto m-2 px-3 float-lg-end"
+                      className="btn w-auto px-3 my-2 mx-auto"
+                      style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                    >
+                      Watch now
+                    </a>
                   </div>
                 </div>
               </div>
@@ -228,7 +249,7 @@ function EventTemp2() {
           ))}
         </Slider>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

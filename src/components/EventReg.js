@@ -18,6 +18,14 @@ import pt8 from "./EventLibrary/pt-8.png";
 import pt9 from "./EventLibrary/pt-9.png";
 import pt10 from "./EventLibrary/pt-10.png";
 import img1 from "./Events-amico.png";
+import image1 from "./ImgUpcomEvents/Img1.png";
+import image2 from "./ImgUpcomEvents/Img2.png";
+import image3 from "./ImgUpcomEvents/Img3.png";
+import image4 from "./ImgUpcomEvents/Img4.png";
+import image5 from "./ImgUpcomEvents/Img5.png";
+import image6 from "./ImgUpcomEvents/Img6.png";
+import image7 from "./ImgUpcomEvents/Img7.png";
+// import image8 from "./ImgUpcomEvents/Img8.png";
 
 function EventReg() {
   const [loginauth, setloginauth] = useState(false);
@@ -217,7 +225,7 @@ function EventReg() {
         </div>
       </div>
       <div
-        className="row d-lg-none d-md-none d-block pt-4 mx-0"
+        className="row d-lg-none d-md-none d-block py-4 mx-0"
         style={{ backgroundColor: "#f5f6f7", width: "100vw" }}
       >
         <h6 className="mb-3 fw-light">
@@ -229,7 +237,7 @@ function EventReg() {
           rel="noreferrer"
           className="btn mx-auto px-4 py-2 fs-5"
           style={{
-            // backgroundColor: "#25d366",
+            backgroundColor: "#25d366",
             width: "auto",
             color: "white",
           }}
@@ -557,13 +565,376 @@ function EventReg() {
 
       {/* Event library */}
 
-      <div className="row py- mx-0" style={{ width: "100vw" }}>
-        <h2 className="text-center fw-bold my-3">
+      <div className="row mx-0" style={{ width: "100vw" }}>
+        {/* <h1 className="text-center fw-bold my-3 display-4">
           Event{" "}
           <span className="text" style={{ color: "#3ad6ab" }}>
             library
           </span>
-        </h2>
+        </h1> */}
+        {/* <h1 className="text-center fw-bold my-3">
+          Focus Next India{" "}
+          <span className="text" style={{ color: "#3ad6ab" }}>
+            talks
+          </span>
+        </h1> */}
+        <h1 className="fw-bold mt-3 mb-md-4">
+          <span className="text" style={{ color: "#f5c89b" }}>
+            FOCUS
+          </span>{" "}
+          <span className="text" style={{ color: "#ffbd59 " }}>
+            O
+          </span>
+          <span className="text" style={{ color: "#da6220 " }}>
+            NE
+          </span>{" "}
+          <span className="text" style={{ color: "#f5c89b" }}>
+            STUDENTS
+          </span>
+        </h1>
+        <div className="col-md-6 col-lg-4 my-4" id="ME/ep10">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image1}
+                alt="Podium Talks 10"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 10</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Importance of women empowerment in sustainable development.
+              </p>
+              {/* <Link to="/ep10" style={{ textDecoration: "none" }}>
+                <a
+                  href="."
+                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
+                >
+                  Documentation
+                </a>
+              </Link> */}
+              <a
+                href="https://youtu.be/ayrjVGl_ZEQ"
+                target="_blank"
+                rel="noreferrer"
+                // className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="CV/ep9">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image2}
+                alt="Podium Talks 9"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 9</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Construct and Evolve. Get inspired to be an entrepreneur!
+              </p>
+              <a
+                href="https://youtu.be/BNYwH1X8VbQ"
+                target="_blank"
+                rel="noreferrer"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="CH/ep8">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image3}
+                alt="Podium Talks 8"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 8</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Know feasible ways to relieve stress & anxiety and be mentally
+                fit.
+              </p>
+              <a
+                href="https://youtu.be/CdkA1fUTFIM"
+                target="_blank"
+                rel="noreferrer"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="ME/ep10">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image4}
+                alt="Podium Talks 10"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 10</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Latest on boarding technology is more than just technical
+                intelligence.
+              </p>
+              {/* <Link to="/ep10" style={{ textDecoration: "none" }}>
+                <a
+                  href="."
+                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
+                >
+                  Documentation
+                </a>
+              </Link> */}
+              <a
+                href="https://youtu.be/LStGEbPODmA"
+                target="_blank"
+                rel="noreferrer"
+                // className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="CV/ep9">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image5}
+                alt="Podium Talks 9"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 9</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                How to tackle hassle conditions and defend yourself?
+              </p>
+              <a
+                href="https://youtu.be/BwPuQp1EzcU"
+                target="_blank"
+                rel="noreferrer"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="CH/ep8">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image6}
+                alt="Podium Talks 8"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 8</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Hone your soft skills and develop a positive influence.
+              </p>
+              <a
+                href="https://youtu.be/ftnkjhEZyPU"
+                target="_blank"
+                rel="noreferrer"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 my-4" id="ME/ep10">
+          <div
+            className="card mx-auto my-2 pt-0"
+            style={{
+              minWidth: "250px",
+              width: "75%",
+              height: "95%",
+              border: "none",
+              borderRadius: "10px",
+              boxShadow: "0 0 3px #999",
+            }}
+          >
+            <center>
+              <img
+                className="mb-2"
+                src={image7}
+                alt="Podium Talks 10"
+                // width="320"
+                // height="220"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  borderRadius: "10px 10px 0 0",
+                }}
+              />
+            </center>
+            <div className="card-body">
+              <h3 className="card-title">{/* <b>Episode 10</b> */}</h3>
+              {/* <h5>Week 8</h5> */}
+              <p className="card-text my-4">
+                Basic laws & rights that all the students need to be aware of.
+              </p>
+              {/* <Link to="/ep10" style={{ textDecoration: "none" }}>
+                <a
+                  href="."
+                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
+                >
+                  Documentation
+                </a>
+              </Link> */}
+              <a
+                href="https://youtu.be/Tj2SQoZlB_k"
+                target="_blank"
+                rel="noreferrer"
+                // className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto px-3 my-2 mx-auto"
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Watch now
+              </a>
+            </div>
+          </div>
+        </div>
+        <h1 className="text-center fw-bold my-3">
+          Podium{" "}
+          <span className="text" style={{ color: "#3ad6ab" }}>
+            talks
+          </span>
+        </h1>
         <div
           className="text-start ms-md-4 ms-3 my-4 p-0"
           style={{ width: "95vw" }}

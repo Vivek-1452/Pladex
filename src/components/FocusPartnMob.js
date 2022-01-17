@@ -117,13 +117,13 @@ function EventTemp2() {
   ];
 
   return (
-    <div className="bg-light">
+    <div style={{ backgroundColor: "#f5f6f7" }}>
       <div className="slider-wrapper pt-5 pb-5" id="mobile">
         <div className="pt-0 d-md-none d-lg-none">
           <h4 className="text-center fw-bold display-6 mb-0">
-            OUR{" "}
+            Our{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
-              PARTNERS
+              Partners
             </span>
             <Link
               to="/AllPartners"

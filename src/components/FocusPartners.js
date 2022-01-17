@@ -33,15 +33,15 @@ export default class FocusPartners extends Component {
       pauseOnHover: true,
     };
     return (
-      <div className="bg-light pb-5">
+      <div className="py-5" style={{ backgroundColor: "#f5f6f7" }}>
         <div className="pb-3">
           <h4
             className="text-center fw-bold display-6 mt-3 mb-1 ps-5 ms-5 w-auto"
             style={{ display: "inline-block" }}
           >
-            OUR{" "}
+            Our{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
-              PARTNERS
+              Partners
             </span>
           </h4>
           <Link to="/AllPartners">

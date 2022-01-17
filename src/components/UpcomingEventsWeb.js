@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // import image3 from "./ImgUpcomEvents/Img3.png";
+import image1 from "./ImgUpcomEvents/Img1.png";
+import image2 from "./ImgUpcomEvents/Img2.png";
+import image3 from "./ImgUpcomEvents/Img3.png";
 import image4 from "./ImgUpcomEvents/Img4.png";
 import image5 from "./ImgUpcomEvents/Img5.png";
 import image6 from "./ImgUpcomEvents/Img6.png";
@@ -31,13 +34,13 @@ export default class UpcomingEventsWeb extends Component {
     };
 
     return (
-      <div className="pb-5 pt-0">
+      <div className="pb-5 pt-0" style={{ backgroundColor: "#f5f6f7" }}>
         <div className="pb-3">
           <h4
             className="text-center fw-bold display-6 mt-3 mb-1 ps-5 ms-5 w-auto"
             style={{ display: "inline-block" }}
           >
-            Upcoming{" "}
+            Our{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
               Events
             </span>
@@ -59,7 +62,7 @@ export default class UpcomingEventsWeb extends Component {
           </Link>
         </div>
         <Slider {...settings}>
-          {/* <div>
+          <div>
             <div
               className="card mx-auto my-2 pt-0"
               style={{
@@ -85,13 +88,12 @@ export default class UpcomingEventsWeb extends Component {
               </center>
               <div className="card-body">
                 <h3 className="card-title">
-                  <span className="text" style={{ color: "#da6220" }}>
-                  </span>
+                  <span className="text" style={{ color: "#da6220" }}></span>
                 </h3>
                 <p className="card-text my-4">
                   Importance of women empowerment in sustainable development.
                 </p>
-                <p className="float-lg-start my-3 ms-3">Dec 20 | 6:07 PM</p>
+                {/* <p className="float-lg-start my-3 ms-3">Dec 20 | 6:07 PM</p>
                 <Link
                   to={{
                     pathname: "/CheckRegister",
@@ -104,10 +106,20 @@ export default class UpcomingEventsWeb extends Component {
                   >
                     Register
                   </button>
-                </Link>
+                </Link> */}
+                <a
+                  href="https://youtu.be/ayrjVGl_ZEQ"
+                  target="_blank"
+                  rel="noreferrer"
+                  // className="btn w-auto m-2 px-3 float-lg-end"
+                  className="btn w-auto px-3 my-2 mx-auto"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Watch now
+                </a>
               </div>
             </div>
-          </div> */}
+          </div>
           <div>
             <div
               className="card mx-auto my-2 pt-0"
@@ -144,7 +156,7 @@ export default class UpcomingEventsWeb extends Component {
                   Latest on boarding technology is more than just technical
                   intelligence.
                 </p>
-                <p className="float-lg-start my-3 ms-3">Dec 21 | 6:07 PM</p>
+                {/* <p className="float-lg-start my-3 ms-3">Dec 21 | 6:07 PM</p>
                 <Link
                   to={{
                     pathname: "/CheckRegister",
@@ -160,7 +172,17 @@ export default class UpcomingEventsWeb extends Component {
                   >
                     Register
                   </button>
-                </Link>
+                </Link> */}
+                <a
+                  href="https://youtu.be/LStGEbPODmA"
+                  target="_blank"
+                  rel="noreferrer"
+                  // className="btn w-auto m-2 px-3 float-lg-end"
+                  className="btn w-auto px-3 my-2 mx-auto"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Watch now
+                </a>
               </div>
             </div>
           </div>
@@ -199,7 +221,7 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   How to tackle hassle conditions and defend yourself?
                 </p>
-                <p className="float-lg-start my-3 ms-3">Dec 22 | 6:07 PM</p>
+                {/* <p className="float-lg-start my-3 ms-3">Dec 22 | 6:07 PM</p>
                 <Link
                   to={{
                     pathname: "/CheckRegister",
@@ -215,7 +237,16 @@ export default class UpcomingEventsWeb extends Component {
                   >
                     Register
                   </button>
-                </Link>
+                </Link> */}
+                <a
+                  href="https://youtu.be/BwPuQp1EzcU"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn w-auto px-3 my-2 mx-auto"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Watch now
+                </a>
               </div>
             </div>
           </div>
@@ -254,7 +285,7 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   Hone your soft skills and develop a positive influence.
                 </p>
-                <p className="float-lg-start my-3 ms-3">Dec 23 | 6:07 PM</p>
+                {/* <p className="float-lg-start my-3 ms-3">Dec 23 | 6:07 PM</p>
                 <Link
                   to={{
                     pathname: "/CheckRegister",
@@ -270,7 +301,16 @@ export default class UpcomingEventsWeb extends Component {
                   >
                     Register
                   </button>
-                </Link>
+                </Link> */}
+                <a
+                  href="https://youtu.be/ftnkjhEZyPU"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn w-auto px-3 my-2 mx-auto"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Watch now
+                </a>
               </div>
             </div>
           </div>
@@ -309,7 +349,7 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   Basic laws & rights that all the students need to be aware of.
                 </p>
-                <p className="float-lg-start my-3 ms-3">Dec 24 | 6:07 PM</p>
+                {/* <p className="float-lg-start my-3 ms-3">Dec 24 | 6:07 PM</p>
                 <Link
                   to={{
                     pathname: "/CheckRegister",
@@ -325,7 +365,17 @@ export default class UpcomingEventsWeb extends Component {
                   >
                     Register
                   </button>
-                </Link>
+                </Link> */}
+                <a
+                  href="https://youtu.be/Tj2SQoZlB_k"
+                  target="_blank"
+                  rel="noreferrer"
+                  // className="btn w-auto m-2 px-3 float-lg-end"
+                  className="btn w-auto px-3 my-2 mx-auto"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Watch now
+                </a>
               </div>
             </div>
           </div>
