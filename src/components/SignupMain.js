@@ -86,6 +86,18 @@ function SignupMain() {
     }
   }
 
+  function onSignIn(googleUser) {
+    var id_token = googleUser.getAuthResponse().id_token;
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://65.1.96.8:8000/oauth/google");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onload = function () {
+      console.log("Signed in as: " + xhr.responseText);
+    };
+    xhr.send("idtoken=" + id_token);
+  }
+
   return (
     <div
       style={{
@@ -282,6 +294,7 @@ function SignupMain() {
                 <span>Login</span>
               </Link>
             </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
           </div>
         </div>
       </div>
