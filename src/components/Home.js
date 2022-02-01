@@ -66,7 +66,7 @@ function Home() {
       {/* <OurMission /> */}
       {display ? <FeatMob /> : <UpcomEve />}
       {display ? <EventTemp2 /> : <UpcomingEventsWeb />}
-      {display ? <CollabMob /> : <CollWeb />}
+      {/* {display ? <CollabMob /> : <CollWeb />} */}
       {display ? <FocusPartnMob /> : <FocusPartners />}
       {display ? <TestimonialsMob /> : <Testimonials />}
       <Count />

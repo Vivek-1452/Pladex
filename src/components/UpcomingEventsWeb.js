@@ -102,7 +102,7 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   Importance of women empowerment in sustainable development.
                 </p>
-                <AddToCalender event={event} />
+                {/* <AddToCalender event={event} /> */}
                 <p
                   className="btn w-auto float-lg-start m-2 pt-2 ms-1"
                   style={{
@@ -175,29 +175,21 @@ export default class UpcomingEventsWeb extends Component {
                   Latest on boarding technology is more than just technical
                   intelligence.
                 </p>
-                {/* <p className="float-lg-start my-3 ms-3">Dec 21 | 6:07 PM</p>
-                <Link
-                  to={{
-                    pathname: "/CheckRegister",
-                    state: "eventReg",
+                <p
+                  className="btn w-auto float-lg-start m-2 pt-2 ms-1"
+                  style={{
+                    backgroundColor: "#e6e7e9",
+                    color: "black",
+                    fontSize: "14px",
                   }}
                 >
-                  <button
-                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="tech"
-                    // onMouseOver={() => hovering("0", "tech")}
-                    // onMouseLeave={() => hovering("1", "tech")}
-                    style={{ backgroundColor: "#3ad6ab", color: "white" }}
-                  >
-                    Register
-                  </button>
-                </Link> */}
+                  Dec 20 | 6:07 PM
+                </p>
                 <a
-                  href="https://youtu.be/LStGEbPODmA"
+                  href="https://youtu.be/ayrjVGl_ZEQ"
                   target="_blank"
                   rel="noreferrer"
-                  // className="btn w-auto m-2 px-3 float-lg-end"
-                  className="btn w-auto px-3 my-2 mx-auto"
+                  className="btn w-auto m-2 px-3 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Watch now
@@ -240,28 +232,21 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   How to tackle hassle conditions and defend yourself?
                 </p>
-                {/* <p className="float-lg-start my-3 ms-3">Dec 22 | 6:07 PM</p>
-                <Link
-                  to={{
-                    pathname: "/CheckRegister",
-                    state: "eventReg",
+                <p
+                  className="btn w-auto float-lg-start m-2 pt-2 ms-1"
+                  style={{
+                    backgroundColor: "#e6e7e9",
+                    color: "black",
+                    fontSize: "14px",
                   }}
                 >
-                  <button
-                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="tackl"
-                    // onMouseOver={() => hovering("0", "tackl")}
-                    // onMouseLeave={() => hovering("1", "tackl")}
-                    style={{ backgroundColor: "#3ad6ab", color: "white" }}
-                  >
-                    Register
-                  </button>
-                </Link> */}
+                  Dec 20 | 6:07 PM
+                </p>
                 <a
-                  href="https://youtu.be/BwPuQp1EzcU"
+                  href="https://youtu.be/ayrjVGl_ZEQ"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn w-auto px-3 my-2 mx-auto"
+                  className="btn w-auto m-2 px-3 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Watch now
@@ -304,28 +289,21 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   Hone your soft skills and develop a positive influence.
                 </p>
-                {/* <p className="float-lg-start my-3 ms-3">Dec 23 | 6:07 PM</p>
-                <Link
-                  to={{
-                    pathname: "/CheckRegister",
-                    state: "eventReg",
+                <p
+                  className="btn w-auto float-lg-start m-2 pt-2 ms-1"
+                  style={{
+                    backgroundColor: "#e6e7e9",
+                    color: "black",
+                    fontSize: "14px",
                   }}
                 >
-                  <button
-                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="soft"
-                    // onMouseOver={() => hovering("0", "soft")}
-                    // onMouseLeave={() => hovering("1", "soft")}
-                    style={{ backgroundColor: "#3ad6ab", color: "white" }}
-                  >
-                    Register
-                  </button>
-                </Link> */}
+                  Dec 20 | 6:07 PM
+                </p>
                 <a
-                  href="https://youtu.be/ftnkjhEZyPU"
+                  href="https://youtu.be/ayrjVGl_ZEQ"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn w-auto px-3 my-2 mx-auto"
+                  className="btn w-auto m-2 px-3 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Watch now
@@ -368,29 +346,21 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   Basic laws & rights that all the students need to be aware of.
                 </p>
-                {/* <p className="float-lg-start my-3 ms-3">Dec 24 | 6:07 PM</p>
-                <Link
-                  to={{
-                    pathname: "/CheckRegister",
-                    state: "eventReg",
+                <p
+                  className="btn w-auto float-lg-start m-2 pt-2 ms-1"
+                  style={{
+                    backgroundColor: "#e6e7e9",
+                    color: "black",
+                    fontSize: "14px",
                   }}
                 >
-                  <button
-                    className="btn w-auto mx-3 px-4 my-2 float-lg-end"
-                    // id="laws"
-                    // onMouseOver={() => hovering("0", "laws")}
-                    // onMouseLeave={() => hovering("1", "laws")}
-                    style={{ backgroundColor: "#3ad6ab", color: "white" }}
-                  >
-                    Register
-                  </button>
-                </Link> */}
+                  Dec 20 | 6:07 PM
+                </p>
                 <a
-                  href="https://youtu.be/Tj2SQoZlB_k"
+                  href="https://youtu.be/ayrjVGl_ZEQ"
                   target="_blank"
                   rel="noreferrer"
-                  // className="btn w-auto m-2 px-3 float-lg-end"
-                  className="btn w-auto px-3 my-2 mx-auto"
+                  className="btn w-auto m-2 px-3 float-lg-end"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Watch now

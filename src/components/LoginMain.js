@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router";
+import GoogleLogin from "react-google-login";
 import main from "./loginbg.svg";
 // import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
@@ -56,17 +57,18 @@ function LoginMain(props) {
     }
   }
 
-  function onSignIn(googleUser) {
-    var id_token = googleUser.getAuthResponse().id_token;
+  const handleLogin = async (googleData) => {
+    const res = await fetch("/oauth/google_login", {
+      method: "POST",
+      body: "token = " + googleData.tokenId,
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://65.1.96.8:8000/oauth/google");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onload = function () {
-      console.log("Signed in as: " + xhr.responseText);
-    };
-    xhr.send("idtoken=" + id_token);
-  }
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+    const data = await res.json();
+    // store returned user somehow
+  };
 
   return (
     <div
@@ -251,7 +253,13 @@ function LoginMain(props) {
                 <span>Sign Up</span>
               </Link>
             </div>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <GoogleLogin
+              clientId="623615460174-undrui8pi574v6qqtra0vo35vr58olqr.apps.googleusercontent.com"
+              buttonText="Log in with Google"
+              onSuccess={handleLogin}
+              onFailure={handleLogin}
+              cookiePolicy={"single_host_origin"}
+            />
           </div>
         </div>
       </div>
