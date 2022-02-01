@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import GoogleLogin from "react-google-login";
 // import { useSearchParams } from "react-router-dom";
 // import { useParams } from "react-router";
 import $ from "jquery";
@@ -87,31 +88,44 @@ function SignupMain() {
     }
   }
 
-  function onSignIn(googleUser) {
-    var id_token = googleUser.getAuthResponse().id_token;
+  // function onSignIn(googleUser) {
+  //   var id_token = googleUser.getAuthResponse().id_token;
 
-    axios({
-      method: "post",
-      url: "http://test.pladex.in/oauth/google",
-      data: { idtoken: id_token },
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    })
-      .then(function (response) {
-        //handle success
-        console.log(response);
-      })
-      .catch(function (response) {
-        //handle error
-        console.log(response);
-      });
-    // var xhr = new XMLHttpRequest();
-    // xhr.open("POST", "http://65.1.96.8:8000/oauth/google");
-    // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    // xhr.onload = function () {
-    //   console.log("Signed in as: " + xhr.responseText);
-    // };
-    // xhr.send("idtoken=" + id_token);
-  }
+  //   axios({
+  //     method: "post",
+  //     url: "http://test.pladex.in/oauth/google",
+  //     data: { idtoken: id_token },
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //   })
+  //     .then(function (response) {
+  //       //handle success
+  //       console.log(response);
+  //     })
+  //     .catch(function (response) {
+  //       //handle error
+  //       console.log(response);
+  //     });
+  //   // var xhr = new XMLHttpRequest();
+  //   // xhr.open("POST", "http://65.1.96.8:8000/oauth/google");
+  //   // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  //   // xhr.onload = function () {
+  //   //   console.log("Signed in as: " + xhr.responseText);
+  //   // };
+  //   // xhr.send("idtoken=" + id_token);
+  // }
+
+  const handleLogin = async (googleData) => {
+    const res = await fetch("/oauth/google", {
+      method: "POST",
+      body: "token = " + googleData.tokenId,
+
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+    const data = await res.json();
+    // store returned user somehow
+  };
 
   return (
     <div
@@ -309,7 +323,14 @@ function SignupMain() {
                 <span>Login</span>
               </Link>
             </div>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            {/* <div class="g-signin2" data-onsuccess="onSignIn"></div> */}
+            <GoogleLogin
+              clientId="623615460174-undrui8pi574v6qqtra0vo35vr58olqr.apps.googleusercontent.com"
+              buttonText="Log in with Google"
+              onSuccess={handleLogin}
+              onFailure={handleLogin}
+              cookiePolicy={"single_host_origin"}
+            />
           </div>
         </div>
       </div>
