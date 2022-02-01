@@ -168,8 +168,8 @@ function OurTeam() {
                       fontFamily: "Bebas Neue, cursive",
                     }}
                   >
-                    GOPICHAND
-                    <br /> KOMMANIBOYNA
+                    GOPI CHAND
+                    <br /> KOMMANABOYINA
                   </h6>
                 </div>
               </div>

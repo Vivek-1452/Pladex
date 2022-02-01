@@ -2,9 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 // import { useSearchParams } from "react-router-dom";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import $ from "jquery";
 import main from "./loginbg.svg";
+import axios from "axios";
 // import logo from "./FocusImages/logo.png";
 import heart from "./heart.png";
 import "./LoginMain.css";
@@ -89,13 +90,27 @@ function SignupMain() {
   function onSignIn(googleUser) {
     var id_token = googleUser.getAuthResponse().id_token;
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://65.1.96.8:8000/oauth/google");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onload = function () {
-      console.log("Signed in as: " + xhr.responseText);
-    };
-    xhr.send("idtoken=" + id_token);
+    axios({
+      method: "post",
+      url: "http://test.pladex.in/oauth/google",
+      data: { idtoken: id_token },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    })
+      .then(function (response) {
+        //handle success
+        console.log(response);
+      })
+      .catch(function (response) {
+        //handle error
+        console.log(response);
+      });
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("POST", "http://65.1.96.8:8000/oauth/google");
+    // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    // xhr.onload = function () {
+    //   console.log("Signed in as: " + xhr.responseText);
+    // };
+    // xhr.send("idtoken=" + id_token);
   }
 
   return (
