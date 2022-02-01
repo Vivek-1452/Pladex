@@ -11,6 +11,7 @@ AOS.init();
 
 function ComingSoon() {
   const [loginauth, setloginauth] = useState(false);
+  const [mail, setmail] = useState("");
 
   const loginhandler = () => {
     setloginauth(true);
@@ -68,7 +69,10 @@ function ComingSoon() {
               >
                 Subscribe to our NewsLetter to get notified when our page goes
                 live.
-                <form>
+                <form
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSdGcfaJF8cxduf2dd8FjzJSBXhk6nLqHRdLH22a78cWkIqo-g/formResponse"
+                  method="POST"
+                >
                   <center>
                     <div
                       className={
@@ -78,18 +82,33 @@ function ComingSoon() {
                       }
                     >
                       <input
-                        type="text"
+                        type="email"
+                        id="Email"
+                        name="entry.881454754"
                         className="form-control"
-                        placeholder="Mail ID"
+                        placeholder="Enter your Mail ID"
+                        value={mail}
+                        onChange={(e) => setmail(e.target.value)}
+                        style={{
+                          borderRadius: "5px",
+                          border: "none",
+                          outline: "none",
+                          padding: "8px 15px",
+                          width: "75%",
+                        }}
                       />
-                      <div className="input-group-append pt-0">
-                        <span
-                          className="input-group-text"
-                          style={{ backgroundColor: "#31343c", color: "white" }}
-                        >
-                          Subscribe
-                        </span>
-                      </div>
+                      <button
+                        className="btn btn-primary"
+                        type="submit"
+                        style={{
+                          border: "none",
+                          outline: "none",
+                          borderRadius: "5px",
+                          width: "25%",
+                        }}
+                      >
+                        Subscribe
+                      </button>
                     </div>
                   </center>
                 </form>

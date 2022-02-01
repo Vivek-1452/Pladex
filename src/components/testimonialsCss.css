@@ -1,0 +1,21 @@
+.react-3d-carousel {
+  background-color: #f5f6f7 !important;
+}
+
+.slider-single-content {
+  padding-top: 0px;
+}
+
+.cardy {
+  background-image: url(./quot1.png), url(./quot2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 5%, 5%;
+  background-position: 5% 5%, 95% 95%;
+}
+
+.cardyy {
+  background-image: url(./quot1.png), url(./quot2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 5%, 5%;
+  background-position: 10% 5%, 90% 95%;
+}

@@ -72,7 +72,7 @@ const Navnew = (props) => {
     } else if (id1 == "nav2") {
       document.location.href = "/Features";
     } else if (id1 == "nav3") {
-      document.location.href = "/AboutUs";
+      document.location.href = "/EventLibrary";
     } else if (id1 == "nav4") {
       document.location.href = "/JoinUs";
     }
@@ -179,7 +179,7 @@ const Navnew = (props) => {
                 // }}
                 onClick={() => clicking("nav3", "nav2", "nav1", "nav4")}
               >
-                About Us
+                Events
               </Link>
               {/* <Link
                 className={

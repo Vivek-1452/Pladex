@@ -5,7 +5,7 @@ import axios from "axios";
 import img1 from "./Icons3d/stud.png";
 import img2 from "./Icons3d/inst.png";
 import img3 from "./Icons3d/eve.png";
-import img4 from "./Icons3d/don.png";
+import img4 from "./Icons3d/part.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -96,8 +96,8 @@ function Count() {
             class="fas fa-hand-holding-usd my-3"
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
-          <h4 className="fw-bold">Donations</h4>
-          <h5>$ 0.00</h5>
+          <h4 className="fw-bold">Partners</h4>
+          <h5>31</h5>
         </div>
       </div>
     </div>

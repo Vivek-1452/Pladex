@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AddToCalender from "react-add-to-calendar";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // import image3 from "./ImgUpcomEvents/Img3.png";
@@ -33,6 +34,14 @@ export default class UpcomingEventsWeb extends Component {
       pauseOnHover: true,
     };
 
+    const event = {
+      title: "Sample Event",
+      description: "This is the sample event provided as an example only",
+      location: "Portland, OR",
+      startTime: "2016-09-16T20:15:00-04:00",
+      endTime: "2016-09-16T21:45:00-04:00",
+    };
+
     return (
       <div className="pb-5 pt-0" style={{ backgroundColor: "#f5f6f7" }}>
         <div className="pb-3">
@@ -40,7 +49,7 @@ export default class UpcomingEventsWeb extends Component {
             className="text-center fw-bold display-6 mt-3 mb-1 ps-5 ms-5 w-auto"
             style={{ display: "inline-block" }}
           >
-            Our{" "}
+            Upcoming{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
               Events
             </span>
@@ -93,8 +102,18 @@ export default class UpcomingEventsWeb extends Component {
                 <p className="card-text my-4">
                   Importance of women empowerment in sustainable development.
                 </p>
-                {/* <p className="float-lg-start my-3 ms-3">Dec 20 | 6:07 PM</p>
-                <Link
+                <AddToCalender event={event} />
+                <p
+                  className="btn w-auto float-lg-start m-2 pt-2 ms-1"
+                  style={{
+                    backgroundColor: "#e6e7e9",
+                    color: "black",
+                    fontSize: "14px",
+                  }}
+                >
+                  Dec 20 | 6:07 PM
+                </p>
+                {/* <Link
                   to={{
                     pathname: "/CheckRegister",
                     state: "eventReg",
@@ -111,8 +130,8 @@ export default class UpcomingEventsWeb extends Component {
                   href="https://youtu.be/ayrjVGl_ZEQ"
                   target="_blank"
                   rel="noreferrer"
-                  // className="btn w-auto m-2 px-3 float-lg-end"
-                  className="btn w-auto px-3 my-2 mx-auto"
+                  className="btn w-auto m-2 px-3 float-lg-end"
+                  // className="btn w-auto px-3 my-2 mx-auto"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
                   Watch now

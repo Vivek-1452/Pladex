@@ -1,9 +1,10 @@
 import React from "react";
 import slide1 from "./ImgHomeSlider/dlibrary.png";
-import slide2 from "./ImgHomeSlider/focus.png";
+// import slide2 from "./ImgHomeSlider/focus.png";
 // import slide3 from "./ImgHomeSlider/logigate.png";
 import slide4 from "./ImgHomeSlider/podiumtalks.png";
-import slide5 from "./ImgHomeSlider/abhiniyu.png";
+// import slide5 from "./ImgHomeSlider/abhiniyu.png";
+import slide6 from "./ImgHomeSlider/techietalks.png";
 
 function HomeSlider() {
   return (
@@ -41,7 +42,7 @@ function HomeSlider() {
             margin: "0 8px",
           }}
         ></button>
-        {/* <button
+        <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
@@ -54,7 +55,7 @@ function HomeSlider() {
             margin: "0 8px",
           }}
         ></button>
-        <button
+        {/* <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="3"
@@ -93,6 +94,17 @@ function HomeSlider() {
         </div> */}
         <div
           className="carousel-item active p-0"
+          style={{ backgroundColor: "#f5f6f7", border: "none" }}
+        >
+          <img
+            // src="https://pladex.in/images/home-2.png"
+            src={slide6}
+            className="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div
+          className="carousel-item p-0"
           style={{ backgroundColor: "#f5f6f7", border: "none" }}
         >
           <img

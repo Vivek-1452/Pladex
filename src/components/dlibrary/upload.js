@@ -73,7 +73,7 @@ export default function Upload() {
             </div>
           </div>
           <div className="card-body px-md-5 px-4">
-            <form action="http://localhost:8000/bookapi" method="post">
+            <form action="/bookapi" method="post">
               <div className="row">
                 <div className="form-group pt-3 pb-2">
                   <label className="pb-2">Name of the Book</label>

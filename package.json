@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "3d-react-carousal": "^4.0.2",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -16,6 +17,7 @@
     "jquery": "^3.6.0",
     "lodash.filter": "^4.6.0",
     "nth-check": "^2.0.1",
+    "randomvalue-js": "^1.0.5",
     "react": "^17.0.2",
     "react-add-to-calendar": "^0.1.5",
     "react-bootstrap": "^2.0.2",
@@ -35,6 +37,7 @@
     "react-vertical-timeline-component": "^3.5.2",
     "reactv16-mailto": "^0.4.4",
     "slick-carousel": "^1.8.1",
+    "swiper": "^7.4.1",
     "typescript": "^4.5.2",
     "web-vitals": "^1.1.2"
   },

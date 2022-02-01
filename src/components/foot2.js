@@ -77,14 +77,14 @@ function foot2() {
           <div className="col-6 col-lg-2 my-3">
             <h5 className="mx-auto fw-bold">Community</h5>
             <br />
+            <Link to="/Team" className="links">
+              <p>Our Team</p>
+            </Link>
             <Link to="/JoinUs" className="links">
               <p>Join Us</p>
             </Link>
-            <a className="links" href="#" target="_blank" rel="noreferrer">
+            <Link to="/HelpAndSupport" className="links">
               <p>Help & Support</p>
-            </a>
-            <Link to="/AboutUs" className="links">
-              <p>Our Vision</p>
             </Link>
           </div>
           <div className="col-md-6 col-lg-2 my-3">

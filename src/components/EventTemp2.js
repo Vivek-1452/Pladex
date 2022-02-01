@@ -152,7 +152,7 @@ function EventTemp2() {
         </div> */}
         <div className="pt-0 d-md-none d-lg-none">
           <h4 className="text-center fw-bold display-6 mb-0">
-            Our{" "}
+            Upcoming{" "}
             <span className="text" style={{ color: "#3ad6ab" }}>
               Events
             </span>
@@ -216,10 +216,17 @@ function EventTemp2() {
                         Register
                       </button>
                     </Link> */}
-                    {/* <p className="float-start my-3 ms-3">
+                    <p
+                      className="btn float-start m-2 ms-2 pt-2"
+                      style={{
+                        backgroundColor: "#e6e7e9",
+                        color: "black",
+                        fontSize: "15px",
+                      }}
+                    >
                       {slide.date} | {slide.time}
                     </p>
-                    <Link
+                    {/* <Link
                       to={{
                         pathname: "/CheckRegister",
                         state: "eventReg",
@@ -236,8 +243,8 @@ function EventTemp2() {
                       href={slide.link}
                       target="_blank"
                       rel="noreferrer"
-                      // className="btn w-auto m-2 px-3 float-lg-end"
-                      className="btn w-auto px-3 my-2 mx-auto"
+                      className="btn w-auto m-2 px-3 float-end"
+                      // className="btn w-auto px-3 my-2 mx-auto"
                       style={{ backgroundColor: "#3ad6ab", color: "white" }}
                     >
                       Watch now

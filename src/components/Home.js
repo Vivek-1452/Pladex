@@ -14,6 +14,8 @@ import CollabMob from "./CollabMob";
 import FeatMob from "./FeatMob";
 import FocusPartners from "./FocusPartners";
 import FocusPartnMob from "./FocusPartnMob";
+import Testimonials from "./Testimonials";
+import TestimonialsMob from "./TestimonalsMob";
 
 function Home() {
   // const [prop1, setprop1] = useState(false);
@@ -66,6 +68,7 @@ function Home() {
       {display ? <EventTemp2 /> : <UpcomingEventsWeb />}
       {display ? <CollabMob /> : <CollWeb />}
       {display ? <FocusPartnMob /> : <FocusPartners />}
+      {display ? <TestimonialsMob /> : <Testimonials />}
       <Count />
       <Foot2 />
     </>

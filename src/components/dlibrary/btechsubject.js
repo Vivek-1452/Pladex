@@ -26,7 +26,7 @@ function Btechsubject() {
   const [book, setbook] = useState([]);
   const [searchdata, setsearchdata] = useState(book);
   const [search, setsearch] = useState("");
-  const [searchby, setsearchby] = useState("all");
+  const [searchby, setsearchby] = useState("Bookname");
   const [filtere, setfilter] = useState("");
   const [filtertxt, setfiltertxt] = useState({
     key: " ",
@@ -59,7 +59,7 @@ function Btechsubject() {
     .map((book) => {
       return (
         <div
-          className="card col-md-4 px-3 py-4 my-3 justify-content-center d-flex"
+          className="card col-md-4 px-2 py-3 my-2 justify-content-center"
           id={book._id}
           style={{ minWidth: 400 }}
         >
@@ -73,7 +73,7 @@ function Btechsubject() {
               </p>
               <div className="d-flex">
                 {
-                  <div className="my-5" style={{ marginRight: "20px" }}>
+                  <div className="my-2" style={{ marginRight: "20px" }}>
                     {book.Bookimglink.length > 3 ? (
                       <img src={book.Bookimglink} width="100px" alt="img"></img>
                     ) : (
@@ -87,7 +87,7 @@ function Btechsubject() {
                   {/* <div className="d-flex flex-row-reverse"></div> */}
 
                   <p
-                    className="card-text mt-5"
+                    className="card-text mt-2"
                     style={{ overflow: "hidden", height: 20 }}
                   >
                     <span className="span1">Author : </span>
@@ -105,7 +105,7 @@ function Btechsubject() {
                     <span className="span2">{book.Branch}</span>
                   </p>
 
-                  <div className="lower my-5" style={{ display: "flex" }}>
+                  <div className="lower my-2" style={{ display: "flex" }}>
                     <span className="lowerimg1">
                       <img src={Share} className="mx-3" alt="img"></img>
                     </span>
@@ -161,26 +161,26 @@ function Btechsubject() {
   };
 
   const handleSearch = () => {
-    // const query = search;
-    // if (query === "") {
-    //   setsearchdata(book);
-    // }
-    // const filteredData = filter(book, (user) => {
-    //   if (searchby === "Bookname") {
-    //     return containSearch(user, query);
-    //   } else if (searchby === "Author") {
-    //     return containSearch1(user, query);
-    //   } else if (searchby === "Subject") {
-    //     return containSearch2(user, query);
-    //   } else {
-    //     return containSearchf(user, searchby);
-    //   }
-    // });
-    // setsearchdata(filteredData);
-    axios.get("/bookapi/:" + search).then((response) => {
-      console.log(search);
-      setsearchdata(response.data);
+    const query = search;
+    if (query === "") {
+      setsearchdata(book);
+    }
+    const filteredData = filter(book, (user) => {
+      if (searchby === "Bookname") {
+        return containSearch(user, query);
+      } else if (searchby === "Author") {
+        return containSearch1(user, query);
+      } else if (searchby === "Subject") {
+        return containSearch2(user, query);
+      } else {
+        return containSearchf(user, query);
+      }
     });
+    setsearchdata(filteredData);
+    //axios.get("/bookapi/:" + search).then((response) => {
+    //console.log(search);
+    //setsearchdata(response.data);
+    //});
   };
   const containSearch = ({ Bookname }, query) => {
     const quer = query.toLowerCase();
@@ -192,11 +192,13 @@ function Btechsubject() {
   };
   const containSearch1 = ({ Authors }, query) => {
     const quer = query.toLowerCase();
-    const name2 = Authors.toLowerCase();
-    if (name2.includes(quer)) {
-      return true;
+    if (Authors) {
+      const name2 = Authors.toLowerCase();
+      if (name2.includes(quer)) {
+        return true;
+      }
+      return false;
     }
-    return false;
   };
 
   const containSearch2 = ({ Subject }, query) => {
@@ -208,11 +210,22 @@ function Btechsubject() {
     return false;
   };
 
-  const containSearchf = ({ ShortForm }, query) => {
+  const containSearchf = ({ ShortForm, Bookname, Authors, Subject }, query) => {
     const name4 = ShortForm;
-    console.log(query);
-    if (name4.includes(query)) {
-      return true;
+    const name5 = Bookname;
+    const name6 = Authors;
+    const name7 = Subject;
+    const quer = query;
+    if (name4.includes(searchby)) {
+      if (name5.includes(quer)) {
+        return true;
+      }
+      if (name6.includes(quer)) {
+        return true;
+      }
+      if (name7.includes(quer)) {
+        return true;
+      }
     }
     return false;
   };
@@ -485,7 +498,7 @@ function Btechsubject() {
         </nav>
 
         {searchdata.length > 0 ? (
-          <div className="users justify-content-center mx-auto">
+          <div className="users row justify-content-center mx-auto">
             {" "}
             {Displayusers}
             <ReactPaginate

@@ -225,32 +225,32 @@
   margin: 8px;
   border-radius: 5px;
   cursor: pointer;
-  /* background-color:#167d21 ; */
+  background-color: #6dd2ae;
   text-decoration: none;
 }
 .pageBttn {
-  /* background-color: #167d21; */
+  background-color: #6dd2ae;
   color: white;
 }
 .paginationBttns a:hover {
   color: black;
   border-radius: 5px;
-  background-color: #ececec;
+  background-color: #167d21;
 }
 
 .paginationActive a {
-  /* color: white; */
-  background-color: #ececec;
+  color: white;
+  background-color: #167d21;
 }
 
 .previousBttn {
-  border: 2px solid #167d21;
+  border: 2px solid #6dd2ae;
 
   color: #002140;
 }
 
 .nextBttn {
-  border: 2px solid #167d21;
+  border: 2px solid #6dd2ae;
   color: #002140;
 }
 

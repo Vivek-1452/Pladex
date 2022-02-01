@@ -42,6 +42,8 @@ import ErrorRedirect from "./components/ErrorRedirect";
 import AllPartners from "./components/AllPartners";
 import Btechsubject from "./components/dlibrary/btechsubject";
 import Upload from "./components/dlibrary/upload";
+import Team from "./components/OurTeam";
+import HelpAndSupport from "./components/helpnsupport";
 
 function App() {
   const [display, setdisplay] = useState(false);
@@ -77,6 +79,12 @@ function App() {
             </Route>
             <Route path="/Focus">
               <Focus />
+            </Route>
+            <Route path="/Team">
+              <Team />
+            </Route>
+            <Route path="/HelpAndSupport">
+              <HelpAndSupport />
             </Route>
             <Route path="/ep10">
               <Ep10 />
