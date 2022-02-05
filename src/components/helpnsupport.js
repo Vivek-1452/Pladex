@@ -118,7 +118,14 @@ function JoinUs() {
         </span>
       </h4> */}
         <div className="row py-1 py-md-4 px-3 px-md-5">
-          <div className="col-lg-4 col-md-5 text-start">
+          <div
+            className="col-lg-4 col-md-5 text-start px-3 py-md-3 pt-4"
+            style={{
+              borderRadius: display ? "15px 15px 0 0" : "15px",
+              backgroundColor: "#fcfcfc",
+              borderRight: display ? "0" : "10px solid white",
+            }}
+          >
             <p className="fw-bold mb-0" style={{ color: "#3ad6ab" }}>
               Support
             </p>
@@ -128,7 +135,13 @@ function JoinUs() {
               looking for? Please mail to us.
             </p>
           </div>
-          <div className="col-lg-8 col-md-7 text-start">
+          <div
+            className="col-lg-8 col-md-7 text-start px-3 py-md-3 pb-4"
+            style={{
+              borderRadius: display ? "0 0 15px 15px" : "15px",
+              backgroundColor: "#fcfcfc",
+            }}
+          >
             <div className="row">
               <div className="col-10">
                 <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>

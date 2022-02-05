@@ -253,13 +253,13 @@ function LoginMain(props) {
                 <span>Sign Up</span>
               </Link>
             </div>
-            <GoogleLogin
+            {/* <GoogleLogin
               clientId="623615460174-undrui8pi574v6qqtra0vo35vr58olqr.apps.googleusercontent.com"
               buttonText="Log in with Google"
               onSuccess={handleLogin}
               onFailure={handleLogin}
               cookiePolicy={"single_host_origin"}
-            />
+            /> */}
           </div>
         </div>
       </div>

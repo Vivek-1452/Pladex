@@ -11,6 +11,19 @@ import image7 from "./ImgFocusPartners/part7.png";
 import image8 from "./ImgFocusPartners/part8.jpeg";
 import image9 from "./ImgFocusPartners/part9.jpg";
 import image10 from "./ImgFocusPartners/part10.png";
+// import fp11 from "./ImgFocusPartners/fp11.svg";
+// import fp12 from "./ImgFocusPartners/fp12.svg";
+// import fp13 from "./ImgFocusPartners/fp13.svg";
+// import fp14 from "./ImgFocusPartners/fp14.svg";
+// import fp15 from "./ImgFocusPartners/fp15.svg";
+// import fp16 from "./ImgFocusPartners/fp16.svg";
+// import fp17 from "./ImgFocusPartners/fp17.svg";
+// import fp18 from "./ImgFocusPartners/fp18.svg";
+// import fp19 from "./ImgFocusPartners/fp19.svg";
+// import fp20 from "./ImgFocusPartners/fp20.svg";
+// import fp21 from "./ImgFocusPartners/fp21.svg";
+// import fp22 from "./ImgFocusPartners/fp22.svg";
+// import fp23 from "./ImgFocusPartners/fp23.svg";
 
 export default class FocusPartners extends Component {
   render() {
@@ -87,7 +100,7 @@ export default class FocusPartners extends Component {
                 <h2 className="card-title ">
                   <b>E-Cell</b>
                 </h2>
-                <p className="card-text my-4">NIT AGARTALA</p>
+                <p className="card-text my-4">NIT Agartala</p>
               </div>
             </div>
           </div>
@@ -117,7 +130,7 @@ export default class FocusPartners extends Component {
                 <h2 className="card-title ">
                   <b>Literary Club</b>
                 </h2>
-                <p className="card-text my-4">NIT AGARTALA</p>
+                <p className="card-text my-4">NIT Agartala</p>
               </div>
             </div>
           </div>
@@ -147,7 +160,7 @@ export default class FocusPartners extends Component {
                 <h2 className="card-title ">
                   <b>E-Cell</b>
                 </h2>
-                <p className="card-text my-4">NIT SILCHAR</p>
+                <p className="card-text my-4">NIT Silchar</p>
               </div>
             </div>
           </div>
@@ -175,9 +188,9 @@ export default class FocusPartners extends Component {
               </center>
               <div className="card-body">
                 <h2 className="card-title ">
-                  <b>Aaveg</b>
+                  <b>Advay</b>
                 </h2>
-                <p className="card-text my-4">NIT AGARTALA</p>
+                <p className="card-text my-4">NIT Agartala</p>
               </div>
             </div>
           </div>
@@ -205,9 +218,9 @@ export default class FocusPartners extends Component {
               </center>
               <div className="card-body">
                 <h2 className="card-title ">
-                  <b>Sanganan Prayog</b>
+                  <b>Dancing Club</b>
                 </h2>
-                <p className="card-text my-4">NIT AGARTALA</p>
+                <p className="card-text my-4">NIT Silchar</p>
               </div>
             </div>
           </div>
@@ -265,9 +278,9 @@ export default class FocusPartners extends Component {
               </center>
               <div className="card-body">
                 <h2 className="card-title ">
-                  <b>E-Cell</b>
+                  <b>Illuminits</b>
                 </h2>
-                <p className="card-text my-4">NIT NAGALAND</p>
+                <p className="card-text my-4">NIT Silchar</p>
               </div>
             </div>
           </div>
@@ -297,7 +310,7 @@ export default class FocusPartners extends Component {
                 <h3 className="card-title ">
                   <b>Social Service Club</b>
                 </h3>
-                <p className="card-text my-4">NIT NAGALAND</p>
+                <p className="card-text my-4">NIT Nagaland</p>
               </div>
             </div>
           </div>
@@ -327,7 +340,7 @@ export default class FocusPartners extends Component {
                 <h2 className="card-title ">
                   <b>MOVIE CLUB</b>
                 </h2>
-                <p className="card-text my-4">NIT NAGALAND</p>
+                <p className="card-text my-4">NIT Nagaland</p>
               </div>
             </div>
           </div>

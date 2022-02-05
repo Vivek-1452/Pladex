@@ -4,7 +4,7 @@ import slide1 from "./ImgHomeSlider/dlibrary.png";
 // import slide3 from "./ImgHomeSlider/logigate.png";
 import slide4 from "./ImgHomeSlider/podiumtalks.png";
 // import slide5 from "./ImgHomeSlider/abhiniyu.png";
-import slide6 from "./ImgHomeSlider/techietalks.png";
+import slide6 from "./ImgHomeSlider/techietalks.svg";
 
 function HomeSlider() {
   return (

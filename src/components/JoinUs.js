@@ -81,6 +81,7 @@ function JoinUs() {
               </a> */}
               </div>
             </div>
+
             <div className="col-lg-3 col-md-5 col-7 pe-0">
               <img
                 src={imgabout}
@@ -96,6 +97,64 @@ function JoinUs() {
           Us
         </span>
       </h4> */}
+
+        <div className="row pb-5" style={{ overflowX: "hidden" }}>
+          <div
+            className="col-md-7"
+            data-aos="zoom-in-right"
+            data-aos-duration="2500"
+          >
+            <h4 className="text-center display-6 mt-3 mb-5 fw-bold">
+              <span className="text" style={{ color: "#3ad6ab" }}>
+                Collaborate
+              </span>{" "}
+              With Us
+            </h4>
+            <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
+              Coming together is a Beginning, Staying together is Progress and
+              Working together is Success
+            </h6>
+            <br />
+            <p style={{ marginBottom: "35px" }}>
+              PLADEX is the hub where students come, connect and explore. Our
+              motto is to push and provide every student to become warriors in
+              their respective field without taking a single penny. Build
+              effective collaboration with PLADEX to revolutionize digital
+              education world. Come , let’s grow and make this beautiful dream a
+              reality together. <strong>INTERESTED ?</strong>
+            </p>
+            <h4>To affiliate with us</h4>
+            <br />
+            <a
+              href="https://forms.gle/Xbj8ZwDMMt1GRhQM7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                id="btn2"
+                className="btn px-3"
+                onMouseOver={() => hovering("0", "btn2")}
+                onMouseLeave={() => hovering("1", "btn2")}
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Join Us
+              </button>
+            </a>
+          </div>
+          <div
+            className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+            data-aos="zoom-in-left"
+            data-aos-duration="2500"
+          >
+            <img
+              id="img2"
+              src={img2}
+              alt="About Us"
+              style={{ height: "90%", width: "60%" }}
+            />
+          </div>
+        </div>
+
         <div
           className="row pb-5"
           style={{ backgroundColor: "azure", overflowX: "hidden" }}
@@ -216,7 +275,9 @@ function JoinUs() {
             />
           </div>
         </div>
-        <div
+
+        {/*   Podium talks
+                 <div
           className="row pb-5"
           style={{ backgroundColor: "azure", overflowX: "hidden" }}
         >
@@ -237,6 +298,7 @@ function JoinUs() {
               alt="About Us"
               style={{ height: "90%", width: "60%" }}
             />
+
           </div>
           <div
             className="col-md-7"
@@ -283,62 +345,8 @@ function JoinUs() {
             </a>
           </div>
         </div>
-        <div className="row pb-5" style={{ overflowX: "hidden" }}>
-          <div
-            className="col-md-7"
-            data-aos="zoom-in-right"
-            data-aos-duration="2500"
-          >
-            <h4 className="text-center display-6 mt-3 mb-5 fw-bold">
-              <span className="text" style={{ color: "#3ad6ab" }}>
-                Collaborate
-              </span>{" "}
-              With Us
-            </h4>
-            <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
-              Coming together is a Beginning, Staying together is Progress and
-              Working together is Success
-            </h6>
-            <br />
-            <p style={{ marginBottom: "35px" }}>
-              PLADEX is the hub where students come, connect and explore. Our
-              motto is to push and provide every student to become warriors in
-              their respective field without taking a single penny. Build
-              effective collaboration with PLADEX to revolutionize digital
-              education world. Come , let’s grow and make this beautiful dream a
-              reality together. <strong>INTERESTED ?</strong>
-            </p>
-            <h4>To affiliate with us</h4>
-            <br />
-            <a
-              href="https://forms.gle/Xbj8ZwDMMt1GRhQM7"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button
-                id="btn2"
-                className="btn px-3"
-                onMouseOver={() => hovering("0", "btn2")}
-                onMouseLeave={() => hovering("1", "btn2")}
-                style={{ backgroundColor: "#3ad6ab", color: "white" }}
-              >
-                Join Us
-              </button>
-            </a>
-          </div>
-          <div
-            className="col-md-5 d-flex h-100 justify-content-center align-self-center"
-            data-aos="zoom-in-left"
-            data-aos-duration="2500"
-          >
-            <img
-              id="img2"
-              src={img2}
-              alt="About Us"
-              style={{ height: "90%", width: "60%" }}
-            />
-          </div>
-        </div>
+     */}
+
         {/* <div className="row pb-5" style={{ backgroundColor: "azure" }}>
         <h4 className="text-center display-6 mt-3 mb-5 d-md-none d-lg-none fw-bold">
           <span className="text" style={{ color: "#3ad6ab" }}>
