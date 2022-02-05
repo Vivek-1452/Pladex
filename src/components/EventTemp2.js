@@ -43,7 +43,7 @@ function EventTemp2() {
       image: image1,
       date: "Feb 6",
       time: "6:07 PM",
-      link: "https://youtu.be/ayrjVGl_ZEQ",
+      link: "https://bit.ly/3Je5O39",
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ function EventTemp2() {
       image: image2,
       date: "Feb 20",
       time: "6:07 PM",
-      link: "https://youtu.be/BNYwH1X8VbQ",
+      link: "https://bit.ly/3Je5O39",
     },
     {
       id: 3,
@@ -66,7 +66,7 @@ function EventTemp2() {
       image: image3,
       date: "Feb 27",
       time: "6:07 PM",
-      link: "https://youtu.be/CdkA1fUTFIM",
+      link: "https://bit.ly/3Je5O39",
     },
     // {
     //   id: 4,
@@ -247,7 +247,7 @@ function EventTemp2() {
                       // className="btn w-auto px-3 my-2 mx-auto"
                       style={{ backgroundColor: "#3ad6ab", color: "white" }}
                     >
-                      Watch now
+                      Connect
                     </a>
                   </div>
                 </div>

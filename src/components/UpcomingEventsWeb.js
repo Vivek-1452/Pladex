@@ -125,14 +125,14 @@ export default class UpcomingEventsWeb extends Component {
                   </button>
                 </Link> */}
                 <a
-                  href="https://youtu.be/ayrjVGl_ZEQ"
+                  href="https://bit.ly/3Je5O39"
                   target="_blank"
                   rel="noreferrer"
                   className="btn w-auto m-2 px-3 float-lg-end"
                   // className="btn w-auto px-3 my-2 mx-auto"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  Watch now
+                  Connect
                 </a>
               </div>
             </div>
@@ -184,13 +184,14 @@ export default class UpcomingEventsWeb extends Component {
                   Feb 20 | 6:07 PM
                 </p>
                 <a
-                  href="https://youtu.be/ayrjVGl_ZEQ"
+                  href="https://bit.ly/3Je5O39"
                   target="_blank"
                   rel="noreferrer"
                   className="btn w-auto m-2 px-3 float-lg-end"
+                  // className="btn w-auto px-3 my-2 mx-auto"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  Watch now
+                  Connect
                 </a>
               </div>
             </div>
@@ -242,13 +243,14 @@ export default class UpcomingEventsWeb extends Component {
                   Feb 27 | 6:07 PM
                 </p>
                 <a
-                  href="https://youtu.be/ayrjVGl_ZEQ"
+                  href="https://bit.ly/3Je5O39"
                   target="_blank"
                   rel="noreferrer"
                   className="btn w-auto m-2 px-3 float-lg-end"
+                  // className="btn w-auto px-3 my-2 mx-auto"
                   style={{ backgroundColor: "#3ad6ab", color: "white" }}
                 >
-                  Watch now
+                  Connect
                 </a>
               </div>
             </div>
