@@ -37,7 +37,7 @@ const Navnew = (props) => {
       document.getElementById("nav1").style.borderBottom = "2px solid #3ad6ab";
     } else if (props.prop1 == "features") {
       document.getElementById("nav2").style.borderBottom = "2px solid #3ad6ab";
-    } else if (props.prop1 == "about") {
+    } else if (props.prop1 == "events") {
       document.getElementById("nav3").style.borderBottom = "2px solid #3ad6ab";
     } else if (props.prop1 == "join") {
       document.getElementById("nav4").style.borderBottom = "2px solid #3ad6ab";

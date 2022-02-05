@@ -178,7 +178,11 @@ function EventReg() {
 
   return (
     <>
-      <Navnew logincheck={loginauth} loginhandler={loginhandler} />
+      <Navnew
+        logincheck={loginauth}
+        loginhandler={loginhandler}
+        prop1="events"
+      />
       <div
         className="row py-3 mx-0"
         style={{
