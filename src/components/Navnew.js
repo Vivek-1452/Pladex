@@ -93,21 +93,19 @@ const Navnew = (props) => {
             <a href="." className="text-dark text-decoration-none">
               <h2
                 style={{
-                  fontFamily: "'Open Sans', sans-serif",
-                  fontWeight: "bold",
+                  fontFamily: "system-ui",
                   fontSize: "32px",
+                  fontWeight: "bold",
                 }}
               >
-                <b>
-                  PL
-                  <span className="text-primary">
-                    <i
-                      className="fas fa-location-arrow px-1"
-                      style={{ color: "#3ad6ab" }}
-                    ></i>
-                  </span>
-                  DEX
-                </b>
+                PL
+                <span className="text-primary">
+                  <i
+                    className="fas fa-location-arrow px-1"
+                    style={{ color: "#3ad6ab" }}
+                  ></i>
+                </span>
+                DEX
               </h2>
             </a>
           </NavbarBrand>
