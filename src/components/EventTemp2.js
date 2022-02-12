@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Event.css";
-import image1 from "./ImgUpcomEvents/web.svg";
+// import image1 from "./ImgUpcomEvents/web.svg";
 import image2 from "./ImgUpcomEvents/crypto.svg";
 import image3 from "./ImgUpcomEvents/cloud.svg";
+import image4 from "./ImgUpcomEvents/app.svg";
 // import image4 from "./ImgUpcomEvents/Img4.png";
 // import image5 from "./ImgUpcomEvents/Img5.png";
 // import image6 from "./ImgUpcomEvents/Img6.png";
@@ -34,19 +35,19 @@ function EventTemp2() {
   };
 
   const slidesData = [
+    // {
+    //   id: 1,
+    //   title: "Entrepreneurship",
+    //   label1: "How can one become a noteworthy FULL STACK DEVELOPER?",
+    //   // label2: "details of colleges ",
+    //   // label3: "needed for admission process.",
+    //   image: image1,
+    //   date: "Feb 6",
+    //   time: "6:07 PM",
+    //   link: "https://bit.ly/3Je5O39",
+    // },
     {
       id: 1,
-      title: "Entrepreneurship",
-      label1: "How can one become a noteworthy FULL STACK DEVELOPER?",
-      // label2: "details of colleges ",
-      // label3: "needed for admission process.",
-      image: image1,
-      date: "Feb 6",
-      time: "6:07 PM",
-      link: "https://bit.ly/3Je5O39",
-    },
-    {
-      id: 2,
       title: "Mental Health",
       label1: "Do you know the certain pre-requisites for CRYPTOGRAPHY?",
       // label2: "striving students ",
@@ -57,14 +58,25 @@ function EventTemp2() {
       link: "https://bit.ly/3Je5O39",
     },
     {
-      id: 3,
+      id: 2,
       title: "Women Empowerment",
       label1:
         "How CLOUD COMPUTING is vital in realizing the promise of digital transformation?",
       // label2: "predict the best ",
       // label3: "college for you at ease and comfort.",
-      image: image3,
+      image: image4,
       date: "Feb 27",
+      time: "6:07 PM",
+      link: "https://bit.ly/3Je5O39",
+    },
+    {
+      id: 3,
+      title: "App Development",
+      label1: "What is the trajectory of an APP DEVELOPER filled with?",
+      // label2: "predict the best ",
+      // label3: "college for you at ease and comfort.",
+      image: image3,
+      date: "Mar 13",
       time: "6:07 PM",
       link: "https://bit.ly/3Je5O39",
     },

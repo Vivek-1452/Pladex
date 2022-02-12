@@ -51,12 +51,12 @@ function Testimonials() {
           style={{ borderRadius: "50%" }}
           alt="pers"
         />
-        <p style={{ color: "#3ad6ab" }}>
+        {/*  <p style={{ color: "#3ad6ab" }}>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
-        </p>{" "}
+        </p>*/}{" "}
         <p className="mb-5">
           I heard about Pladex from my friend. So, I checked out the website
           Pladex.in. Firstly, the interface got me, dude! That was so nice and
@@ -67,7 +67,7 @@ function Testimonials() {
           clear my doubts in the live chat. Thanks to Pladex for being so
           perseverant.
         </p>{" "}
-        <h4> Kesav Pavan </h4> <p> BASE University </p>{" "}
+        <h4> Kesav Pavan </h4> <p> BASE University, Bengaluru </p>{" "}
       </div>{" "}
     </div>,
 
@@ -81,7 +81,7 @@ function Testimonials() {
       <div className="card-body">
         <img
           id="img1"
-          src={imgk2}
+          src={imgk5}
           className="mt-1 mb-3"
           // src = "https://mk0qomafemocnned3wjh.kinstacdn.com/wp-content/uploads/2019/02/AI-thispersondoesnotexist.jpg"
           height="80"
@@ -89,13 +89,13 @@ function Testimonials() {
           style={{ borderRadius: "50%" }}
           alt="pers"
         />
-        <p style={{ color: "#3ad6ab" }}>
+        {/* <p style={{ color: "#3ad6ab" }}>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
-        </p>{" "}
+        </p>*/}{" "}
         <p className="mb-5">
           I got to know Pladex through the competition named CAMPUS GALLERY
           which fascinated me a lot because I could see all the aesthetic
@@ -127,12 +127,12 @@ function Testimonials() {
           style={{ borderRadius: "50%" }}
           alt="pers"
         />
-        <p style={{ color: "#3ad6ab" }}>
+        {/*<p style={{ color: "#3ad6ab" }}>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
-        </p>{" "}
+        </p>*/}{" "}
         <p className="mb-5">
           I am a 2nd year B. Tech student at Nit Agartala. I visited the Pladex
           website one day and my eyes were caught up with features. I just love
@@ -165,13 +165,13 @@ function Testimonials() {
           style={{ borderRadius: "50%" }}
           alt="pers"
         />
-        <p style={{ color: "#3ad6ab" }}>
+        {/* <p style={{ color: "#3ad6ab" }}>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
-        </p>{" "}
+        </p>*/}{" "}
         <p className="mb-5">
           My graduation started online and the same is going on. I thought I
           would gain nothing and even tensed about my career. Looking for
@@ -180,7 +180,7 @@ function Testimonials() {
           top-notch companies. I got my doubts cleared and with that knowledge,
           I chose my path. In return for such help, I could only thank Pladex
           heartfully. And I even hope for many such features could hit the
-          necessities of many. Thank you!{" "}
+          necessities of many. Thank you!
         </p>{" "}
         <h4> Sathvika</h4> <p> NIT Mizoram </p>{" "}
       </div>{" "}
@@ -197,7 +197,7 @@ function Testimonials() {
       <div className="card-body">
         <img
           id="img1"
-          src={imgk5}
+          src={imgk2}
           className="mt-1 mb-3"
           //src = "https://mk0qomafemocnned3wjh.kinstacdn.com/wp-content/uploads/2019/02/AI-thispersondoesnotexist.jpg"
           height="80"
@@ -205,11 +205,11 @@ function Testimonials() {
           style={{ borderRadius: "50%" }}
           alt="pers"
         />
-        <p style={{ color: "#3ad6ab" }}>
+        {/*  <p style={{ color: "#3ad6ab" }}>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
-        </p>{" "}
+        </p>*/}{" "}
         <p className="mb-5">
           I was very interested in many extracurricular activities, but I could
           not get the representation of all my works. Then my friend once

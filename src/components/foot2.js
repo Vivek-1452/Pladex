@@ -121,8 +121,11 @@ function foot2() {
               style={{
                 color: "#6dd2ae",
                 textDecoration: "none",
+                fontSize: "13px",
               }}
             >
+              <i class="fa-solid fa-envelope"> </i>
+              {"    "}
               pladexstudentscorner@gmail.com
             </a>
             <br />
@@ -136,7 +139,7 @@ function foot2() {
                 textDecoration: "none",
               }}
             >
-              +91 8688055328
+              <i class="fa-solid fa-phone"> </i> +91 8688055328
             </a>
             {/* <Mailto email="pladexstudentscorner@gmail.com" obfuscate={true}>
               pladexstudentscorner@gmail.com

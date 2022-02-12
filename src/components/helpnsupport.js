@@ -144,12 +144,11 @@ function JoinUs() {
           >
             <div className="row">
               <div className="col-10">
-                <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>
+                <p className="fw-bold mb-0">Who we are?</p>
                 <p id="q1" style={{ color: "#595959", display: "none" }}>
-                  Everything you need to know about us. Can't find the answer
-                  you're looking for. Please mail to us. Everything you need to
-                  know about us. Can't find the answer you're looking for.
-                  Please mail to us.
+                  We, the students from different colleges and from different
+                  domains have come together to form a community of students as
+                  our main motto.
                 </p>
               </div>
               <div className="col-2">
@@ -163,12 +162,13 @@ function JoinUs() {
             </div>
             <div className="row">
               <div className="col-10">
-                <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>
+                <p className="fw-bold mb-0">
+                  What is the role of pladex in students' lives?
+                </p>
                 <p id="q2" style={{ color: "#595959", display: "none" }}>
-                  Everything you need to know about us. Can't find the answer
-                  you're looking for. Please mail to us. Everything you need to
-                  know about us. Can't find the answer you're looking for.
-                  Please mail to us.
+                  We are here to connect students and form a community to let
+                  them share their ideas and create a world class digital
+                  education system in India.
                 </p>
               </div>
               <div className="col-2">
@@ -182,12 +182,11 @@ function JoinUs() {
             </div>
             <div className="row">
               <div className="col-10">
-                <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>
+                <p className="fw-bold mb-0">Who can join in your start-up?</p>
                 <p id="q3" style={{ color: "#595959", display: "none" }}>
-                  Everything you need to know about us. Can't find the answer
-                  you're looking for. Please mail to us. Everything you need to
-                  know about us. Can't find the answer you're looking for.
-                  Please mail to us.
+                  UG students who are passionate, committed, consistent and
+                  should have an interest in any of the required sections of our
+                  start-up.
                 </p>
               </div>
               <div className="col-2">
@@ -201,12 +200,14 @@ function JoinUs() {
             </div>
             <div className="row">
               <div className="col-10">
-                <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>
+                <p className="fw-bold mb-0">
+                  Is there any non technical field in your startup?
+                </p>
                 <p id="q4" style={{ color: "#595959", display: "none" }}>
-                  Everything you need to know about us. Can't find the answer
-                  you're looking for. Please mail to us. Everything you need to
-                  know about us. Can't find the answer you're looking for.
-                  Please mail to us.
+                  Yes, you can be a community influencer or you can be a part of
+                  students to assist junior students in counselling process
+                  during their admissions or you can be part of live management
+                  team for podium talks
                 </p>
               </div>
               <div className="col-2">
@@ -220,12 +221,13 @@ function JoinUs() {
             </div>
             <div className="row">
               <div className="col-10">
-                <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>
+                <p className="fw-bold mb-0">
+                  Can anyone be a part of your startup?
+                </p>
                 <p id="q5" style={{ color: "#595959", display: "none" }}>
-                  Everything you need to know about us. Can't find the answer
-                  you're looking for. Please mail to us. Everything you need to
-                  know about us. Can't find the answer you're looking for.
-                  Please mail to us.
+                  UG students who are passionate, committed, consistent and
+                  should have an interest in any of the required sections of our
+                  start-up.
                 </p>
               </div>
               <div className="col-2">
@@ -239,12 +241,13 @@ function JoinUs() {
             </div>
             <div className="row">
               <div className="col-10">
-                <p className="fw-bold mb-0">col-lg-9 col-md-7 col-5 px-lg-0?</p>
+                <p className="fw-bold mb-0">
+                  What are the different technical sections in your start-up?
+                </p>
                 <p id="q6" style={{ color: "#595959", display: "none" }}>
-                  Everything you need to know about us. Can't find the answer
-                  you're looking for. Please mail to us. Everything you need to
-                  know about us. Can't find the answer you're looking for.
-                  Please mail to us.
+                  Video editing team, content team, web development team, social
+                  media marketing team, poster making team, app development
+                  team, financial management team and sponsorship team.
                 </p>
               </div>
               <div className="col-2">

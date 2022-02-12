@@ -3,10 +3,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // import image3 from "./ImgUpcomEvents/Img3.png";
-import image1 from "./ImgUpcomEvents/web.svg";
+// import image1 from "./ImgUpcomEvents/web.svg";
 import image4 from "./ImgUpcomEvents/crypto.svg";
 import image5 from "./ImgUpcomEvents/cloud.svg";
-// import image6 from "./ImgUpcomEvents/Img6.png";
+import image6 from "./ImgUpcomEvents/app.svg";
 // import image7 from "./ImgUpcomEvents/Img7.png";
 import "./upcom.css";
 // import image8 from "./ImgUpcomEvents/Img8.png";
@@ -69,7 +69,7 @@ export default class UpcomingEventsWeb extends Component {
           </Link>
         </div>
         <Slider {...settings}>
-          <div>
+          {/* <div>
             <div
               className="card mx-auto my-2 pt-0"
               style={{
@@ -99,9 +99,9 @@ export default class UpcomingEventsWeb extends Component {
                 </h3>
                 <p className="card-text my-4">
                   How can one become a noteworthy <b>FULL STACK DEVELOPER</b>?
-                </p>
-                {/* <AddToCalender event={event} /> */}
-                <p
+                </p> */}
+          {/* <AddToCalender event={event} /> */}
+          {/* <p
                   className="btn w-auto float-lg-start m-2 pt-2 ms-1"
                   style={{
                     backgroundColor: "#e6e7e9",
@@ -110,8 +110,8 @@ export default class UpcomingEventsWeb extends Component {
                   }}
                 >
                   Feb 06 | 6:07 PM
-                </p>
-                {/* <Link
+                </p> */}
+          {/* <Link
                   to={{
                     pathname: "/CheckRegister",
                     state: "eventReg",
@@ -124,7 +124,7 @@ export default class UpcomingEventsWeb extends Component {
                     Register
                   </button>
                 </Link> */}
-                <a
+          {/* <a
                   href="https://bit.ly/3Je5O39"
                   target="_blank"
                   rel="noreferrer"
@@ -136,7 +136,7 @@ export default class UpcomingEventsWeb extends Component {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
           <div>
             <div
               className="card mx-auto my-2 pt-0"
@@ -241,6 +241,64 @@ export default class UpcomingEventsWeb extends Component {
                   }}
                 >
                   Feb 27 | 6:07 PM
+                </p>
+                <a
+                  href="https://bit.ly/3Je5O39"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn w-auto m-2 px-3 float-lg-end"
+                  // className="btn w-auto px-3 my-2 mx-auto"
+                  style={{ backgroundColor: "#3ad6ab", color: "white" }}
+                >
+                  Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className="card mx-auto my-2 pt-0"
+              style={{
+                minWidth: "250px",
+                width: "75%",
+                height: "95%",
+                border: "none",
+                borderRadius: "10px",
+                boxShadow: "0 0 4px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="mb-2"
+                  src={image6}
+                  alt="Upcoming Event 5"
+                  // width="320"
+                  // height="220"
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    borderRadius: "10px 10px 0 0",
+                  }}
+                />
+              </center>
+              <div className="card-body">
+                <h3 className="card-title">
+                  <span className="text" style={{ color: "#da6220" }}>
+                    {/* <b>Self Defense</b> */}
+                  </span>
+                </h3>
+                <p className="card-text my-4">
+                  What is the trajectory of an <b>APP DEVELOPER</b> filled with?
+                </p>
+                <p
+                  className="btn w-auto float-lg-start m-2 pt-2 ms-1"
+                  style={{
+                    backgroundColor: "#e6e7e9",
+                    color: "black",
+                    fontSize: "14px",
+                  }}
+                >
+                  Mar 13 | 6:07 PM
                 </p>
                 <a
                   href="https://bit.ly/3Je5O39"

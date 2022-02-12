@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
 import Foot2 from "./foot2";
 import Navnew from "./Navnew";
 // import image4 from "./ImgUpcomEvents/Img4.png";
@@ -28,6 +29,14 @@ import image7 from "./ImgUpcomEvents/Img7.png";
 // import image8 from "./ImgUpcomEvents/Img8.png";
 
 function EventReg() {
+  const [display, setdisplay] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 769) {
+      setdisplay(true);
+    }
+  }, [display]);
+
   const [loginauth, setloginauth] = useState(false);
 
   const loginhandler = () => {
@@ -601,7 +610,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -654,7 +663,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -698,7 +707,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -743,7 +752,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -797,7 +806,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -841,7 +850,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -885,7 +894,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -997,7 +1006,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1026,18 +1035,27 @@ function EventReg() {
                 now working at Indian railways.
               </p>
               <Link to="/ep10" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://youtu.be/UTDBHHTPO3I"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1050,7 +1068,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1079,18 +1097,27 @@ function EventReg() {
                 at <b>L&T</b>.
               </p>
               <Link to="/ep9" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://youtu.be/UTDBHHTPO3I"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1103,7 +1130,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1132,18 +1159,27 @@ function EventReg() {
                 constantly has been in the research field.
               </p>
               <Link to="/ep8" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://youtu.be/UTDBHHTPO3I"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1156,7 +1192,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1184,18 +1220,27 @@ function EventReg() {
                 of Mumbai pursuing <b>Electronics</b>.
               </p>
               <Link to="/ep7" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=CfwvNextxqY"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1208,7 +1253,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1236,18 +1281,27 @@ function EventReg() {
                 down in <b>IIM Ahmedabad</b>.
               </p>
               <Link to="/ep6" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=7u6qK869afE"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1260,7 +1314,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1288,18 +1342,27 @@ function EventReg() {
                 <b>Mechanical branch</b>.
               </p>
               <Link to="/ep5" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=QaHIhpg4Y3k"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1312,7 +1375,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1340,18 +1403,27 @@ function EventReg() {
                 <b>academics</b> and <b>passion</b>.
               </p>
               <Link to="/ep4" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=YD1qgxbkv6E"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1364,7 +1436,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1392,18 +1464,27 @@ function EventReg() {
                 and explored various career paths.
               </p>
               <Link to="/ep3" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=uhRAyxTv1YA"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1417,7 +1498,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1445,18 +1526,27 @@ function EventReg() {
                 with <b>AIR 4</b>.
               </p>
               <Link to="/ep2" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=aF3HvqwdJxQ"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now
@@ -1469,7 +1559,7 @@ function EventReg() {
             className="card mx-auto my-2 pt-0"
             style={{
               minWidth: "250px",
-              width: "75%",
+              width: display ? "85%" : "75%",
               height: "95%",
               border: "none",
               borderRadius: "10px",
@@ -1497,18 +1587,27 @@ function EventReg() {
                 sessions of <b>MNCs</b>.
               </p>
               <Link to="/ep1" style={{ textDecoration: "none" }}>
-                <a
-                  href="."
-                  className="btn btn-light mx-2 px-3 my-2 float-lg-start"
-                >
-                  Documentation
-                </a>
+                {display ? (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    <i class="fa-solid fa-file-lines"></i>
+                  </a>
+                ) : (
+                  <a
+                    href="."
+                    className="btn btn-light mx-2 px-3 my-2 float-start"
+                  >
+                    Documentation
+                  </a>
+                )}
               </Link>
               <a
                 href="https://www.youtube.com/watch?v=q8m43j9XlHo"
                 target="_blank"
                 rel="noreferrer"
-                className="btn w-auto m-2 px-3 float-lg-end"
+                className="btn w-auto m-2 px-3 float-end"
                 style={{ backgroundColor: "#3ad6ab", color: "white" }}
               >
                 Watch now

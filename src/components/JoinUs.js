@@ -7,6 +7,7 @@ import img1 from "./Podcast-amico.png";
 import img2 from "./JoinusImg/joinusImg2.png";
 import img3 from "./JoinusImg/joinusImg3.png";
 import img4 from "./JoinusImg/joinusImg4.png";
+import img5 from "./JoinusImg/joinusImg5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -155,6 +156,8 @@ function JoinUs() {
           </div>
         </div>
 
+        {/*team up */}
+
         <div
           className="row pb-5"
           style={{ backgroundColor: "azure", overflowX: "hidden" }}
@@ -220,6 +223,7 @@ function JoinUs() {
             </a>
           </div>
         </div>
+        {/* community influencer */}
         <div className="row pb-5" style={{ overflowX: "hidden" }}>
           <div
             className="col-md-7"
@@ -273,6 +277,74 @@ function JoinUs() {
               alt="About Us"
               style={{ height: "90%", width: "60%" }}
             />
+          </div>
+        </div>
+
+        {/* patners with us */}
+
+        <div
+          className="row pb-5"
+          style={{ backgroundColor: "azure", overflowX: "hidden" }}
+        >
+          <h4 className="text-center display-6 mt-3 mb-5 d-md-none d-lg-none fw-bold">
+            <span className="text" style={{ color: "#3ad6ab" }}>
+              Patern
+            </span>{" "}
+            with us
+          </h4>
+          <div
+            className="col-md-5 d-flex h-100 justify-content-center align-self-center"
+            data-aos="zoom-in-right"
+            data-aos-duration="2500"
+          >
+            <img
+              id="img5"
+              src={img5}
+              alt="About Us"
+              style={{ height: "90%", width: "60%" }}
+            />
+          </div>
+          <div
+            className="col-md-7"
+            data-aos="zoom-in-left"
+            data-aos-duration="2500"
+          >
+            <h4 className="text-center display-6 mt-3 mb-5 d-none d-md-block d-lg-block fw-bold">
+              <span className="text" style={{ color: "#3ad6ab" }}>
+                Patner
+              </span>{" "}
+              with us
+            </h4>
+            <h6 className="fw-bold" style={{ fontFamily: "cursive" }}>
+              Success lies in the combination of both talent and business savvy,
+              and that magic comes through partnership between both.
+            </h6>
+            <br />
+            <p style={{ marginBottom: "35px" }}>
+              PLADEX is a visionary hub aiding students draft their careers and
+              fulfill their numerous dreams. We always look forward for forming
+              great partnership of peerless value for bringing positive impact
+              on students lives and improvising the levels and standards of
+              digital education. Let the Reconnoitering era of the Digi-ed world
+              begin with our partnership.{" "}
+            </p>
+            <h4>To join hands with us for partnership</h4>
+            <br />
+            <a
+              href="https://forms.gle/o1dR1ddthAUL8wTb6"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                id="btn3"
+                className="btn px-3"
+                onMouseOver={() => hovering("0", "btn3")}
+                onMouseLeave={() => hovering("1", "btn3")}
+                style={{ backgroundColor: "#3ad6ab", color: "white" }}
+              >
+                Join Us
+              </button>
+            </a>
           </div>
         </div>
 

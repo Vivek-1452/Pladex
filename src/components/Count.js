@@ -97,7 +97,7 @@ function Count() {
             style={{ fontSize: "60px", color: "#70e9c7" }}
           ></i> */}
           <h4 className="fw-bold">Partners</h4>
-          <h5>31</h5>
+          <h5>41</h5>
         </div>
       </div>
     </div>
