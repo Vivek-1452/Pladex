@@ -67,7 +67,8 @@ function Home() {
       {display ? <FeatMob /> : <UpcomEve />}
       {display ? <EventTemp2 /> : <UpcomingEventsWeb />}
       {/* {display ? <CollabMob /> : <CollWeb />} */}
-      {display ? <FocusPartnMob /> : <FocusPartners />}
+     // {display ? <FocusPartnMob /> : <FocusPartners />} error in focuspartnmob or focuspartners...check that
+  
       {display ? <TestimonialsMob /> : <Testimonials />}
       <Count />
       <Foot2 />
