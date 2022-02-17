@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import "./App.css";
-import { Switch } from "react-router";
-import { Route } from "react-router";
-import { useState } from "react";
+import { Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
