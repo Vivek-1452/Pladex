@@ -374,8 +374,6 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div>
-
-          {/my change/}
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -407,7 +405,7 @@ export default class FocusPartners extends Component {
             </div>
           </div> */}
 
-          {/two/}
+      
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -438,7 +436,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/three/}
+      
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -469,7 +467,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/four/}
+       
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -500,7 +498,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/five/}
+       
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -531,7 +529,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/six/}
+ 
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -562,7 +560,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/seven/}
+   
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -593,7 +591,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/eight/}
+  
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -624,7 +622,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/nine/}
+       
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -655,7 +653,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/ten/}
+   
           {/* <div>
             <div
               className="card mx-auto my-2"
@@ -686,7 +684,7 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div> */}
-          {/11/}
+       
 
           {/* <div>
             <div
@@ -719,7 +717,7 @@ export default class FocusPartners extends Component {
             </div>
           </div> */}
 
-          {/12/}
+        
 
           {/* <div>
             <div
@@ -752,8 +750,7 @@ export default class FocusPartners extends Component {
             </div>
           </div> */}
 
-          {/13/}
-
+         
           {/* <div>
             <div
               className="card mx-auto my-2"
