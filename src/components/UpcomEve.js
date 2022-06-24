@@ -67,7 +67,7 @@ function UpcomEve() {
                 of all genres, competitive materials and{" "}
                 <strong>handwritten notes</strong>.
               </p>
-              <Link to="/dlibrary">
+              <Link to="/ComingSoon">
                 <button
                   id="dlib"
                   className="btn w-auto mx-auto px-4 mb-2"
