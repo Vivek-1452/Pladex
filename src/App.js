@@ -27,8 +27,8 @@ import Ep1 from "./components/Ep1";
 // import FocusCompReg from "./components/FocusCompReg";
 import FocusRegSuc from "./components/FocusRegSuc";
 import ComingSoon from "./components/ComingSoon";
-import LoginMain from "./components/LoginMain";
-import SignupMain from "./components/SignupMain";
+import LoginV3 from "./components/LoginV3";
+import SignupV3 from "./components/SignupV3";
 import CheckReg from "./components/CheckReg";
 // import CheckCompReg from "./components/CheckCompReg";
 import EmailValidation from "./components/EmailValidation";
@@ -40,8 +40,8 @@ import ResetSuccess from "./components/ResetSuccess";
 import ErrorRedirect from "./components/ErrorRedirect";
 // import CompRegSuccess from "./components/CompRegSuccess";
 import AllPartners from "./components/AllPartners";
-import Btechsubject from "./components/dlibrary/btechsubject";
-import Upload from "./components/dlibrary/upload";
+// import Btechsubject from "./components/dlibrary/btechsubject";
+// import Upload from "./components/dlibrary/upload";
 import Team from "./components/OurTeam";
 import HelpAndSupport from "./components/helpnsupport";
 
@@ -161,20 +161,20 @@ function App() {
             <Route path="/AllPartners">
               <AllPartners />
             </Route>
-            <Route path="/dlibrary">
+            {/* <Route path="/dlibrary">
               <Btechsubject />
             </Route>
             <Route path="/uploadbook">
               <Upload />
-            </Route>
+            </Route> */}
             {/* <Route path="/DLibrary">
               <Btechsubject />
             </Route> */}
             <Route path="/login">
-              <LoginMain />
+              <LoginV3 />
             </Route>
             <Route path="/signup">
-              <SignupMain />
+              <SignupV3 />
             </Route>
             <Route path="/detail">
               <Details />

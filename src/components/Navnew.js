@@ -1,14 +1,15 @@
-import { Container, Nav, Navbar, NavbarBrand, NavLink } from "react-bootstrap";
+import { Container, Nav, Navbar, NavbarBrand } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { GoogleLogout } from "react-google-login";
-import { Redirect } from "react-router";
+// import { GoogleLogout } from "react-google-login";
+// import { Redirect } from "react-router";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+
 const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
   // const [isLoaded2, setIsLoaded2] = useState(false);
