@@ -374,6 +374,413 @@ export default class FocusPartners extends Component {
               </div>
             </div>
           </div>
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp11}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>CODING CLUB</b>
+                </h2>
+                <p className="card-text my-4">NIT Nagaland</p>
+              </div>
+            </div>
+          </div> */}
+
+      
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp12}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Design Club</b>
+                </h2>
+                <p className="card-text my-4">NIT Nagaland</p>
+              </div>
+            </div>
+          </div> */}
+      
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp13}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b> Idea Dedication </b>
+                </h2>
+                <p className="card-text my-4">--------</p>
+              </div>
+            </div>
+          </div> */}
+       
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp14}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Meta Morph</b>
+                </h2>
+                <p className="card-text my-4">Nit Himachal Pradesh</p>
+              </div>
+            </div>
+          </div> */}
+       
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp15}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Aero Club</b>
+                </h2>
+                <p className="card-text my-4">MNIT Allahabad</p>
+              </div>
+            </div>
+          </div> */}
+ 
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp16}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>AI & Robotics club</b>
+                </h2>
+                <p className="card-text my-4">NIT Andhra Pradesh</p>
+              </div>
+            </div>
+          </div> */}
+   
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp17}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>CSEA</b>
+                </h2>
+                <p className="card-text my-4">NIT Andhra Pradesh</p>
+              </div>
+            </div>
+          </div> */}
+  
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp18}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Riders</b>
+                </h2>
+                <p className="card-text my-4">NIT Jamshedpur</p>
+              </div>
+            </div>
+          </div> */}
+       
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp19}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>ACM</b>
+                </h2>
+                <p className="card-text my-4">NIT Nagpur</p>
+              </div>
+            </div>
+          </div> */}
+   
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp20}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Robotics</b>
+                </h2>
+                <p className="card-text my-4">NIT Nagaland</p>
+              </div>
+            </div>
+          </div> */}
+       
+
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp21}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Student Branch</b>
+                </h2>
+                <p className="card-text my-4">NIT Nagaland</p>
+              </div>
+            </div>
+          </div> */}
+
+        
+
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp22}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>Tathva</b>
+                </h2>
+                <p className="card-text my-4">NIT calicut</p>
+              </div>
+            </div>
+          </div> */}
+
+         
+          {/* <div>
+            <div
+              className="card mx-auto my-2"
+              style={{
+                minWidth: "250px",
+                width: "70%",
+                height: "95%",
+                border: "1px solid #3ad6ab",
+                borderRadius: "10px",
+                boxShadow: "0 0 5px #999",
+              }}
+            >
+              <center>
+                <img
+                  className="my-3"
+                  src={fp23}
+                  alt="College Explorer"
+                  width="200"
+                  height="200"
+                  style={{ borderRadius: "50%" }}
+                />
+              </center>
+              <div className="card-body">
+                <h2 className="card-title ">
+                  <b>FARC</b>
+                </h2>
+                <p className="card-text my-4">NIT Surathkal</p>
+              </div>
+            </div>
+          </div> */}
         </Slider>
       </div>
     );
