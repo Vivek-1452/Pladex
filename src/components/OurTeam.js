@@ -7,13 +7,15 @@ import Navnew from "./Navnew";
 import img1 from "./teamHeader.svg";
 import vivek from "./TeamImages/vivek.jpg";
 import gopi from "./TeamImages/noimg.png";
-import venkatesh from "./TeamImages/venky.png";
+import sneha from "./TeamImages/sneha.jpg";
+// import venkatesh from "./TeamImages/venky.png";
 import kishan from "./TeamImages/kishan.jpg";
 import akhil from "./TeamImages/akhil.jpg";
 import priya from "./TeamImages/priya.jpeg";
 import sathvika from "./TeamImages/sathvika.png";
 import sai from "./TeamImages/sai.jpeg";
 import nishant from "./TeamImages/nishant.png";
+import "./OurTeam.css";
 
 function OurTeam() {
   const [loginauth, setloginauth] = useState(false);
@@ -130,6 +132,60 @@ function OurTeam() {
               <center>
                 <img
                   className="bg-dark"
+                  src={sneha}
+                  alt="sneha"
+                  style={{ width: "100%" }}
+                />
+              </center>
+            </div>
+            <span style={{ position: "relative", top: "-120px" }}>
+              <div className="w-100 d-inline-block pt-0">
+                <div
+                  className="float-start text-white w-auto d-inline-block ps-3 pe-1 py-1"
+                  style={{ borderRadius: "0 3px 3px 0" }}
+                >
+                  <h6
+                    className="crh"
+                    style={{
+                      fontSize: "13px",
+                      marginBottom: "0",
+                      paddingBottom: "3px",
+                      borderBottom: "3px solid white",
+                      fontFamily: "Mochiy Pop P One, sans-serif",
+                    }}
+                  >
+                    Front-end lead
+                  </h6>
+                </div>
+              </div>
+              <div className="w-100 d-inline-block pt-0">
+                <div
+                  className="float-start text-white w-auto d-inline-block ps-3 pe-1 py-0"
+                  style={{ borderRadius: "0 3px 3px 0" }}
+                >
+                  <h6
+                    className="text-start cr"
+                    style={{
+                      fontSize: "30px",
+                      marginBottom: "0",
+                      fontFamily: "Bebas Neue, cursive",
+                    }}
+                  >
+                    SNEHA
+                    <br /> CHADIPIRALLA
+                  </h6>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div
+            className="col-md-6 col-lg-4 pt-0 px-3"
+            style={{ height: "auto" }}
+          >
+            <div className="pt-0">
+              <center>
+                <img
+                  className="bg-dark"
                   src={gopi}
                   alt="gopi"
                   style={{ width: "100%" }}
@@ -175,7 +231,7 @@ function OurTeam() {
               </div>
             </span>
           </div>
-          <div
+          {/* <div
             className="col-md-6 col-lg-4 pt-0 px-3"
             style={{ height: "auto" }}
           >
@@ -228,7 +284,7 @@ function OurTeam() {
                 </div>
               </div>
             </span>
-          </div>
+          </div> */}
           <div
             className="col-md-6 col-lg-4 pt-0 px-3"
             style={{ height: "auto" }}

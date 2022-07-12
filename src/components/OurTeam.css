@@ -1,0 +1,9 @@
+.cr {
+  background: -webkit-linear-gradient(#333, #e2e2e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crh {
+  color: #515151;
+}
