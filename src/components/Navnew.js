@@ -13,19 +13,19 @@ import axios from "axios";
 const Navnew = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
   // const [isLoaded2, setIsLoaded2] = useState(false);
-  // if (window.location.origin == "https://www.pladex.in") {
+  // if (window.location.origin == "http://www.pladex.in") {
 
   var log1 = window.location.origin + "/logout";
 
   useEffect(() => {
-    if (window.location.origin == "https://www.pladex.in") {
-      axios.post("https://www.pladex.in/authenticate").then((response) => {
+    if (window.location.origin == "http://www.pladex.in") {
+      axios.post("http://www.pladex.in/authenticate").then((response) => {
         if (response.data.status == "authenticated") {
           setIsLoaded(true);
         }
       });
     } else {
-      axios.post("https://pladex.in/authenticate").then((response) => {
+      axios.post("http://pladex.in/authenticate").then((response) => {
         if (response.data.status == "authenticated") {
           setIsLoaded(true);
         }
@@ -259,7 +259,7 @@ const Navnew = (props) => {
               )} */}
               {isLoaded ? (
                 <a
-                  // href="https://www.pladex.in/logout"
+                  // href="http://www.pladex.in/logout"
                   href={log1}
                   className="mx-2 links text-light rounded px-3 py-2 text-decoration-none"
                   style={{ backgroundColor: "#31343c", color: "white" }}

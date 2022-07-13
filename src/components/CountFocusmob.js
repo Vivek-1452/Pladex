@@ -20,12 +20,12 @@ function CountFocusmob() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    if (window.location.origin == "https://www.pladex.in") {
-      axios.get("https://www.pladex.in/count_students").then((response) => {
+    if (window.location.origin == "http://www.pladex.in") {
+      axios.get("http://www.pladex.in/count_students").then((response) => {
         setStudents(response.data);
       });
     } else {
-      axios.get("https://pladex.in/count_students").then((response) => {
+      axios.get("http://pladex.in/count_students").then((response) => {
         setStudents(response.data);
       });
     }
@@ -34,12 +34,12 @@ function CountFocusmob() {
   const [inst, setInst] = useState([]);
 
   useEffect(() => {
-    if (window.location.origin == "https://www.pladex.in") {
-      axios.get("https://www.pladex.in/count_inst").then((response) => {
+    if (window.location.origin == "http://www.pladex.in") {
+      axios.get("http://www.pladex.in/count_inst").then((response) => {
         setInst(response.data);
       });
     } else {
-      axios.get("https://pladex.in/count_inst").then((response) => {
+      axios.get("http://pladex.in/count_inst").then((response) => {
         setInst(response.data);
       });
     }
