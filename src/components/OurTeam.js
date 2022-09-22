@@ -124,7 +124,7 @@ function OurTeam() {
               </div>
             </span>
           </div>
-          {/* <div
+          <div
             className="col-md-6 col-lg-4 pt-0 px-3"
             style={{ height: "auto" }}
           >
@@ -177,7 +177,7 @@ function OurTeam() {
                 </div>
               </div>
             </span>
-          </div> */}
+          </div>
           <div
             className="col-md-6 col-lg-4 pt-0 px-3"
             style={{ height: "auto" }}
@@ -231,7 +231,7 @@ function OurTeam() {
               </div>
             </span>
           </div>
-          <div
+          {/* <div
             className="col-md-6 col-lg-4 pt-0 px-3"
             style={{ height: "auto" }}
           >
@@ -284,7 +284,7 @@ function OurTeam() {
                 </div>
               </div>
             </span>
-          </div>
+          </div> */}
           <div
             className="col-md-6 col-lg-4 pt-0 px-3"
             style={{ height: "auto" }}
